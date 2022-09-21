@@ -1,11 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
-import SliderHero from "./components/SliderHero";
+import SliderHero from "./sections/SliderHero";
 import yogapose from "../public/yoga-pose.png";
 import Button from "./components/Button";
-import LeftImageCard from "./components/LeftImageCard";
+import LeftImageCard from "./sections/LeftImageCard";
 import { data } from "./static/data";
 import CourseHomepage from "./sections/CourseHomepage";
+import { BsArrowRight } from "react-icons/bs";
+import Teacherprofile from "./sections/Teacherprofile";
+import Header from "./components/Header";
 
 export default function Home() {
   return (
@@ -126,6 +129,40 @@ export default function Home() {
           the other and everyone will take away a lot more than what they have
           given.
         </p>
+      </div>
+      {/* What do we offer  Section starts  */}
+      <div className="w-full px-32 py-16">
+        <h2 className="text-[40px] font-bold">What Do We Offer </h2>
+        <div className="flex items-stretch space-x-4">
+          {data.offer.map((value, index) => {
+            return (
+              <div key={index} className=" w-1/4 bg-gray-100 p-4 text-center">
+                <Image
+                  src={value.image}
+                  alt={value.title}
+                  height={160}
+                  width={160}
+                />
+                <h3 className="text-[24px] font-semibold">{value.title}</h3>
+                <p>{value.content}</p>
+                <a
+                  className="float-right flex items-center space-x-4 "
+                  href={value.url}
+                >
+                  <BsArrowRight />
+                  <span> Read More</span>
+                </a>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      {/* Teachers Section  */}
+      <div className="w-full bg-gray-100 px-32 py-16">
+        <h2 className="text-center text-[45px] font-bold">
+          Best Yoga Teachers Rishikesh India
+        </h2>
+        <Teacherprofile />
       </div>
     </div>
   );

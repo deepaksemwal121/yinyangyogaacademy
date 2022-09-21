@@ -1,9 +1,6 @@
-import Image from "next/image";
-import React from "react";
-import Button from "../components/Button";
-import CourseRightImage from "../components/CourseRightImage";
-import CousrseLeftImage from "../components/CousrseLeftImage";
+import CousrseLeftImage from "./CousrseLeftImage";
 import { coursesHome } from "../static/coursesData";
+import CourseRightImage from "./CourseRightImage";
 
 const CourseHomepage = () => {
   return (

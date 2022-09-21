@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { type } from "os";
 import React from "react";
-import Button from "./Button";
+import Button from "../components/Button";
 
 interface DataProps {
   title: string;
@@ -17,7 +18,7 @@ interface DataProps {
   }[];
 }
 
-const CourseRightImage: React.FC<DataProps> = ({
+const CousrseLeftImage: React.FC<DataProps> = ({
   title,
   image,
   desc,
@@ -27,16 +28,14 @@ const CourseRightImage: React.FC<DataProps> = ({
 }) => {
   return (
     <div className="flex w-full items-center space-x-12">
-      <div className="w-1/2">
-        <h2 className="text-[40px] font-semibold">{title}</h2>
-        <p>{desc.para1}</p>
-        <br />
-        <p>{desc.para2}</p>
-        <br />
-        <Button title="Enroll Now" url="/" />
-      </div>
       <div className="relative w-1/2">
-        <Image src={image} alt={shortdesc} width={540} height={300} />
+        <Image
+          src={image}
+          alt={shortdesc}
+          width={540}
+          height={300}
+          className="shadow-lg shadow-black"
+        />
         <div className="absolute  top-3">
           {levels.map((i: string, index: number) => {
             return (
@@ -49,7 +48,7 @@ const CourseRightImage: React.FC<DataProps> = ({
             );
           })}
         </div>
-        <div className="grid grid-cols-3  gap-4">
+        <div className="grid  grid-cols-3  gap-4">
           {highlights.map((value, index) => {
             return (
               <div key={index} className="flex items-center space-x-4">
@@ -60,8 +59,16 @@ const CourseRightImage: React.FC<DataProps> = ({
           })}
         </div>
       </div>
+      <div className="w-1/2">
+        <h2 className="text-[40px] font-semibold">{title}</h2>
+        <p>{desc.para1}</p>
+        <br />
+        <p>{desc.para2}</p>
+        <br />
+        <Button title="Enroll Now" url="/" />
+      </div>
     </div>
   );
 };
 
-export default CourseRightImage;
+export default CousrseLeftImage;
