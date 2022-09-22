@@ -13,7 +13,7 @@ import {
 } from "react-icons/fa";
 
 const Header = () => {
-  const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState(true);
 
   return (
     <div className="w-full">

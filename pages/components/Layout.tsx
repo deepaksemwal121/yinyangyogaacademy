@@ -6,8 +6,8 @@ interface Pages {
 }
 const Layout = ({ children }: Pages) => {
   return (
-    <div>
-      <Header />
+    <div className="bg-white">
+      {/* <Header /> */}
       {children}
     </div>
   );
