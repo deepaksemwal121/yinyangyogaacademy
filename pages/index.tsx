@@ -8,7 +8,7 @@ import { data } from "./static/data";
 import CourseHomepage from "./sections/CourseHomepage";
 import { BsArrowRight } from "react-icons/bs";
 import Teacherprofile from "./sections/Teacherprofile";
-import Header from "./components/Header";
+
 
 export default function Home() {
   return (

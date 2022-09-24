@@ -13,11 +13,15 @@ import {
 } from "react-icons/fa";
 
 const Header = () => {
+<<<<<<< HEAD
   const [hover, setHover] = useState({
     about: false,
     yogaTeacher: false,
     yogaTreat: false,
   });
+=======
+  const [hover, setHover] = useState(true);
+>>>>>>> daeae42c50f04328666fefe0aed15ff87e2dd58f
 
   return (
     <div className="">
