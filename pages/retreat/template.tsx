@@ -114,20 +114,20 @@ const template = () => {
               Energy centers within the human body
             </Text.Secondary>
             <Text.Primary size="lg" color="black">
-              Understanding Chakras & Their Functioning
+              Understanding Chakras &amp; Their Functioning
             </Text.Primary>
             <div className="my-2">
               <Text.Secondary color="gray" size="sm">
                 Chakras are the energy centers within the human body. They help
-                to regulate all the body’s processes, right from organ function
-                to the immune system and emotion control.
+                to regulate all the body&apos;s processes, right from organ
+                function to the immune system and emotion control.
               </Text.Secondary>
             </div>
 
             <div className="my-2">
               <Text.Secondary color="gray" size="sm">
                 If one or more of these energy centers are blocked, we may
-                unconsciously be impeding the body’s energy flow. When we
+                unconsciously be impeding the body&apos;s energy flow. When we
                 suppress feelings like anger or sorrow for example, these
                 chakras get blocked and in the long run, start to affect the
                 body. Whenever we fall sick or experience low emotional levels,
@@ -235,7 +235,7 @@ const template = () => {
               <Text.Secondary color="gray">
                 This retreat is designed to be beneficial to everyone. Neither
                 do you need to have a background in Yoga to participate nor is
-                there any restriction on age. You don’t need flexibility or
+                there any restriction on age. You don&apos;t need flexibility or
                 strength to do this retreat. This retreat is ideal for anyone
                 looking to recharge their battery, take a break from the stress
                 of daily life and learn more about yourself. The only
@@ -245,7 +245,7 @@ const template = () => {
             </div>
           </div>
           <div className="rounded bg-orange-100 p-4">
-            <Text.Secondary size="lg">What's Included</Text.Secondary>
+            <Text.Secondary size="lg">What&apos;s Included</Text.Secondary>
             <Text.Primary color="black" size="lg">
               All What Is Included In Retreat
             </Text.Primary>
