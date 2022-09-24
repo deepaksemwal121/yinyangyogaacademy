@@ -15,7 +15,9 @@ const Primary = (props: text) => {
   return (
     <div
       className={`${
-        props.size === "lg" ? "text-4xl font-semibold" : "text-2xl font-medium"
+        props.size === "lg"
+          ? "my-1 text-2xl font-semibold"
+          : " text-base font-medium"
       } ${color}`}
     >
       {props.children}
@@ -33,7 +35,7 @@ const Secondary = (props: text) => {
   return (
     <div
       className={`${
-        props.size === "lg" ? "text-xl font-medium" : "text-base"
+        props.size === "lg" ? "text-lg font-medium" : "text-sm"
       } ${color}`}
     >
       {props.children}
