@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import Header from "./Header";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "./Footer";
 
 interface Pages {
   children?: ReactNode;
@@ -9,8 +10,9 @@ interface Pages {
 const Layout = ({ children }: Pages) => {
   return (
     <div className="bg-white">
-      {/* <Header /> */}
+      <Header />
       {children}
+      <Footer />
     </div>
   );
 };

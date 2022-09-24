@@ -4,7 +4,11 @@ const nextConfig = {
   swcMinify: true,
 
   images: {
-    domains: ["yinyangyogaacademy.com", "cdn-icons-png.flaticon.com"],
+    domains: [
+      "yinyangyogaacademy.com",
+      "cdn-icons-png.flaticon.com",
+      "www.yogkulam.org",
+    ],
   },
 };
 

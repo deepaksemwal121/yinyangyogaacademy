@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap");
+
 .hero__about {
   display: flex;
   justify-content: center;
@@ -18,4 +20,17 @@
 
 .readMore {
   clip-path: polygon(0 0, 100% 38%, 100% 100%, 0% 100%);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 500;
+}
+p,
+li,
+span,
+div {
+  font-family: "DM Sans", sans-serif;
 }

@@ -33,7 +33,7 @@ const About = () => {
       {/* Hero Section  */}
       <div className="hero__about">
         <div className="hero__about-content">
-          <h2 className="text-[50px] font-bold text-white">
+          <h2 className="text-[50px]  text-white">
             About YinYang Yoga Academy
           </h2>
           <div className="breadcrumbs text-sm text-white">
@@ -52,7 +52,7 @@ const About = () => {
         <div className="w-1/2">
           <p className="text-orange-600">Know More About us </p>
           <div className="h-1 w-[10%] bg-orange-500"></div>
-          <h2 className="text-[45px] font-semibold">
+          <h2 className="text-[45px] ">
             About Yin Yang Yoga Academy Rishikesh
           </h2>
           <p className="text-justify">
@@ -85,9 +85,7 @@ const About = () => {
             />
           </div>
           <div className="absolute top-[80%] left-[10%] h-[200px] w-[80%] bg-orange-600 p-8">
-            <h3 className="text-[30px] font-semibold text-white">
-              Yin Yang Yoga Academy
-            </h3>
+            <h3 className="text-[30px]  text-white">Yin Yang Yoga Academy</h3>
             <p className="text-[#f1f1f1]">
               Yin Yoga is a slower practice where poses are passively held for
               longer, working on the deep, dense (Yin) connective tissues and
@@ -97,9 +95,7 @@ const About = () => {
         </div>
       </div>
       <div className="px-32 py-16">
-        <h3 className="text-center text-[50px] font-bold">
-          Our Values and Mission
-        </h3>
+        <h3 className="text-center text-[50px] ">Our Values and Mission</h3>
       </div>
       <div className="grid grid-cols-3 gap-4 px-32">
         <div className="p-4 text-center">
@@ -109,8 +105,8 @@ const About = () => {
             width={100}
             alt=""
           />
-          <h3 className="text-center text-[24px] font-semibold text-orange-600">
-            Holixtic Learning Programme
+          <h3 className="text-center text-[24px]  text-orange-600">
+            Holistic Learning Programme
           </h3>
           <p>
             We offers a holistic learning programme which explores Yoga not only
@@ -125,7 +121,7 @@ const About = () => {
             width={100}
             alt=""
           />
-          <h3 className="text-center text-[24px] font-semibold text-orange-600">
+          <h3 className="text-center text-[24px]  text-orange-600">
             Specialized Yoga Curriculum
           </h3>
           <p>
@@ -140,7 +136,7 @@ const About = () => {
             width={100}
             alt=""
           />
-          <h3 className="text-center text-[24px] font-semibold text-orange-600">
+          <h3 className="text-center text-[24px]  text-orange-600">
             Yoga For Everyone
           </h3>
           <p>
@@ -158,7 +154,7 @@ const About = () => {
             width={100}
             alt=""
           />
-          <h3 className="text-center text-[24px] font-semibold text-orange-600">
+          <h3 className="text-center text-[24px]  text-orange-600">
             Importance of Yoga
           </h3>
           <p>
@@ -174,7 +170,7 @@ const About = () => {
             width={100}
             alt=""
           />
-          <h3 className="text-center text-[24px] font-semibold text-orange-600">
+          <h3 className="text-center text-[24px]  text-orange-600">
             Future Yoga Teacher
           </h3>
           <p>
@@ -189,7 +185,7 @@ const About = () => {
             width={100}
             alt=""
           />
-          <h3 className="text-center text-[24px] font-semibold text-orange-600">
+          <h3 className="text-center text-[24px]  text-orange-600">
             Security First
           </h3>
           <p>
@@ -211,9 +207,7 @@ const About = () => {
         <div className="w-1/2">
           <p className="text-lg text-orange-500">Our Roots</p>
           <div className="h-1 w-[10%] bg-orange-500"></div>
-          <h3 className="text-[45px] font-semibold">
-            Foundation Of Yin Yoga Academy
-          </h3>
+          <h3 className="text-[45px] ">Foundation Of Yin Yoga Academy</h3>
           <p>
             The name Rishikesh Yogkulam denotes a unification of the name of the
             city Rishikesh - the world capital of Yoga and “Yogkulam” which
@@ -228,15 +222,15 @@ const About = () => {
               <IoEarthOutline size={70} color="white" />
             </div>
             <div className="text-white">
-              <p className="text-[20px] font-semibold">Global Students</p>
-              <p className="text-[40px] font-bold">{happy} +</p>
+              <p className="text-[20px] ">Global Students</p>
+              <p className="text-[40px] font-medium">{happy} +</p>
             </div>
           </div>
         </div>
       </div>
       {/* Books Section  */}
       <div className="w-full px-32 py-16">
-        <h3 className="mb-8 text-[40px] font-semibold">
+        <h3 className="mb-8 text-[40px] ">
           Find The Best Yoga Books Here
           <div className="h-1 w-[10%] bg-orange-500"></div>
         </h3>

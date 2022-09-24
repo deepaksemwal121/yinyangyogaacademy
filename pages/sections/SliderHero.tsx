@@ -9,15 +9,16 @@ const SliderHero = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     cssEase: "linear",
+    autolay: true,
   };
 
   return (
-    <div className="m-0 h-[100vh] overflow-x-hidden ">
+    <div className="h-[90vh] w-full overflow-x-hidden ">
       <Slider {...settings}>
-        <div className="flex h-[80vh]  bg-gray-300 ">
-          <div className="w-fullitems-stretch flex h-full justify-center">
+        <div className="flex   w-full bg-gray-300 ">
+          <div className="flex h-[80vh]  w-full items-stretch justify-center">
             <div className="flex w-1/2 flex-col justify-center p-8">
-              <h2 className="text-[40px] font-semibold">
+              <h2 className="text-[40px] text-black">
                 Yoga is The Art Of
                 <em> Self Realisation</em>
               </h2>
@@ -35,11 +36,10 @@ const SliderHero = () => {
             <div className="slide-1 w-1/2"></div>
           </div>
         </div>
-        <div className="h-[80vh] bg-orange-600 text-white">1</div>
-        <div className="h-[80vh] bg-orange-600">1</div>
-        <div className="h-[80vh] bg-orange-600">1</div>
-        <div className="h-[80vh] bg-orange-600">1</div>
-        <div className="h-[80vh] bg-orange-600">1</div>
+        <div className="h-[80vh] bg-orange-600 text-white">Sample Slider 2</div>
+        <div className="h-[80vh] bg-orange-600 text-white">Sample Slider 3</div>
+        <div className="h-[80vh] bg-orange-600 text-white">Sample Slider 4</div>
+        <div className="h-[80vh] bg-orange-600 text-white">Sample Slider 5</div>
       </Slider>
     </div>
   );

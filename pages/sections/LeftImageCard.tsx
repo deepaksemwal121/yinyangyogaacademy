@@ -13,7 +13,7 @@ const LeftImageCard = ({ title, description, icon }: Card) => {
         <Image src={icon} alt="icon" width={150} height={150} />
       </div>
       <div className="w-3/4">
-        <h3 className="text-2xl font-semibold">{title}</h3>
+        <h3 className="text-2xl">{title}</h3>
         <p>{description}</p>
       </div>
     </div>

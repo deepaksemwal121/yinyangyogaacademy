@@ -41,7 +41,7 @@ const CousrseLeftImage: React.FC<DataProps> = ({
             return (
               <div
                 key={index}
-                className="badge badge-accent mx-4 inline-block text-white"
+                className="badge badge-accent mx-4 inline-flex items-center  text-black"
               >
                 {i}
               </div>
@@ -60,12 +60,16 @@ const CousrseLeftImage: React.FC<DataProps> = ({
         </div>
       </div>
       <div className="w-1/2">
-        <h2 className="text-[40px] font-semibold">{title}</h2>
+        <h2 className="text-[40px]">{title}</h2>
         <p>{desc.para1}</p>
         <br />
         <p>{desc.para2}</p>
         <br />
-        <Button title="Enroll Now" url="/" />
+        <Button
+          title="Enroll Now"
+          url="/"
+          style="text-lg text-orange-600 px-6 py-3 border-orange-600 border-2 hover:bg-orange-500 hover:text-white"
+        />
       </div>
     </div>
   );

@@ -9,7 +9,6 @@ import CourseHomepage from "./sections/CourseHomepage";
 import { BsArrowRight } from "react-icons/bs";
 import Teacherprofile from "./sections/Teacherprofile";
 
-
 export default function Home() {
   return (
     <div>
@@ -21,13 +20,15 @@ export default function Home() {
       {/* Main Index Pages starts from Here  */}
       {/* Slider Component will go here */}
       <SliderHero />
-      <div className="flex w-full items-center space-x-4 px-32 py-16">
+      <div className="flex w-full items-center space-x-4 px-32 ">
         <div className="w-1/2">
           <Image src={yogapose} alt="yoga-pose" width={666} height={666} />
         </div>
         <div className="w-1/2">
-          <p>ONE DESTINATION, MANY PATHS, ONE JOURNEY</p>
-          <h2 className="text-[40px] font-semibold">
+          <p className="text-lg font-medium text-orange-600">
+            ONE DESTINATION, MANY PATHS, ONE JOURNEY
+          </p>
+          <h2 className="text-[40px]">
             YOGA TEACHER TRAINING IN RISHIKESH, INDIA
           </h2>
           <p>
@@ -53,8 +54,10 @@ export default function Home() {
       {/* Section 2 Starts from here  */}
       <div className="flex w-full items-center space-x-4 px-32 py-16">
         <div className="w-1/2">
-          <p>ONE DESTINATION, MANY PATHS, ONE JOURNEY</p>
-          <h2 className="text-[40px] font-semibold">
+          <p className="text-lg font-medium text-orange-600">
+            ONE DESTINATION, MANY PATHS, ONE JOURNEY
+          </p>
+          <h2 className="text-[40px]">
             Why Yoga Teacher Training Programs And Retreats?
           </h2>
           {data.cardData.map((i, index) => {
@@ -81,7 +84,7 @@ export default function Home() {
       <CourseHomepage />
       {/* Best Teacher Section */}
       <div className="w-full px-32 py-16">
-        <h2 className="text-center text-[45px] font-bold">
+        <h2 className="text-center text-[45px]">
           BEST ONLINE YOGA TEACHER TRAINING INDIA
         </h2>
         <p className="text-center text-lg">
@@ -111,32 +114,16 @@ export default function Home() {
                   width={80}
                   height={80}
                 />
-                <h2 className="text-[30px] font-semibold text-gray-700">
-                  {value.title}
-                </h2>
+                <h2 className="text-[30px] text-gray-700">{value.title}</h2>
                 <p>{value.content}</p>
               </div>
             );
           })}
         </div>
-        <p>
-          All the classes that are taking place are almost similar to the
-          offline classes only with full-on excitement and interaction. The
-          bonds are still strong and as it was earlier only the distance has
-          increased. People are still enjoying each class and the variety that
-          each course provides to enrich the body, soul, and mind.
-          <br />
-          This is the only institute that provides something for everyone
-          whether you are a beginner, intermediate, advance, or seeking a change
-          in life. All the courses here are designed in such a way that it has
-          innovation as well as experience. Here everyone will get something or
-          the other and everyone will take away a lot more than what they have
-          given.
-        </p>
       </div>
       {/* What do we offer  Section starts  */}
       <div className="w-full px-32 py-16">
-        <h2 className="text-[40px] font-bold">What Do We Offer </h2>
+        <h2 className="text-[40px] ">What Do We Offer </h2>
         <div className="flex items-stretch space-x-4">
           {data.offer.map((value, index) => {
             return (
@@ -147,10 +134,10 @@ export default function Home() {
                   height={160}
                   width={160}
                 />
-                <h3 className="text-[24px] font-semibold">{value.title}</h3>
+                <h3 className="text-[24px]">{value.title}</h3>
                 <p>{value.content}</p>
                 <a
-                  className="float-right flex items-center space-x-4 "
+                  className="float-right flex items-center space-x-4 text-orange-600"
                   href={value.url}
                 >
                   <BsArrowRight />
@@ -162,12 +149,7 @@ export default function Home() {
         </div>
       </div>
       {/* Teachers Section  */}
-      <div className="w-full bg-gray-100 px-32 py-16">
-        <h2 className="text-center text-[45px] font-bold">
-          Best Yoga Teachers Rishikesh India
-        </h2>
-        <Teacherprofile />
-      </div>
+      <Teacherprofile />
     </div>
   );
 }
