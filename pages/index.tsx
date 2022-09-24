@@ -43,7 +43,11 @@ export default function Home() {
             of them are trained from Rishikesh.
           </p>
           <br />
-          <Button title="Enroll Now" url="/" />
+          <Button
+            style="w-[50%] bg-orange-600 text-white px-6 py-4"
+            title="Enroll Now"
+            url="/"
+          />
         </div>
       </div>
       {/* Section 2 Starts from here  */}

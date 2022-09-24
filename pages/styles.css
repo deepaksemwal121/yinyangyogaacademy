@@ -1,22 +1,21 @@
-/* the slides */
-.slick-slide {
-  margin: 0 20px;
-}
-
-/* the parent */
-.slick-list {
-  margin: 0 -20px;
-  height: 250px;
-}
-
 .hero__about {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: 70vh;
   background: url("../public/about-us-yinyang.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.slide-1 {
+  background-image: url("../public/slider-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.readMore {
+  clip-path: polygon(0 0, 100% 38%, 100% 100%, 0% 100%);
 }

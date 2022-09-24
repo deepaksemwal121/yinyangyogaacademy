@@ -1,11 +1,12 @@
 interface ButtonProps {
   title: string;
   url: string;
+  style: string;
 }
-const Button = ({ title, url }: ButtonProps) => {
+const Button = ({ title, url, style }: ButtonProps) => {
   return (
     <>
-      <a className=" bg-[#de4c12] px-8 py-4" href={url}>
+      <a className={style} href={url}>
         {title}
       </a>
     </>

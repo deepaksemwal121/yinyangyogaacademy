@@ -101,4 +101,72 @@ export const data = {
       desc: "A traditional Hatha Yoga teacher, Sonuji started practising Yoga at the age of 10. Expounding the cl",
     },
   ],
+  books: [
+    {
+      title: "Ajna Chakra",
+      author: "Rishi Nityabodhananda",
+      image: "/../public/Ajna_Chakra.jpg",
+      download_url: "/",
+    },
+    {
+      title: "Asana Pranayama Mudra Bandha",
+      author: "Swami Satyendra Saraswati ",
+      image: "/../public/Asana.jpg",
+      download_url: "/",
+    },
+    {
+      title: "Ayurveda The Science of Self-Healing",
+      author: "Dr. Vasant Lad",
+      image: "/../public/ayurveda.jpg",
+      download_url: "/",
+    },
+    {
+      title: "The Bhagvad Gita",
+      author: "Winthrop Sargeant",
+      image: "/../public/Bhagwat_Gita.jpg",
+      download_url: "/",
+    },
+    {
+      title: "The Ayurveda Encyclopedia",
+      author: "",
+      image: "/../public/encyclopedia.jpg",
+      download_url: "/",
+    },
+    {
+      title: "Hatha Yoga Pradipika",
+      author: "Swami Mutibondhmanda",
+      image: "/../public/hatha.jpg",
+      download_url: "/",
+    },
+    {
+      title: "Moola Bandha -The Master Key",
+      author: "Swami Buddhananda",
+      image: "/../public/moola.jpg",
+      download_url: "/",
+    },
+    {
+      title: "Prana and Pranayama",
+      author: "Swami Niranjananda Saraswati",
+      image: "/../public/prana.jpg",
+      download_url: "/",
+    },
+    {
+      title: "Tattwa Shuddhi",
+      author: "Swami Satyasangananda",
+      image: "/../public/tattwa.jpg",
+      download_url: "/",
+    },
+    {
+      title: "Inside The Yoga Sutras",
+      author: "",
+      image: "/../public/Yoga_sutra.jpg",
+      download_url: "/",
+    },
+    {
+      title: "Yogic Management of Common Diseases",
+      author: "Dr Swami Karmananda",
+      image: "/../public/yogic_management.jpg",
+      download_url: "/",
+    },
+  ],
 };

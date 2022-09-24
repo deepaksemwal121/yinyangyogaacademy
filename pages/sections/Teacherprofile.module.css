@@ -1,0 +1,10 @@
+/* the slides */
+.slick-slide {
+  margin: 0 20px;
+}
+
+/* the parent */
+.slick-list {
+  margin: 0 -20px;
+  height: 250px;
+}

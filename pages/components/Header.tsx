@@ -13,10 +13,14 @@ import {
 } from "react-icons/fa";
 
 const Header = () => {
-  const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState({
+    about: false,
+    yogaTeacher: false,
+    yogaTreat: false,
+  });
 
   return (
-    <div className="w-full">
+    <div className="">
       <div className="topbar flex justify-between bg-gray-800 px-32 py-2">
         <div className="flex w-2/6 items-center justify-end space-x-3  px-2 text-white">
           <BiLocationPlus size={20} color="orange" />
@@ -41,7 +45,7 @@ const Header = () => {
           <FaTripadvisor size={20} color="orange" />
         </div>
       </div>
-      <nav className="navigation flex items-center justify-between bg-white px-32 py-4">
+      <nav className=" flex items-center justify-between bg-white px-32 py-4">
         <div className="brand">
           <Link href="/">
             <Image
@@ -58,11 +62,15 @@ const Header = () => {
               <Link href="/">Home</Link>
             </li>
             <li className="relative">
-              <span onMouseEnter={() => setHover(false)}>
+              <span
+                onMouseEnter={() => setHover({ ...hover, about: !hover.about })}
+              >
                 About <FiChevronDown />
               </span>
               <div
-                className={`absolute top-[70px] z-10 flex w-[250px] flex-col border-t-2 border-orange-700 bg-white p-0`}
+                className={`${
+                  hover.about ? "inline-block" : "hidden"
+                } absolute top-[60px] z-10 flex w-[250px] flex-col border-t-2 border-orange-700 bg-white p-0`}
               >
                 <div className="z-20 py-3">
                   <div className=" absolute left-6 top-[-5px]  h-4 w-4 rotate-45 bg-white"></div>
@@ -87,53 +95,70 @@ const Header = () => {
               </div>
             </li>
             <li>
-              <span onMouseEnter={() => setHover(false)}>
+              <span
+                onMouseEnter={() =>
+                  setHover({ ...hover, yogaTeacher: !hover.yogaTeacher })
+                }
+              >
                 Yoga Teacher Training <FiChevronDown />
               </span>
+              <div
+                className={`${
+                  hover.yogaTeacher ? "inline-block" : "hidden"
+                } absolute top-[70px] z-10 flex w-[270px] flex-col border-t-2 border-orange-700 bg-white p-0`}
+              >
+                <div className="z-20 py-3">
+                  <div className=" absolute left-6 top-[-5px]  h-4 w-4 rotate-45 bg-white p-0"></div>
+                </div>
+                <ul className="w-full">
+                  <li className=" border-b-[1px] py-2  hover:bg-orange-300">
+                    <Link href="/"> 100 hours Yoga Teacher Training</Link>
+                  </li>
+                  <li className="border-b-[1px] py-2  hover:bg-orange-300">
+                    <Link href="/">200 hours Yoga Teacher Training</Link>
+                  </li>
+                  <li className="border-b-[1px] py-2  hover:bg-orange-300">
+                    <Link href="/">300 hours Yoga Teacher Training</Link>
+                  </li>
+                  <li className=" py-2  hover:bg-orange-300">
+                    <Link href="/">500 hours Yoga Teacher Training</Link>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
-              <span onMouseEnter={() => setHover(false)}>
+              <span
+                onMouseEnter={() =>
+                  setHover({ ...hover, yogaTreat: !hover.yogaTreat })
+                }
+              >
                 Yoga Retreat <FiChevronDown />
               </span>
+              <div
+                className={`${
+                  hover.yogaTreat ? "inline-block" : "hidden"
+                } absolute top-[70px] z-10 flex w-[270px] flex-col border-t-2 border-orange-700 bg-white p-0`}
+              >
+                <div className="z-20 py-3">
+                  <div className=" absolute left-6 top-[-5px]  h-4 w-4 rotate-45 bg-white p-0"></div>
+                </div>
+                <ul className="w-full">
+                  <li className=" border-b-[1px] py-2  hover:bg-orange-300">
+                    <Link href="/"> 5 Day Yoga Retreat</Link>
+                  </li>
+                  <li className="border-b-[1px] py-2  hover:bg-orange-300">
+                    <Link href="/">7 Chakra Yoga Retreat</Link>
+                  </li>
+                  <li className="border-b-[1px] py-2  hover:bg-orange-300">
+                    <Link href="/"> 10 Day Yoga Retreat</Link>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>Contact Us</li>
             <li>Pay Now</li>
             <li>Apply Now</li>
           </ul>
-
-          <div
-            className={`absolute left-[45%] top-28 z-10 hidden w-[300px] border-t-2 border-orange-700 bg-white `}
-          >
-            <ul>
-              <li className=" border-b-[1px] py-2 px-2 hover:bg-orange-300">
-                100 hours Yoga Teacher Training
-              </li>
-              <li className="border-b-[1px] py-2 px-2 hover:bg-orange-300">
-                200 hours Yoga Teacher Training
-              </li>
-              <li className="border-b-[1px] py-2 px-2 hover:bg-orange-300">
-                300 hours Yoga Teacher Training
-              </li>
-              <li className=" py-2 px-2 hover:bg-orange-300">
-                500 hours Yoga Teacher Training
-              </li>
-            </ul>
-          </div>
-          <div
-            className={`absolute left-[60%] top-28 z-10 w-[300px] border-t-2 border-orange-700 bg-white `}
-          >
-            <ul>
-              <li className=" border-b-[1px] py-2 px-2 hover:bg-orange-300">
-                5 Day Yoga Retreat
-              </li>
-              <li className="border-b-[1px] py-2 px-2 hover:bg-orange-300">
-                7 Chakra Yoga Retreat
-              </li>
-              <li className="border-b-[1px] py-2 px-2 hover:bg-orange-300">
-                10 Day Yoga Retreat
-              </li>
-            </ul>
-          </div>
         </div>
       </nav>
     </div>
