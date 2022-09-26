@@ -1,10 +1,14 @@
+import path from "path";
+console.log(__dirname);
+console.log(path.resolve(__dirname, "..", "public", "icon1.png"));
+const file = require("../public/icon1.png");
 export const data = {
   cardData: [
     {
       title: "Lifetime Opportunity",
       description:
         "Get a lifetime opportunity and take a bag full of memories for life to cherish. With high-quality food, living accompanied with great facilities find a balance in hectic work-life and new meaning to life.",
-      icon: "/../public/icon1.png",
+      icon: file,
     },
     {
       title: "Amazing Treks",
