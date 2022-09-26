@@ -78,13 +78,13 @@ const Header = () => {
                     <Link href="/about/our-teachers">Our Teachers</Link>
                   </li>
                   <li className="border-b-[1px]  hover:bg-orange-300">
-                    <Link href="/about">Acommodation</Link>
+                    <Link href="/about/accomodation">Acommodation</Link>
                   </li>
                   <li className="border-b-[1px]  hover:bg-orange-300">
-                    <Link href="/about">Reviews</Link>
+                    <Link href="/about/reviews">Reviews</Link>
                   </li>
                   <li className="  hover:bg-orange-300">
-                    <Link href="/about">Blogs</Link>
+                    <Link href="/about/blogs">Blogs</Link>
                   </li>
                 </ul>
               </div>
@@ -108,16 +108,24 @@ const Header = () => {
                 </div>
                 <ul className="w-full">
                   <li className=" border-b-[1px]   hover:bg-orange-300">
-                    <Link href="/"> 100 hours Yoga Teacher Training</Link>
+                    <Link href="/yoga-teacher-training/100-hours">
+                      100 hours Yoga Teacher Training
+                    </Link>
                   </li>
                   <li className="border-b-[1px]   hover:bg-orange-300">
-                    <Link href="/">200 hours Yoga Teacher Training</Link>
+                    <Link href="/yoga-teacher-training/200-hours">
+                      200 hours Yoga Teacher Training
+                    </Link>
                   </li>
                   <li className="border-b-[1px]  hover:bg-orange-300">
-                    <Link href="/">300 hours Yoga Teacher Training</Link>
+                    <Link href="/yoga-teacher-training/300-hours">
+                      300 hours Yoga Teacher Training
+                    </Link>
                   </li>
                   <li className="   hover:bg-orange-300">
-                    <Link href="/">500 hours Yoga Teacher Training</Link>
+                    <Link href="/yoga-teacher-training/500-hours">
+                      500 hours Yoga Teacher Training
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -141,13 +149,13 @@ const Header = () => {
                 </div>
                 <ul className="w-full">
                   <li className=" border-b-[1px]  hover:bg-orange-300">
-                    <Link href="/"> 5 Day Yoga Retreat</Link>
+                    <Link href="/retreat/5-days"> 5 Day Yoga Retreat</Link>
                   </li>
                   <li className="border-b-[1px]   hover:bg-orange-300">
                     <Link href="/retreat/chakra">7 Chakra Yoga Retreat</Link>
                   </li>
                   <li className="border-b-[1px]  hover:bg-orange-300">
-                    <Link href="/"> 10 Day Yoga Retreat</Link>
+                    <Link href="/retreat/10-days"> 10 Day Yoga Retreat</Link>
                   </li>
                 </ul>
               </div>

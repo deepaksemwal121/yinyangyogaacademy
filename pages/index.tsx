@@ -4,7 +4,7 @@ import SliderHero from "../components/sections/SliderHero";
 import yogapose from "../public/yoga-pose.png";
 import Button from "../components/Button";
 import LeftImageCard from "../components/sections/LeftImageCard";
-import { data } from "../static/data";
+import { data } from "../data/data";
 import CourseHomepage from "../components/sections/CourseHomepage";
 import { BsArrowRight } from "react-icons/bs";
 import Teacherprofile from "../components/sections/Teacherprofile";

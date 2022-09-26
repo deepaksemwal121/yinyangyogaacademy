@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import about from "../../public/about-us.jpg";
 import { IoDownloadOutline, IoEarthOutline } from "react-icons/io5";
 import Slider from "react-slick";
-import { data } from "../../static/data";
+import { data } from "../../data/data";
 import Teacherprofile from "../../components/sections/Teacherprofile";
 
 const About = () => {
