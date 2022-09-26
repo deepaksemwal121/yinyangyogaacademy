@@ -35,7 +35,7 @@ const template = () => {
           </div>
           <div>
             <Image
-              src={require("../public/chakra.png")}
+              src={require("../../public/chakra.png")}
               height={411}
               width={607}
               alt="hero"
@@ -55,37 +55,37 @@ const template = () => {
                 {
                   name: "Sahasrara Chakra",
                   desc: "Have you ever woken up in the morning with a feeling of not being grounded, of being somewhere you don’t belong, feeling restless with constant worries and frustration",
-                  image: require("../public/shahsrachakra.png"),
+                  image: require("../../public/shahsrachakra.png"),
                 },
                 {
                   name: "Ajna Chakra",
                   desc: "Have you ever woken up in the morning with a feeling of not being grounded, of being somewhere you don’t belong, feeling restless with constant worries and frustration",
-                  image: require("../public/ajnachakra.png"),
+                  image: require("../../public/ajnachakra.png"),
                 },
                 {
                   name: "Vishuddha Chakra",
                   desc: "Have you ever woken up in the morning with a feeling of not being grounded, of being somewhere you don’t belong, feeling restless with constant worries and frustration",
-                  image: require("../public/vishuddhachakra.png"),
+                  image: require("../../public/vishuddhachakra.png"),
                 },
                 {
                   name: "Anhata Chakra",
                   desc: "Have you ever woken up in the morning with a feeling of not being grounded, of being somewhere you don’t belong, feeling restless with constant worries and frustration",
-                  image: require("../public/anhatachakra.png"),
+                  image: require("../../public/anhatachakra.png"),
                 },
                 {
                   name: "Manipura Chakra",
                   desc: "Have you ever woken up in the morning with a feeling of not being grounded, of being somewhere you don’t belong, feeling restless with constant worries and frustration",
-                  image: require("../public/manipura.png"),
+                  image: require("../../public/manipura.png"),
                 },
                 {
                   name: "Swadhistana Chakra",
                   desc: "Have you ever woken up in the morning with a feeling of not being grounded, of being somewhere you don’t belong, feeling restless with constant worries and frustration",
-                  image: require("../public/swadhisthana.png"),
+                  image: require("../../public/swadhisthana.png"),
                 },
                 {
                   name: "Muladhara Chakra",
                   desc: "Have you ever woken up in the morning with a feeling of not being grounded, of being somewhere you don’t belong, feeling restless with constant worries and frustration",
-                  image: require("../public/muladhara.png"),
+                  image: require("../../public/muladhara.png"),
                 },
               ].map((item, i) => {
                 return (
@@ -163,7 +163,7 @@ const template = () => {
             <div className="my-4">
               {[
                 {
-                  image: require("../public/shahsrachakra.png"),
+                  image: require("../../public/shahsrachakra.png"),
                   title: "Self discovery",
                   desc: "On this inner journey of self discovery, we help you access your healing powers, giving you techniques that you can take back and integrate into your daily life.",
                 },
