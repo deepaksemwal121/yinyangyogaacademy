@@ -35,7 +35,7 @@ const Secondary = (props: text) => {
   return (
     <div
       className={`${
-        props.size === "lg" ? "text-lg font-medium" : "text-sm"
+        props.size === "lg" ? "text-lg font-medium" : "text-lg "
       } ${color}`}
     >
       {props.children}

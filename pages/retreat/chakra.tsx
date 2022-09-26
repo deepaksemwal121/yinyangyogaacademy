@@ -1,9 +1,11 @@
 import Head from "next/head";
-import Text from "../components/Text";
-import Button from "../components/Buttons";
+import Text from "../../components/Text";
+import Button from "../../components/Buttons";
 import Slider from "react-slick";
 import Image from "next/image";
 import { IoCheckmarkCircle } from "react-icons/io5";
+import Teacherprofile from "../../components/sections/Teacherprofile";
+
 const template = () => {
   const settings = {
     dots: true,
@@ -18,31 +20,34 @@ const template = () => {
         <meta name="description" content="Yin yang yoga academy" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="px-32">
+      <main className="">
         {/* hero section */}
-        <section className="grid h-[40rem] grid-cols-2 items-center">
+        <section className="grid h-[40rem] grid-cols-2 items-center bg-orange-200 px-32 py-16">
           <div>
             <Text.Secondary size="lg">Welcome to yoga retreat</Text.Secondary>
-            <Text.Primary size="lg" color="black">
-              Chakras Yoga Retreat in Rishikesh
-            </Text.Primary>
-            <Text.Primary size="lg" color="black">
-              X Days Retreat !
-            </Text.Primary>
+            <h3 className="text-[45px]">Chakras Yoga Retreat in Rishikesh</h3>
+            <h3 className="text-[40px]">7 Days Retreat !</h3>
 
             <Text.Secondary color="gray">
               Come and join us for the unforgettable experience of a lifetime
             </Text.Secondary>
             <Button>Enroll now</Button>
           </div>
-          <div></div>
+          <div>
+            <Image
+              src="/../public/chakra.png"
+              height={411}
+              width={607}
+              alt="hero"
+            />
+          </div>
         </section>
         {/* chakra retreat section */}
-        <section className="text-center">
-          <Text.Secondary size="lg">Practicing Yoga</Text.Secondary>
-          <Text.Primary size="lg" color="black">
-            Chakras Yoga Retreat in Rishikesh
-          </Text.Primary>
+        <section className="px-32 py-16 text-center">
+          <p className="text-lg font-semibold text-orange-600">
+            Practicing Yoga
+          </p>
+          <h3 className="text-[40px]">Chakras Yoga Retreat in Rishikesh</h3>
 
           <div className="my-6">
             <Slider {...settings}>
@@ -50,26 +55,37 @@ const template = () => {
                 {
                   name: "Sahasrara Chakra",
                   desc: "Have you ever woken up in the morning with a feeling of not being grounded, of being somewhere you don’t belong, feeling restless with constant worries and frustration",
-                  image:
-                    "https://yinyangyogaacademy.com/wp-content/uploads/2022/09/3-150x150.png",
+                  image: "/../public/shahsrachakra.png",
                 },
                 {
-                  name: "Sahasrara Chakra",
+                  name: "Ajna Chakra",
                   desc: "Have you ever woken up in the morning with a feeling of not being grounded, of being somewhere you don’t belong, feeling restless with constant worries and frustration",
-                  image:
-                    "https://yinyangyogaacademy.com/wp-content/uploads/2022/09/3-150x150.png",
+                  image: "/../public/ajnachakra.png",
                 },
                 {
-                  name: "Sahasrara Chakra",
+                  name: "Vishuddha Chakra",
                   desc: "Have you ever woken up in the morning with a feeling of not being grounded, of being somewhere you don’t belong, feeling restless with constant worries and frustration",
-                  image:
-                    "https://yinyangyogaacademy.com/wp-content/uploads/2022/09/3-150x150.png",
+                  image: "/../public/vishuddhachakra.png",
                 },
                 {
-                  name: "Sahasrara Chakra",
+                  name: "Anhata Chakra",
                   desc: "Have you ever woken up in the morning with a feeling of not being grounded, of being somewhere you don’t belong, feeling restless with constant worries and frustration",
-                  image:
-                    "https://yinyangyogaacademy.com/wp-content/uploads/2022/09/3-150x150.png",
+                  image: "/../public/anhatachakra.png",
+                },
+                {
+                  name: "Manipura Chakra",
+                  desc: "Have you ever woken up in the morning with a feeling of not being grounded, of being somewhere you don’t belong, feeling restless with constant worries and frustration",
+                  image: "/../public/manipura.png",
+                },
+                {
+                  name: "Swadhistana Chakra",
+                  desc: "Have you ever woken up in the morning with a feeling of not being grounded, of being somewhere you don’t belong, feeling restless with constant worries and frustration",
+                  image: "/../public/swadhisthana.png",
+                },
+                {
+                  name: "Muladhara Chakra",
+                  desc: "Have you ever woken up in the morning with a feeling of not being grounded, of being somewhere you don’t belong, feeling restless with constant worries and frustration",
+                  image: "/../public/muladhara.png",
                 },
               ].map((item, i) => {
                 return (
@@ -82,9 +98,7 @@ const template = () => {
                         width={200}
                       />
                       <div className="px-4">
-                        <Text.Secondary size="lg" color="black">
-                          {item.name}
-                        </Text.Secondary>
+                        <h3 className="text-[34px]">{item.name}</h3>
                         <div className="my-2">
                           <Text.Secondary size="sm" color="gray">
                             {item.desc}
@@ -100,7 +114,7 @@ const template = () => {
         </section>
 
         {/* undestanding chakras and their functions */}
-        <section className="-mx-32 my-32 grid h-[30rem] grid-cols-2 items-center bg-orange-100 px-32">
+        <section className="grid grid-cols-2  items-center bg-orange-100  px-32 py-16">
           <div className="text-center">
             <Image
               src="https://yinyangyogaacademy.com/wp-content/uploads/2022/09/Untitled-design.png"
@@ -113,9 +127,9 @@ const template = () => {
             <Text.Secondary size="lg">
               Energy centers within the human body
             </Text.Secondary>
-            <Text.Primary size="lg" color="black">
+            <h3 className="text-[45px]">
               Understanding Chakras &amp; Their Functioning
-            </Text.Primary>
+            </h3>
             <div className="my-2">
               <Text.Secondary color="gray" size="sm">
                 Chakras are the energy centers within the human body. They help
@@ -141,17 +155,15 @@ const template = () => {
             <Button>Enroll Now</Button>
           </div>
         </section>
-        <section className="grid grid-cols-2 items-center">
+        <section className=" grid grid-cols-2 items-center px-32 py-16">
           <div>
             <Text.Secondary size="lg">7 days chakra retreat</Text.Secondary>
-            <Text.Primary color="black" size="lg">
-              About the 7 days yoga retreat
-            </Text.Primary>
+            <h3 className="text-[40px]">About the 7 days yoga retreat</h3>
             {/* title desc comps */}
             <div className="my-4">
               {[
                 {
-                  image: "",
+                  image: "/../public/shahsrachakra.png",
                   title: "Self discovery",
                   desc: "On this inner journey of self discovery, we help you access your healing powers, giving you techniques that you can take back and integrate into your daily life.",
                 },
@@ -197,13 +209,11 @@ const template = () => {
           </div>
         </section>
         {/* highlights eligibility whats included */}
-        <section className="grid grid-cols-2 space-x-2">
+        <section className="grid grid-cols-2 space-x-2 px-32">
           <div>
             <div className="mb-2 rounded bg-orange-100 p-4">
               <Text.Secondary size="lg">Highlights</Text.Secondary>
-              <Text.Primary color="black" size="lg">
-                Overview Of The Retreat
-              </Text.Primary>
+              <h3 className="text-[34px]">Overview Of The Retreat</h3>
               <Text.Secondary color="gray">
                 While there are many kinds of Yoga retreats, the Chakra retreat
                 is primarily different in its focus. The subject of the retreat,
@@ -229,9 +239,7 @@ const template = () => {
             </div>
             <div className="mt-2 rounded bg-orange-100 p-4">
               <Text.Secondary size="lg">Eligibility</Text.Secondary>
-              <Text.Primary color="black" size="lg">
-                Eligibility For The Retreat
-              </Text.Primary>
+              <h3 className="text-[34px]">Eligibility For The Retreat</h3>
               <Text.Secondary color="gray">
                 This retreat is designed to be beneficial to everyone. Neither
                 do you need to have a background in Yoga to participate nor is
@@ -246,9 +254,7 @@ const template = () => {
           </div>
           <div className="rounded bg-orange-100 p-4">
             <Text.Secondary size="lg">What&apos;s Included</Text.Secondary>
-            <Text.Primary color="black" size="lg">
-              All What Is Included In Retreat
-            </Text.Primary>
+            <h3 className="text-[34px]">All What Is Included In Retreat</h3>
             {[
               { title: " 2 yoga classes daily (one morning, one evening)" },
               { title: " Daily pranayama class (breath awareness practice)" },
@@ -290,11 +296,9 @@ const template = () => {
         </section>
 
         {/* pricing section */}
-        <section className="my-32 text-center">
+        <section className="my-32 px-32 text-center">
           <Text.Secondary size="lg">Timetable</Text.Secondary>
-          <Text.Primary size="lg" color="black">
-            Upcoming Events
-          </Text.Primary>
+          <h3 className="text-[40px]">Upcoming Events</h3>
           <table className="my-6 w-full">
             <thead className="h-16 rounded bg-orange-100">
               <tr className="font-medium text-orange-600">
@@ -380,6 +384,7 @@ const template = () => {
           </table>
         </section>
       </main>
+      <Teacherprofile />
     </div>
   );
 };

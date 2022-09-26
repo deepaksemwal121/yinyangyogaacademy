@@ -65,10 +65,8 @@ const Footer = () => {
           </div>
           {/* Quick Links */}
           <div className="flex flex-col justify-center">
-            <p className="text-lg font-semibold text-white">
-              Quick Link
-              <div className="mb-4 h-[2px] w-1/3 bg-orange-600"></div>
-            </p>
+            <p className="text-lg font-semibold text-white">Quick Link</p>
+            <div className="mb-4 h-[2px] w-1/3 bg-orange-600"></div>
             <ul className="list-none space-y-4 text-white">
               <li className="cursor-pointer hover:text-orange-600"> Home</li>
               <li className="cursor-pointer hover:text-orange-600">
@@ -90,8 +88,8 @@ const Footer = () => {
           <div className="flex flex-initial flex-col">
             <p className="text-lg font-semibold text-white">
               Yoga Teacher Training
-              <div className="mb-4 h-[2px] w-1/3 bg-orange-600"></div>
             </p>
+            <div className="mb-4 h-[2px] w-1/3 bg-orange-600"></div>
             <ul className="list-none space-y-4 text-white">
               <li className="cursor-pointer hover:text-orange-600">
                 100 hour yoga teacher training
@@ -115,10 +113,8 @@ const Footer = () => {
           </div>
           {/* Contact Information  */}
           <div className="flex flex-col justify-center">
-            <p className="text-lg font-semibold text-white">
-              Get In Touch
-              <div className="mb-4 h-[2px] w-1/3 bg-orange-600"></div>
-            </p>
+            <p className="text-lg font-semibold text-white">Get In Touch</p>
+            <div className="mb-4 h-[2px] w-1/3 bg-orange-600"></div>
             <ul className="list-none space-y-4 text-white">
               <li className="flex w-full cursor-pointer space-x-4 hover:text-orange-600 ">
                 <IoLocateOutline className="w-1/6" size={25} />{" "}
@@ -138,8 +134,8 @@ const Footer = () => {
             </ul>
             <p className="mt-4 text-lg font-semibold text-white">
               Payment Options
-              <div className="mb-4 h-[2px] w-1/3 bg-orange-600"></div>
             </p>
+            <div className="mb-4 h-[2px] w-1/3 bg-orange-600"></div>
             <div className="grid grid-cols-4 gap-2 text-white">
               <IoLogoPaypal size={26} />
               <RiMastercardFill size={26} />

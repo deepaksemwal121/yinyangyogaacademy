@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import "./Teacherprofile.module.css";
-import { data } from "../static/data";
+import { data } from "../../static/data";
 
 const Teacherprofile = () => {
   const settings = {

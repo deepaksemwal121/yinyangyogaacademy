@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import TeacherCard from "../components/TeacherCard";
-import { data } from "../static/data";
+import TeacherCard from "../../components/TeacherCard";
+import { data } from "../../static/data";
 
 const Teachers = () => {
   return (

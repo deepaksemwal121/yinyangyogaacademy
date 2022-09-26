@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Slider from "react-slick";
-import Button from "../components/Button";
+import Button from "../Button";
 
 const SliderHero = () => {
   const settings = {

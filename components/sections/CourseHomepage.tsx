@@ -1,5 +1,5 @@
 import CousrseLeftImage from "./CousrseLeftImage";
-import { coursesHome } from "../static/coursesData";
+import { coursesHome } from "../../static/coursesData";
 import CourseRightImage from "./CourseRightImage";
 
 const CourseHomepage = () => {

@@ -2,8 +2,8 @@ import Head from "next/head";
 import Script from "next/script";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import Button from "../components/Buttons";
-import Text from "../components/Text";
+import Button from "../../components/Buttons";
+import Text from "../../components/Text";
 export default function Home() {
   const router = useRouter();
   const path = router.asPath;

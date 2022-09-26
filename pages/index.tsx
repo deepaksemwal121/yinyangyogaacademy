@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
-import SliderHero from "./sections/SliderHero";
+import SliderHero from "../components/sections/SliderHero";
 import yogapose from "../public/yoga-pose.png";
-import Button from "./components/Button";
-import LeftImageCard from "./sections/LeftImageCard";
-import { data } from "./static/data";
-import CourseHomepage from "./sections/CourseHomepage";
+import Button from "../components/Button";
+import LeftImageCard from "../components/sections/LeftImageCard";
+import { data } from "../static/data";
+import CourseHomepage from "../components/sections/CourseHomepage";
 import { BsArrowRight } from "react-icons/bs";
-import Teacherprofile from "./sections/Teacherprofile";
+import Teacherprofile from "../components/sections/Teacherprofile";
 
 export default function Home() {
   return (

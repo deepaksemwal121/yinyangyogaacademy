@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
-import Button from "../components/Button";
-import Teacherprofile from "../sections/Teacherprofile";
+import Button from "../../components/Button";
+import Teacherprofile from "../../components/sections/Teacherprofile";
 
 const accomodation = () => {
   const settings = {

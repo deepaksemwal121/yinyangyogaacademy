@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import logo from "../public/logo.png";
 import { BiEnvelope, BiLocationPlus, BiPhoneCall } from "react-icons/bi";
 import { FiChevronDown } from "react-icons/fi";
 import {
@@ -48,12 +49,7 @@ const Header = () => {
       <nav className=" flex w-full items-center justify-between bg-white px-32 py-4 shadow">
         <div className="brand">
           <Link href="/">
-            <Image
-              src="/../public/logo.png"
-              width={130}
-              height={45}
-              alt="logo"
-            />
+            <Image src={logo} width={130} height={45} alt="logo" />
           </Link>
         </div>
         <div className="menu">
@@ -148,7 +144,7 @@ const Header = () => {
                     <Link href="/"> 5 Day Yoga Retreat</Link>
                   </li>
                   <li className="border-b-[1px]   hover:bg-orange-300">
-                    <Link href="/">7 Chakra Yoga Retreat</Link>
+                    <Link href="/retreat/chakra">7 Chakra Yoga Retreat</Link>
                   </li>
                   <li className="border-b-[1px]  hover:bg-orange-300">
                     <Link href="/"> 10 Day Yoga Retreat</Link>

@@ -1,4 +1,4 @@
-const data = {
+export const data = {
   hero: {
     flag: ["Welcome to yoga retreat"],
     title: ["Chakras Yoga Retreat in Rishikesh"],
@@ -7,6 +7,5 @@ const data = {
     cta: ["Enroll Now"],
     image: [""],
   },
-};
 
-export default data;
+};

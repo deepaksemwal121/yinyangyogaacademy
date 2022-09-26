@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { type } from "os";
 import React from "react";
-import Button from "../components/Button";
+import Button from "../Button";
 
 interface DataProps {
   title: string;
