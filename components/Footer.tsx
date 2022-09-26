@@ -12,30 +12,30 @@ import { RiMastercardFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <>
-      <div className="flex w-full items-center space-x-4 bg-orange-700 px-32 py-8">
-        <div className="w-1/2">
-          <p className="text-[20px] font-medium text-gray-100">
+    <footer>
+      <div className="flex w-full flex-col items-center bg-orange-700 px-8 py-4 md:flex-row  md:space-x-4 md:py-8 md:px-32">
+        <div className="w-full md:w-1/2">
+          <p className="text-[14px] font-medium text-gray-100 md:text-[20px]">
             Want To know More About Us
           </p>
-          <h2 className="text-[40px] font-medium text-white">
+          <h2 className=" text-[26px] font-medium text-white md:text-[40px]">
             Subscribe To Our Newsletter
           </h2>
         </div>
-        <div className="flex w-1/2  items-center space-x-4">
+        <div className="flex items-center  md:w-1/2 md:space-x-4">
           <input
-            className="w-full rounded border-0 py-4"
+            className="w-full border-0  py-2 md:rounded md:py-4"
             type="email"
             placeholder="Enter Email Address"
           />
-          <button className="flex items-center space-x-2 rounded bg-black px-4 py-4 font-medium text-white">
+          <button className="flex items-center space-x-2 bg-black px-2 py-2 font-medium text-white md:rounded md:px-4 md:py-4">
             <span>Subscribe</span>
             <IoSendOutline />
           </button>
         </div>
       </div>
-      <div className=" bg-gray-800 px-32 py-16">
-        <div className="grid grid-cols-4 gap-8">
+      <div className=" bg-gray-800 px-8 py-4 md:px-32 md:py-16">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Brands Column */}
           <div className="space-y-4">
             <div className="flex items-center">
@@ -150,7 +150,7 @@ const Footer = () => {
         <span>Copyright &copy; 2022</span>
         <a className="hover:text-orange-600"> YinYang Yoga Academy</a>
       </div>
-    </>
+    </footer>
   );
 };
 

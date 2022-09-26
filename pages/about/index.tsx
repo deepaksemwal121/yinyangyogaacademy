@@ -14,6 +14,32 @@ const About = () => {
     slidesToShow: 5,
     slidesToScroll: 3,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
   };
 
   useEffect(() => {
@@ -29,11 +55,11 @@ const About = () => {
     autoIncrement();
   }, []);
   return (
-    <div>
+    <main className="w-full">
       {/* Hero Section  */}
       <div className="hero__about">
         <div className="hero__about-content">
-          <h2 className="text-[50px]  text-white">
+          <h2 className="text-[20px] text-white  md:text-[30px] lg:text-[40px]">
             About YinYang Yoga Academy
           </h2>
           <div className="breadcrumbs text-sm text-white">
@@ -48,11 +74,11 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-full items-center space-x-8 px-32 py-16">
-        <div className="w-1/2">
+      <div className="w-full items-center px-8 py-4 md:flex md:space-x-8 md:px-32">
+        <div className="w-full md:w-1/2">
           <p className="text-orange-600">Know More About us </p>
           <div className="h-1 w-[10%] bg-orange-500"></div>
-          <h2 className="text-[45px] ">
+          <h2 className="text-[26px] md:text-[30px] lg:text-[45px] ">
             About Yin Yang Yoga Academy Rishikesh
           </h2>
           <p className="text-justify">
@@ -74,8 +100,8 @@ const About = () => {
             town.
           </p>
         </div>
-        <div className="relative w-1/2">
-          <div>
+        <div className="relative w-full md:w-1/2">
+          <div className="w-full">
             <Image
               className="rounded"
               src={about}
@@ -84,8 +110,10 @@ const About = () => {
               alt="aboutus "
             />
           </div>
-          <div className="absolute top-[80%] left-[10%] h-[200px] w-[80%] bg-orange-600 p-8">
-            <h3 className="text-[30px]  text-white">Yin Yang Yoga Academy</h3>
+          <div className="h-[200px] w-full bg-orange-600 p-8 md:absolute md:top-[80%] md:left-[10%] md:w-[80%]">
+            <h3 className="text-[20px] text-white  md:text-[30px]">
+              Yin Yang Yoga Academy
+            </h3>
             <p className="text-[#f1f1f1]">
               Yin Yoga is a slower practice where poses are passively held for
               longer, working on the deep, dense (Yin) connective tissues and
@@ -94,10 +122,12 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="px-32 py-16">
-        <h3 className="text-center text-[50px] ">Our Values and Mission</h3>
+      <div className="px-8 py-4 md:flex md:space-x-8 md:px-32 md:py-16">
+        <h3 className="text-center text-[30px] md:text-[50px] ">
+          Our Values and Mission
+        </h3>
       </div>
-      <div className="grid grid-cols-3 gap-4 px-32">
+      <div className="grid grid-cols-2 gap-2 px-8 py-4 md:grid-cols-3 md:gap-4 md:px-32 md:py-16">
         <div className="p-4 text-center">
           <Image
             src="https://cdn-icons-png.flaticon.com/512/2978/2978779.png"
@@ -105,7 +135,7 @@ const About = () => {
             width={100}
             alt=""
           />
-          <h3 className="text-center text-[24px]  text-orange-600">
+          <h3 className="text-center text-[20px] text-orange-600  md:text-[24px]">
             Holistic Learning Programme
           </h3>
           <p>
@@ -121,7 +151,7 @@ const About = () => {
             width={100}
             alt=""
           />
-          <h3 className="text-center text-[24px]  text-orange-600">
+          <h3 className="text-center text-[20px] text-orange-600  md:text-[24px]">
             Specialized Yoga Curriculum
           </h3>
           <p>
@@ -136,7 +166,7 @@ const About = () => {
             width={100}
             alt=""
           />
-          <h3 className="text-center text-[24px]  text-orange-600">
+          <h3 className="text-center text-[20px] text-orange-600  md:text-[24px]">
             Yoga For Everyone
           </h3>
           <p>
@@ -145,8 +175,6 @@ const About = () => {
             matters is what you learn along the journey.
           </p>
         </div>
-      </div>
-      <div className="grid grid-cols-3 gap-4 px-32">
         <div className="p-4 text-center">
           <Image
             src="https://cdn-icons-png.flaticon.com/512/2773/2773699.png"
@@ -154,7 +182,7 @@ const About = () => {
             width={100}
             alt=""
           />
-          <h3 className="text-center text-[24px]  text-orange-600">
+          <h3 className="text-center text-[20px] text-orange-600  md:text-[24px]">
             Importance of Yoga
           </h3>
           <p>
@@ -170,7 +198,7 @@ const About = () => {
             width={100}
             alt=""
           />
-          <h3 className="text-center text-[24px]  text-orange-600">
+          <h3 className="text-center text-[20px] text-orange-600  md:text-[24px]">
             Future Yoga Teacher
           </h3>
           <p>
@@ -185,7 +213,7 @@ const About = () => {
             width={100}
             alt=""
           />
-          <h3 className="text-center text-[24px]  text-orange-600">
+          <h3 className="text-center text-[20px] text-orange-600  md:text-[24px]">
             Security First
           </h3>
           <p>
@@ -194,9 +222,10 @@ const About = () => {
           </p>
         </div>
       </div>
+
       {/* About the Yin Yang Yoga Academy */}
-      <div className="sapce-x-8 flex w-full px-32 py-16">
-        <div className="w-1/2">
+      <div className="sapce-x-8 w-full px-12   py-10 md:flex md:px-32 md:py-16">
+        <div className="md:w-1/2">
           <Image
             src="/../public/YinYogaabout.png"
             alt="about"
@@ -204,10 +233,12 @@ const About = () => {
             width={1600}
           />
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           <p className="text-lg text-orange-500">Our Roots</p>
           <div className="h-1 w-[10%] bg-orange-500"></div>
-          <h3 className="text-[45px] ">Foundation Of Yin Yoga Academy</h3>
+          <h3 className="text-[24px] md:text-[45px] ">
+            Foundation Of Yin Yoga Academy
+          </h3>
           <p>
             The name Rishikesh Yogkulam denotes a unification of the name of the
             city Rishikesh - the world capital of Yoga and “Yogkulam” which
@@ -217,20 +248,22 @@ const About = () => {
             students and become an integral part of this Yoga family in
             Rishikesh.
           </p>
-          <div className="counter my-4 flex w-1/2 bg-orange-600 p-8">
+          <div className="counter my-4 flex w-full bg-orange-600 p-8 md:w-1/2">
             <div className="w-1/3">
               <IoEarthOutline size={70} color="white" />
             </div>
             <div className="text-white">
-              <p className="text-[20px] ">Global Students</p>
-              <p className="text-[40px] font-medium">{happy} +</p>
+              <p className="text-[16px] md:text-[20px] ">Global Students</p>
+              <p className="text-[26px] font-medium md:text-[40px]">
+                {happy} +
+              </p>
             </div>
           </div>
         </div>
       </div>
       {/* Books Section  */}
-      <div className="w-full px-32 py-16">
-        <h3 className="mb-8 text-[40px] ">
+      <div className=" w-full px-8 py-4 md:px-32 md:py-16">
+        <h3 className="mb-8 text-[26px] md:text-[40px] ">
           Find The Best Yoga Books Here
           <div className="h-1 w-[10%] bg-orange-500"></div>
         </h3>
@@ -238,7 +271,7 @@ const About = () => {
         <Slider {...settings}>
           {data.books.map((item, index) => {
             return (
-              <div key={index} className="p-4">
+              <div key={index} className="h-full p-4">
                 <div className="relative">
                   <Image
                     src={item.image}
@@ -248,15 +281,17 @@ const About = () => {
                     alt="book"
                   />
                   <div className="absolute bottom-0 flex w-full flex-col items-center justify-center bg-black p-4 text-center text-white opacity-75">
-                    <p className="text-lg">{item.title}</p>
-                    <p className="">
+                    <p className="hidden text-sm md:block md:text-lg">
+                      {item.title}
+                    </p>
+                    <p className=" hidden text-sm md:block md:text-base">
                       -<em>{item.author}</em>
                     </p>
                     <label
                       htmlFor="my-modal"
-                      className="modal-button btn m-4 flex space-x-4 bg-orange-600 px-4 py-2"
+                      className="modal-button btn m-4 flex bg-orange-600  px-2 py-1 text-[12px] md:space-x-4 md:px-4 md:py-2"
                     >
-                      <IoDownloadOutline size={25} color="white" />
+                      <IoDownloadOutline color="white" />
                       <span>Download</span>
                     </label>
                   </div>
@@ -299,7 +334,7 @@ const About = () => {
                 />
               </div>
               <button className="btn btn-xs bg-orange-600 sm:btn-sm md:btn-md lg:btn-md">
-                Send PDF
+                Get PDF
               </button>
             </form>
           </div>
@@ -308,7 +343,7 @@ const About = () => {
 
       {/* Teacher Profile */}
       <Teacherprofile />
-    </div>
+    </main>
   );
 };
 

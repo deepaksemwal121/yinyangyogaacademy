@@ -11,12 +11,12 @@
   background-size: cover;
 }
 
-.slide-1 {
+/* .slide-1 {
   background-image: url("../public/slider-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .readMore {
   clip-path: polygon(0 0, 100% 38%, 100% 100%, 0% 100%);

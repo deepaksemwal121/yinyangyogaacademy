@@ -10,7 +10,7 @@ interface Pages {
 const Layout = ({ children }: Pages) => {
   return (
     <div className="bg-white">
-      <Header />
+      {/* <Header /> */}
       {children}
       <Footer />
     </div>

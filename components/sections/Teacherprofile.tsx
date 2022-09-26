@@ -9,23 +9,58 @@ const Teacherprofile = () => {
     className: "center",
     arrows: true,
     infinite: true,
-    centerPadding: "60px",
     slidesToShow: 3,
-    dots: true,
+    slidesToScroll: 3,
+    dots: false,
     swipeToSlide: true,
     useCSS: true,
     cssEase: "linear",
+    responsive: [
+      // {
+      //   breakpoint: 1440,
+      //   settings: {
+      //     slidesToShow: 3,
+      //     slidesToScroll: 3,
+      //     infinite: true,
+      //     dots: true,
+      //   },
+      // },
+      // {
+      //   breakpoint: 1024,
+      //   settings: {
+      //     slidesToShow: 3,
+      //     slidesToScroll: 3,
+      //     infinite: true,
+      //     dots: true,
+      //   },
+      // },
+      // {
+      //   breakpoint: 600,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 2,
+      //     initialSlide: 2,
+      //   },
+      // },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
-    <div className="w-full bg-gray-100 px-32 py-16">
-      <h2 className="text-center text-[45px]">
+    <div className="mt-12  w-full bg-gray-100 px-8 py-4 md:mt-6 md:px-32 md:py-16">
+      <h2 className="text-center text-[30px] md:text-[45px]">
         Best Yoga Teachers Rishikesh India
       </h2>
       <div>
         <Slider {...settings}>
           {data.guruProfile.map((item, index) => {
             return (
-              <div key={index} className="p-4">
+              <div key={index} className="p-2 md:p-4">
                 <div className="rounded bg-white p-4">
                   <Image
                     src={item.image}

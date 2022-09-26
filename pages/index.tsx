@@ -20,15 +20,15 @@ export default function Home() {
       {/* Main Index Pages starts from Here  */}
       {/* Slider Component will go here */}
       <SliderHero />
-      <div className="flex w-full items-center space-x-4 px-32 ">
-        <div className="w-1/2">
+      <div className="w-full items-center px-8 md:flex md:space-x-4 md:px-32 ">
+        <div className="md:w-1/2">
           <Image src={yogapose} alt="yoga-pose" width={666} height={666} />
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           <p className="text-lg font-medium text-orange-600">
             ONE DESTINATION, MANY PATHS, ONE JOURNEY
           </p>
-          <h2 className="text-[40px]">
+          <h2 className="text-[30px] md:text-[40px]">
             YOGA TEACHER TRAINING IN RISHIKESH, INDIA
           </h2>
           <p>
@@ -52,12 +52,12 @@ export default function Home() {
         </div>
       </div>
       {/* Section 2 Starts from here  */}
-      <div className="flex w-full items-center space-x-4 px-32 py-16">
-        <div className="w-1/2">
-          <p className="text-lg font-medium text-orange-600">
+      <div className="mt-8 w-full flex-col-reverse items-center px-8 py-8 md:flex md:flex-row md:space-x-4 md:px-32 md:py-16">
+        <div className="md:w-1/2">
+          <p className="text-base font-medium text-orange-600 md:text-lg">
             ONE DESTINATION, MANY PATHS, ONE JOURNEY
           </p>
-          <h2 className="text-[40px]">
+          <h2 className="text-[30px] md:text-[40px]">
             Why Yoga Teacher Training Programs And Retreats?
           </h2>
           {data.cardData.map((i, index) => {
@@ -71,7 +71,7 @@ export default function Home() {
             );
           })}
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           <Image
             src="/../public/yoga-pose.png"
             alt="yoga-pose"
@@ -83,8 +83,8 @@ export default function Home() {
       {/* Course Section on Homepage Starts from Here */}
       <CourseHomepage />
       {/* Best Teacher Section */}
-      <div className="w-full px-32 py-16">
-        <h2 className="text-center text-[45px]">
+      <div className="w-full px-8 py-4 md:px-32 md:py-16">
+        <h2 className="text-center text-[25px] md:text-[45px]">
           BEST ONLINE YOGA TEACHER TRAINING INDIA
         </h2>
         <p className="text-center text-lg">
@@ -104,7 +104,7 @@ export default function Home() {
           faculties have their sort of achievement and are renowned
           professionals having deep knowledge in yoga.
         </p>
-        <div className="my-8 grid grid-cols-3 gap-4">
+        <div className="my-8 grid grid-cols-1 gap-4 md:grid-cols-3">
           {data.onlineCards.map((value, index) => {
             return (
               <div key={index} className="bg-[#f9d3af] p-8">
@@ -114,20 +114,22 @@ export default function Home() {
                   width={80}
                   height={80}
                 />
-                <h2 className="text-[30px] text-gray-700">{value.title}</h2>
-                <p>{value.content}</p>
+                <h2 className="text-[20px] text-gray-800 md:text-[30px]">
+                  {value.title}
+                </h2>
+                <p className="text-base md:text-lg">{value.content}</p>
               </div>
             );
           })}
         </div>
       </div>
       {/* What do we offer  Section starts  */}
-      <div className="w-full px-32 py-16">
-        <h2 className="text-[40px] ">What Do We Offer </h2>
-        <div className="flex items-stretch space-x-4">
+      <div className="w-full px-8 py-4 md:px-32 md:py-16">
+        <h2 className="text-[30px] md:text-[40px] ">What Do We Offer </h2>
+        <div className=" grid grid-cols-1 gap-4 md:grid-cols-4">
           {data.offer.map((value, index) => {
             return (
-              <div key={index} className=" w-1/4 bg-gray-100 p-4 text-center">
+              <div key={index} className=" bg-gray-100 p-4 text-center ">
                 <Image
                   src={value.image}
                   alt={value.title}

@@ -27,8 +27,8 @@ const CousrseLeftImage: React.FC<DataProps> = ({
   highlights,
 }) => {
   return (
-    <div className="flex w-full items-center space-x-12">
-      <div className="relative w-1/2">
+    <div className=" flex w-full flex-col-reverse items-center md:flex-row md:space-x-12">
+      <div className="relative md:w-1/2">
         <Image
           src={image}
           alt={shortdesc}
@@ -48,7 +48,7 @@ const CousrseLeftImage: React.FC<DataProps> = ({
             );
           })}
         </div>
-        <div className="grid  grid-cols-3  gap-4">
+        <div className="grid grid-cols-1  gap-4  md:grid-cols-3">
           {highlights.map((value, index) => {
             return (
               <div key={index} className="flex items-center space-x-4">
@@ -59,8 +59,8 @@ const CousrseLeftImage: React.FC<DataProps> = ({
           })}
         </div>
       </div>
-      <div className="w-1/2">
-        <h2 className="text-[40px]">{title}</h2>
+      <div className="w-full md:w-1/2">
+        <h2 className="text-[30px] md:text-[40px]">{title}</h2>
         <p>{desc.para1}</p>
         <br />
         <p>{desc.para2}</p>

@@ -4,11 +4,11 @@ import CourseRightImage from "./CourseRightImage";
 
 const CourseHomepage = () => {
   return (
-    <div className="w-full bg-gray-200 px-32 py-16">
+    <div className="w-full bg-gray-200 px-8 py-4 md:px-32 md:py-16">
       <p className="text-center text-lg font-semibold text-orange-600">
         FOUR TYPES OF COURSES
       </p>
-      <h1 className="text-center text-3xl">
+      <h1 className="text-center text-[30px] md:text-3xl">
         YOGA TEACHER TRAINING IN RISHIKESH, INDIA
       </h1>
       <p className="text-center">
