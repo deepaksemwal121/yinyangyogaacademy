@@ -1,43 +1,39 @@
-import path from "path";
-console.log(__dirname);
-console.log(path.resolve(__dirname, "..", "public", "icon1.png"));
-const file = require("../public/icon1.png");
 export const data = {
   cardData: [
     {
       title: "Lifetime Opportunity",
       description:
         "Get a lifetime opportunity and take a bag full of memories for life to cherish. With high-quality food, living accompanied with great facilities find a balance in hectic work-life and new meaning to life.",
-      icon: file,
+      icon: require("../public/icon1.png"),
     },
     {
       title: "Amazing Treks",
       description:
         "Yoga School in Rishikesh because has so many exciting activities lined up for their clines. From getting new friends to amazing treks, nature walks, excursions, etc get close to nature.",
-      icon: "/../public/icon2.png",
+      icon: require("../public/icon2.png"),
     },
     {
       title: "Spa & Ayurveda",
       description:
         "Apart from yoga enjoy some extra facilities and features like Ayurveda, spa, etc. This comes with a detailed knowledge as to how they help in real life rather than just the implementation.",
-      icon: "/../public/icon3.png",
+      icon: require("../public/icon3.png"),
     },
   ],
   onlineCards: [
     {
-      image: "/../public/yoga-online1.png",
+      image: require("../public/yoga-online1.png"),
       title: "Classical Hatha Yoga",
       content:
         "Build firm foundation in hatha yoga rooted in the Sivananda Yoga tradition, while learning the importance of deep relaxation, proper diet, positive thinking and meditation for your physical and mental well-being",
     },
     {
-      image: "/../public/yoga-online2.png",
+      image: require("../public/yoga-online2.png"),
       title: "Experienced Teachers",
       content:
         "Classes are taken by teachers with years of experience in teaching yoga to people from across the globe, both online and offline. Our approach is gentle, traditional and holistic.",
     },
     {
-      image: "/../public/yoga-online3.png",
+      image: require("../public/yoga-online3.png"),
       title: "Interactive Classes",
       content:
         "Keeping the class size small, gives us the flexibility to offer you individualised attention during each class and each step of the way. Any questions you may have will be answered personally during the sessions.",
@@ -48,28 +44,28 @@ export const data = {
       title: "Yoga retreats",
       content:
         "A Yoga retreat is an opportunity to shape your thoughts & being by aligning your mind, body and soul.",
-      image: "/../public/yoga-retreat-yinyang.png",
+      image: require("../public/yoga-retreat-yinyang.png"),
       url: "/",
     },
     {
       title: "Accomodation",
       content:
         "Accommodation is available on private as well as shared basis to ensure that everyone feels absolutely comfortable, warm and as homely as possible.      ",
-      image: "/../public/accomodate.png",
+      image: require("../public/accomodate.png"),
       url: "/",
     },
     {
       title: "Gurus",
       content:
         "Maestros in their respective fields of Yoga, all our teachers are extensively trained and have a lifetime of experience to share with you.",
-      image: "/../public/guruji.png",
+      image: require("../public/guruji.png"),
       url: "/",
     },
     {
       title: "Food",
       content:
         "Prepared in-house at our school itself, every morning starts with a refreshing cup of herbal tea followed by three delicious and nutritious meals during the day.",
-      image: "/../public/veg-food.png",
+      image: require("../public/veg-food.png"),
       url: "/",
     },
   ],
@@ -145,67 +141,67 @@ export const data = {
     {
       title: "Ajna Chakra",
       author: "Rishi Nityabodhananda",
-      image: "/../public/Ajna_Chakra.jpg",
+      image: require("../public/Ajna_Chakra.jpg"),
       download_url: "/",
     },
     {
       title: "Asana Pranayama Mudra Bandha",
       author: "Swami Satyendra Saraswati ",
-      image: "/../public/Asana.jpg",
+      image: require("../public/Asana.jpg"),
       download_url: "/",
     },
     {
       title: "Ayurveda The Science of Self-Healing",
       author: "Dr. Vasant Lad",
-      image: "/../public/ayurveda.jpg",
+      image: require("../public/ayurveda.jpg"),
       download_url: "/",
     },
     {
       title: "The Bhagvad Gita",
       author: "Winthrop Sargeant",
-      image: "/../public/Bhagwat_Gita.jpg",
+      image: require("../public/Bhagwat_Gita.jpg"),
       download_url: "/",
     },
     {
       title: "The Ayurveda Encyclopedia",
       author: "",
-      image: "/../public/encyclopedia.jpg",
+      image: require("../public/encyclopedia.jpg"),
       download_url: "/",
     },
     {
       title: "Hatha Yoga Pradipika",
       author: "Swami Mutibondhmanda",
-      image: "/../public/hatha.jpg",
+      image: require("../public/hatha.jpg"),
       download_url: "/",
     },
     {
       title: "Moola Bandha -The Master Key",
       author: "Swami Buddhananda",
-      image: "/../public/moola.jpg",
+      image: require("../public/moola.jpg"),
       download_url: "/",
     },
     {
       title: "Prana and Pranayama",
       author: "Swami Niranjananda Saraswati",
-      image: "/../public/prana.jpg",
+      image: require("../public/prana.jpg"),
       download_url: "/",
     },
     {
       title: "Tattwa Shuddhi",
       author: "Swami Satyasangananda",
-      image: "/../public/tattwa.jpg",
+      image: require("../public/tattwa.jpg"),
       download_url: "/",
     },
     {
       title: "Inside The Yoga Sutras",
       author: "",
-      image: "/../public/Yoga_sutra.jpg",
+      image: require("../public/Yoga_sutra.jpg"),
       download_url: "/",
     },
     {
       title: "Yogic Management of Common Diseases",
       author: "Dr Swami Karmananda",
-      image: "/../public/yogic_management.jpg",
+      image: require("../public/yogic_management.jpg"),
       download_url: "/",
     },
   ],
