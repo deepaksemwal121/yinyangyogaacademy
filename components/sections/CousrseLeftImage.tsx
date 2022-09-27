@@ -28,7 +28,22 @@ const CousrseLeftImage: React.FC<DataProps> = ({
 }) => {
   return (
     <div className=" flex w-full flex-col-reverse items-center md:flex-row md:space-x-12">
-      <div className="relative md:w-1/2">
+      <div className="w-2/3">
+        <h2 className="text-[30px] md:text-[40px]">{title}</h2>
+        <Image
+          src={image}
+          alt={shortdesc}
+          width={740}
+          height={400}
+          className="rounded shadow-lg shadow-black"
+        />
+        <p>{desc.para1}</p>
+        <br />
+        <p>{desc.para2}</p>
+        <br />
+      </div>
+      <div className="w-1/3"></div>
+      {/* <div className="relative md:w-1/2">
         <Image
           src={image}
           alt={shortdesc}
@@ -70,7 +85,7 @@ const CousrseLeftImage: React.FC<DataProps> = ({
           url="/"
           style="text-lg text-orange-600 px-6 py-3 border-orange-600 border-2 hover:bg-orange-500 hover:text-white"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
