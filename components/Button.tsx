@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface ButtonProps {
   title: string;
   url: string;
@@ -5,11 +7,11 @@ interface ButtonProps {
 }
 const Button = ({ title, url, style }: ButtonProps) => {
   return (
-    <>
-      <a className={style} href={url}>
-        {title}
-      </a>
-    </>
+    <Link href={url}>
+      <div className="flex my-2">
+        <div className={style}>{title}</div>
+      </div>
+    </Link>
   );
 };
 

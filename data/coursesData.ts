@@ -1,18 +1,18 @@
 export const coursesHome = {
   _100hour: {
-    title: "100 Hour YTTC",
+    title: "100 Hour Yin Yan Yoga Academy",
     desc: {
       para1:
         "This 100-hour course is specially designed for a beginner who is very new here. This is just the basics and one can say a breakdown of the 200-hour YTTC. This has one of the simple and the basics of yoga. Here one gets the knowledge and the very essence of the subject. The course is a two-week course and involves all that one should know as he or she enters the world of yoga.",
       para2:
         "This course will cure the body and will push it under the process of becoming a more flexible and shapen machine as days pass and one enters into the further courses.",
     },
-    image: require("../public/100-hours-yoga-teacher-training-in-rishikesh-india.jpg"),
+    image: "/course.jpg",
     levels: ["Beginner"],
     shortdesc: "100-hours-yoga-teacher-training-in-rishikesh-india",
     highlights: [
       {
-        icons: require("../public/yoga-outline-1.png"),
+        icons: require("/public/yoga-outline-1.png"),
         name: "Hatha",
       },
       {
@@ -34,19 +34,19 @@ export const coursesHome = {
     ],
   },
   _200hour: {
-    title: "200 Hour YTTC",
+    title: "200 Hour Yin Yan Yoga Academy",
     desc: {
       para1:
         "This is a course which one can say that both the beginners as well as an intermediate person can take. This is a one-month course where one will surely get clarity about what this subject means to one. One can emerge as a passionate teacher and otherwise is also the option.",
       para2:
         "Finally, after this, you can claim yourself as a teacher because this course will give you the capability to teach. After this, you will be able to align and adjust with the subject having the ability to spread the knowledge",
     },
-    image: require("../public/200-hour-yoga-teacher-training-in-rishikesh.jpg"),
+    image: "/course.jpg",
     levels: ["Beginner", "Intermediate"],
     shortdesc: "200-hours-yoga-teacher-training-in-rishikesh-india",
     highlights: [
       {
-        icons: require("../public/yoga-outline-1.png"),
+        icons: require("/public/yoga-outline-1.png"),
         name: "Hatha & Ashtanga",
       },
       {

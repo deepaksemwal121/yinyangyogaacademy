@@ -17,13 +17,14 @@ const CourseHomepage = () => {
         Thus the four different types of curses are as follows :-
       </p>
       <div className="space-y-6">
-        <CousrseLeftImage
+      <CourseRightImage
           title={coursesHome._100hour.title}
           desc={coursesHome._100hour.desc}
           image={coursesHome._100hour.image}
           highlights={coursesHome._100hour.highlights}
           shortdesc={coursesHome._100hour.shortdesc}
           levels={coursesHome._100hour.levels}
+          reverse={true }
         />
         <CourseRightImage
           title={coursesHome._200hour.title}
@@ -32,22 +33,25 @@ const CourseHomepage = () => {
           highlights={coursesHome._200hour.highlights}
           shortdesc={coursesHome._200hour.shortdesc}
           levels={coursesHome._200hour.levels}
+          reverse={false}
         />
-        <CousrseLeftImage
+        <CourseRightImage
           title={coursesHome._300hour.title}
           desc={coursesHome._300hour.desc}
           image={coursesHome._300hour.image}
           highlights={coursesHome._300hour.highlights}
           shortdesc={coursesHome._300hour.shortdesc}
           levels={coursesHome._300hour.levels}
+          reverse={true}
         />
         <CourseRightImage
-          title={coursesHome._500hour.title}
-          desc={coursesHome._500hour.desc}
-          image={coursesHome._500hour.image}
-          highlights={coursesHome._500hour.highlights}
-          shortdesc={coursesHome._500hour.shortdesc}
-          levels={coursesHome._500hour.levels}
+          title={coursesHome._300hour.title}
+          desc={coursesHome._300hour.desc}
+          image={coursesHome._300hour.image}
+          highlights={coursesHome._300hour.highlights}
+          shortdesc={coursesHome._300hour.shortdesc}
+          levels={coursesHome._300hour.levels}
+          reverse={false}
         />
       </div>
     </div>
