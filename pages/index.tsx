@@ -8,6 +8,13 @@ import { data } from "../data/data";
 import CourseHomepage from "../components/sections/CourseHomepage";
 import { BsArrowRight } from "react-icons/bs";
 import Teacherprofile from "../components/sections/Teacherprofile";
+import {
+  IoCall,
+  IoChevronForwardCircle,
+  IoLogoFacebook,
+  IoLogoInstagram,
+  IoLogoTwitter,
+} from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -19,7 +26,120 @@ export default function Home() {
       </Head>
       {/* Main Index Pages starts from Here  */}
       {/* Slider Component will go here */}
-      <SliderHero />
+      {/* <SliderHero /> */}
+      <section
+        className="flex  h-screen flex-col justify-between text-white"
+        style={{
+          backgroundImage: `url(/landing_hero.jpg)`,
+          backgroundPositionY: "bottom",
+          backgroundPositionX: "center",
+        }}
+      >
+        <div className="grid grid-cols-2 px-4 py-5 sm:px-32">
+          <div className="">
+            <h3 className="text-xl text-white sm:text-3xl">
+              Yin Yang Yoga Academy
+            </h3>
+          </div>
+          <div className="flex items-center justify-end">
+            <div className="hidden rounded-xl bg-white py-2 px-8 text-black sm:block sm:text-xl">
+              Apply Now
+            </div>
+          </div>
+        </div>
+        <div className="my-16 grid px-4 sm:grid-cols-2 sm:px-32">
+          <div className="items-center space-y-6">
+            <p className="text-orange-600">Know Yourself</p>
+            <h2 className="text-xl text-white sm:text-4xl">
+              Yoga Teacher Training
+              <br />
+              the art of self realization
+            </h2>
+            <p className=" text-gray-200">
+              Yoga cultivates the ways of maintaining a balanced attitude in
+              day-to-day <br /> life and endows skill in the performance of
+              one&apos;s actions
+            </p>
+            <div className="flex items-center space-x-2">
+              <IoChevronForwardCircle color="orange" size={40} />
+              <p className="text-white">
+                Discover yoga teacher training courses now
+              </p>
+            </div>
+          </div>
+          <div className=" hidden items-end sm:block ">
+            <ul className="flex flex-col items-end space-y-4 font-semibold">
+              <li className="flex items-center ">
+                About
+                <div className="mx-2 h-1 w-10 bg-white" />
+              </li>
+              <li className="flex items-center ">
+                Our Teachers
+                <div className="mx-2 h-1 w-10 bg-white" />
+              </li>
+              <li className="flex items-center ">
+                Accommodation
+                <div className="mx-2 h-1 w-10 bg-white" />
+              </li>
+              <li className="flex items-center ">
+                Blogs
+                <div className="mx-2 h-1 w-10 bg-white" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className=" hidden justify-between px-32 py-12 sm:flex">
+          <div className="grid w-2/3 grid-cols-4 space-x-8 border-t border-gray-50 pt-4">
+            <div className="space-y-2">
+              <h3 className="text-xl text-white">Teacher Training</h3>
+              <div className="h-[1px] w-1/4 bg-white" />
+              <ul className="space-y-1">
+                <li>100 hours training course</li>
+                <li>200 hours training course</li>
+                <li className="text-orange-600">View More</li>
+              </ul>
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-xl text-white">Ayurveda Courses</h3>
+              <div className="h-[1px] w-1/4 bg-white" />
+              <ul className="space-y-1">
+                <li>100 hours training course</li>
+                <li>100 hours training course</li>
+                <li className="text-orange-600">View More</li>
+              </ul>
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-xl text-white">Yoga Retreats</h3>
+              <div className="h-[1px] w-1/4 bg-white" />
+              <ul className="space-y-1">
+                <li>5 day yoga retreat</li>
+                <li>7 day yoga retreat</li>
+                <li className="text-orange-600">View More</li>
+              </ul>
+            </div>
+            <div className="space-y-2 ">
+              <h3 className="text-xl text-white">Social</h3>
+              <div className="h-[1px] w-1/4 bg-white" />
+              <ul className="flex items-center space-y-1 space-x-4">
+                <li className="text-blue-600">
+                  <IoLogoFacebook size={28} />
+                </li>
+                <li className="text-pink-600">
+                  <IoLogoInstagram size={25} />
+                </li>
+                <li className="text-blue-600">
+                  <IoLogoTwitter size={28} />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex items-center justify-end">
+            <div className="rounded-full bg-orange-600 p-5">
+              <IoCall size={25} color="white" />
+            </div>
+          </div>
+        </div>
+      </section>
       <div className="w-full items-center px-8 md:flex md:space-x-4 md:px-32 ">
         <div className="md:w-1/2">
           <Image src={yogapose} alt="yoga-pose" width={666} height={666} />

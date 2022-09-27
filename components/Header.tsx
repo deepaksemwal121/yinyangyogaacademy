@@ -22,22 +22,22 @@ const Header = () => {
 
   return (
     <div className="">
-      <div className="topbar flex justify-between bg-gray-800 px-32 py-2">
-        <div className="flex w-2/6 items-center justify-end space-x-3  px-2 text-white">
+      <div className="topbar flex justify-between bg-gray-800 px-32 py-2 text-white">
+        <div className="flex w-2/6 items-center justify-end space-x-3  px-2">
           <BiLocationPlus size={20} color="orange" />
           <span className="text-sm">
             Near Anandham Ashram, Tapovan, Rishikesh
           </span>
         </div>
-        <div className="flex w-1/6 items-center justify-end space-x-3  px-2 text-white">
+        <div className="flex w-1/6 items-center justify-end space-x-3  px-2 ">
           <BiPhoneCall size={20} color="orange" />
           <span className="text-sm">+91 123 456 789</span>
         </div>
-        <div className="flex w-2/6 items-center justify-end space-x-3  px-2 text-white">
+        <div className="flex w-2/6 items-center justify-end space-x-3  px-2 ">
           <BiEnvelope size={20} color="orange" />
           <span className="text-sm">rishikeshyogkulam@gmail.com </span>
         </div>
-        <div className="flex w-1/6 items-center justify-center space-x-3  text-white">
+        <div className="flex w-1/6 items-center justify-center space-x-3 ">
           <FaFacebook size={20} color="orange" />
           <FaInstagram size={20} color="orange" />
           <FaTwitter size={20} color="orange" />
@@ -46,7 +46,7 @@ const Header = () => {
           <FaTripadvisor size={20} color="orange" />
         </div>
       </div>
-      <nav className=" flex w-full items-center justify-between bg-white px-32 py-4 shadow">
+      <nav className=" flex w-full items-center justify-between  px-32 py-4 shadow">
         <div className="brand">
           <Link href="/">
             <Image src={logo} width={130} height={45} alt="logo" />
