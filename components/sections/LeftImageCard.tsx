@@ -14,7 +14,7 @@ const LeftImageCard = ({ title, description, icon }: Card) => {
       </div>
       <div className="md:w-3/4">
         <h3 className="text-2xl">{title}</h3>
-        <p>{description}</p>
+        <p className="text-gray-600">{description}</p>
       </div>
     </div>
   );
