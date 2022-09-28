@@ -165,7 +165,7 @@ export default function Home() {
           </p>
           <br />
           <Button
-            style="w-[50%] bg-orange-600 text-white px-6 py-4"
+            style="w-[50%] bg-orange-600 mx-auto text-white px-6 py-4"
             title="Enroll Now"
             url="/"
           />
