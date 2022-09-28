@@ -29,11 +29,11 @@ const CourseRightImage: React.FC<DataProps> = ({
 }) => {
   return (
     <div
-      className={`my-4 grid w-full items-center gap-4 md:flex md:space-x-12 ${
-        reverse ? "flex-row-reverse" : ""
+      className={`my-4 grid w-full items-center gap-4 px-8 py-8 md:flex md:space-x-12 md:px-32 ${
+        reverse ? "flex-row-reverse bg-white" : "bg-orange-100"
       }`}
     >
-      <div className="relative md:w-1/2 items-center flex justify-center">
+      <div className="relative flex items-center justify-center md:w-1/2">
         <Image src={image} alt={shortdesc} width={480} height={720} />
         <div className="absolute  top-3">
           {levels.map((i: string, index: number) => {
@@ -49,8 +49,8 @@ const CourseRightImage: React.FC<DataProps> = ({
         </div>
       </div>
       <div className="md:w-1/2">
-        <h2 className="text-[30px] md:text-[40px]">{title}</h2>
-        <p>{desc.para1}</p>
+        <h2 className="text-[25px] md:text-[30px]">{title}</h2>
+        <p className="text-gray-600">{desc.para1}</p>
         <br />
         {/* <p>{desc.para2}</p> */}
         {/* <br /> */}
@@ -60,9 +60,9 @@ const CourseRightImage: React.FC<DataProps> = ({
               <div key={index} className="flex items-center space-x-4 ">
                 <Image src={value.icons} width={50} height={50} alt="astangh" />
                 <div>
-                  <h2>{value.name}</h2>
+                  <h2 className="text-orange-600">{value.name}</h2>
 
-                  <p>
+                  <p className="text-gray-600">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Fuga ipsam ducimus tempore, est ipsum mollitia.
                   </p>

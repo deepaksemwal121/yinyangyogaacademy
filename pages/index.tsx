@@ -15,6 +15,7 @@ import {
   IoLogoInstagram,
   IoLogoTwitter,
 } from "react-icons/io5";
+import MobileNav from "../components/MobileNav";
 
 export default function Home() {
   return (
@@ -35,19 +36,23 @@ export default function Home() {
           backgroundPositionX: "center",
         }}
       >
-        <div className="grid grid-cols-2 px-4 py-5 sm:px-32">
+        <div className="grid grid-cols-2 px-8 py-5 sm:px-32">
           <div className="">
-            <h3 className="text-xl text-white sm:text-3xl">
+            <Image src="/logotrans.png" alt="logo trans" width={150} height={75}/>
+            {/* <h3 className="text-xl text-white sm:text-3xl">
               Yin Yang Yoga Academy
-            </h3>
+            </h3> */}
           </div>
           <div className="flex items-center justify-end">
-            <div className="hidden rounded-xl bg-white py-2 px-8 text-black sm:block sm:text-xl">
+            <div className="">
+              <MobileNav />
+            </div>
+            <div className="hidden cursor-pointer rounded-xl bg-white py-2 px-8 text-base text-orange-600 hover:bg-orange-600 hover:text-white sm:block sm:text-lg">
               Apply Now
             </div>
           </div>
         </div>
-        <div className="my-16 grid px-4 sm:grid-cols-2 sm:px-32">
+        <div className="my-16 grid px-8 sm:grid-cols-2 sm:px-32">
           <div className="items-center space-y-6">
             <p className="text-orange-600">Know Yourself</p>
             <h2 className="text-xl text-white sm:text-4xl">
@@ -60,28 +65,37 @@ export default function Home() {
               day-to-day <br /> life and endows skill in the performance of
               one&apos;s actions
             </p>
-            <div className="flex items-center space-x-2">
-              <IoChevronForwardCircle color="orange" size={40} />
-              <p className="text-white">
+            <div className="flex flex-col items-center justify-center space-x-2 sm:flex-row sm:justify-start">
+              <IoChevronForwardCircle
+                color="orange"
+                className="hidden sm:block"
+                size={40}
+              />
+              <p className="text-center text-white sm:text-left">
                 Discover yoga teacher training courses now
               </p>
+              <Button
+                title="View All Courses"
+                style="bg-orange-600 rounded-full px-12 py-2 block sm:hidden"
+                url="/courses"
+              />
             </div>
           </div>
           <div className=" hidden items-end sm:block ">
-            <ul className="flex flex-col items-end space-y-4 font-semibold">
-              <li className="flex items-center ">
+            <ul className="flex cursor-pointer flex-col items-end space-y-4 font-semibold">
+              <li className="flex items-center hover:text-orange-600">
                 About
                 <div className="mx-2 h-1 w-10 bg-white" />
               </li>
-              <li className="flex items-center ">
+              <li className="flex items-center hover:text-orange-600 ">
                 Our Teachers
                 <div className="mx-2 h-1 w-10 bg-white" />
               </li>
-              <li className="flex items-center ">
+              <li className="flex items-center hover:text-orange-600">
                 Accommodation
                 <div className="mx-2 h-1 w-10 bg-white" />
               </li>
-              <li className="flex items-center ">
+              <li className="flex items-center hover:text-orange-600">
                 Blogs
                 <div className="mx-2 h-1 w-10 bg-white" />
               </li>
@@ -89,31 +103,35 @@ export default function Home() {
           </div>
         </div>
         <div className=" hidden justify-between px-32 py-12 sm:flex">
-          <div className="grid w-2/3 grid-cols-4 space-x-8 border-t border-gray-50 pt-4">
+          <div className="grid w-4/5 grid-cols-4 space-x-8 border-t border-gray-50 pt-4">
             <div className="space-y-2">
               <h3 className="text-xl text-white">Teacher Training</h3>
               <div className="h-[1px] w-1/4 bg-white" />
-              <ul className="space-y-1">
-                <li>100 hours training course</li>
-                <li>200 hours training course</li>
+              <ul className="cursor-pointer space-y-1">
+                <li className="hover:text-orange-600">
+                  100 hours training course
+                </li>
+                <li className="hover:text-orange-600">
+                  200 hours training course
+                </li>
                 <li className="text-orange-600">View More</li>
               </ul>
             </div>
             <div className="space-y-2">
               <h3 className="text-xl text-white">Ayurveda Courses</h3>
-              <div className="h-[1px] w-1/4 bg-white" />
-              <ul className="space-y-1">
-                <li>100 hours training course</li>
-                <li>100 hours training course</li>
+              <div className="h-[1px]  w-1/4 bg-white" />
+              <ul className="cursor-pointer space-y-1 text-base">
+                <li className="hover:text-orange-600">100 hours training </li>
+                <li className="hover:text-orange-600">100 hours training</li>
                 <li className="text-orange-600">View More</li>
               </ul>
             </div>
             <div className="space-y-2">
               <h3 className="text-xl text-white">Yoga Retreats</h3>
               <div className="h-[1px] w-1/4 bg-white" />
-              <ul className="space-y-1">
-                <li>5 day yoga retreat</li>
-                <li>7 day yoga retreat</li>
+              <ul className="cursor-pointer space-y-1">
+                <li className="hover:text-orange-600">5 day yoga retreat</li>
+                <li className="hover:text-orange-600">7 day yoga retreat</li>
                 <li className="text-orange-600">View More</li>
               </ul>
             </div>
@@ -134,8 +152,8 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center justify-end">
-            <div className="rounded-full bg-orange-600 p-5">
-              <IoCall size={25} color="white" />
+            <div className="rounded-full bg-orange-600 p-5 text-white hover:bg-white hover:text-orange-600">
+              <IoCall size={25} />
             </div>
           </div>
         </div>
@@ -151,7 +169,7 @@ export default function Home() {
           <h2 className="text-[30px] md:text-[40px]">
             YOGA TEACHER TRAINING IN RISHIKESH, INDIA
           </h2>
-          <p>
+          <p className="text-gray-600">
             With each passing day, people are getting more and more engaged
             towards a better peaceful life. Amidst all the chaos all that
             everyone wants is a little time for oneself so that it leads them t
@@ -159,13 +177,13 @@ export default function Home() {
             such a life that gives one such peace and balances one’s life.{" "}
           </p>
           <br />
-          <p>
+          <p className="text-gray-600">
             Today yoga teacher trainers are spread worldwide wide and a maximum
             of them are trained from Rishikesh.
           </p>
           <br />
           <Button
-            style="w-[50%] bg-orange-600 mx-auto text-white px-6 py-4"
+            style="w-[50%] bg-orange-600 text-white px-6 py-4"
             title="Enroll Now"
             url="/"
           />
@@ -203,11 +221,11 @@ export default function Home() {
       {/* Course Section on Homepage Starts from Here */}
       <CourseHomepage />
       {/* Best Teacher Section */}
-      <div className="w-full px-8 py-4 md:px-32 md:py-16">
-        <h2 className="text-center text-[25px] md:text-[45px]">
+      <div className="w-full space-y-4 px-8 py-4 md:px-32 md:py-16">
+        <h2 className="text-center text-[20px] md:text-[45px]">
           BEST ONLINE YOGA TEACHER TRAINING INDIA
         </h2>
-        <p className="text-center text-lg">
+        <p className="text-center text-base text-gray-600 sm:text-lg">
           There are online classes that are also there. There is no stop to
           spreading knowledge as thus like the entire world the yoga world has
           also chosen and taken part in online tutoring. From hatha yoga to the
@@ -215,29 +233,31 @@ export default function Home() {
           and other asanas everything is been taught. All the problems have been
           kept in mind and the classes are being conducted.
         </p>
-        <br />
-        <p className="text-center text-lg">
+        {/* <br />
+        <p className="text-center text-lg text-gray-600">
           All these classes are taken by none other than experienced teachers
           who have the experience of teaching both offline as well as online.
           Yes, these teachers are capable to teach online also as they are
           internationally renowned personalities in this field. All the
           faculties have their sort of achievement and are renowned
           professionals having deep knowledge in yoga.
-        </p>
+        </p> */}
         <div className="my-8 grid grid-cols-1 gap-4 md:grid-cols-3">
           {data.onlineCards.map((value, index) => {
             return (
-              <div key={index} className="bg-[#f9d3af] p-8">
+              <div key={index} className="rounded bg-[#f9d3af] p-6">
                 <Image
                   src={value.image}
                   alt={value.title}
                   width={80}
                   height={80}
                 />
-                <h2 className="text-[20px] text-gray-800 md:text-[30px]">
+                <h2 className="text-[20px] text-orange-600 md:text-[25px]">
                   {value.title}
                 </h2>
-                <p className="text-base md:text-lg">{value.content}</p>
+                <p className="text-base text-gray-600 md:text-lg">
+                  {value.content}
+                </p>
               </div>
             );
           })}
@@ -249,17 +269,25 @@ export default function Home() {
         <div className=" grid grid-cols-1 gap-4 md:grid-cols-4">
           {data.offer.map((value, index) => {
             return (
-              <div key={index} className=" bg-gray-100 p-4 text-center ">
-                <Image
-                  src={value.image}
-                  alt={value.title}
-                  height={160}
-                  width={160}
-                />
-                <h3 className="text-[24px]">{value.title}</h3>
-                <p>{value.content}</p>
+              <div
+                key={index}
+                className=" flex flex-col justify-between bg-gray-100 p-4 text-center "
+              >
+                <div className="space-y-1">
+                  <Image
+                    src={value.image}
+                    alt={value.title}
+                    height={160}
+                    width={160}
+                  />
+                  <h3 className="text-[24px]">{value.title}</h3>
+                  <p className="text-sm text-gray-600 sm:text-base">
+                    {value.content}
+                  </p>
+                </div>
+
                 <a
-                  className="float-right flex items-center space-x-4 text-orange-600"
+                  className="float-right mt-4 flex items-center space-x-4 text-orange-600"
                   href={value.url}
                 >
                   <BsArrowRight />
