@@ -19,18 +19,18 @@ const TeacherCard: React.FC<Teacher> = ({ image, name, expertise, desc }) => {
             <Image
               className="rounded-full"
               src={image}
-              height={250}
-              width={250}
+              height={200}
+              width={200}
               alt="yoga-teacher"
             />
           </div>
           <div>
-            <h2 className="text-[26px] text-orange-800">{name}</h2>
-            <p className="text-lg text-orange-600">{expertise}</p>
+            <h2 className="text-lg text-orange-800 md:text-[26px]">{name}</h2>
+            <p className="text-sm text-orange-600 md:text-lg">{expertise}</p>
           </div>
           <div
             onClick={() => setShowMore(!showMore)}
-            className="readMore absolute bottom-0 right-0 cursor-pointer bg-orange-600 p-4 text-white"
+            className="readMore absolute bottom-0 right-0 cursor-pointer bg-orange-600 p-2 text-sm text-white md:p-4"
           >
             Read More
           </div>

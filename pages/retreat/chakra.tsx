@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Text from "../../components/Text";
-import Button from "../../components/Buttons";
+import Button from "../../components/Button";
 import Slider from "react-slick";
 import Image from "next/image";
 import { IoCheckmarkCircle } from "react-icons/io5";
@@ -12,6 +12,15 @@ const template = () => {
     infinite: true,
     slidesToShow: 3,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div>
@@ -22,16 +31,22 @@ const template = () => {
       </Head>
       <main className="">
         {/* hero section */}
-        <section className="grid h-[40rem] grid-cols-2 items-center bg-orange-200 px-32 py-16">
+        <section className="grid  h-[40rem] items-center bg-orange-200 px-8 py-16 md:grid-cols-2 md:px-32">
           <div>
             <Text.Secondary size="lg">Welcome to yoga retreat</Text.Secondary>
-            <h3 className="text-[45px]">Chakras Yoga Retreat in Rishikesh</h3>
-            <h3 className="text-[40px]">7 Days Retreat !</h3>
+            <h3 className="text-[30px] md:text-[45px]">
+              Chakras Yoga Retreat in Rishikesh
+            </h3>
+            <h3 className="text-[30px] md:text-[40px] ">7 Days Retreat !</h3>
 
             <Text.Secondary color="gray">
               Come and join us for the unforgettable experience of a lifetime
             </Text.Secondary>
-            <Button>Enroll now</Button>
+            <Button
+              title="Book Now"
+              url="/"
+              style="border-2 border-orange-600 px-6 py-2 text-orange-600 text-[24px] hover:bg-orange-600 hover:text-white"
+            />
           </div>
           <div>
             <Image
@@ -43,11 +58,13 @@ const template = () => {
           </div>
         </section>
         {/* chakra retreat section */}
-        <section className="px-32 py-16 text-center">
+        <section className="px-8 py-16 text-center md:px-32">
           <p className="text-lg font-semibold text-orange-600">
             Practicing Yoga
           </p>
-          <h3 className="text-[40px]">Chakras Yoga Retreat in Rishikesh</h3>
+          <h3 className="text-[30px] md:text-[40px]">
+            Chakras Yoga Retreat in Rishikesh
+          </h3>
 
           <div className="my-6">
             <Slider {...settings}>
@@ -98,7 +115,9 @@ const template = () => {
                         width={200}
                       />
                       <div className="px-4">
-                        <h3 className="text-[34px]">{item.name}</h3>
+                        <h3 className="text-[24px] md:text-[34px]">
+                          {item.name}
+                        </h3>
                         <div className="my-2">
                           <Text.Secondary size="sm" color="gray">
                             {item.desc}
@@ -114,7 +133,7 @@ const template = () => {
         </section>
 
         {/* undestanding chakras and their functions */}
-        <section className="grid grid-cols-2  items-center bg-orange-100  px-32 py-16">
+        <section className="grid items-center  bg-orange-100 px-8  py-16 md:grid-cols-2 md:px-32">
           <div className="text-center">
             <Image
               src="https://yinyangyogaacademy.com/wp-content/uploads/2022/09/Untitled-design.png"
@@ -127,7 +146,7 @@ const template = () => {
             <Text.Secondary size="lg">
               Energy centers within the human body
             </Text.Secondary>
-            <h3 className="text-[45px]">
+            <h3 className="text-[30px] md:text-[45px]">
               Understanding Chakras &amp; Their Functioning
             </h3>
             <div className="my-2">
@@ -152,13 +171,19 @@ const template = () => {
                 the balance and energy flow throughout the body.
               </Text.Secondary>
             </div>
-            <Button>Enroll Now</Button>
+            <Button
+              title="Book Now"
+              url="/"
+              style="border-2 border-orange-600 px-6 py-2 text-orange-600 text-[24px] hover:bg-orange-600 hover:text-white"
+            />
           </div>
         </section>
-        <section className=" grid grid-cols-2 items-center px-32 py-16">
+        <section className=" grid items-center px-8 py-16 md:grid-cols-2 md:px-32">
           <div>
             <Text.Secondary size="lg">7 days chakra retreat</Text.Secondary>
-            <h3 className="text-[40px]">About the 7 days yoga retreat</h3>
+            <h3 className="text-[30px] md:text-[40px]">
+              About the 7 days yoga retreat
+            </h3>
             {/* title desc comps */}
             <div className="my-4">
               {[
@@ -179,7 +204,10 @@ const template = () => {
                 },
               ].map((item, i) => {
                 return (
-                  <div key={i} className="my-2 flex items-center">
+                  <div
+                    key={i}
+                    className="my-2 flex flex-col items-center md:flex-row"
+                  >
                     <Image
                       src="http://yinyangyogaacademy.com/wp-content/uploads/2022/09/yog2.png"
                       alt="icon"
@@ -209,11 +237,13 @@ const template = () => {
           </div>
         </section>
         {/* highlights eligibility whats included */}
-        <section className="grid grid-cols-2 space-x-2 px-32">
+        <section className="grid space-y-4 px-8 md:grid-cols-2 md:space-x-2 md:px-32">
           <div>
             <div className="mb-2 rounded bg-orange-100 p-4">
               <Text.Secondary size="lg">Highlights</Text.Secondary>
-              <h3 className="text-[34px]">Overview Of The Retreat</h3>
+              <h3 className="text-2xl md:text-[34px]">
+                Overview Of The Retreat
+              </h3>
               <Text.Secondary color="gray">
                 While there are many kinds of Yoga retreats, the Chakra retreat
                 is primarily different in its focus. The subject of the retreat,
@@ -239,7 +269,9 @@ const template = () => {
             </div>
             <div className="mt-2 rounded bg-orange-100 p-4">
               <Text.Secondary size="lg">Eligibility</Text.Secondary>
-              <h3 className="text-[34px]">Eligibility For The Retreat</h3>
+              <h3 className="text-2xl md:text-[34px]">
+                Eligibility For The Retreat
+              </h3>
               <Text.Secondary color="gray">
                 This retreat is designed to be beneficial to everyone. Neither
                 do you need to have a background in Yoga to participate nor is
@@ -254,7 +286,9 @@ const template = () => {
           </div>
           <div className="rounded bg-orange-100 p-4">
             <Text.Secondary size="lg">What&apos;s Included</Text.Secondary>
-            <h3 className="text-[34px]">All What Is Included In Retreat</h3>
+            <h3 className="text-2xl md:text-[34px]">
+              All What Is Included In Retreat
+            </h3>
             {[
               { title: " 2 yoga classes daily (one morning, one evening)" },
               { title: " Daily pranayama class (breath awareness practice)" },
@@ -284,7 +318,7 @@ const template = () => {
               { title: " One kirtan or sound healing session" },
             ].map((item, i) => {
               return (
-                <div key={i} className="my-2 flex items-center">
+                <div key={i} className="my-4 flex items-center md:my-2">
                   <IoCheckmarkCircle className="mr-2 text-orange-600" />
                   <Text.Secondary size="sm" color="gray">
                     {item.title}
@@ -296,92 +330,98 @@ const template = () => {
         </section>
 
         {/* pricing section */}
-        <section className="my-32 px-32 text-center">
+        <section className="my-32 px-8 text-center md:px-32">
           <Text.Secondary size="lg">Timetable</Text.Secondary>
           <h3 className="text-[40px]">Upcoming Events</h3>
-          <table className="my-6 w-full">
-            <thead className="h-16 rounded bg-orange-100">
-              <tr className="font-medium text-orange-600">
-                <td>Start Date</td>
-                <td>Start End</td>
-                <td>Availability</td>
-                <td>Shared</td>
-                <td>Private</td>
-                <td>Booking</td>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                {
-                  start: "23 Jul 2022",
-                  end: "29 Jul 2022",
-                  availability: "Available",
-                  shared: "499 USD",
-                  private: "599 USD",
-                  booking: "Apply Now",
-                },
-                {
-                  start: "23 Jul 2022",
-                  end: "29 Jul 2022",
-                  availability: "Available",
-                  shared: "499 USD",
-                  private: "599 USD",
-                  booking: "Apply Now",
-                },
-                {
-                  start: "23 Jul 2022",
-                  end: "29 Jul 2022",
-                  availability: "Available",
-                  shared: "499 USD",
-                  private: "599 USD",
-                  booking: "Apply Now",
-                },
-                {
-                  start: "23 Jul 2022",
-                  end: "29 Jul 2022",
-                  availability: "Available",
-                  shared: "499 USD",
-                  private: "599 USD",
-                  booking: "Apply Now",
-                },
-                {
-                  start: "23 Jul 2022",
-                  end: "29 Jul 2022",
-                  availability: "Available",
-                  shared: "499 USD",
-                  private: "599 USD",
-                  booking: "Apply Now",
-                },
-                {
-                  start: "23 Jul 2022",
-                  end: "29 Jul 2022",
-                  availability: "Available",
-                  shared: "499 USD",
-                  private: "599 USD",
-                  booking: "Apply Now",
-                },
-              ].map((item, i) => {
-                return (
-                  <tr
-                    key={i}
-                    className={`h-16 text-sm text-gray-600 ${
-                      i % 2 !== 0 ? "bg-orange-100" : ""
-                    } `}
-                  >
-                    <td>{item.start}</td>
-                    <td>{item.end}</td>
-                    <td>{item.availability}</td>
-                    <td>{item.shared}</td>
-                    <td>{item.private}</td>
-                    <td>
-                      <Button>{item.booking}</Button>
-                    </td>
-                  </tr>
-                );
-              })}
-              <tr></tr>
-            </tbody>
-          </table>
+          <div className="w-full overflow-x-auto">
+            <table className="table-zebra my-4 table w-full">
+              <thead className="h-16 rounded bg-orange-100">
+                <tr className="font-medium text-orange-600">
+                  <td>Start Date</td>
+                  <td>Start End</td>
+                  <td>Availability</td>
+                  <td>Shared</td>
+                  <td>Private</td>
+                  <td className="text-center">Booking</td>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  {
+                    start: "23 Jul 2022",
+                    end: "29 Jul 2022",
+                    availability: "Available",
+                    shared: "499 USD",
+                    private: "599 USD",
+                    booking: "Apply Now",
+                  },
+                  {
+                    start: "23 Jul 2022",
+                    end: "29 Jul 2022",
+                    availability: "Available",
+                    shared: "499 USD",
+                    private: "599 USD",
+                    booking: "Apply Now",
+                  },
+                  {
+                    start: "23 Jul 2022",
+                    end: "29 Jul 2022",
+                    availability: "Available",
+                    shared: "499 USD",
+                    private: "599 USD",
+                    booking: "Apply Now",
+                  },
+                  {
+                    start: "23 Jul 2022",
+                    end: "29 Jul 2022",
+                    availability: "Available",
+                    shared: "499 USD",
+                    private: "599 USD",
+                    booking: "Apply Now",
+                  },
+                  {
+                    start: "23 Jul 2022",
+                    end: "29 Jul 2022",
+                    availability: "Available",
+                    shared: "499 USD",
+                    private: "599 USD",
+                    booking: "Apply Now",
+                  },
+                  {
+                    start: "23 Jul 2022",
+                    end: "29 Jul 2022",
+                    availability: "Available",
+                    shared: "499 USD",
+                    private: "599 USD",
+                    booking: "Apply Now",
+                  },
+                ].map((item, i) => {
+                  return (
+                    <tr
+                      key={i}
+                      className={`h-16 text-sm text-gray-600 ${
+                        i % 2 !== 0 ? "bg-orange-100" : ""
+                      } `}
+                    >
+                      <td>{item.start}</td>
+                      <td>{item.end}</td>
+                      <td>{item.availability}</td>
+                      <td>{item.shared}</td>
+                      <td>{item.private}</td>
+                      <td>
+                        <Button
+                          title={item.booking}
+                          url="/"
+                          style="bg-orange-600 md:px-6 md:py-3 px-3 py-1 mx-auto text-white rounded"
+                        />
+                      </td>
+                    </tr>
+                  );
+                })}
+                <tr></tr>
+              </tbody>
+            </table>
+          </div>
         </section>
       </main>
       <Teacherprofile />

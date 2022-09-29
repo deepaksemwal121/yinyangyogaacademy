@@ -14,8 +14,8 @@ const accomodation = () => {
   };
   return (
     <>
-      <div className="flex w-full items-center bg-orange-200 px-32 py-16">
-        <div className="w-1/2">
+      <div className="w-full items-center bg-orange-200 px-8 py-16 md:flex md:px-32 md:py-16">
+        <div className="md:w-1/2">
           {/* BreadCrumbs */}
           <div className="breadcrumbs text-sm">
             <ul>
@@ -29,7 +29,7 @@ const accomodation = () => {
             </ul>
           </div>
           {/* Hero Text */}
-          <h3 className="text-[40px]">
+          <h3 className="text-[30px] md:text-[40px]">
             Yin Yang Yoga Academy
             <br /> Rishikesh
           </h3>
@@ -40,8 +40,8 @@ const accomodation = () => {
             style="bg-orange-600 px-4 py-2 text-white hover:bg-orange-400 btn"
           />
         </div>
-        <div className="relative w-1/2 ">
-          <h3 className="absolute top-[10%] z-20 text-[100px] font-black mix-blend-overlay">
+        <div className="relative md:w-1/2 ">
+          <h3 className="absolute top-[10%] z-20 text-[50px] font-black mix-blend-overlay md:text-[100px]">
             Accomodation
           </h3>
           <Image
@@ -53,8 +53,8 @@ const accomodation = () => {
           />
         </div>
       </div>
-      <div className="flex w-full items-center space-x-4 px-32 py-16">
-        <div className="relative w-1/2">
+      <div className="flex w-full flex-col-reverse items-center space-x-4  px-8 py-16 md:flex-row md:px-32">
+        <div className="relative md:w-1/2">
           <Image
             src="https://www.yogkulam.org/images/acc/ryk-2.jpg"
             height={450}
@@ -62,16 +62,18 @@ const accomodation = () => {
             alt="accomadate"
             className="rounded"
           />
-          <div className="absolute top-[80%]  h-[150px] w-[80%] bg-orange-600 p-8">
-            <h3 className="text-[30px] text-white">Yin Yang Yoga Academy</h3>
+          <div className="top-[80%] h-auto w-[80%]  bg-orange-600 p-8 md:absolute md:h-[150px]">
+            <h3 className="text-[24px] text-white md:text-[30px]">
+              Yin Yang Yoga Academy
+            </h3>
             <p className="text-[#f1f1f1]">
               We Provide the Best Acommodation in Rishikesh with All Faciliies
             </p>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           <p className="text-orange-500">What You Get</p>
-          <h3 className="mb-4 text-[45px]">
+          <h3 className="mb-4 text-[24px] md:text-[45px]">
             With Yin Yang Yoga Academy
             <div className="h-1 w-[30%] bg-orange-500"></div>
           </h3>
@@ -89,10 +91,10 @@ const accomodation = () => {
           </p>
         </div>
       </div>
-      <div className="w-full px-32 py-16 ">
+      <div className="w-full px-8 py-16 md:px-32 ">
         <h3 className="text-[40px]">Facilites We Provide</h3>
         <div className="mb-4 h-1 w-[20%] bg-orange-500"></div>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid  gap-4 md:grid-cols-4">
           <div className="bg-orange-100 p-4 text-center">
             <Image
               src="https://cdn-icons-png.flaticon.com/512/489/489401.png"
@@ -170,9 +172,8 @@ const accomodation = () => {
           </div>
         </div>
       </div>
-      <div className="px-32">
-        <h3 className="text-[34px] ">At a Glance</h3>{" "}
-        <div className="h-1 w-[10%] bg-orange-500"></div>
+      <div className="px-8 md:px-32">
+        <h3 className="text-[24px] md:text-[34px] ">At a Glance</h3>
       </div>
       <div className="overflow-x-hidden py-16 px-4">
         <Slider {...settings}>

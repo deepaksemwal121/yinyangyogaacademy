@@ -6,8 +6,8 @@ import { data } from "../../data/data";
 const Teachers = () => {
   return (
     <>
-      <div className="flex w-full justify-end bg-orange-200 px-32 py-16">
-        <div className=" flex w-1/2 flex-col  justify-center">
+      <div className="w-full justify-end bg-orange-200 px-8 py-16 md:flex md:px-32 md:py-16">
+        <div className=" flex flex-col justify-center  md:w-1/2">
           {/* BreadCrumbs */}
           <div className="breadcrumbs text-sm">
             <ul>
@@ -21,12 +21,12 @@ const Teachers = () => {
             </ul>
           </div>
           {/* Headers -Hero */}
-          <h2 className="text-[40px] ">
+          <h2 className="text-[20px] md:text-[40px]">
             &quot; A good teacher doesn&apos;t teach from the book. A good
             teacher teaches from the heart &quot;
           </h2>
         </div>
-        <div className="w-1/2 text-right">
+        <div className="text-right md:w-1/2">
           <Image
             src="/../public/about-teacher.png"
             height={735 / 2}
@@ -35,8 +35,8 @@ const Teachers = () => {
           />
         </div>
       </div>
-      <div className=" flex w-full items-center px-32 py-8">
-        <div className="w-1/2">
+      <div className=" w-full items-center px-8 py-8 md:flex md:px-32">
+        <div className="md:w-1/2">
           <Image
             src="/../public/guruji.png"
             height={500}
@@ -44,8 +44,8 @@ const Teachers = () => {
             alt="maestro"
           />
         </div>
-        <div className="w-1/2">
-          <h1 className="my-4 text-[30px]">
+        <div className="md:w-1/2">
+          <h1 className="my-4 text-xl md:text-[30px]">
             Teaching Faculty - Yin Yang Yoga Academy
             <div className="h-1 w-[30%] bg-orange-500"></div>
           </h1>
@@ -58,11 +58,11 @@ const Teachers = () => {
         </div>
       </div>
       {/* Gurus Section  */}
-      <div className="px-32 pt-16">
-        <h3 className="text-[40px]">Meet The Guru&apos;s</h3>
+      <div className="px-8 pt-16 md:px-32">
+        <h3 className="text-2xl md:text-[40px]">Meet The Guru&apos;s</h3>
         <div className="h-1 w-[20%] bg-orange-500"></div>
       </div>
-      <div className=" grid grid-cols-2 gap-4 py-8 px-32">
+      <div className=" grid gap-4 py-8 px-8 md:grid-cols-2 md:px-32">
         {data.guruProfile.map((item, index) => {
           return (
             <TeacherCard

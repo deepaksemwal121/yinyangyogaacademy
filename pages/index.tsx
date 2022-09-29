@@ -37,19 +37,19 @@ export default function Home() {
         }}
       >
         <div className="grid grid-cols-2 px-8 py-5 sm:px-32">
-          <div className="">
+          {/* <div className="">
             <Image src="/logotrans.png" alt="logo trans" width={150} height={75}/>
-            {/* <h3 className="text-xl text-white sm:text-3xl">
+            <h3 className="text-xl text-white sm:text-3xl">
               Yin Yang Yoga Academy
-            </h3> */}
-          </div>
+            </h3>
+          </div> */}
           <div className="flex items-center justify-end">
-            <div className="">
+            {/* <div className="">
               <MobileNav />
-            </div>
-            <div className="hidden cursor-pointer rounded-xl bg-white py-2 px-8 text-base text-orange-600 hover:bg-orange-600 hover:text-white sm:block sm:text-lg">
+            </div> */}
+            {/* <div className="hidden cursor-pointer rounded-xl bg-white py-2 px-8 text-base text-orange-600 hover:bg-orange-600 hover:text-white sm:block sm:text-lg">
               Apply Now
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="my-16 grid px-8 sm:grid-cols-2 sm:px-32">

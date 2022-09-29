@@ -1,4 +1,6 @@
-import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import {
   IoChevronDown,
   IoChevronUp,
@@ -10,11 +12,25 @@ import {
 } from "react-icons/io5";
 import Button from "./Button";
 
-const MobileNav = () => {
+interface Props {
+  displayLogo: boolean;
+}
+const MobileNav = ({ displayLogo }: Props) => {
   const [open, setOpen] = useState(false);
   const [drop, setDrop] = useState(-1);
+  console.log(displayLogo);
+
   return (
-    <div className="md:hidden">
+    <div className=" fixed z-50 flex w-full items-center justify-between px-8  md:hidden">
+      <div>
+        <Image
+          className={`${displayLogo ? "opacity-100" : "opacity-0"}`}
+          src="/logotrans.png"
+          alt="logo trans"
+          width={240 / 2}
+          height={150 / 2}
+        />
+      </div>
       <label className="swap-rotate swap z-20  rounded-full bg-orange-600 p-1">
         <input
           onChange={() => setOpen(!open)}
@@ -46,7 +62,7 @@ const MobileNav = () => {
           open ? "" : "hidden"
         }`}
       >
-        <ul className="relative space-y-4 text-xl">
+        <ul className="relative space-y-4 text-xl text-white">
           <li>Home</li>
           <li className=" flex items-center space-x-2 ">
             <div onClick={() => setDrop(0)}>About </div>
@@ -63,33 +79,18 @@ const MobileNav = () => {
             </div>
           </li>
           <ul className={`space-y-2 text-base ${drop === 0 ? "" : "hidden"}`}>
-            <li className="pl-4">100Hrs Hours Yoga Teacher Training</li>
-            <li className="pl-4">200Hrs Hours Yoga Teacher Training</li>
-            <li className="pl-4">300Hrs Hours Yoga Teacher Training</li>
-            <li className="pl-4">500Hrs Hours Yoga Teacher Training</li>
+            <Link href="/about">
+              <li className="pl-4">About Yin Yoga Academy</li>
+            </Link>
+            <Link href="/about/accomodation">
+              <li className="pl-4">Accomodations</li>
+            </Link>
+            <Link href="/about/our-teachers">
+              <li className="pl-4">Our Teachers</li>
+            </Link>
           </ul>
           <li className=" flex items-center space-x-2 ">
-            <div onClick={() => setDrop(1)}>Yoga Teacher Training </div>
-            <div className="">
-              {drop === 1 ? (
-                <div onClick={() => setDrop(-1)} className="">
-                  <IoChevronUp color="white" />
-                </div>
-              ) : (
-                <div onClick={() => setDrop(1)}>
-                  <IoChevronDown color="white" className="" />
-                </div>
-              )}
-            </div>
-          </li>
-          <ul className={`space-y-2 text-base ${drop === 1 ? "" : "hidden"}`}>
-            <li className="pl-4">100Hrs Hours Yoga Teacher Training</li>
-            <li className="pl-4">200Hrs Hours Yoga Teacher Training</li>
-            <li className="pl-4">300Hrs Hours Yoga Teacher Training</li>
-            <li className="pl-4">500Hrs Hours Yoga Teacher Training</li>
-          </ul>
-          <li className=" flex items-center space-x-2 ">
-            <div onClick={() => setDrop(2)}>Yoga Retreat </div>
+            <div onClick={() => setDrop(2)}>Yoga Teacher Training </div>
             <div className="">
               {drop === 2 ? (
                 <div onClick={() => setDrop(-1)} className="">
@@ -103,10 +104,49 @@ const MobileNav = () => {
             </div>
           </li>
           <ul className={`space-y-2 text-base ${drop === 2 ? "" : "hidden"}`}>
-            <li className="pl-4">100Hrs Hours Yoga Teacher Training</li>
-            <li className="pl-4">200Hrs Hours Yoga Teacher Training</li>
-            <li className="pl-4">300Hrs Hours Yoga Teacher Training</li>
-            <li className="pl-4">500Hrs Hours Yoga Teacher Training</li>
+            <Link href="/yoga-teacher-training/100-hours-yttc">
+              <li className="pl-4">100Hrs Hours Yoga Teacher Training</li>
+            </Link>
+            <Link href="/yoga-teacher-training/100-hours-yttc">
+              <li className="pl-4">100Hrs Hours Yoga Teacher Training</li>
+            </Link>
+            <Link href="/yoga-teacher-training/200-hours-yttc">
+              <li className="pl-4">200Hrs Hours Yoga Teacher Training</li>
+            </Link>
+            <Link href="/yoga-teacher-training/300-hours-yttc">
+              <li className="pl-4">300Hrs Hours Yoga Teacher Training</li>
+            </Link>
+            <Link href="/yoga-teacher-training/500-hours-yttc">
+              <li className="pl-4">500Hrs Hours Yoga Teacher Training</li>
+            </Link>
+            <Link href="/yoga-teacher-training/ayurveda">
+              <li className="pl-4">100Hrs Hours Yoga Teacher Training</li>
+            </Link>
+          </ul>
+          <li className=" flex items-center space-x-2 ">
+            <div onClick={() => setDrop(1)}>Yoga Retreat </div>
+            <div className="">
+              {drop === 1 ? (
+                <div onClick={() => setDrop(-1)} className="">
+                  <IoChevronUp color="white" />
+                </div>
+              ) : (
+                <div onClick={() => setDrop(1)}>
+                  <IoChevronDown color="white" className="" />
+                </div>
+              )}
+            </div>
+          </li>
+          <ul className={`space-y-2 text-base ${drop === 1 ? "" : "hidden"}`}>
+            <Link href="/retreat/5-days-retreat">
+              <li className="pl-4">5 Day Yoga Retreat</li>
+            </Link>
+            <Link href="/retreat/chakra">
+              <li className="pl-4">7 Day Chakra Yoga Retreat</li>
+            </Link>
+            <Link href="/retreat/10-days-retreat">
+              <li className="pl-4">10 Day Yoga Retreat</li>
+            </Link>
           </ul>
           <li>Contact Us</li>
           <li>Blogs</li>
