@@ -36,6 +36,7 @@ const MobileNav = ({ displayLogo }: Props) => {
           onChange={() => setOpen(!open)}
           type="checkbox"
           className="opacity-0"
+          value={open}
         />
         <svg
           className="swap-off fill-current"
@@ -59,7 +60,7 @@ const MobileNav = ({ displayLogo }: Props) => {
       </label>
       <div
         className={`fixed left-0 top-0 z-10 h-screen w-screen bg-gray-900 px-8 py-16  ${
-          open === "true" ? "" : "hidden"
+          open ? "" : "hidden"
         }`}
       >
         <ul className="relative space-y-4 text-xl text-white">
