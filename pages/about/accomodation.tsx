@@ -11,6 +11,15 @@ const accomodation = () => {
     slidesToScroll: 1,
     cssEase: "linear",
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <>
@@ -46,7 +55,7 @@ const accomodation = () => {
           </h3>
           <Image
             className=""
-            src="/../public/accomodate.png"
+            src="/accomodate.png"
             height={500}
             width={500}
             alt="accomodation"

@@ -15,10 +15,10 @@ import Button from "./Button";
 interface Props {
   displayLogo: boolean;
 }
+
 const MobileNav = ({ displayLogo }: Props) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<string | number | boolean | string[]>(false);
   const [drop, setDrop] = useState(-1);
-  console.log(displayLogo);
 
   return (
     <div className=" fixed z-50 flex w-full items-center justify-between px-8  md:hidden">
@@ -59,7 +59,7 @@ const MobileNav = ({ displayLogo }: Props) => {
       </label>
       <div
         className={`fixed left-0 top-0 z-10 h-screen w-screen bg-gray-900 px-8 py-16  ${
-          open ? "" : "hidden"
+          open === "true" ? "" : "hidden"
         }`}
       >
         <ul className="relative space-y-4 text-xl text-white">
@@ -108,19 +108,23 @@ const MobileNav = ({ displayLogo }: Props) => {
               <li className="pl-4">100Hrs Hours Yoga Teacher Training</li>
             </Link>
             <Link href="/yoga-teacher-training/100-hours-yttc">
-              <li className="pl-4">100Hrs Hours Yoga Teacher Training</li>
-            </Link>
-            <Link href="/yoga-teacher-training/200-hours-yttc">
               <li className="pl-4">200Hrs Hours Yoga Teacher Training</li>
             </Link>
-            <Link href="/yoga-teacher-training/300-hours-yttc">
+            <Link href="/yoga-teacher-training/200-hours-yttc">
               <li className="pl-4">300Hrs Hours Yoga Teacher Training</li>
             </Link>
-            <Link href="/yoga-teacher-training/500-hours-yttc">
+            <Link href="/yoga-teacher-training/300-hours-yttc">
               <li className="pl-4">500Hrs Hours Yoga Teacher Training</li>
             </Link>
+            <Link href="/yoga-teacher-training/500-hours-yttc">
+              <li className="pl-4">
+                100Hrs Hours Ayurveda Yoga Teacher Training
+              </li>
+            </Link>
             <Link href="/yoga-teacher-training/ayurveda">
-              <li className="pl-4">100Hrs Hours Yoga Teacher Training</li>
+              <li className="pl-4" onClick={() => setOpen("false")}>
+                200Hrs Hours Ayurveda Yoga Teacher Training
+              </li>
             </Link>
           </ul>
           <li className=" flex items-center space-x-2 ">

@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 70vh;
-  background: url("../public/about-us-yinyang.jpg");
+  background: url("/about-us-yinyang.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

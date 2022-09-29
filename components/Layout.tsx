@@ -29,7 +29,6 @@ const Layout = ({ children }: Pages) => {
     } else {
       setDisplayLogo(true);
     }
-    console.log(height);
   };
   return (
     <div className="relative bg-white">

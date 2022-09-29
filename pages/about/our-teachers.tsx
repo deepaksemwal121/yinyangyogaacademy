@@ -28,7 +28,7 @@ const Teachers = () => {
         </div>
         <div className="text-right md:w-1/2">
           <Image
-            src="/../public/about-teacher.png"
+            src="/about-teacher.png"
             height={735 / 2}
             width={430}
             alt="teacher"
@@ -37,12 +37,7 @@ const Teachers = () => {
       </div>
       <div className=" w-full items-center px-8 py-8 md:flex md:px-32">
         <div className="md:w-1/2">
-          <Image
-            src="/../public/guruji.png"
-            height={500}
-            width={500}
-            alt="maestro"
-          />
+          <Image src="/guruji.png" height={500} width={500} alt="maestro" />
         </div>
         <div className="md:w-1/2">
           <h1 className="my-4 text-xl md:text-[30px]">

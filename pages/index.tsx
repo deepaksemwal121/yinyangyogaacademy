@@ -211,7 +211,7 @@ export default function Home() {
         </div>
         <div className="md:w-1/2">
           <Image
-            src="/../public/yoga-pose.png"
+            src="/yoga-pose.png"
             alt="yoga-pose"
             height={666}
             width={666}
