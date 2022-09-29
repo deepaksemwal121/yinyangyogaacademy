@@ -36,7 +36,6 @@ const MobileNav = ({ displayLogo }: Props) => {
           onChange={() => setOpen(!open)}
           type="checkbox"
           className="opacity-0"
-          value={open}
         />
         <svg
           className="swap-off fill-current"
