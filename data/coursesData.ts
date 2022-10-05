@@ -7,7 +7,11 @@ export const coursesHome = {
       para2:
         "This course will cure the body and will push it under the process of becoming a more flexible and shapen machine as days pass and one enters into the further courses.",
     },
-    image: "/course.jpg",
+    featuredImg: "/home-100-1.jpg",
+    image: [
+      "/100-hours-yoga-teacher-training-in-rishikesh-india.jpg",
+      "/100hr-2.jpg",
+    ],
     levels: ["Beginner"],
     shortdesc: "100-hours-yoga-teacher-training-in-rishikesh-india",
     highlights: [
@@ -41,7 +45,8 @@ export const coursesHome = {
       para2:
         "Finally, after this, you can claim yourself as a teacher because this course will give you the capability to teach. After this, you will be able to align and adjust with the subject having the ability to spread the knowledge",
     },
-    image: "/course.jpg",
+    featuredImg: "/200-hour-yoga-teacher-training-in-rishikesh.jpg",
+    image: ["/200hr-3.jpg", "/200hr-2.jpg"],
     levels: ["Beginner", "Intermediate"],
     shortdesc: "200-hours-yoga-teacher-training-in-rishikesh-india",
     highlights: [
@@ -75,7 +80,8 @@ export const coursesHome = {
       para2:
         "A combination of yoga and Ayurveda takes you to the last stage of self-indigence. After this or from this stage only one can surely think of establishing is own school, institute and start spreading the knowledge among people.",
     },
-    image: require("../public/300-homepage.jpg"),
+    featuredImg: "/300-homepage.jpg",
+    image: ["/300hr-2.jpg", "/300hr-3.png"],
     levels: ["Intermediate", "Advance"],
     shortdesc: "300-hours-yoga-teacher-training-in-rishikesh-india",
     highlights: [
@@ -113,7 +119,8 @@ export const coursesHome = {
       para2:
         "This course will help you find a different you brushing all that you already have. Also, this is a combination of the previous courses which helps to foster any change that may have taken place after you have passed or cleared. You can learn some new techniques as well.",
     },
-    image: require("../public/500-hrs-homepage.jpg"),
+    featuredImg: "/500hr-2.jpg",
+    image: ["/500-hrs-homepage.jpg", "/500hr-3.jpg"],
     levels: ["Beginner", "Intermediate", "Advance"],
     shortdesc: "500-hours-yoga-teacher-training-in-rishikesh-india",
     highlights: [

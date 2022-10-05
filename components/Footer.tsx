@@ -34,7 +34,7 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <div className=" bg-gray-800 px-8 py-4 md:px-32 md:py-16">
+      <div className=" footer-pattern px-8 py-4 md:px-32 md:py-16" id="footer">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Brands Column */}
           <div className="space-y-4">

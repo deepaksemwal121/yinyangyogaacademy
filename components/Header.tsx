@@ -21,7 +21,7 @@ const Header = () => {
   });
 
   return (
-    <div className="">
+    <div className="hidden md:block">
       <div className="topbar flex justify-between bg-gray-800 px-32 py-2 text-white">
         <div className="flex w-2/6 items-center justify-end space-x-3  px-2">
           <BiLocationPlus size={20} color="orange" />
@@ -46,7 +46,17 @@ const Header = () => {
           <FaTripadvisor size={20} color="orange" />
         </div>
       </div>
-      <nav className=" flex w-full items-center justify-between  px-32 py-4 shadow">
+      <nav
+        className=" flex w-full items-center justify-between  px-32 py-4 shadow"
+        onMouseLeave={() =>
+          setHover({
+            ...hover,
+            about: false,
+            yogaTeacher: false,
+            yogaTreat: false,
+          })
+        }
+      >
         <div className="brand">
           <Link href="/">
             <Image src={logo} width={130} height={45} alt="logo" />
@@ -162,7 +172,9 @@ const Header = () => {
             </li>
             <li>Contact Us</li>
             <li>Pay Now</li>
-            <li>Apply Now</li>
+            <li className="bg-orange-600 px-8 py-4 font-[700] text-white">
+              Apply Now
+            </li>
           </ul>
         </div>
       </nav>

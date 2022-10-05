@@ -8,7 +8,8 @@ interface DataProps {
     para1: string;
     para2: string;
   };
-  image: string;
+  featuredImg: string;
+  image: string[];
   levels: string[];
   shortdesc: string;
   highlights: {
@@ -26,21 +27,36 @@ const CourseRightImage: React.FC<DataProps> = ({
   shortdesc,
   highlights,
   reverse,
+  featuredImg,
 }) => {
   return (
     <div
       className={`my-4 grid w-full items-center gap-4 px-8 py-8 md:flex md:space-x-12 md:px-32 ${
-        reverse ? "flex-row-reverse bg-white" : "bg-orange-100"
+        reverse ? "flex-row-reverse bg-white" : " bg-mandala"
       }`}
     >
-      <div className="relative flex items-center justify-center md:w-1/2">
-        <Image src={image} alt={shortdesc} width={480} height={720} />
+      <div className="relative flex flex-col space-y-3 md:w-1/2">
+        <Image src={featuredImg} alt={shortdesc} width={600} height={400} />
+        <div className="grid grid-cols-2 gap-3">
+          {image.map((item, index) => {
+            return (
+              <Image
+                src={item}
+                key={index}
+                alt={shortdesc}
+                width={600}
+                height={400}
+              />
+            );
+          })}
+        </div>
+
         <div className="absolute  top-3">
           {levels.map((i: string, index: number) => {
             return (
               <div
                 key={index}
-                className="badge badge-accent mx-4 inline-flex items-center px-3 py-2  text-white"
+                className="badge badge-accent mx-4 inline-flex items-center bg-red-600 px-3 py-2  text-white"
               >
                 {i}
               </div>
@@ -71,11 +87,6 @@ const CourseRightImage: React.FC<DataProps> = ({
             );
           })}
         </div>
-        <Button
-          title="Enroll Now"
-          url="/ell"
-          style="text-lg text-orange-600 px-6 py-3  border-orange-600 border-2 hover:bg-orange-500 hover:text-white"
-        />
       </div>
     </div>
   );

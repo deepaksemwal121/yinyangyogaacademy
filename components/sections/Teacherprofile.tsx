@@ -2,7 +2,49 @@ import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import "./Teacherprofile.module.css";
-import { data } from "../../data/data";
+
+import { BsArrowRightCircleFill } from "react-icons/bs";
+import data from "../../data/data";
+
+function SampleNextArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "black",
+        borderRadius: "50%",
+        width: "30px",
+        height: "30px",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "black",
+        borderRadius: "50%",
+        width: "30px",
+        height: "30px",
+      }}
+      onClick={onClick}
+    />
+  );
+}
 
 const Teacherprofile = () => {
   const settings = {
@@ -16,32 +58,6 @@ const Teacherprofile = () => {
     useCSS: true,
     cssEase: "linear",
     responsive: [
-      // {
-      //   breakpoint: 1440,
-      //   settings: {
-      //     slidesToShow: 3,
-      //     slidesToScroll: 3,
-      //     infinite: true,
-      //     dots: true,
-      //   },
-      // },
-      // {
-      //   breakpoint: 1024,
-      //   settings: {
-      //     slidesToShow: 3,
-      //     slidesToScroll: 3,
-      //     infinite: true,
-      //     dots: true,
-      //   },
-      // },
-      // {
-      //   breakpoint: 600,
-      //   settings: {
-      //     slidesToShow: 2,
-      //     slidesToScroll: 2,
-      //     initialSlide: 2,
-      //   },
-      // },
       {
         breakpoint: 480,
         settings: {
@@ -50,6 +66,8 @@ const Teacherprofile = () => {
         },
       },
     ],
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
   return (
     <div className="mt-12  w-full bg-gray-100 px-8 py-4 md:mt-6 md:px-32 md:py-16">

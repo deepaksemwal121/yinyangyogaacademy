@@ -1,21 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import SliderHero from "../components/sections/SliderHero";
-import yogapose from "../public/yoga-pose.png";
-import Button from "../components/Button";
 import LeftImageCard from "../components/sections/LeftImageCard";
-import { data } from "../data/data";
 import CourseHomepage from "../components/sections/CourseHomepage";
 import { BsArrowRight } from "react-icons/bs";
 import Teacherprofile from "../components/sections/Teacherprofile";
-import {
-  IoCall,
-  IoChevronForwardCircle,
-  IoLogoFacebook,
-  IoLogoInstagram,
-  IoLogoTwitter,
-} from "react-icons/io5";
-import MobileNav from "../components/MobileNav";
+import data from "../data/data";
 
 export default function Home() {
   return (
@@ -27,8 +17,8 @@ export default function Home() {
       </Head>
       {/* Main Index Pages starts from Here  */}
       {/* Slider Component will go here */}
-      {/* <SliderHero /> */}
-      <section
+      <SliderHero />
+      {/* <section
         className="flex  h-screen flex-col justify-between text-white"
         style={{
           backgroundImage: `url(/landing_hero.jpg)`,
@@ -36,22 +26,6 @@ export default function Home() {
           backgroundPositionX: "center",
         }}
       >
-        <div className="grid grid-cols-2 px-8 py-5 sm:px-32">
-          {/* <div className="">
-            <Image src="/logotrans.png" alt="logo trans" width={150} height={75}/>
-            <h3 className="text-xl text-white sm:text-3xl">
-              Yin Yang Yoga Academy
-            </h3>
-          </div> */}
-          <div className="flex items-center justify-end">
-            {/* <div className="">
-              <MobileNav />
-            </div> */}
-            {/* <div className="hidden cursor-pointer rounded-xl bg-white py-2 px-8 text-base text-orange-600 hover:bg-orange-600 hover:text-white sm:block sm:text-lg">
-              Apply Now
-            </div> */}
-          </div>
-        </div>
         <div className="my-16 grid px-8 sm:grid-cols-2 sm:px-32">
           <div className="items-center space-y-6">
             <p className="text-orange-600">Know Yourself</p>
@@ -157,17 +131,40 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-      <div className="w-full items-center px-8 md:flex md:space-x-4 md:px-32 ">
-        <div className="md:w-1/2">
-          <Image src={yogapose} alt="yoga-pose" width={666} height={666} />
+      </section> */}
+      <div className="w-full items-center px-8 md:flex md:space-x-4 md:px-32  ">
+        <div className=" relative md:w-1/2">
+          <Image
+            src="/yoga-retreat-5.png"
+            alt="yoga-pose"
+            width={666}
+            height={666}
+            className="relative z-[2]"
+          />
+          <div className="absolute top-0 opacity-40 md:left-[70px]">
+            <Image
+              src="/bg-mandala.png"
+              width={500}
+              height={500}
+              alt="bg"
+              className="spin-mandala"
+            />
+          </div>
         </div>
         <div className="md:w-1/2">
           <p className="text-lg font-medium text-orange-600">
-            ONE DESTINATION, MANY PATHS, ONE JOURNEY
+            One Destination, Many Paths, One Journey
           </p>
-          <h2 className="text-[30px] md:text-[40px]">
-            YOGA TEACHER TRAINING IN RISHIKESH, INDIA
+          <h2 className="flex flex-col text-[30px] md:text-[40px]">
+            Yoga Teacher Training In Rishikesh, INDIA
+            <span>
+              <Image
+                src="/underline.svg"
+                width={2500 / 12}
+                height={346 / 12}
+                alt="line-decor"
+              />{" "}
+            </span>
           </h2>
           <p className="text-gray-600">
             With each passing day, people are getting more and more engaged
@@ -182,49 +179,76 @@ export default function Home() {
             of them are trained from Rishikesh.
           </p>
           <br />
-          <Button
-            style="w-[50%] bg-orange-600 text-white px-6 py-4"
-            title="Enroll Now"
-            url="/"
-          />
+          <blockquote cite="https://www.google.com">
+            <em>
+              &ldquo; We are committed to creating a safer, nurturing space to
+              share the wisdom of yoga and meditation. Our students are able to
+              explore their self-yoga practice and self-transformation in a
+              comfortable and non-judgemental environment. &rdquo;
+            </em>
+          </blockquote>
         </div>
       </div>
       {/* Section 2 Starts from here  */}
-      <div className="mt-8 w-full flex-col-reverse items-center px-8 py-8 md:flex md:flex-row md:space-x-4 md:px-32 md:py-16">
-        <div className="md:w-1/2">
-          <p className="text-base font-medium text-orange-600 md:text-lg">
-            ONE DESTINATION, MANY PATHS, ONE JOURNEY
-          </p>
-          <h2 className="text-[30px] md:text-[40px]">
-            Why Yoga Teacher Training Programs And Retreats?
-          </h2>
-          {data.cardData.map((i, index) => {
-            return (
-              <LeftImageCard
-                key={index}
-                title={i.title}
-                description={i.description}
-                icon={i.icon}
-              />
-            );
-          })}
-        </div>
-        <div className="md:w-1/2">
-          <Image
-            src="/yoga-pose.png"
-            alt="yoga-pose"
-            height={666}
-            width={666}
-          />
+      <div className="mt-8 w-full  text-center md:px-32 md:py-16">
+        <p className="text-base font-medium text-orange-600 md:text-lg">
+          ONE DESTINATION, MANY PATHS, ONE JOURNEY
+        </p>
+        <h2 className="flex flex-col text-[30px] md:text-[40px]">
+          Why Yoga Teacher Training Programs And Retreats?
+          <span>
+            <Image
+              src="/underline.svg"
+              width={2500 / 12}
+              height={346 / 12}
+              alt="line-decor"
+            />{" "}
+          </span>
+        </h2>
+        <div className="flex-col-reverse items-center px-8 py-8 md:flex md:flex-row md:space-x-4">
+          <div className="md:w-1/2">
+            {data.cardData.map((i, index) => {
+              return (
+                <LeftImageCard
+                  key={index}
+                  title={i.title}
+                  description={i.description}
+                  icon={i.icon}
+                />
+              );
+            })}
+          </div>
+          <div className="relative md:w-1/2">
+            <Image
+              src="/home-3.jpg"
+              className="z-10 rounded"
+              alt="yoga-pose"
+              height={400}
+              width={564}
+            />
+            <div className="md:up-down absolute left-5 top-5 h-[220px] w-[311px] rounded bg-[#bd0007] md:h-[400px] md:w-[564px] "></div>
+          </div>
         </div>
       </div>
       {/* Course Section on Homepage Starts from Here */}
       <CourseHomepage />
       {/* Best Teacher Section */}
-      <div className="w-full space-y-4 px-8 py-4 md:px-32 md:py-16">
-        <h2 className="text-center text-[20px] md:text-[45px]">
-          BEST ONLINE YOGA TEACHER TRAINING INDIA
+      <div className="relative w-full space-y-4 px-8 py-4 md:px-32 md:py-16">
+        <div className="absolute right-0 top-0 opacity-25 ">
+          <Image src="/bg-chakra-mool.png" height={500} width={500} alt="bg" />
+        </div>
+        <h2 className="flex flex-col text-center text-[30px] md:text-[40px]">
+          Best Yoga Teacher Training India
+          <span>
+            <Image
+              src="/underline.svg"
+              width={2500 / 12}
+              height={346 / 12}
+              alt="line-decor"
+            />{" "}
+          </span>
         </h2>
+
         <p className="text-center text-base text-gray-600 sm:text-lg">
           There are online classes that are also there. There is no stop to
           spreading knowledge as thus like the entire world the yoga world has
@@ -245,7 +269,10 @@ export default function Home() {
         <div className="my-8 grid grid-cols-1 gap-4 md:grid-cols-3">
           {data.onlineCards.map((value, index) => {
             return (
-              <div key={index} className="rounded bg-[#f9d3af] p-6">
+              <div
+                key={index}
+                className="best-bg relative rounded bg-[#f9d3af] p-6"
+              >
                 <Image
                   src={value.image}
                   alt={value.title}
@@ -264,14 +291,30 @@ export default function Home() {
         </div>
       </div>
       {/* What do we offer  Section starts  */}
-      <div className="w-full px-8 py-4 md:px-32 md:py-16">
-        <h2 className="text-[30px] md:text-[40px] ">What Do We Offer </h2>
-        <div className=" grid grid-cols-1 gap-4 md:grid-cols-4">
+      <div className="relative w-full px-8 py-4 md:px-32 md:py-16">
+        <div className="absolute left-0 opacity-25 ">
+          <Image src="/bg-mandala.png" height={500} width={500} alt="bg" />
+        </div>
+        <h2 className="flex flex-col text-center text-[30px] md:text-[40px]">
+          What Do We Offer
+          <span>
+            <Image
+              src="/underline.svg"
+              width={2500 / 12}
+              height={346 / 12}
+              alt="line-decor"
+            />{" "}
+          </span>
+        </h2>
+        <p className="-z-10 text-center text-[45px] font-black italic opacity-50 ">
+          &ldquo; लोकः समस्ताः सुखिनो भवन्तु &rdquo;
+        </p>
+        <div className="  grid grid-cols-1 gap-4 md:grid-cols-4">
           {data.offer.map((value, index) => {
             return (
               <div
                 key={index}
-                className=" flex flex-col justify-between bg-gray-100 p-4 text-center "
+                className="z-10 flex flex-col justify-between bg-gray-100 p-4 text-center "
               >
                 <div className="space-y-1">
                   <Image
