@@ -21,14 +21,14 @@ const MobileNav = ({ displayLogo }: Props) => {
   const [drop, setDrop] = useState(-1);
 
   return (
-    <div className=" fixed z-50 flex w-full items-center justify-between px-8  md:hidden">
+    <div className=" fixed z-50 flex w-full items-center justify-between py-4 px-8  md:hidden">
       <div>
         <Image
           className={`${displayLogo ? "opacity-100" : "opacity-0"}`}
-          src="/logotrans.png"
+          src="/logo-color-transparent.png"
           alt="logo trans"
-          width={240 / 2}
-          height={150 / 2}
+          width={150}
+          height={50}
         />
       </div>
       <label className="swap-rotate swap z-20  rounded-full bg-orange-600 p-1">

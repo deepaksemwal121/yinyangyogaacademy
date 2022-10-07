@@ -13,7 +13,7 @@ const Retreat = () => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="flex h-[80vh] items-center justify-center bg-orange-200 px-8 py-4 md:px-32 md:py-16">
+      <div className="flex h-[95vh] items-center justify-center bg-orange-200 px-8 py-4 md:px-32 md:py-16">
         <div className="md:w-1/2">
           {/* BreadCrumbs */}
           <div className="breadcrumbs text-sm">

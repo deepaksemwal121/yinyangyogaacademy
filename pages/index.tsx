@@ -6,7 +6,7 @@ import CourseHomepage from "../components/sections/CourseHomepage";
 import { BsArrowRight } from "react-icons/bs";
 import Teacherprofile from "../components/sections/Teacherprofile";
 import data from "../data/data";
-
+import Slider from "../components/HeroSlider";
 export default function Home() {
   return (
     <div>
@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       {/* Main Index Pages starts from Here  */}
       {/* Slider Component will go here */}
-      <SliderHero />
+      <Slider />
       {/* <section
         className="flex  h-screen flex-col justify-between text-white"
         style={{
@@ -155,7 +155,7 @@ export default function Home() {
           <p className="text-lg font-medium text-orange-600">
             One Destination, Many Paths, One Journey
           </p>
-          <h2 className="flex flex-col text-[30px] md:text-[40px]">
+          <h2 className="flex flex-col text-[30px] font-bold md:text-[40px]">
             Yoga Teacher Training In Rishikesh, INDIA
             <span>
               <Image
@@ -194,7 +194,7 @@ export default function Home() {
         <p className="text-base font-medium text-orange-600 md:text-lg">
           ONE DESTINATION, MANY PATHS, ONE JOURNEY
         </p>
-        <h2 className="flex flex-col text-[30px] md:text-[40px]">
+        <h2 className="flex flex-col text-[30px] font-bold md:text-[40px]">
           Why Yoga Teacher Training Programs And Retreats?
           <span>
             <Image
@@ -226,7 +226,7 @@ export default function Home() {
               height={400}
               width={564}
             />
-            <div className="md:up-down absolute left-5 top-5 h-[220px] w-[311px] rounded bg-[#bd0007] md:h-[400px] md:w-[564px] "></div>
+            <div className="up-down absolute left-3 top-3 h-[220px] w-[311px] rounded bg-[#bd0007] md:h-[400px] md:w-[564px] "></div>
           </div>
         </div>
       </div>
@@ -237,7 +237,7 @@ export default function Home() {
         <div className="absolute right-0 top-0 opacity-25 ">
           <Image src="/bg-chakra-mool.png" height={500} width={500} alt="bg" />
         </div>
-        <h2 className="flex flex-col text-center text-[30px] md:text-[40px]">
+        <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
           Best Yoga Teacher Training India
           <span>
             <Image
@@ -295,7 +295,7 @@ export default function Home() {
         <div className="absolute left-0 opacity-25 ">
           <Image src="/bg-mandala.png" height={500} width={500} alt="bg" />
         </div>
-        <h2 className="flex flex-col text-center text-[30px] md:text-[40px]">
+        <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
           What Do We Offer
           <span>
             <Image
@@ -306,7 +306,7 @@ export default function Home() {
             />{" "}
           </span>
         </h2>
-        <p className="-z-10 text-center text-[45px] font-black italic opacity-50 ">
+        <p className="-z-10 text-center text-[24px] font-black italic opacity-50 md:text-[45px] ">
           &ldquo; लोकः समस्ताः सुखिनो भवन्तु &rdquo;
         </p>
         <div className="  grid grid-cols-1 gap-4 md:grid-cols-4">

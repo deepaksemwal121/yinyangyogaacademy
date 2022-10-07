@@ -32,7 +32,9 @@ const CourseRightImage: React.FC<DataProps> = ({
   return (
     <div
       className={`my-4 grid w-full items-center gap-4 px-8 py-8 md:flex md:space-x-12 md:px-32 ${
-        reverse ? "flex-row-reverse bg-white" : " bg-mandala"
+        reverse
+          ? "bgCourses-left flex-row-reverse bg-white"
+          : " bgCourses-right"
       }`}
     >
       <div className="relative flex flex-col space-y-3 md:w-1/2">

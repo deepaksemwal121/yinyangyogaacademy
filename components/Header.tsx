@@ -21,7 +21,7 @@ const Header = () => {
   });
 
   return (
-    <div className="hidden md:block">
+    <div className="z-[100] hidden md:block">
       <div className="topbar flex justify-between bg-gray-800 px-32 py-2 text-white">
         <div className="flex w-2/6 items-center justify-end space-x-3  px-2">
           <BiLocationPlus size={20} color="orange" />
@@ -46,17 +46,7 @@ const Header = () => {
           <FaTripadvisor size={20} color="orange" />
         </div>
       </div>
-      <nav
-        className=" flex w-full items-center justify-between  px-32 py-4 shadow"
-        onMouseLeave={() =>
-          setHover({
-            ...hover,
-            about: false,
-            yogaTeacher: false,
-            yogaTreat: false,
-          })
-        }
-      >
+      <nav className=" flex w-full items-center justify-between  px-32 py-4 shadow">
         <div className="brand">
           <Link href="/">
             <Image src={logo} width={130} height={45} alt="logo" />
@@ -67,17 +57,25 @@ const Header = () => {
             <li>
               <Link href="/">Home</Link>
             </li>
-            <li className="relative">
-              <span onMouseEnter={() => setHover({ ...hover, about: true })}>
+            <li
+              className="relative"
+              onMouseLeave={() =>
+                setHover({
+                  ...hover,
+                  about: false,
+                })
+              }
+              onMouseEnter={() => setHover({ ...hover, about: true })}
+            >
+              <span>
                 About <FiChevronDown />
               </span>
               <div
-                onMouseLeave={() => setHover({ ...hover, about: !hover.about })}
                 className={`${
-                  hover.about ? "inline-block" : "hidden"
-                } absolute top-[70px] z-10 flex w-[250px] flex-col border-t-2 border-orange-700 bg-white p-0`}
+                  hover.about ? "" : "hidden"
+                } absolute top-[50px] z-10 flex w-[250px] flex-col border-t-2 border-orange-700 bg-white p-0`}
               >
-                <div className="z-20 py-3">
+                <div className="z-40 py-3">
                   <div className=" absolute left-6 top-[-5px]  h-4 w-4 rotate-45 bg-white"></div>
                 </div>
                 <ul className="w-full">
@@ -99,19 +97,38 @@ const Header = () => {
                 </ul>
               </div>
             </li>
-            <li>
+            <li
+              className="relative"
+              onMouseLeave={() =>
+                setHover({
+                  ...hover,
+                  yogaTeacher: false,
+                })
+              }
+              onMouseEnter={() =>
+                setTimeout(() => {
+                  setHover({
+                    ...hover,
+                    yogaTeacher: true,
+                  });
+                }, 500)
+              }
+            >
               <span
                 onMouseEnter={() => setHover({ ...hover, yogaTeacher: true })}
               >
                 Yoga Teacher Training <FiChevronDown />
               </span>
               <div
+                onMouseEnter={() => setHover({ ...hover, yogaTeacher: true })}
                 onMouseLeave={() =>
-                  setHover({ ...hover, yogaTeacher: !hover.yogaTeacher })
+                  setTimeout(() => {
+                    setHover({ ...hover, yogaTeacher: false });
+                  }, 300)
                 }
                 className={`${
                   hover.yogaTeacher ? "inline-block" : "hidden"
-                } absolute top-[70px] z-10 flex w-[270px] flex-col border-t-2 border-orange-700 bg-white p-0`}
+                } absolute top-[50px] z-10 flex w-[270px] flex-col border-t-2 border-orange-700 bg-white p-0 shadow`}
               >
                 <div className="z-20 py-3">
                   <div className=" absolute left-6 top-[-5px]  h-4 w-4 rotate-45 bg-white p-0"></div>
@@ -140,7 +157,15 @@ const Header = () => {
                 </ul>
               </div>
             </li>
-            <li>
+            <li
+              className="relative"
+              onMouseLeave={() =>
+                setHover({
+                  ...hover,
+                  yogaTreat: false,
+                })
+              }
+            >
               <span
                 onMouseEnter={() => setHover({ ...hover, yogaTreat: true })}
               >
@@ -152,20 +177,24 @@ const Header = () => {
                 }
                 className={`${
                   hover.yogaTreat ? "inline-block" : "hidden"
-                } absolute top-[70px] z-10 flex w-[270px] flex-col border-t-2 border-orange-700 bg-white p-0`}
+                } absolute top-[50px] z-10 flex w-[270px] flex-col border-t-2 border-orange-700 bg-white p-0`}
               >
                 <div className="z-20 py-3">
                   <div className=" absolute left-6 top-[-5px]  h-4 w-4 rotate-45 bg-white p-0"></div>
                 </div>
                 <ul className="w-full">
                   <li className=" border-b-[1px]  hover:bg-orange-300">
-                    <Link href="/retreat/5-days"> 5 Day Yoga Retreat</Link>
+                    <Link href="/retreat/5-days-retreat">
+                      5 Day Yoga Retreat
+                    </Link>
                   </li>
                   <li className="border-b-[1px]   hover:bg-orange-300">
                     <Link href="/retreat/chakra">7 Chakra Yoga Retreat</Link>
                   </li>
                   <li className="border-b-[1px]  hover:bg-orange-300">
-                    <Link href="/retreat/10-days"> 10 Day Yoga Retreat</Link>
+                    <Link href="/retreat/10-days-retreat">
+                      10 Day Yoga Retreat
+                    </Link>
                   </li>
                 </ul>
               </div>

@@ -8,7 +8,7 @@ interface ButtonProps {
 const Button = ({ title, url, style }: ButtonProps) => {
   return (
     <Link href={url}>
-      <div className="flex my-2">
+      <div className="my-2 flex">
         <div className={style}>{title}</div>
       </div>
     </Link>
