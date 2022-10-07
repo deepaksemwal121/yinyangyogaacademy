@@ -7,7 +7,7 @@ import { data } from "./data";
 const SliderHero = () => {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
   const slideLength = data.length;
-  const autoScroll = false;
+  const autoScroll = true;
   let intervalTime = 5000;
 
   let slideInterval: any;
