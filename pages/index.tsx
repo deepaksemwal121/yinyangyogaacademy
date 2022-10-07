@@ -14,6 +14,12 @@ export default function Home() {
         <title>Yin Yang Yoga Academy</title>
         <meta name="description" content="Yin yang yoga academy" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href={`https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Quicksand:wght@400;500;600;700&display=swap`}
+          rel="stylesheet"
+        />
       </Head>
       {/* Main Index Pages starts from Here  */}
       {/* Slider Component will go here */}
