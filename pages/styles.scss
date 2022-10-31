@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Quicksand:wght@400;500;600;700&family=Rozha+One&display=swap");
+
 .hero__about {
   display: flex;
   justify-content: center;
@@ -9,10 +11,53 @@
   background-size: cover;
 }
 
-.fancy-font {
-  font-family: "Berkshire Swash", cursive;
+.home-3bg {
+  background-image: url(../public/home-3-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
+.flag {
+  clip-path: polygon(100% 0%, 89% 49%, 100% 100%, 0 99%, 0% 50%, 0 0);
+}
+
+.clipped {
+  clip-path: polygon(100% 0%, 80% 100%, 0 99%, 0 0);
+}
+
+.home-3bg::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 80px;
+  background-image: url(../public/wave.svg);
+  background-size: cover;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.home-3bg::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 80px;
+  background-image: url(.././public/wave.svg);
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-retreat {
+  background-image: url(../public/pattern-bg.png);
+  background-size: 20%;
+  background-repeat: repeat;
+}
+
+.sloka {
+  font-family: "Rozha One", serif;
+}
 /* .slide-1 {
   background-image: url("../public/slider-1.jpg");
   background-position: center;
@@ -91,7 +136,7 @@ blockquote {
 }
 
 .spin-mandala {
-  animation: spin 10s linear infinite;
+  animation: spin 30s linear infinite;
   position: absolute;
   top: 0;
   left: 0;
@@ -225,6 +270,46 @@ blockquote {
   width: 50%;
 }
 
+.bgCourses-right::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 80px;
+  background-image: url(../public/wave.svg);
+  background-size: cover;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.bgCourses-right::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 80px;
+  background-image: url(.././public/wave.svg);
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+}
+.wave {
+  background-color: #f9ac1e50;
+  background-image: url("../public/bg-course.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.wave:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 80px;
+  background-image: url(../public/wave.svg);
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+}
 .bgCourses-right {
   background-color: #f9ac1e50;
   background-image: url("../public/bg-course.png");
@@ -240,4 +325,157 @@ blockquote {
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
+}
+
+// Animated Button
+
+.animated-btn {
+  animation: wobble 1s ease infinite;
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    -webkit-transform: translateX(-32px) rotate(-10deg);
+    transform: translateX(-32px) rotate(-10deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(calc(32px / 2)) rotate(10deg);
+    transform: translateX(calc(32px / 2)) rotate(10deg);
+  }
+
+  45% {
+    -webkit-transform: translateX(calc(-32px / 2)) rotate(calc(-10deg / 1.8));
+    transform: translateX(calc(-32px / 2)) rotate(calc(-10deg / 1.8));
+  }
+
+  60% {
+    -webkit-transform: translateX(calc(32px / 3.3)) rotate(calc(10deg / 3));
+    transform: translateX(calc(32px / 3.3)) rotate(calc(10deg / 3));
+  }
+
+  75% {
+    -webkit-transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
+    transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
+  }
+}
+
+.fancy-font {
+  font-family: "Berkshire Swash", cursive;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+/* The typewriter cursor effect */
+
+.testimonial-bg {
+  background-image: url("../public/testimonial-bg-2.jpg");
+  background-repeat: repeat;
+}
+
+.bg-chakra {
+  background-image: url("../public/bg-course-left.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cloud1 {
+  width: 100%;
+  -webkit-animation: movecloud1 30s infinite;
+  -moz-animation: movecloud1 30s infinite;
+  -o-animation: movecloud1 30s infinite;
+}
+
+@-webkit-keyframes movecloud1 {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+@-moz-keyframes movecloud1 {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+@-o-keyframes movecloud1 {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+
+.mountain {
+  background-image: url(../public/mountain.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.lotuschakra {
+  background: #ffffff10 url(../public/lotuschakra.png);
+  background-repeat: repeat;
+  background-size: 60px;
+}
+
+.courses-bg {
+  position: relative;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(218, 90, 1, 0.4) 100%
+  );
+}
+
+.courses-bg:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 80px;
+  background-image: url(../public/wave.svg);
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+}
+
+.floralChakra {
+  background-image: linear-gradient(135deg, #ebebebd6 0%, #f1f1f1d6 100%),
+    url(../public/iconFloral.png);
+  background-repeat: repeat;
+  background-size: 50px;
+}
+
+.contact-header {
+  background-image: linear-gradient(135deg, #6b3535d6 0%, #242121d6 100%),
+    url(../public/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
 }

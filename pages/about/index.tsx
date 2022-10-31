@@ -74,12 +74,18 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-full items-center px-8 py-4 md:flex md:space-x-8 md:px-32">
+      <div className="courses-bg relative w-full items-center px-8 py-16 md:flex md:space-x-8 md:px-32">
         <div className="w-full md:w-1/2">
-          <p className="text-orange-600">Know More About us </p>
-          <div className="h-1 w-[10%] bg-orange-500"></div>
-          <h2 className="text-[26px] md:text-[30px] lg:text-[45px] ">
+          <h2 className="flex flex-col text-[30px] font-bold md:text-[40px]">
             About Yin Yang Yoga Academy Rishikesh
+            <span>
+              <Image
+                src="/underline.svg"
+                width={2500 / 12}
+                height={346 / 12}
+                alt="line-decor"
+              />{" "}
+            </span>
           </h2>
           <p className="text-justify">
             Rishikesh Yogkulam was founded in 2018, born from the vision of
@@ -110,7 +116,7 @@ const About = () => {
               alt="aboutus "
             />
           </div>
-          <div className="h-[200px] w-full bg-orange-600 p-8 md:absolute md:top-[80%] md:left-[10%] md:w-[80%]">
+          <div className="z-30 h-[200px] w-full bg-orange-600 p-8 md:absolute md:top-[80%] md:left-[10%] md:w-[80%]">
             <h3 className="text-[20px] text-white  md:text-[30px]">
               Yin Yang Yoga Academy
             </h3>
@@ -122,12 +128,20 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="px-8 py-4 md:flex md:space-x-8 md:px-32 md:py-16">
-        <h3 className="text-center text-[30px] md:text-[50px] ">
+      <div className="w-full px-8 py-4 md:flex md:space-x-8 md:px-32 md:py-28">
+        <h2 className="flex w-full flex-col text-center text-[30px] font-bold md:text-[40px]">
           Our Values and Mission
-        </h3>
+          <span>
+            <Image
+              src="/underline.svg"
+              width={2500 / 12}
+              height={346 / 12}
+              alt="line-decor"
+            />{" "}
+          </span>
+        </h2>
       </div>
-      <div className="grid grid-cols-2 gap-2 px-8 py-4 md:grid-cols-3 md:gap-4 md:px-32 md:py-16">
+      <div className="grid grid-cols-2 gap-2 px-8 md:grid-cols-3 md:gap-4 md:px-32 ">
         <div className="p-4 text-center">
           <Image
             src="https://cdn-icons-png.flaticon.com/512/2978/2978779.png"
@@ -224,7 +238,7 @@ const About = () => {
       </div>
 
       {/* About the Yin Yang Yoga Academy */}
-      <div className="sapce-x-8 w-full px-12   py-10 md:flex md:px-32 md:py-16">
+      <div className="sapce-x-8 floralChakra w-full  px-12  py-10 md:flex md:px-32 md:py-16">
         <div className="md:w-1/2">
           <Image
             src="/../public/YinYogaabout.png"

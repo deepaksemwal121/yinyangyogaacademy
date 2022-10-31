@@ -8,8 +8,8 @@ const CourseHomepage = () => {
   return (
     <div className="w-full space-y-2  py-4 text-gray-600 md:py-16 ">
       <div className=" px-8  md:px-32">
-        <p className="text-center text-sm font-semibold text-orange-600 sm:text-lg">
-          FOUR TYPES OF COURSES
+        <p className="sloka text-center text-[40px] text-orange-600 ">
+          &ldquo; समत्वं योग उच्यते &rdquo;
         </p>
         <h2 className="flex flex-col text-center text-[30px] md:text-[40px]">
           YOGA TEACHER TRAINING IN RISHIKESH, INDIA
@@ -36,7 +36,6 @@ const CourseHomepage = () => {
           image={coursesHome._100hour.image}
           highlights={coursesHome._100hour.highlights}
           shortdesc={coursesHome._100hour.shortdesc}
-          levels={coursesHome._100hour.levels}
           reverse={true}
         />
         <CourseRightImage
@@ -46,7 +45,6 @@ const CourseHomepage = () => {
           image={coursesHome._200hour.image}
           highlights={coursesHome._200hour.highlights}
           shortdesc={coursesHome._200hour.shortdesc}
-          levels={coursesHome._200hour.levels}
           reverse={false}
         />
         <CourseRightImage
@@ -56,7 +54,6 @@ const CourseHomepage = () => {
           image={coursesHome._300hour.image}
           highlights={coursesHome._300hour.highlights}
           shortdesc={coursesHome._300hour.shortdesc}
-          levels={coursesHome._300hour.levels}
           reverse={true}
         />
         <CourseRightImage
@@ -66,7 +63,6 @@ const CourseHomepage = () => {
           image={coursesHome._500hour.image}
           highlights={coursesHome._500hour.highlights}
           shortdesc={coursesHome._500hour.shortdesc}
-          levels={coursesHome._500hour.levels}
           reverse={false}
         />
       </div>

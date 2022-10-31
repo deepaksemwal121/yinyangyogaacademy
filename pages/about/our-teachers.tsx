@@ -6,7 +6,16 @@ import data from "../../data/data";
 const Teachers = () => {
   return (
     <>
-      <div className="w-full justify-end bg-orange-200 px-8 py-16 md:flex md:px-32 md:py-16">
+      <div className="mountain relative  w-full justify-end bg-gray-50 px-8  py-16 md:flex md:px-32 ">
+        <div className="absolute right-0  w-full">
+          <Image
+            className="cloud1 absolute top-0"
+            src="/cloud1.png"
+            height={783}
+            width={1636}
+            alt="maestro"
+          />
+        </div>
         <div className=" flex flex-col justify-center  md:w-1/2">
           {/* BreadCrumbs */}
           <div className="breadcrumbs text-sm">
@@ -26,24 +35,41 @@ const Teachers = () => {
             teacher teaches from the heart &quot;
           </h2>
         </div>
-        <div className="text-right md:w-1/2">
+        <div className=" relative text-right md:w-1/2">
           <Image
-            src="/about-teacher.png"
-            height={735 / 2}
-            width={430}
-            alt="teacher"
+            className="absolute top-0 z-40 rounded-full shadow-md"
+            src="/our.jpg"
+            height={350}
+            width={350}
+            alt="maestro"
           />
         </div>
       </div>
-      <div className=" w-full items-center px-8 py-8 md:flex md:px-32">
+      <div className="wave relative w-full items-center space-x-8 bg-orange-200 px-8 py-24 md:flex md:px-32">
         <div className="md:w-1/2">
-          <Image src="/guruji.png" height={500} width={500} alt="maestro" />
+          <Image
+            className="rounded shadow-md"
+            src="/ourteachers.jpg"
+            height={423}
+            width={752}
+            alt="maestro"
+          />
         </div>
         <div className="md:w-1/2">
-          <h1 className="my-4 text-xl md:text-[30px]">
+          <p className=" sloka text-[30px] text-orange-600">
+            विद्यां ददाति विनयं
+          </p>
+          <h2 className="flex flex-col text-[30px] font-bold md:text-[40px]">
             Teaching Faculty - Yin Yang Yoga Academy
-            <div className="h-1 w-[30%] bg-orange-500"></div>
-          </h1>
+            <span>
+              <Image
+                src="/underline.svg"
+                width={2500 / 12}
+                height={346 / 12}
+                alt="line-decor"
+              />{" "}
+            </span>
+          </h2>
           <p>
             Maestros in their respective fields of Yoga, all our teachers are
             extensively trained and have a lifetime of experience to share with
@@ -54,10 +80,19 @@ const Teachers = () => {
       </div>
       {/* Gurus Section  */}
       <div className="px-8 pt-16 md:px-32">
-        <h3 className="text-2xl md:text-[40px]">Meet The Guru&apos;s</h3>
-        <div className="h-1 w-[20%] bg-orange-500"></div>
+        <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          Meet The Guru&apos;s
+          <span>
+            <Image
+              src="/underline.svg"
+              width={2500 / 12}
+              height={346 / 12}
+              alt="line-decor"
+            />{" "}
+          </span>
+        </h2>
       </div>
-      <div className=" grid gap-4 py-8 px-8 md:grid-cols-2 md:px-32">
+      <div className=" lotuschakra grid gap-4 py-8 px-8 md:grid-cols-2 md:px-32">
         {data.guruProfile.map((item, index) => {
           return (
             <TeacherCard

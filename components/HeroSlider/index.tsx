@@ -69,11 +69,10 @@ const SliderHero = () => {
                     {slide.title}
                   </h3>
                   <em className=" text-center text-[16px] md:text-[24px]">
-                    {" "}
                     &quot; {slide.para} &quot;
                   </em>
                   <Button
-                    style=" bg-orange-600 md:px-8 md:py-4 px-4 py-2 md:text-[24px] text-[16px] hover:bg-black  "
+                    style=" bg-orange-600 md:px-8 md:py-3 px-4 py-2 text-sm  md:text-[16px] rounded hover:bg-black  "
                     title="Enroll Now"
                     url="/"
                   />

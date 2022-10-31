@@ -21,7 +21,7 @@ const Header = () => {
   });
 
   return (
-    <div className="z-[100] hidden md:block">
+    <div className="fixed z-[100] hidden w-full bg-white md:block">
       <div className="topbar flex justify-between bg-gray-800 px-32 py-2 text-white">
         <div className="flex w-2/6 items-center justify-end space-x-3  px-2">
           <BiLocationPlus size={20} color="orange" />
@@ -46,7 +46,7 @@ const Header = () => {
           <FaTripadvisor size={20} color="orange" />
         </div>
       </div>
-      <nav className=" flex w-full items-center justify-between  px-32 py-4 shadow">
+      <nav className=" flex w-full items-center justify-between  px-32 py-2 shadow">
         <div className="brand">
           <Link href="/">
             <Image src={logo} width={130} height={45} alt="logo" />
@@ -54,11 +54,11 @@ const Header = () => {
         </div>
         <div className="menu">
           <ul className="flex items-center justify-between space-x-8">
-            <li>
+            <li className="hover:bg-[#bd0006] hover:text-white">
               <Link href="/">Home</Link>
             </li>
             <li
-              className="relative"
+              className="relative hover:bg-[#bd0006] hover:text-white "
               onMouseLeave={() =>
                 setHover({
                   ...hover,
@@ -75,30 +75,30 @@ const Header = () => {
                   hover.about ? "" : "hidden"
                 } absolute top-[50px] z-10 flex w-[250px] flex-col border-t-2 border-orange-700 bg-white p-0`}
               >
-                <div className="z-40 py-3">
+                <div className="z-40">
                   <div className=" absolute left-6 top-[-5px]  h-4 w-4 rotate-45 bg-white"></div>
                 </div>
                 <ul className="w-full">
-                  <li className=" border-b-[1px] hover:bg-orange-300">
+                  <li className=" border-b-[1px] text-black hover:bg-orange-300  hover:text-white">
                     <Link href="/about">Yin Yang Yoga Academy</Link>
                   </li>
-                  <li className="border-b-[1px]  hover:bg-orange-300">
+                  <li className="border-b-[1px]  text-black hover:bg-orange-300  hover:text-white">
                     <Link href="/about/our-teachers">Our Teachers</Link>
                   </li>
-                  <li className="border-b-[1px]  hover:bg-orange-300">
+                  <li className="border-b-[1px] text-black hover:bg-orange-300 hover:text-white">
                     <Link href="/about/accomodation">Acommodation</Link>
                   </li>
-                  <li className="border-b-[1px]  hover:bg-orange-300">
+                  <li className="border-b-[1px] text-black hover:bg-orange-300 hover:text-white">
                     <Link href="/about/reviews">Reviews</Link>
                   </li>
-                  <li className="  hover:bg-orange-300">
+                  <li className=" text-black hover:bg-orange-300 hover:text-white">
                     <Link href="/about/blogs">Blogs</Link>
                   </li>
                 </ul>
               </div>
             </li>
             <li
-              className="relative"
+              className="relative hover:bg-[#bd0006] hover:text-white"
               onMouseLeave={() =>
                 setHover({
                   ...hover,
@@ -130,26 +130,26 @@ const Header = () => {
                   hover.yogaTeacher ? "inline-block" : "hidden"
                 } absolute top-[50px] z-10 flex w-[270px] flex-col border-t-2 border-orange-700 bg-white p-0 shadow`}
               >
-                <div className="z-20 py-3">
+                <div className="z-20">
                   <div className=" absolute left-6 top-[-5px]  h-4 w-4 rotate-45 bg-white p-0"></div>
                 </div>
                 <ul className="w-full">
-                  <li className=" border-b-[1px]   hover:bg-orange-300">
+                  <li className=" border-b-[1px]  text-black hover:bg-orange-300 hover:text-white">
                     <Link href="/yoga-teacher-training/100-hours">
                       100 hours Yoga Teacher Training
                     </Link>
                   </li>
-                  <li className="border-b-[1px]   hover:bg-orange-300">
+                  <li className="border-b-[1px] text-black  hover:bg-orange-300   hover:text-white">
                     <Link href="/yoga-teacher-training/200-hours">
                       200 hours Yoga Teacher Training
                     </Link>
                   </li>
-                  <li className="border-b-[1px]  hover:bg-orange-300">
+                  <li className="border-b-[1px]  text-black hover:bg-orange-300  hover:text-white">
                     <Link href="/yoga-teacher-training/300-hours">
                       300 hours Yoga Teacher Training
                     </Link>
                   </li>
-                  <li className="   hover:bg-orange-300">
+                  <li className="   text-black hover:bg-orange-300 hover:text-white">
                     <Link href="/yoga-teacher-training/500-hours">
                       500 hours Yoga Teacher Training
                     </Link>
@@ -158,7 +158,7 @@ const Header = () => {
               </div>
             </li>
             <li
-              className="relative"
+              className="relative hover:bg-[#bd0006] hover:text-white"
               onMouseLeave={() =>
                 setHover({
                   ...hover,
@@ -179,19 +179,19 @@ const Header = () => {
                   hover.yogaTreat ? "inline-block" : "hidden"
                 } absolute top-[50px] z-10 flex w-[270px] flex-col border-t-2 border-orange-700 bg-white p-0`}
               >
-                <div className="z-20 py-3">
+                <div className="z-20">
                   <div className=" absolute left-6 top-[-5px]  h-4 w-4 rotate-45 bg-white p-0"></div>
                 </div>
                 <ul className="w-full">
-                  <li className=" border-b-[1px]  hover:bg-orange-300">
+                  <li className=" border-b-[1px] text-black hover:bg-orange-300 hover:text-white">
                     <Link href="/retreat/5-days-retreat">
                       5 Day Yoga Retreat
                     </Link>
                   </li>
-                  <li className="border-b-[1px]   hover:bg-orange-300">
+                  <li className="border-b-[1px] text-black  hover:bg-orange-300  hover:text-white">
                     <Link href="/retreat/chakra">7 Chakra Yoga Retreat</Link>
                   </li>
-                  <li className="border-b-[1px]  hover:bg-orange-300">
+                  <li className="border-b-[1px] text-black  hover:bg-orange-300 hover:text-white">
                     <Link href="/retreat/10-days-retreat">
                       10 Day Yoga Retreat
                     </Link>
@@ -199,9 +199,12 @@ const Header = () => {
                 </ul>
               </div>
             </li>
-            <li>Contact Us</li>
-            <li>Pay Now</li>
-            <li className="bg-orange-600 px-8 py-4 font-[700] text-white">
+
+            <li className="hover:bg-[#bd0006] hover:text-white">
+              <Link href="/contact">Contact Us</Link>
+            </li>
+            <li className="hover:bg-[#bd0006] hover:text-white">Pay Now</li>
+            <li className="animated-btn cursor-pointer bg-orange-600 px-4 py-2 font-[700] text-white">
               Apply Now
             </li>
           </ul>
