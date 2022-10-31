@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <title>Yin Yang Yoga Academy</title>
         <meta name="description" content="Yin yang yoga academy" />
-        <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
