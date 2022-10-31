@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ReactPlayer from "react-player/lazy";
+// import ReactPlayer from "react-player/youtube";
 import Slider from "react-slick";
 
 const TestimonialCarousel = () => {
@@ -22,7 +22,15 @@ const TestimonialCarousel = () => {
           <div>
             <div className="testimonial-bg flex w-full items-center rounded-lg p-6 shadow">
               <div className="w-2/3">
-                <ReactPlayer url="https://youtu.be/iAtSeoqTFaI" />
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/iAtSeoqTFaI"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
               <div className="w-1/3 text-center">
                 <Image
@@ -44,7 +52,15 @@ const TestimonialCarousel = () => {
           <div>
             <div className="testimonial-bg flex w-full items-center rounded-lg p-6 shadow">
               <div className="w-2/3">
-                <ReactPlayer url="https://youtu.be/iAtSeoqTFaI" />
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/iAtSeoqTFaI"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
               <div className="w-1/3 text-center">
                 <Image

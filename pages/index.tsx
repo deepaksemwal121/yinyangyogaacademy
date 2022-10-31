@@ -14,6 +14,7 @@ export default function Home() {
       <Head>
         <title>Yin Yang Yoga Academy</title>
         <meta name="description" content="Yin yang yoga academy" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.5" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Main Index Pages starts from Here  */}

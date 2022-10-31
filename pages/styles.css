@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Quicksand:wght@400;500;600;700&family=Rozha+One&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Quicksand:wght@400;500;600;700&family=Rozha+One&display=swap");
 
 .hero__about {
   display: flex;
@@ -327,7 +327,9 @@ blockquote {
   background-repeat: no-repeat;
 }
 
-// Animated Button
+.animated-btn:hover {
+  animation: none;
+}
 
 .animated-btn {
   animation: wobble 1s ease infinite;
@@ -467,7 +469,7 @@ blockquote {
 
 .floralChakra {
   background-image: linear-gradient(135deg, #ebebebd6 0%, #f1f1f1d6 100%),
-    url(../public/iconFloral.png);
+    url(../public/iconFloral1.png);
   background-repeat: repeat;
   background-size: 50px;
 }
