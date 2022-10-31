@@ -204,7 +204,7 @@ const Header = () => {
               <Link href="/contact">Contact Us</Link>
             </li>
             <li className="hover:bg-[#bd0006] hover:text-white">Pay Now</li>
-            <li className="animated-btn cursor-pointer bg-orange-600 px-4 py-2 font-[700] text-white">
+            <li className="animated-btn cursor-pointer bg-orange-600 px-4 py-2 font-[700] text-white shadow-md shadow-orange-300">
               Apply Now
             </li>
           </ul>

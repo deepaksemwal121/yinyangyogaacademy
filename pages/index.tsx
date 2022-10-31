@@ -15,11 +15,6 @@ export default function Home() {
         <title>Yin Yang Yoga Academy</title>
         <meta name="description" content="Yin yang yoga academy" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href={`https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Quicksand:wght@400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet`}
-        />
       </Head>
       {/* Main Index Pages starts from Here  */}
       {/* Slider Component will go here */}
@@ -136,7 +131,7 @@ export default function Home() {
               width={2500 / 12}
               height={346 / 12}
               alt="line-decor"
-            />{" "}
+            />
           </span>
         </h2>
 
@@ -152,15 +147,6 @@ export default function Home() {
           and other asanas everything is been taught. All the problems have been
           kept in mind and the classes are being conducted.
         </p>
-        {/* <br />
-        <p className="text-center text-lg text-gray-600">
-          All these classes are taken by none other than experienced teachers
-          who have the experience of teaching both offline as well as online.
-          Yes, these teachers are capable to teach online also as they are
-          internationally renowned personalities in this field. All the
-          faculties have their sort of achievement and are renowned
-          professionals having deep knowledge in yoga.
-        </p> */}
         <div className="my-8 grid grid-cols-1 gap-4 md:grid-cols-3">
           {data.onlineCards.map((value, index) => {
             return (
