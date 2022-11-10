@@ -1,5 +1,5 @@
 import CousrseLeftImage from "./CousrseLeftImage";
-import { coursesHome } from "../../data/coursesData";
+// import { coursesHome } from "../../data/coursesData";
 import CourseRightImage from "./CourseRightImage";
 import Image from "next/image";
 import CourseCard from "./CourseCard";
@@ -29,7 +29,7 @@ const CourseHomepage = () => {
         </p>
       </div>
       <div className="space-y-12 py-8  ">
-        <CourseRightImage
+        {/* <CourseRightImage
           featuredImg={coursesHome._100hour.featuredImg}
           title={coursesHome._100hour.title}
           desc={coursesHome._100hour.desc}
@@ -64,7 +64,7 @@ const CourseHomepage = () => {
           highlights={coursesHome._500hour.highlights}
           shortdesc={coursesHome._500hour.shortdesc}
           reverse={false}
-        />
+        /> */}
       </div>
       <CourseCard />
     </div>
