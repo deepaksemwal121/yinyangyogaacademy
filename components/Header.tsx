@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import logo from "../public/logo.png";
+import logo from "../public/logo-white.png";
 import { BiEnvelope, BiLocationPlus, BiPhoneCall } from "react-icons/bi";
 import { FiChevronDown } from "react-icons/fi";
 import {
@@ -12,204 +12,156 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import DropdownMenu from "./DropdownMenu";
 
 const Header = () => {
-  const [hover, setHover] = useState({
-    about: false,
-    yogaTeacher: false,
-    yogaTreat: false,
-  });
+  const [openMenu, setOpenMenu] = useState(false);
+  const MenuHover = [
+    {
+      title: " About",
+      subtitle: [
+        "Yin Yang Yoga Academy",
+        "Our Teachers",
+        "Acommodation",
+        "Reviews",
+        "Blogs",
+      ],
+      links: [
+        "/about",
+        "/about/our-teachers",
+        "/about/accomodation",
+        "/about/reviews",
+        "/about/blogs",
+      ],
+    },
+    {
+      title: "Yoga Teacher Training",
+      subtitle: [
+        "100 Hours YTTC",
+        "200 Hours YTTC",
+        "300 Hours YTTC",
+        "500 Hours YTTC",
+        "100 Hours Ayurveda YTTC",
+        "200 Hours Ayurveda YTTC",
+      ],
+      links: [
+        "/yoga-teacher-training/200-hours",
+        "/yoga-teacher-training/200-hours",
+        "/yoga-teacher-training/200-hours",
+        "/yoga-teacher-training/200-hours",
+        "/yoga-teacher-training/200-hours",
+        "/yoga-teacher-training/200-hours",
+      ],
+    },
+    {
+      title: "Yoga Retreat",
+      subtitle: [
+        "5 Day Yoga Retreat",
+        "10 Day Yoga Retreat ",
+        "7 Day Chakra Yoga Retreat",
+      ],
+      links: [
+        "/retreat/10-days-retreat",
+        "/retreat/10-days-retreat",
+        "/retreat/10-days-retreat",
+      ],
+    },
+  ];
 
   return (
-    <div className="fixed z-[100] hidden w-full bg-white md:block">
-      <div className="topbar flex justify-between bg-gray-800 px-32 py-2 text-white">
-        <div className="flex w-2/6 items-center justify-end space-x-3  px-2">
-          <BiLocationPlus size={20} color="orange" />
+    <div className="fixed z-[100] w-full bg-white  md:block ">
+      <div className="topbar z-10 hidden justify-between bg-gray-800 py-2 px-4 text-white md:flex md:px-6 lg:px-8 xl:px-32">
+        <div className="flex w-2/6 items-center  space-x-3  px-2">
+          <BiLocationPlus size={20} color="lightgray" />
           <span className="text-sm">
             Near Anandham Ashram, Tapovan, Rishikesh
           </span>
         </div>
         <div className="flex w-1/6 items-center justify-end space-x-3  px-2 ">
-          <BiPhoneCall size={20} color="orange" />
+          <BiPhoneCall size={20} color="lightgray" />
           <span className="text-sm">+91 123 456 789</span>
         </div>
         <div className="flex w-2/6 items-center justify-end space-x-3  px-2 ">
-          <BiEnvelope size={20} color="orange" />
+          <BiEnvelope size={20} color="lightgray" />
           <span className="text-sm">rishikeshyogkulam@gmail.com </span>
         </div>
         <div className="flex w-1/6 items-center justify-center space-x-3 ">
-          <FaFacebook size={20} color="orange" />
-          <FaInstagram size={20} color="orange" />
-          <FaTwitter size={20} color="orange" />
-          <FaYoutube size={20} color="orange" />
-          <FaPinterest size={20} color="orange" />
-          <FaTripadvisor size={20} color="orange" />
+          <FaFacebook size={20} color="lightgray" />
+          <FaInstagram size={20} color="lightgray" />
+          <FaTwitter size={20} color="lightgray" />
+          <FaYoutube size={20} color="lightgray" />
+          <FaPinterest size={20} color="lightgray" />
+          <FaTripadvisor size={20} color="lightgray" />
         </div>
       </div>
-      <nav className=" flex w-full items-center justify-between  px-32 py-2 shadow">
-        <div className="brand">
+      <nav className=" relative flex w-full items-center justify-around py-2 shadow md:px-8 lg:space-x-24 lg:px-8 xl:space-x-20 xl:px-32">
+        <div className="brand logo absolute left-16 flex h-full w-1/3 items-center justify-center bg-[#bd0006] p-4 drop-shadow-lg  md:w-1/4 lg:w-1/5 xl:w-1/6">
           <Link href="/">
-            <Image src={logo} width={130} height={45} alt="logo" />
+            <Image src={logo} width={880 / 5} height={283 / 5} alt="logo" />
           </Link>
         </div>
-        <div className="menu">
-          <ul className="flex items-center justify-between space-x-8">
-            <li className="hover:bg-[#bd0006] hover:text-white">
+        <div
+          className=" flex w-full justify-end p-4  lg:hidden"
+          onClick={() => setOpenMenu(!openMenu)}
+        >
+          <span className={`font-semibold  tracking-[0.3rem] text-[#bd0006]`}>
+            {openMenu ? "CLOSE" : "MENU"}
+            <div className="h-[2px] w-1/2 bg-[#bd0006] duration-300 ease-linear hover:w-3/4"></div>
+          </span>
+        </div>
+
+        <div className="menu hidden h-max w-4/6 duration-200 ease-in-out  lg:block">
+          <ul className="flex  items-center justify-around  ">
+            <li className=" hover:text-[#bd0006]">
               <Link href="/">Home</Link>
             </li>
-            <li
-              className="relative hover:bg-[#bd0006] hover:text-white "
-              onMouseLeave={() =>
-                setHover({
-                  ...hover,
-                  about: false,
-                })
-              }
-              onMouseEnter={() => setHover({ ...hover, about: true })}
-            >
-              <span>
-                About <FiChevronDown />
-              </span>
-              <div
-                className={`${
-                  hover.about ? "" : "hidden"
-                } absolute top-[50px] z-10 flex w-[250px] flex-col border-t-2 border-orange-700 bg-white p-0`}
-              >
-                <div className="z-40">
-                  <div className=" absolute left-6 top-[-5px]  h-4 w-4 rotate-45 bg-white"></div>
-                </div>
-                <ul className="w-full">
-                  <li className=" border-b-[1px] text-black hover:bg-orange-300  hover:text-white">
-                    <Link href="/about">Yin Yang Yoga Academy</Link>
-                  </li>
-                  <li className="border-b-[1px]  text-black hover:bg-orange-300  hover:text-white">
-                    <Link href="/about/our-teachers">Our Teachers</Link>
-                  </li>
-                  <li className="border-b-[1px] text-black hover:bg-orange-300 hover:text-white">
-                    <Link href="/about/accomodation">Acommodation</Link>
-                  </li>
-                  <li className="border-b-[1px] text-black hover:bg-orange-300 hover:text-white">
-                    <Link href="/about/reviews">Reviews</Link>
-                  </li>
-                  <li className=" text-black hover:bg-orange-300 hover:text-white">
-                    <Link href="/about/blogs">Blogs</Link>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li
-              className="relative hover:bg-[#bd0006] hover:text-white"
-              onMouseLeave={() =>
-                setHover({
-                  ...hover,
-                  yogaTeacher: false,
-                })
-              }
-              onMouseEnter={() =>
-                setTimeout(() => {
-                  setHover({
-                    ...hover,
-                    yogaTeacher: true,
-                  });
-                }, 500)
-              }
-            >
-              <span
-                onMouseEnter={() => setHover({ ...hover, yogaTeacher: true })}
-              >
-                Yoga Teacher Training <FiChevronDown />
-              </span>
-              <div
-                onMouseEnter={() => setHover({ ...hover, yogaTeacher: true })}
-                onMouseLeave={() =>
-                  setTimeout(() => {
-                    setHover({ ...hover, yogaTeacher: false });
-                  }, 300)
-                }
-                className={`${
-                  hover.yogaTeacher ? "inline-block" : "hidden"
-                } absolute top-[50px] z-10 flex w-[270px] flex-col border-t-2 border-orange-700 bg-white p-0 shadow`}
-              >
-                <div className="z-20">
-                  <div className=" absolute left-6 top-[-5px]  h-4 w-4 rotate-45 bg-white p-0"></div>
-                </div>
-                <ul className="w-full">
-                  <li className=" border-b-[1px]  text-black hover:bg-orange-300 hover:text-white">
-                    <Link href="/yoga-teacher-training/100-hours">
-                      100 hours Yoga Teacher Training
-                    </Link>
-                  </li>
-                  <li className="border-b-[1px] text-black  hover:bg-orange-300   hover:text-white">
-                    <Link href="/yoga-teacher-training/200-hours">
-                      200 hours Yoga Teacher Training
-                    </Link>
-                  </li>
-                  <li className="border-b-[1px]  text-black hover:bg-orange-300  hover:text-white">
-                    <Link href="/yoga-teacher-training/300-hours">
-                      300 hours Yoga Teacher Training
-                    </Link>
-                  </li>
-                  <li className="   text-black hover:bg-orange-300 hover:text-white">
-                    <Link href="/yoga-teacher-training/500-hours">
-                      500 hours Yoga Teacher Training
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li
-              className="relative hover:bg-[#bd0006] hover:text-white"
-              onMouseLeave={() =>
-                setHover({
-                  ...hover,
-                  yogaTreat: false,
-                })
-              }
-            >
-              <span
-                onMouseEnter={() => setHover({ ...hover, yogaTreat: true })}
-              >
-                Yoga Retreat <FiChevronDown />
-              </span>
-              <div
-                onMouseLeave={() =>
-                  setHover({ ...hover, yogaTreat: !hover.yogaTreat })
-                }
-                className={`${
-                  hover.yogaTreat ? "inline-block" : "hidden"
-                } absolute top-[50px] z-10 flex w-[270px] flex-col border-t-2 border-orange-700 bg-white p-0`}
-              >
-                <div className="z-20">
-                  <div className=" absolute left-6 top-[-5px]  h-4 w-4 rotate-45 bg-white p-0"></div>
-                </div>
-                <ul className="w-full">
-                  <li className=" border-b-[1px] text-black hover:bg-orange-300 hover:text-white">
-                    <Link href="/retreat/5-days-retreat">
-                      5 Day Yoga Retreat
-                    </Link>
-                  </li>
-                  <li className="border-b-[1px] text-black  hover:bg-orange-300  hover:text-white">
-                    <Link href="/retreat/chakra">7 Chakra Yoga Retreat</Link>
-                  </li>
-                  <li className="border-b-[1px] text-black  hover:bg-orange-300 hover:text-white">
-                    <Link href="/retreat/10-days-retreat">
-                      10 Day Yoga Retreat
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li className="hover:bg-[#bd0006] hover:text-white">
+            {MenuHover.map((item, index) => {
+              return (
+                <DropdownMenu
+                  key={index}
+                  title={item.title}
+                  subtitle={item.subtitle}
+                  links={item.links}
+                />
+              );
+            })}
+            <li className="hover:text-[#bd0006]">
               <Link href="/contact">Contact Us</Link>
             </li>
-            <li className="hover:bg-[#bd0006] hover:text-white">Pay Now</li>
-            <li className="animated-btn cursor-pointer bg-orange-600 px-4 py-2 font-[700] text-white shadow-md shadow-orange-300">
-              Apply Now
-            </li>
+            <li className="hover:text-[#bd0006]">Pay Now</li>
           </ul>
         </div>
       </nav>
+      {/* Mobile Menu  */}
+      <div className={`${openMenu ? "" : "hidden"} p-3`}>
+        <ul className="menu flex flex-col items-center  justify-around space-y-4 space-x-4 ">
+          <li className=" hover:text-[#bd0006]">
+            <Link href="/">Home</Link>
+          </li>
+          {MenuHover.map((item, index) => {
+            return (
+              <DropdownMenu
+                key={index}
+                title={item.title}
+                subtitle={item.subtitle}
+                links={item.links}
+              />
+            );
+          })}
+          <li className="hover:text-[#bd0006]">
+            <Link href="/contact">Contact Us</Link>
+          </li>
+          <li className="hover:text-[#bd0006]">Pay Now</li>
+        </ul>
+      </div>
+      <div className="swingBtn fixed top-0 right-7 hidden lg:block">
+        <Image
+          src={"/applynow.png"}
+          height={200}
+          width={200}
+          alt="apply now "
+        />
+      </div>
     </div>
   );
 };

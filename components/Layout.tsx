@@ -32,7 +32,7 @@ const Layout = ({ children }: Pages) => {
   };
   return (
     <div className="relative bg-white">
-      <MobileNav displayLogo={displayLogo} />
+      {/* <MobileNav displayLogo={displayLogo} /> */}
       <Header />
       {children}
       <Footer />

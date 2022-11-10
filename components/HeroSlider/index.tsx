@@ -65,14 +65,14 @@ const SliderHero = () => {
             {index === currentSlide && (
               <div>
                 <div className="animate-text flex h-screen flex-col items-center justify-center bg-[#33333360] px-8 py-8 text-white md:px-32">
-                  <h3 className="fancy-font text-[30px] font-bold text-white md:text-[60px] ">
+                  <h3 className="fancy-font text-[30px] font-bold text-white drop-shadow-lg md:text-[60px] ">
                     {slide.title}
                   </h3>
                   <em className=" text-center text-[16px] md:text-[24px]">
                     &quot; {slide.para} &quot;
                   </em>
                   <Button
-                    style=" bg-orange-600 md:px-8 md:py-3 px-4 py-2 text-sm  md:text-[16px] rounded hover:bg-black  "
+                    style=" bg-[#bd0006] md:px-8 md:py-3 px-4 py-2 text-sm  md:text-[18px] rounded hover:bg-black  "
                     title="Enroll Now"
                     url="/"
                   />
