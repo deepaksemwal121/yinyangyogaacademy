@@ -1,13 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { FaCcDiscover, FaCcVisa } from "react-icons/fa";
-import {
-  IoCallOutline,
-  IoLocateOutline,
-  IoLogoPaypal,
-  IoMailOutline,
-  IoSendOutline,
-} from "react-icons/io5";
 import { MdEmail, MdHouse, MdPhone } from "react-icons/md";
 import {
   RiCompassDiscoverFill,
@@ -198,18 +190,18 @@ const Footer = () => {
               Contact
             </h6>
             <p className="mb-4 flex  justify-center md:justify-start">
-              <MdHouse className="w-1/4" size={18} />
+              <MdHouse className="md:w-1/4 lg:w-1/4 xl:w-1/4" size={18} />
               <span className="w-3/4">
                 Laxman Chowk Road, Near Anandham Ashram, Tapovan, Rishikesh,
                 Uttarakhand 249192
               </span>
             </p>
             <p className="mb-4 flex  justify-center md:justify-start">
-              <MdEmail className="w-1/4" size={18} />
+              <MdEmail className="md:w-1/4 lg:w-1/4 xl:w-1/4" size={18} />
               <span className="w-3/4">mail@yinyangyogaacademy.com</span>
             </p>
             <p className="mb-4 flex  justify-center md:justify-start">
-              <MdPhone className="w-1/4" size={18} />
+              <MdPhone className="md:w-1/4 lg:w-1/4 xl:w-1/4" size={18} />
               <span className="w-3/4">+91 8218114342, +91 8979596944</span>
             </p>
             <p className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
