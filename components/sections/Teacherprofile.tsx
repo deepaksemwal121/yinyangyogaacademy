@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import Image from "next/image";
 import "./Teacherprofile.module.css";
 
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import { BsArrowRight, BsArrowRightCircleFill } from "react-icons/bs";
 import data from "../../data/data";
 
 function SampleNextArrow(props: any) {
@@ -16,7 +16,7 @@ function SampleNextArrow(props: any) {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        background: "black",
+        background: "#bd0006",
         borderRadius: "50%",
         width: "30px",
         height: "30px",
@@ -36,7 +36,7 @@ function SamplePrevArrow(props: any) {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        background: "black",
+        background: "#bd0006",
         borderRadius: "50%",
         width: "30px",
         height: "30px",
@@ -51,8 +51,8 @@ const Teacherprofile = () => {
     className: "center",
     arrows: true,
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 2,
+    slidesToScroll: 1,
     dots: false,
     swipeToSlide: true,
     useCSS: true,
@@ -63,6 +63,15 @@ const Teacherprofile = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],
@@ -70,28 +79,47 @@ const Teacherprofile = () => {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div className="mt-12  w-full bg-gray-100 px-8 py-4 md:mt-6 md:px-32 md:py-16">
-      <h2 className="text-center text-[30px] md:text-[45px]">
+    <div className="mt-12 ">
+      <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
         Best Yoga Teachers Rishikesh India
+        <span>
+          <Image
+            src="/line-decor.png"
+            width={550 / 2}
+            height={63 / 2}
+            alt="line-decor"
+          />
+        </span>
       </h2>
       <div>
         <Slider {...settings}>
           {data.guruProfile.map((item, index) => {
             return (
-              <div key={index} className="p-2 md:p-4">
-                <div className="rounded bg-white p-4">
-                  <Image
-                    src={item.image}
-                    height={100}
-                    width={100}
-                    alt="Dheeraj"
-                    className="rounded-full border border-orange-400"
-                  />
-                  <h3 className="text-[24px] ">{item.name}</h3>
-                  <p className="font-medium text-orange-600">
-                    {item.expertise}
+              <div key={index} className="p-2  md:p-4">
+                <div className="rounded-lg bg-white p-4">
+                  <div className="flex items-center space-x-4 ">
+                    <div className="w-1/3">
+                      <Image
+                        src={item.image}
+                        height={150}
+                        width={150}
+                        alt="Dheeraj"
+                        className="rounded-br-[30%] rounded-tl-[30%] border-[4px] border-solid border-[#bd0006]"
+                      />
+                    </div>
+                    <div className="w-2/3 space-y-3">
+                      <h3 className="fancy-font text-xl ">{item.name}</h3>
+                      <p className="rounded-br-[20px] rounded-tl-[20px] bg-[#bd0006] p-2 font-medium  text-white">
+                        {item.expertise}
+                      </p>
+                      <p>{item.desc}</p>
+                    </div>
+                  </div>
+
+                  <p className="flex cursor-pointer items-center text-[#bd0006] hover:space-x-4 hover:duration-300 hover:ease-linear">
+                    <span className="tracking-wider">Read More</span>
+                    <BsArrowRight />
                   </p>
-                  <p>{item.desc}</p>
                 </div>
               </div>
             );

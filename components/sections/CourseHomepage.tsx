@@ -1,6 +1,3 @@
-import CousrseLeftImage from "./CousrseLeftImage";
-// import { coursesHome } from "../../data/coursesData";
-import CourseRightImage from "./CourseRightImage";
 import Image from "next/image";
 import CourseCard from "./CourseCard";
 
@@ -28,44 +25,7 @@ const CourseHomepage = () => {
           subject. Thus the four different types of curses are as follows :-
         </p>
       </div>
-      <div className="space-y-12 py-8  ">
-        {/* <CourseRightImage
-          featuredImg={coursesHome._100hour.featuredImg}
-          title={coursesHome._100hour.title}
-          desc={coursesHome._100hour.desc}
-          image={coursesHome._100hour.image}
-          highlights={coursesHome._100hour.highlights}
-          shortdesc={coursesHome._100hour.shortdesc}
-          reverse={true}
-        />
-        <CourseRightImage
-          featuredImg={coursesHome._200hour.featuredImg}
-          title={coursesHome._200hour.title}
-          desc={coursesHome._200hour.desc}
-          image={coursesHome._200hour.image}
-          highlights={coursesHome._200hour.highlights}
-          shortdesc={coursesHome._200hour.shortdesc}
-          reverse={false}
-        />
-        <CourseRightImage
-          featuredImg={coursesHome._300hour.featuredImg}
-          title={coursesHome._300hour.title}
-          desc={coursesHome._300hour.desc}
-          image={coursesHome._300hour.image}
-          highlights={coursesHome._300hour.highlights}
-          shortdesc={coursesHome._300hour.shortdesc}
-          reverse={true}
-        />
-        <CourseRightImage
-          featuredImg={coursesHome._500hour.featuredImg}
-          title={coursesHome._500hour.title}
-          desc={coursesHome._500hour.desc}
-          image={coursesHome._500hour.image}
-          highlights={coursesHome._500hour.highlights}
-          shortdesc={coursesHome._500hour.shortdesc}
-          reverse={false}
-        /> */}
-      </div>
+      <div className="space-y-12 py-8  "></div>
       <CourseCard />
     </div>
   );

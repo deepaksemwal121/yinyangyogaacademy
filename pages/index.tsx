@@ -1,9 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
+import { BsArrowRight } from "react-icons/bs";
 import SliderHero from "../components/HeroSlider";
 import CourseSlider from "../components/sections/CourseSlider";
 import LeftImageCard from "../components/sections/LeftImageCard";
+import Teacherprofile from "../components/sections/Teacherprofile";
+import TestimonialCarousel from "../components/sections/TestimonialCarousel";
+import TrustPilotReview from "../components/sections/TrustPilotReview";
 import data from "../data/data";
 import ShadowCard from "../widgets/reusable/ShadowCard";
 
@@ -261,8 +265,152 @@ const index = () => {
             </div>
           </div>
         </section>
-        <section className=" px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className=" px-4 py-4 md:px-6 lg:px-8 xl:px-32">
           <CourseSlider />
+        </section>
+        <section className=" my-8 px-4 md:px-6 lg:px-8 xl:px-32">
+          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+            Why To Choose Yin Yang Yoga Academy
+            <span>
+              <Image
+                src="/line-decor.png"
+                width={550 / 2}
+                height={63 / 2}
+                alt="line-decor"
+              />
+            </span>
+          </h2>
+          <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+            {[1, 2, 3, 4].map((item, index) => {
+              return (
+                <div key={index} className="cardShadow">
+                  <Image
+                    className="rounded-bl-[40%] p-2 hover:scale-105"
+                    src="https://www.yogkulam.org/images/yoga_retreat.jpg"
+                    height={280}
+                    width={400}
+                    alt="retreat"
+                  />
+                  <div className="p-[1rem]">
+                    <h2 className="rounded-tl-[20px] rounded-br-[20px] bg-[#bd0006] p-2 text-center text-2xl text-white">
+                      Yoga Retreat
+                    </h2>
+                    <p className="mt-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Accusantium voluptatibus reiciendis nemo nulla quasi
+                      aspernatur quis maxime eos itaque perspiciatis.
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+        <section className="greyFloral my-8 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+            Learn From The Best Yoga School In Rishikesh
+            <span>
+              <Image
+                src="/line-decor.png"
+                width={550 / 2}
+                height={63 / 2}
+                alt="line-decor"
+              />
+            </span>
+          </h2>
+          <div className="py-8 text-center">
+            <p className="mb-4">
+              If you want to do the best yoga training and seeing this as your
+              passion as well as a profession then there is no better place than
+              this. <b>Rishikesh&apos;s Yoga Teacher Training </b> has all that
+              you need to know as a teacher as well as a student. They are best
+              known for the knowledge that they spread. There are so many
+              reasons why it is the best <b>Yoga School in Rishikesh</b>. There
+              are some other factors as well which are very important apart from
+              just the advance and this is the only place that covers those as
+              well They are established on grounds of <b>trust </b>and{" "}
+              <b>credibility</b> and inspires people to get the best out of
+              them. The gurus present here are experts and almost believe in
+              yoga as their food, prayer, oxygen, and reason to live to give
+              their best.
+            </p>
+            <Image
+              src="/registered-yoga-school.webp"
+              width={512}
+              height={187}
+              alt="Registered Yoga School"
+            />
+          </div>
+        </section>
+        <section className="my-8 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+          <p className=" text-center font-medium uppercase tracking-wide text-[#bd0006]">
+            Yin Yang Yoga Blogs
+          </p>
+          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+            Know More About Yoga and Its Benefits
+            <span>
+              <Image
+                src="/line-decor.png"
+                width={550 / 2}
+                height={63 / 2}
+                alt="line-decor"
+              />
+            </span>
+          </h2>
+
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 ">
+            {[1, 2, 3].map((item, index) => {
+              return (
+                <div key={index} className="flex flex-col">
+                  <div className="z-0 pl-8">
+                    <Image
+                      className="rounded-lg object-cover"
+                      src="/100hr-2.jpg"
+                      height={350}
+                      width={470}
+                      alt="Blog1"
+                    />
+                  </div>
+                  <div className="z-20 -mt-20 bg-white p-4 shadow-lg">
+                    <h3 className="text-[20px]">
+                      How To Do Anjali Mudra (Namaste Mudra) and its Benefits
+                    </h3>
+                    <p>
+                      How To Do Anjali Mudra (Namaste Mudra) and its Benefits
+                      Anjali Mudra or the Namaste Mudra is one of the...
+                    </p>
+                    <p className="flex cursor-pointer items-center text-[#bd0006] hover:space-x-4 hover:duration-300 hover:ease-linear">
+                      <span className="tracking-wider">Read Full Article</span>
+                      <BsArrowRight />
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+        <section className="patternBg  py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+          <Teacherprofile />
+        </section>
+        <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+          <TestimonialCarousel />
+        </section>
+        <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+          <p className=" text-center font-medium uppercase tracking-wide text-[#bd0006]">
+            our social reviews
+          </p>
+          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+            Why We are the First Choice For YTTC
+            <span>
+              <Image
+                src="/line-decor.png"
+                width={550 / 2}
+                height={63 / 2}
+                alt="line-decor"
+              />
+            </span>
+          </h2>
+          <TrustPilotReview />
         </section>
       </main>
     </div>

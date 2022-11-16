@@ -8,147 +8,230 @@ import {
   IoMailOutline,
   IoSendOutline,
 } from "react-icons/io5";
-import { RiMastercardFill } from "react-icons/ri";
+import { MdEmail, MdHouse, MdPhone } from "react-icons/md";
+import {
+  RiCompassDiscoverFill,
+  RiMastercardFill,
+  RiPaypalFill,
+  RiVisaFill,
+} from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="flex w-full flex-col items-center bg-orange-700 px-8 py-4 md:flex-row  md:space-x-4 md:py-8 md:px-32">
-        <div className="w-full md:w-1/2">
-          <p className="text-[14px] font-medium text-gray-100 md:text-[20px]">
-            Want To know More About Us
-          </p>
-          <h2 className=" text-[26px] font-medium text-white md:text-[40px]">
-            Subscribe To Our Newsletter
-          </h2>
+    <footer
+      id="footer"
+      className="footer-pattern text-center text-gray-200 lg:text-left "
+    >
+      <div className="flex items-center justify-center  p-6 py-8 px-4 md:px-6 lg:justify-between lg:px-8 xl:px-32">
+        <div className="mr-12 hidden text-xl lg:block">
+          <span>Get connected with us on social networks:</span>
         </div>
-        <div className="flex items-center  md:w-1/2 md:space-x-4">
-          <input
-            className="w-full border-0  py-2 md:rounded md:py-4"
-            type="email"
-            placeholder="Enter Email Address"
-          />
-          <button className="flex items-center space-x-2 bg-black px-2 py-2 font-medium text-white md:rounded md:px-4 md:py-4">
-            <span>Subscribe</span>
-            <IoSendOutline />
-          </button>
+        <div className="flex justify-center">
+          <a href="#!" className="mr-6 text-gray-200">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="facebook-f"
+              className="w-2.5"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                fill="currentColor"
+                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+              ></path>
+            </svg>
+          </a>
+          <a href="#!" className="mr-6 text-gray-200">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="twitter"
+              className="w-4"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+              ></path>
+            </svg>
+          </a>
+          <a href="#!" className="mr-6 text-gray-200">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="google"
+              className="w-3.5"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 488 512"
+            >
+              <path
+                fill="currentColor"
+                d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+              ></path>
+            </svg>
+          </a>
+          <a href="#!" className="mr-6 text-gray-200">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="instagram"
+              className="w-3.5"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              ></path>
+            </svg>
+          </a>
+          <a href="#!" className="mr-6 text-gray-200">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="linkedin-in"
+              className="w-3.5"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+              ></path>
+            </svg>
+          </a>
         </div>
       </div>
-      <div className=" footer-pattern px-8 py-4 md:px-32 md:py-16" id="footer">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          {/* Brands Column */}
-          <div className="space-y-4">
-            <div className="flex items-center">
-              <Image
-                src="/logo-icon.png"
-                height={395 / 4}
-                width={632 / 4}
-                alt="logo"
-              />
-              <p className="text-[26px] font-bold leading-5 text-orange-600">
-                Yin Yang <br />
-                <span className="text-base text-yellow-500">Yoga Academy</span>
-              </p>
-            </div>
-            <p className="text-sm text-white">
-              Rishikesh Yogkulam exists to bring the authentic teachings of yoga
-              back to yoga; both on and off the mat. And to create a physical
-              and virtual place for a conscious community to practice the art,
-              science, and philosophy of authentic yoga.
-            </p>
+      <div className=" px-4 py-8 text-center md:px-6 md:text-left lg:px-8 xl:px-32">
+        <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="">
             <Image
-              src="https://www.yogkulam.org/images/rys.png"
-              height={70}
-              width={235}
-              alt="affliation"
+              src="/logo-white.png"
+              height={283 / 4}
+              width={880 / 4}
+              alt="logo-white"
             />
+            <p>
+              Here you can use rows and columns to organize your footer content.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
           </div>
-          {/* Quick Links */}
-          <div className="flex flex-col justify-center">
-            <p className="text-lg font-semibold text-white">Quick Link</p>
-            <div className="mb-4 h-[2px] w-1/3 bg-orange-600"></div>
-            <ul className="list-none space-y-4 text-white">
-              <li className="cursor-pointer hover:text-orange-600"> Home</li>
-              <li className="cursor-pointer hover:text-orange-600">
+          <div className="">
+            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+              Navigation
+            </h6>
+            <p className="mb-4">
+              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
+                Home
+              </a>
+            </p>
+            <p className="mb-4">
+              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
                 Yoga Teacher Training
-              </li>
-              <li className="cursor-pointer hover:text-orange-600">
+              </a>
+            </p>
+            <p className="mb-4">
+              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
                 Contact Us
-              </li>
-              <li className="cursor-pointer hover:text-orange-600">About Us</li>
-              <li className="cursor-pointer hover:text-orange-600">
-                Refund Policy
-              </li>
-              <li className="cursor-pointer hover:text-orange-600">
-                Privacy Policy
-              </li>
-            </ul>
+              </a>
+            </p>
+            <p className="mb-4">
+              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
+                About Us
+              </a>
+            </p>
+            <p>
+              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
+                Refund and Privacy Policy
+              </a>
+            </p>
           </div>
-          {/* Teacher Training Program  */}
-          <div className="flex flex-initial flex-col">
-            <p className="text-lg font-semibold text-white">
+          <div className="">
+            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
               Yoga Teacher Training
+            </h6>
+            <p className="mb-4">
+              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
+                100 Hours YTTC
+              </a>
             </p>
-            <div className="mb-4 h-[2px] w-1/3 bg-orange-600"></div>
-            <ul className="list-none space-y-4 text-white">
-              <li className="cursor-pointer hover:text-orange-600">
-                100 hour yoga teacher training
-              </li>
-              <li className="cursor-pointer hover:text-orange-600">
-                200 hour yoga teacher training
-              </li>
-              <li className="cursor-pointer hover:text-orange-600">
-                300 hour yoga teacher training
-              </li>
-              <li className="cursor-pointer hover:text-orange-600">
-                500 hour yoga teacher training
-              </li>
-              {/* <li className="cursor-pointer hover:text-orange-600">
-                100 hour Ayurveda yoga teacher training
-              </li>
-              <li className="cursor-pointer hover:text-orange-600">
-                200 hour Ayurveda yoga teacher training
-              </li> */}
-            </ul>
+            <p className="mb-4">
+              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
+                200 Hour YTTC
+              </a>
+            </p>
+            <p className="mb-4">
+              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
+                300 Hour YTTC
+              </a>
+            </p>
+            <p className="mb-4">
+              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
+                500 Hour YTTC
+              </a>
+            </p>
+            <p className="mb-4">
+              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
+                100 Hour Ayureveda YTTC
+              </a>
+            </p>
+            <p className="mb-4">
+              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
+                200 Hour Ayureveda YTTC
+              </a>
+            </p>
           </div>
-          {/* Contact Information  */}
-          <div className="flex flex-col justify-center">
-            <p className="text-lg font-semibold text-white">Get In Touch</p>
-            <div className="mb-4 h-[2px] w-1/3 bg-orange-600"></div>
-            <ul className="list-none space-y-4 text-white">
-              <li className="flex w-full cursor-pointer space-x-4 hover:text-orange-600 ">
-                <IoLocateOutline className="w-1/6" size={25} />{" "}
-                <span className="w-5/6">
-                  Laxman Chowk Road, Near Anandham Ashram, Tapovan, Rishikesh,
-                  Uttarakhand 249192
-                </span>
-              </li>
-              <li className="flex w-full cursor-pointer space-x-4 hover:text-orange-600 ">
-                <IoCallOutline className="w-1/6" size={25} />{" "}
-                <span className="w-5/6">+91 8218114342, +918979596944</span>
-              </li>
-              <li className="flex w-full cursor-pointer space-x-4 hover:text-orange-600 ">
-                <IoMailOutline className="w-1/6" size={25} />{" "}
-                <span className="w-5/6">rishikeshyogkulam@gmail.com</span>
-              </li>
-            </ul>
-            <p className="mt-4 text-lg font-semibold text-white">
-              Payment Options
+          <div className="">
+            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+              Contact
+            </h6>
+            <p className="mb-4 flex  justify-center md:justify-start">
+              <MdHouse className="w-1/4" size={18} />
+              <span className="w-3/4">
+                Laxman Chowk Road, Near Anandham Ashram, Tapovan, Rishikesh,
+                Uttarakhand 249192
+              </span>
             </p>
-            <div className="mb-4 h-[2px] w-1/3 bg-orange-600"></div>
-            <div className="grid grid-cols-4 gap-2 text-white">
-              <IoLogoPaypal size={26} />
-              <RiMastercardFill size={26} />
-              <FaCcVisa size={26} />
-              <FaCcDiscover size={26} />
-            </div>
+            <p className="mb-4 flex  justify-center md:justify-start">
+              <MdEmail className="w-1/4" size={18} />
+              <span className="w-3/4">mail@yinyangyogaacademy.com</span>
+            </p>
+            <p className="mb-4 flex  justify-center md:justify-start">
+              <MdPhone className="w-1/4" size={18} />
+              <span className="w-3/4">+91 8218114342, +91 8979596944</span>
+            </p>
+            <p className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+              Payment Methods
+            </p>
+            <p className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+              <RiPaypalFill className="w-1/4" size={24} />
+              <RiVisaFill className="w-1/4" size={24} />
+              <RiMastercardFill className="w-1/4" size={24} />
+              <RiCompassDiscoverFill className="w-1/4" size={24} />
+            </p>
           </div>
         </div>
       </div>
-      {/* Copyright Section */}
-      <div className="flex items-center justify-center space-x-2 bg-gray-900 p-3 text-white">
-        <span>Copyright &copy; 2022</span>
-        <a className="hover:text-orange-600"> YinYang Yoga Academy</a>
+      <div className="bg-gray-600  text-center">
+        <span>© 2021 Copyright:</span>
+        <a
+          className="font-semibold text-gray-600"
+          href="https://tailwind-elements.com/"
+        >
+          Tailwind Elements
+        </a>
       </div>
     </footer>
   );

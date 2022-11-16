@@ -14,7 +14,7 @@ const CourseSlider = () => {
     cssEase: "linear",
     autolay: true,
     autoplaySpeed: 500,
-    arrows: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 480,
