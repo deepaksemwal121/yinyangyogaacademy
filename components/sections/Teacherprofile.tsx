@@ -104,7 +104,7 @@ const Teacherprofile = () => {
                         height={150}
                         width={150}
                         alt="Dheeraj"
-                        className="rounded-br-[30%] rounded-tl-[30%] border-[4px] border-solid border-[#bd0006]"
+                        className="rounded-br-[30%] rounded-tl-[30%] border border-solid border-[#bd0006]"
                       />
                     </div>
                     <div className="w-2/3 space-y-3">

@@ -69,7 +69,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="fixed z-[100] w-full bg-white  md:block ">
+    <div className=" sticky top-0  z-50 w-full bg-white md:block ">
       <div className="topbar z-10 hidden justify-between bg-gray-800 py-2 px-4 text-white md:flex md:px-6 lg:px-8 xl:px-32">
         <div className="flex w-2/6 items-center  space-x-3  px-2">
           <BiLocationPlus size={20} color="lightgray" />
@@ -95,7 +95,7 @@ const Header = () => {
         </div>
       </div>
       <nav className=" relative flex w-full items-center justify-around py-2 shadow md:px-8 lg:space-x-24 lg:px-8 xl:space-x-20 xl:px-32">
-        <div className="brand logo absolute left-16 flex h-full w-1/3 items-center justify-center bg-[#bd0006] p-4 drop-shadow-lg  md:w-1/4 lg:w-1/5 xl:w-1/6">
+        <div className="brand logo absolute left-16 z-50 flex h-full w-1/3 items-center justify-center bg-[#bd0006] p-4 drop-shadow-lg  md:w-1/4 lg:w-1/5 xl:w-1/6">
           <Link href="/">
             <Image src={logo} width={880 / 5} height={283 / 5} alt="logo" />
           </Link>
@@ -154,7 +154,7 @@ const Header = () => {
           <li className="hover:text-[#bd0006]">Pay Now</li>
         </ul>
       </div>
-      <div className="swingBtn fixed top-0 right-7 hidden lg:block">
+      <div className="fixed top-0 right-7 z-50 hidden lg:block">
         <Image
           src={"/applynow.png"}
           height={200}
