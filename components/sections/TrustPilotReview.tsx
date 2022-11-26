@@ -9,8 +9,8 @@ const TrustPilotReview = () => {
         <h2 className="text-xl">Excellent</h2>
         <Image
           src="/trustpilot-big-star.png"
-          width={1000 / 5}
-          height={188 / 5}
+          width={1000 / 7}
+          height={188 / 7}
           alt="trustpilot"
         />
         <p>
@@ -19,8 +19,8 @@ const TrustPilotReview = () => {
         </p>
         <Image
           src="/trustpilot-logo.png"
-          height={74}
-          width={300}
+          height={74 / 2}
+          width={300 / 2}
           alt="trustpilot-logo"
         />
         <div></div>
@@ -28,8 +28,8 @@ const TrustPilotReview = () => {
       <div className="cardShadow space-y-4 p-4">
         <Image
           src="/google-logo.png"
-          width={128}
-          height={128}
+          width={128 / 2}
+          height={128 / 2}
           alt="Google Logo"
         />
         <p className="flex items-center justify-center space-x-1">
@@ -41,7 +41,12 @@ const TrustPilotReview = () => {
         </p>
       </div>
       <div className="cardShadow flex flex-col justify-center space-y-4 p-4">
-        <Image src="/facebook.gif" width={1032} height={208} alt="facebook" />
+        <Image
+          src="/facebook.gif"
+          width={1032 / 3}
+          height={208 / 3}
+          alt="facebook"
+        />
         <div className="flex items-start justify-center space-x-2">
           <p className=" flex items-center space-x-2 rounded-full bg-[#438aff] px-2  py-1 font-semibold text-white">
             <span>4.8</span>

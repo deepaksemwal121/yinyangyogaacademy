@@ -75,6 +75,7 @@ const About = () => {
           <h2 className=" fancy-font text-2xl  leading-[6rem] text-white drop-shadow md:text-3xl lg:text-4xl xl:text-5xl">
             About Yin Yang Yoga Academy
           </h2>
+          {/* BreadCrumbs */}
           <nav className="flex" aria-label="Breadcrumb">
             <ol className="inline-flex items-center space-x-1 text-white md:space-x-3">
               <li className="inline-flex items-center">
