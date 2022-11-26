@@ -94,8 +94,8 @@ const Header = () => {
           <FaTripadvisor size={20} color="lightgray" />
         </div>
       </div>
-      <nav className=" relative flex w-full items-center justify-around py-2 shadow md:px-8 lg:space-x-24 lg:px-8 xl:space-x-20 xl:px-32">
-        <div className="brand logo absolute left-16 z-50 flex h-full w-1/3 items-center justify-center bg-[#bd0006] p-4 drop-shadow-lg  md:w-1/4 lg:w-1/5 xl:w-1/6">
+      <nav className=" relative z-50 flex w-full items-center justify-around py-2 shadow md:px-8 lg:space-x-24 lg:px-8 xl:space-x-20 xl:px-32">
+        <div className="brand logo absolute left-4 z-50 flex h-full w-1/3 items-center justify-center rounded-tl-3xl rounded-br-3xl bg-[#bd0006] p-4 drop-shadow-lg md:left-16  md:w-1/4 lg:w-1/5 xl:w-1/6">
           <Link href="/">
             <Image src={logo} width={880 / 5} height={283 / 5} alt="logo" />
           </Link>
@@ -110,9 +110,9 @@ const Header = () => {
           </span>
         </div>
 
-        <div className="menu hidden h-max w-4/6 duration-200 ease-in-out  lg:block">
+        <div className="hidden h-max w-4/6  lg:block">
           <ul className="flex  items-center justify-around  ">
-            <li className=" hover:text-[#bd0006]">
+            <li className="  p-4 hover:text-[#bd0006]">
               <Link href="/">Home</Link>
             </li>
             {MenuHover.map((item, index) => {

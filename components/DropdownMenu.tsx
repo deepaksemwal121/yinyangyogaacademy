@@ -9,29 +9,15 @@ interface Menu {
 }
 
 const DropdownMenu = ({ links, title, subtitle }: Menu) => {
-  let [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    setIsOpen(false);
-  }, []);
-
   return (
-    <div
-      onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => setIsOpen(false)}
-      className="relative  duration-300 hover:text-[#bd0006] "
-    >
+    <div className="group relative p-4 duration-300 hover:text-[#bd0006] ">
       <span className="flex items-center space-x-2">
         <span> {title}</span> <FiChevronDown />
       </span>
       <div
-        onMouseEnter={() => setIsOpen(true)}
-        onMouseLeave={() => setIsOpen(false)}
-        className={`${
-          isOpen ? "block" : "hidden"
-        } top-[30px] left-0 z-10 flex w-[250px] flex-col rounded border-t-[2px] border-[#bd0006] bg-white  p-0 lg:absolute`}
+        className={` top-[50px] left-0  hidden w-[250px] flex-col  border-t-[2px] border-[#bd0006] bg-white p-4 group-hover:flex   lg:absolute`}
       >
-        <ul className="w-full">
+        <ul className="w-full space-y-4">
           {subtitle.map((item, index) => {
             return (
               <li
