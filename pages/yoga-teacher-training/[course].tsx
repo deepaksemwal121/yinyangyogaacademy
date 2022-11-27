@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { IoBedOutline } from "react-icons/io5";
 import {
-  MdArrowRight,
-  MdHome,
   MdOutlineChromeReaderMode,
   MdOutlineRiceBowl,
   MdOutlineShower,
@@ -377,28 +375,71 @@ const CoursePage = () => {
       <main>
         <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
           <div className=" space-y-2 py-2">
-            <p className=" text-xl font-semibold tracking-wide text-gray-200">
+            <p className=" font-semibold tracking-wide text-gray-200 md:text-xl">
               Come and join us for the unforgettable experience of a lifetime
             </p>
             <h2 className=" fancy-font text-2xl  text-white drop-shadow md:text-3xl md:leading-[6rem] lg:text-4xl xl:text-5xl">
               100 Hour Yoga Teacher Training <br />
               In Rishikesh, India
             </h2>
-            <div className="breadcrumbs text-sm text-white md:text-lg">
-              <ul>
-                <li>
-                  <a className="">
-                    <MdHome size={20} />
+            <nav className="flex" aria-label="Breadcrumb">
+              <ol className="inline-flex items-center space-x-1 text-white md:space-x-3">
+                <li className="inline-flex items-center">
+                  <a
+                    href="#"
+                    className="inline-flex items-center text-sm font-medium "
+                  >
+                    <svg
+                      className="mr-2 h-4 w-4"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                    </svg>
+                    Home
                   </a>
                 </li>
                 <li>
-                  <a>Yoga Teacher Training </a>
+                  <div className="flex items-center">
+                    <svg
+                      className="h-6 w-6 "
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <a href="#" className="ml-1 text-sm font-medium  md:ml-2">
+                      YTTC
+                    </a>
+                  </div>
                 </li>
-                <li>
-                  <a>100 Hour YTTC</a>
+                <li aria-current="page">
+                  <div className="flex items-center">
+                    <svg
+                      className="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span className="ml-1 text-sm font-medium   md:ml-2">
+                      100 Hours YTTC
+                    </span>
+                  </div>
                 </li>
-              </ul>
-            </div>
+              </ol>
+            </nav>
           </div>
         </section>
         <section className="py-8 px-4  md:px-6 lg:px-8 xl:px-32">
@@ -447,8 +488,8 @@ const CoursePage = () => {
           </div>
         </section>
         <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <div className=" grid gap-4 space-y-2 lg:grid-cols-3 ">
-            <div className="group -mt-12 space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg ">
+          <div className=" grid grid-cols-1  gap-4 lg:grid-cols-3 ">
+            <div className="group space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg md:-mt-12 ">
               <h2 className="flex w-full flex-col  text-xl">
                 Courese Overview
                 <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
@@ -492,7 +533,7 @@ const CoursePage = () => {
                 </li>
               </ul>
             </div>
-            <div className="group -mt-12 space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg ">
+            <div className="group space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg md:-mt-12 ">
               <h2 className="flex w-full flex-col  text-xl">
                 Courese Highlights
                 <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
@@ -536,7 +577,7 @@ const CoursePage = () => {
                 </li>
               </ul>
             </div>
-            <div className="group -mt-12 space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg ">
+            <div className="group space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg md:-mt-12 ">
               <h2 className="flex w-full flex-col  text-xl">
                 Courese Summary
                 <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
@@ -608,11 +649,11 @@ const CoursePage = () => {
                 width={600}
                 alt="100 hours "
               />
-              <div className="flex flex-col justify-center space-y-4 lg:w-1/2">
-                <h3 className="group text-3xl font-semibold text-[#bd0006]">
+              <div className="flex flex-col justify-center space-y-2 lg:w-1/2">
+                <h3 className="group text-xl font-semibold text-[#bd0006] md:text-3xl">
                   What is Yoga?
                 </h3>
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+                <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
                 <p>
                   Yoga is the ancient art of achieving the oneness of the
                   internal with the external. It is the practice of
@@ -623,29 +664,31 @@ const CoursePage = () => {
                   structure.
                 </p>
                 <div className="mt-4 flex space-x-2 rounded-lg bg-white p-4 shadow">
-                  <div className="flex w-1/3 flex-col items-center ">
+                  <div className="flex w-1/3 flex-col items-center text-center ">
                     <Image
                       src="/floral-icon.png"
                       height={70}
                       width={70}
                       alt="icon"
                     />
-                    <h3 className="text-lg text-slate-500">
+                    <h3 className="text-slate-500 md:text-lg">
                       Boosts Creativity
                     </h3>
                   </div>
-                  <div className="flex w-1/3 flex-col items-center border-l-[2px] border-r-[2px] border-dashed ">
+                  <div className="flex w-1/3 flex-col items-center border-l-[2px] border-r-[2px] border-dashed text-center ">
                     <Image
                       src="/health.png"
                       height={70}
                       width={70}
                       alt="icon"
                     />
-                    <h3 className="text-lg text-slate-500">Improves Health</h3>
+                    <h3 className="text-slate-500 md:text-lg">
+                      Improves Health
+                    </h3>
                   </div>
-                  <div className="flex w-1/3 flex-col items-center ">
+                  <div className="flex w-1/3 flex-col items-center text-center ">
                     <Image src="/peace.png" height={70} width={70} alt="icon" />
-                    <h3 className="text-lg text-slate-500">Inner Peace</h3>
+                    <h3 className="text-slate-500 md:text-lg">Inner Peace</h3>
                   </div>
                 </div>
               </div>
@@ -653,10 +696,12 @@ const CoursePage = () => {
           </div>
           <div className="mt-4 space-y-2 lg:flex lg:space-x-4">
             <div className="space-y-2 lg:w-1/2">
-              <h3 className="group text-3xl font-semibold text-[#bd0006]">
+              <h3 className="group text-xl font-semibold text-[#bd0006] md:text-3xl">
                 Why taking this training?
+                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h3>
-              <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+              <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
+
               <p>
                 The 100 Hour Yoga Teacher Training in Rishikesh is a very
                 innovative module that is designed to help the students gain the
@@ -673,10 +718,11 @@ const CoursePage = () => {
                 a great opportunity for individuals who are passionate about
                 yoga teaching.
               </p>
-              <h3 className="group text-3xl font-semibold text-[#bd0006]">
+              <h3 className="group text-xl font-semibold text-[#bd0006] md:text-3xl">
                 In Conclusion
               </h3>
-              <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+              <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
+
               <p>
                 Thus the 100 Hour Yoga Teacher Training in Rishikesh is a
                 complete module that helps you get a grip of the Hatha Vinyas
@@ -686,10 +732,10 @@ const CoursePage = () => {
               </p>
             </div>
             <div className="space-y-2 lg:w-1/2">
-              <h3 className="group text-3xl font-semibold text-[#bd0006]">
+              <h3 className="group text-xl font-semibold text-[#bd0006] md:text-3xl">
                 What does this training give?
               </h3>
-              <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+              <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
               <p className="space-y-1">
                 The 100 Hour Yoga Teacher Training in Rishikesh is a perfect
                 course for someone who is passionate about the art of yoga and
@@ -814,11 +860,11 @@ const CoursePage = () => {
                   </span>
                 </li>
               </ul>
-              <div className="mt-4 flex items-center justify-between rounded-lg border-[1px] bg-white p-4 shadow-lg">
-                <h3 className="text-[30px] font-semibold">
+              <div className="mt-4 flex flex-col items-center justify-between rounded-lg border-[1px] bg-white p-4 shadow-lg md:flex-row">
+                <h3 className=" text-lg font-semibold md:text-3xl">
                   Total Course Fee for 100 hours YTTC
                 </h3>
-                <span className="rounded  bg-[#bd0006] p-4 text-xl font-semibold text-white">
+                <span className="rounded  bg-[#bd0006] p-2 text-base font-semibold text-white md:p-4 md:text-xl">
                   USD 499
                 </span>
               </div>
@@ -929,16 +975,15 @@ const CoursePage = () => {
               </Slider>
             </div>
           </div>
-          {/* <div className="my-4 border-t-[2px] border-dashed border-slate-400"></div> */}
-          <div className="mx-8 mt-4 mb-12 rounded-lg bg-white p-8  drop-shadow-md">
+          <div className="mt-4 mb-12 rounded-lg bg-white p-8 drop-shadow-md  md:mx-8">
             <div className="flex items-center justify-between  ">
               <div
                 onClick={() => setTab(0)}
                 className={`${
                   tab === 0
-                    ? "border-b-[2px] border-dashed border-[#bd0006] bg-slate-100 text-[#bd0006]"
+                    ? "border-b-[2px] border-dashed border-[#bd0006] bg-slate-200 text-[#bd0006]"
                     : "bg-slate-50"
-                } w-1/2  cursor-pointer p-4 text-lg font-bold`}
+                } w-1/2  cursor-pointer p-4 font-bold md:text-lg`}
               >
                 INCLUDED
               </div>
@@ -946,9 +991,9 @@ const CoursePage = () => {
                 onClick={() => setTab(1)}
                 className={`${
                   tab === 1
-                    ? "border-b-[2px] border-dashed border-[#bd0006] bg-slate-100 text-[#bd0006]"
+                    ? "border-b-[2px] border-dashed border-[#bd0006] bg-slate-200 text-[#bd0006]"
                     : "bg-slate-50"
-                } w-1/2 cursor-pointer p-4 text-lg font-bold `}
+                } w-1/2 cursor-pointer p-4 font-bold md:text-lg `}
               >
                 NOT INCLUDED
               </div>
@@ -992,6 +1037,7 @@ const CoursePage = () => {
             </div>
           </div>
         </section>
+
         <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
           <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
             Course Syllabus - 100 Hour Yoga Teacher Training In Rishikesh
@@ -1004,7 +1050,7 @@ const CoursePage = () => {
               />
             </span>
           </h2>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid gap-6 md:grid-cols-2">
             {courseStructure.map((item, index) => {
               return (
                 <div
@@ -1019,9 +1065,9 @@ const CoursePage = () => {
               );
             })}
           </div>
-          <div className="mx-auto mt-8 flex w-[80%] items-center justify-between  rounded-lg border-[1px] bg-white p-4 shadow-lg ">
-            <div className="w-2/3 space-y-3">
-              <h3 className="text-3xl text-gray-600">
+          <div className=" mt-8 flex flex-col items-center justify-between  space-y-2 rounded-lg border-[1px] bg-white  p-4 text-center shadow-lg md:flex-row md:space-y-0 ">
+            <div className="space-y-3 md:w-2/3">
+              <h3 className=" text-xl text-gray-600 md:text-3xl">
                 Want To Know More About The Syllabus
               </h3>
               <p>
@@ -1029,7 +1075,7 @@ const CoursePage = () => {
                 Accusantium, ea? Nesciunt veritatis quos vero cupiditate.
               </p>
             </div>
-            <div className="flex w-1/3 justify-center font-bold">
+            <div className="flex items-center justify-center font-bold md:w-1/3">
               <button className="flex items-center space-x-2 rounded-lg bg-[#bd0006] p-4 text-white">
                 <span>Detailed Syllabus</span>
                 <BsArrowRight />
@@ -1068,9 +1114,11 @@ const CoursePage = () => {
               className="object-contain"
             />
           </div>
-          <div className="mx-auto mt-8 flex w-[80%] items-center  rounded-lg border-[1px] bg-white p-4 shadow-lg ">
-            <div className="w-2/3 space-y-3 text-center">
-              <h3 className=" text-4xl text-gray-600">How To Book Your Spot</h3>
+          <div className=" mt-8 flex flex-col items-center justify-between  space-y-2 rounded-lg border-[1px] bg-white  p-4 text-center shadow-lg md:flex-row md:space-y-0 ">
+            <div className="space-y-3 md:w-2/3">
+              <h3 className=" text-xl text-gray-600 md:text-3xl">
+                How To Book Your Spot
+              </h3>
               <p className="">
                 Please note that our yoga courses fill up well in advance,
                 please apply in time to secure your seat. To register please
@@ -1079,14 +1127,15 @@ const CoursePage = () => {
                 <b>deposit of $200 to confirm</b> your reservation.
               </p>
             </div>
-            <div className="w-1/3 justify-center md:flex">
-              <button className="flex items-center space-x-2 rounded-lg bg-[#bd0006] p-4 font-bold text-white">
+            <div className="flex items-center justify-center font-bold md:w-1/3">
+              <button className="flex items-center space-x-2 rounded-lg bg-[#bd0006] p-4 text-white">
                 <span>Apply Now</span>
                 <BsArrowRight />
               </button>
             </div>
           </div>
         </section>
+        {/* Time Table is Not REsponsive */}
         {/* Seats Availabe */}
         <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
           <p className="text-center text-lg font-bold text-[#bd0006]">
@@ -1108,43 +1157,49 @@ const CoursePage = () => {
             Yoga Academy. Certified by{" "}
             <b className="text-[#bd0006]">Yoga Alliance, USA.</b>
           </p>
-          <div className="flex w-full justify-between rounded-t-lg bg-[#bd0006] p-4 text-center text-lg font-bold text-white">
-            <div className="w-1/6 border-r-[2px] border-dashed">Start Date</div>
-            <div className="w-1/6  border-r-[2px] border-dashed">End Date</div>
-            <div className="w-1/6 border-r-[2px] border-dashed">
-              Availability
-            </div>
-            <div className="w-1/6 border-r-[2px] border-dashed">Shared</div>
-            <div className="w-1/6 border-r-[2px] border-dashed">Private</div>
-            <div className="w-1/6">Booking</div>
-          </div>
-          {seatAvailability.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className={`flex ${
-                  index % 2 === 0 ? "bg-slate-50" : "bg-slate-100"
-                } w-full justify-between   p-4 text-center text-lg font-medium`}
-              >
-                <div className="w-1/6 border-r-[2px] border-dashed">
-                  {item.start}
-                </div>
-                <div className="w-1/6  border-r-[2px] border-dashed">
-                  {item.end}
-                </div>
-                <div className="w-1/6 border-r-[2px] border-dashed">
-                  {item.availability}
-                </div>
-                <div className="w-1/6 border-r-[2px] border-dashed">
-                  {item.shared}
-                </div>
-                <div className="w-1/6 border-r-[2px] border-dashed">
-                  {item.private}
-                </div>
-                <div className="w-1/6">{item.booking}</div>
+          <div className="w-full overflow-x-scroll">
+            <div className="flex w-full justify-between rounded-t-lg bg-[#bd0006] p-4 text-center text-lg font-bold text-white">
+              <div className="w-1/6 border-r-[2px] border-dashed">
+                Start Date
               </div>
-            );
-          })}
+              <div className="w-1/6  border-r-[2px] border-dashed">
+                End Date
+              </div>
+              <div className="w-1/6 border-r-[2px] border-dashed">
+                Availability
+              </div>
+              <div className="w-1/6 border-r-[2px] border-dashed">Shared</div>
+              <div className="w-1/6 border-r-[2px] border-dashed">Private</div>
+              <div className="w-1/6">Booking</div>
+            </div>
+            {seatAvailability.map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  className={`flex ${
+                    index % 2 === 0 ? "bg-slate-50" : "bg-slate-100"
+                  } w-full justify-between   p-4 text-center text-lg font-medium`}
+                >
+                  <div className="w-1/6 border-r-[2px] border-dashed">
+                    {item.start}
+                  </div>
+                  <div className="w-1/6  border-r-[2px] border-dashed">
+                    {item.end}
+                  </div>
+                  <div className="w-1/6 border-r-[2px] border-dashed">
+                    {item.availability}
+                  </div>
+                  <div className="w-1/6 border-r-[2px] border-dashed">
+                    {item.shared}
+                  </div>
+                  <div className="w-1/6 border-r-[2px] border-dashed">
+                    {item.private}
+                  </div>
+                  <div className="w-1/6">{item.booking}</div>
+                </div>
+              );
+            })}
+          </div>
         </section>
         <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
           <p className="text-center text-lg font-bold text-[#bd0006]">
@@ -1161,7 +1216,7 @@ const CoursePage = () => {
               />
             </span>
           </h2>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {whatGet.map((item, index) => {
               return (
                 <div
@@ -1175,11 +1230,11 @@ const CoursePage = () => {
                       width={64}
                       alt="icon-1"
                     />
-                    <h3 className="text-3xl font-bold text-gray-600">
+                    <h3 className="text-xl font-bold text-gray-600 md:text-3xl">
                       {item.title}
                     </h3>
                   </div>
-                  <p>{item.desc}</p>
+                  <p className="text-base ">{item.desc}</p>
                 </div>
               );
             })}
@@ -1209,8 +1264,8 @@ const CoursePage = () => {
             learning and be passionate about the whole process and journey of
             the course.
           </p>
-          <div className="mt-4 flex items-center space-x-4 space-y-4">
-            <div className="w-1/2">
+          <div className="mt-4  flex flex-col items-center space-x-4 space-y-4 lg:flex-row">
+            <div className="lg:w-1/2">
               <p>
                 People from all levels of yoga or work are allowed to join this
                 course and no previous experience is required. Our expert
@@ -1221,7 +1276,7 @@ const CoursePage = () => {
                 this course.
               </p>
               <h3 className="my-4 text-2xl">Things To Remember</h3>
-              <ul className="grid grid-cols-2  gap-4">
+              <ul className="grid  gap-4 md:grid-cols-2">
                 <li className="flex items-center space-x-4">
                   <Image
                     src="/icons-home/001-chakra.png"
@@ -1329,7 +1384,7 @@ const CoursePage = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-1/2">
+            <div className="lg:w-1/2">
               <Image
                 src="/100hr-2.jpg"
                 width={600}
@@ -1368,6 +1423,8 @@ const CoursePage = () => {
             })}
           </div>
         </section>
+        {/* Responsive */}
+
         <section className=" mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
           <p className="text-center text-lg font-bold text-[#bd0006]">
             Yoga is the journey of the self, through the self, to the self
@@ -1403,8 +1460,8 @@ const CoursePage = () => {
               techniques.
             </p>
           </div>
-          <div className="mt-4 flex space-x-4">
-            <div className="relative w-1/3">
+          <div className="mt-4 space-x-4 md:flex">
+            <div className=" md:w-1/3">
               <div className="static">
                 <Image
                   src="/100hr-2.jpg"
@@ -1415,7 +1472,7 @@ const CoursePage = () => {
                 />
               </div>
             </div>
-            <div className="grid w-2/3 grid-cols-2 gap-4">
+            <div className="grid gap-4 md:w-2/3 md:grid-cols-2">
               <li className="flex items-center space-x-4">
                 <Image
                   src="/icons-home/001-chakra.png"
@@ -1508,6 +1565,7 @@ const CoursePage = () => {
             </div>
           </div>
         </section>
+        {/* Pending */}
         <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
           <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
             Activity During The Course
@@ -1537,6 +1595,72 @@ const CoursePage = () => {
             </span>
           </h2>
           <CourseCard />
+        </section>
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32 ">
+          <p className="text-center text-xl font-bold text-[#bd0006]">
+            Course In a Nutshell
+          </p>
+          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+            Best 100 Hour Yoga Teacher Training In Rishikesh India
+            <span>
+              <Image
+                src="/line-decor.png"
+                width={550 / 2}
+                height={63 / 2}
+                alt="line-decor"
+              />
+            </span>
+          </h2>
+          <p>
+            The yogkulam yoga retreat in Rishikesh is a divine place where you
+            will get teachings regarding Hatha, Asthanga, and Yin yoga is a deep
+            and thorough manner. Here, we teach in a traditional way derived
+            from all these types of yoga and help students develop their way of
+            teaching on the basis of these traditional styles. We put extra
+            focus on the posture of our trainees during the classes and their
+            dedication and maintaining their integrity during the performance of
+            many asanas. Through this deep training program, you will understand
+            how to perform different asanas and their benefits. At the same
+            time, as a teacher, you will in the future have a piece of extra
+            knowledge and experience to pass on the knowledge of how to do these
+            asanas safely.
+          </p>
+          <div className=" mt-8 space-y-4 rounded-lg bg-white px-8 py-4 text-center">
+            <div className=" -mt-8 flex justify-center">
+              <iframe
+                className="rounded-lg"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/I2aiSwHR1BE"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <h3 className="fancy-font text:xl font-bold text-[#bd0006] md:text-2xl">
+              We are Loved by Yoga Students Across The World
+            </h3>
+            <p>
+              We teach some of the oldest yoga forms present and implement yoga
+              forms that are performed by rishis as well. We implement a mix of
+              traditional and modern training techniques to help our students
+              get a quick understanding of the course, which also helps them
+              develop their unique way of teaching.
+            </p>
+            <p>
+              Along with teaching, we provide some of the cleanest and basic
+              accommodations available to our students. These rooms are
+              available for a single resident as well as two people have the
+              option of sharing the rooms as well. We provide basic vegetarian
+              meals each day during the course. The meals include breakfast,
+              lunch, and dinner. These dishes are designed in such a way that
+              they provide nutrition to your boy in the exact and right amount.
+              Lastly, we also provide some of the finest drinking water
+              available. We have an RO filtration system from where all our
+              drinking water gets processed.
+            </p>
+          </div>
         </section>
         <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
           <FAQ />

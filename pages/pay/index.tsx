@@ -11,24 +11,51 @@ const Pay = () => {
     <main>
       <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
         <div className=" space-y-2 py-2">
-          <p className=" text-xl font-semibold tracking-wide text-gray-200">
+          <p className="text-lg font-semibold tracking-wide text-gray-200 md:text-xl">
             Come and join us for the unforgettable experience of a lifetime
           </p>
-          <h2 className=" fancy-font text-5xl leading-[4rem] text-white drop-shadow">
+          <h2 className=" fancy-font text-2xl  text-white drop-shadow md:text-3xl lg:text-4xl lg:leading-[6rem] xl:text-5xl">
             Course Fee For Yoga Teacher Training
           </h2>
-          <div className="breadcrumbs text-lg text-white">
-            <ul>
-              <li>
-                <a className="">
-                  <MdHome size={20} />
+          <nav className="flex" aria-label="Breadcrumb">
+            <ol className="inline-flex items-center space-x-1 text-white md:space-x-3">
+              <li className="inline-flex items-center">
+                <a
+                  href="#"
+                  className="inline-flex items-center text-sm font-medium "
+                >
+                  <svg
+                    className="mr-2 h-4 w-4"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                  </svg>
+                  Home
                 </a>
               </li>
               <li>
-                <a>Course Fee </a>
+                <div className="flex items-center">
+                  <svg
+                    className="h-6 w-6 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <a href="#" className="ml-1 text-sm font-medium  md:ml-2">
+                    Course Registration Fee
+                  </a>
+                </div>
               </li>
-            </ul>
-          </div>
+            </ol>
+          </nav>
         </div>
       </section>
       <section className="py-8 px-4  md:px-6 lg:px-8 xl:px-32">
@@ -59,13 +86,13 @@ const Pay = () => {
           Please find all payment options to complete your deposit fee
           transaction below.
         </p>
-        <div className="mt-6 flex justify-between">
+        <div className="mt-6 flex flex-col-reverse justify-between space-y-4 lg:flex-row">
           <div className="space-y-4">
-            <h2 className="group flex w-full flex-col  text-3xl">
+            <h2 className="group mt-4 flex w-full flex-col text-3xl  lg:mt-0">
               Refund Policy
               <span className=" mt-2 h-[2px] w-[20%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[30%] "></span>
             </h2>
-            <p className="w-[90%]">
+            <p className="md:w-[90%]">
               All aspirants are advised to carefully consider the time and
               resources required for the course before forwarding the
               application for the teacher training course. The deposit submitted
@@ -76,7 +103,7 @@ const Pay = () => {
               attention to the teacher training program.
             </p>
           </div>
-          <div className="patternBg w-1/3 space-y-4 rounded-lg border-2 p-4 shadow ">
+          <div className="patternBg space-y-4 rounded-lg border-2 p-4 shadow lg:w-1/3 ">
             <h2 className="group flex w-full flex-col  text-3xl">
               Registration Fee
               <span className=" mt-2 h-[2px] w-[30%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[40%] "></span>
@@ -85,7 +112,7 @@ const Pay = () => {
               target="paypal"
               action="https://www.paypal.com/cgi-bin/webscr"
               method="post"
-              className="space-y-4"
+              className="space-y-4 "
             >
               <div>
                 <label className="font-medium">Advance Course Fee </label>
@@ -98,7 +125,7 @@ const Pay = () => {
 
                 <select
                   name="os0"
-                  className="rounded-md ring-0  focus:ring-[#bd0006]"
+                  className="w-[90%] rounded-md ring-0 focus:ring-[#bd0006]  md:w-full"
                 >
                   <option value="100 Hour YTTC">
                     100 Hour YTTC $200.00 USD
@@ -155,8 +182,8 @@ const Pay = () => {
         </div>
       </section>
       <section className="flex justify-center py-8 px-4  md:px-6 lg:px-8 xl:px-32">
-        <div className="flex w-[80%]  items-center justify-between rounded-lg border-[1px] border-[#bd0006] bg-white p-4 shadow-lg ">
-          <div className="w-3/4 space-y-2 p-4">
+        <div className="flex flex-col  items-center justify-between rounded-lg border-[1px] border-[#bd0006] bg-white p-4 shadow-lg lg:w-[80%] lg:flex-row ">
+          <div className="space-y-2 p-4 text-center lg:w-3/4">
             <h2 className="fancy-font w-full text-2xl">
               {" "}
               Want To Know More About The Yoga Teacher Training Courses
@@ -166,7 +193,7 @@ const Pay = () => {
               nihil illum iure consequuntur,
             </p>
           </div>
-          <div className="w-1/4">
+          <div className="lg:w-1/4">
             <button className="flex items-center space-x-2 rounded-lg bg-[#bd0006] p-4 font-bold text-white">
               <span>Learn More</span>
               <BsArrowRight />

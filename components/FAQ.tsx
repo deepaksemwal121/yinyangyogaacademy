@@ -1,5 +1,8 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import { BsChevronDown, BsChevronUp } from "react-icons/bs";
+import { MdArrowDownward } from "react-icons/md";
+import FAQCard from "./FAQCard";
 
 const faqData = [
   {
@@ -42,22 +45,10 @@ const FAQ = () => {
           />
         </span>
       </h2>
-      <div className="mx-auto space-y-4">
-        {faqData.map((item, index) => {
-          return (
-            <div
-              key={index}
-              tabIndex={0}
-              className="collapse-plus collapse rounded-box border  bg-base-100 drop-shadow-sm"
-            >
-              <div className="collapse-title p-4 text-xl font-medium">
-                {item.ques}
-              </div>
-              <div className="collapse-content">
-                <p>{item.ans}</p>
-              </div>
-            </div>
-          );
+
+      <div className="mx-auto space-y-2">
+        {faqData.map((item: any, index: number) => {
+          return <FAQCard key={index} ques={item.ques} ans={item.ans} />;
         })}
       </div>
     </div>

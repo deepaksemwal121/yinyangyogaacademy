@@ -5,7 +5,7 @@ import { MdArrowForward } from "react-icons/md";
 
 const CourseCard = () => {
   return (
-    <div className="grid gap-3 md:grid-cols-4">
+    <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
       {[1, 2, 3, 4].map(() => {
         return (
           <div

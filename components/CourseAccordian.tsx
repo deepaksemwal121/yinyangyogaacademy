@@ -28,7 +28,7 @@ const CourseAccordian: React.FC<Syllabus> = ({ title, desc, classes }) => {
       </div>
       <div className={` bg-slate-50 p-4 ${open ? "" : "hidden"}`}>
         <p>{desc}</p>
-        <ul className="mt-4 grid grid-cols-3 gap-5">
+        <ul className="mt-4 grid gap-5 md:grid-cols-3">
           {classes.map((item, index) => {
             return (
               <li key={index} className="flex items-center space-x-4">
