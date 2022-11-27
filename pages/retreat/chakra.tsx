@@ -5,6 +5,10 @@ import Slider from "react-slick";
 import Image from "next/image";
 import { IoCheckmarkCircle } from "react-icons/io5";
 import Teacherprofile from "../../components/sections/Teacherprofile";
+import { BsArrowRight, BsPatchCheck } from "react-icons/bs";
+import TestimonialCarousel from "../../components/sections/TestimonialCarousel";
+import TrustPilotReview from "../../components/sections/TrustPilotReview";
+import timeTable from "../../data/timeTable";
 
 const template = () => {
   const settings = {
@@ -20,6 +24,13 @@ const template = () => {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
     ],
   };
   return (
@@ -31,41 +42,192 @@ const template = () => {
       </Head>
       <main className="">
         {/* hero section */}
-        <section className="grid  h-[40rem] items-center bg-orange-200 px-8 py-16 md:grid-cols-2 md:px-32">
-          <div>
-            <Text.Secondary size="lg">Welcome to yoga retreat</Text.Secondary>
-            <h3 className="text-[30px] md:text-[45px]">
-              Chakras Yoga Retreat in Rishikesh
-            </h3>
-            <h3 className="text-[30px] md:text-[40px] ">7 Days Retreat !</h3>
-
-            <Text.Secondary color="gray">
+        <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
+          <div className=" space-y-2 py-2">
+            <p className=" text-lg font-semibold tracking-wide text-gray-200 md:text-xl">
               Come and join us for the unforgettable experience of a lifetime
-            </Text.Secondary>
-            <Button
-              title="Book Now"
-              url="/"
-              style="border-2 border-orange-600 px-6 py-2 text-orange-600 text-[24px] hover:bg-orange-600 hover:text-white"
-            />
-          </div>
-          <div>
-            <Image
-              src={require("../../public/chakra.png")}
-              height={411}
-              width={607}
-              alt="hero"
-            />
+            </p>
+            <h2 className=" fancy-font text-2xl  leading-[6rem] text-white drop-shadow md:text-3xl lg:text-4xl xl:text-5xl">
+              7 Day Chakra Yoga Retreat in Rishikesh
+            </h2>
+            <nav className="flex" aria-label="Breadcrumb">
+              <ol className="inline-flex items-center space-x-1 text-white md:space-x-3">
+                <li className="inline-flex items-center">
+                  <a
+                    href="#"
+                    className="inline-flex items-center text-sm font-medium "
+                  >
+                    <svg
+                      className="mr-2 h-4 w-4"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                    </svg>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <div className="flex items-center">
+                    <svg
+                      className="h-6 w-6 "
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <a href="#" className="ml-1 text-sm font-medium  md:ml-2">
+                      Yoga Retreat
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center">
+                    <svg
+                      className="h-6 w-6 "
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <a href="#" className="ml-1 text-sm font-medium  md:ml-2">
+                      7 Days Chakra Yoga Retreat
+                    </a>
+                  </div>
+                </li>
+              </ol>
+            </nav>
           </div>
         </section>
         {/* chakra retreat section */}
-        <section className="px-8 py-16 text-center md:px-32">
-          <p className="text-lg font-semibold text-orange-600">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+          <p className="text-center text-xl font-semibold text-[#bd0006] ">
+            Know More About Yoga Retreat
+          </p>
+          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+            7 Day Chakra Yoga Retreat in Rishikesh
+            <span>
+              <Image
+                src="/line-decor.png"
+                width={550 / 2}
+                height={63 / 2}
+                alt="line-decor"
+              />
+            </span>
+          </h2>
+          <div className="space-y-4">
+            <p>
+              Have you ever woken up in the morning with a feeling of not being
+              grounded, of being somewhere you don&apos;t belong, feeling
+              restless with constant worries and frustration? Do you look at the
+              future with anxiety and at the past with regret? These feelings
+              arise from the need to be efficient and functional machines even
+              at the cost of our mental and physical health! Fear, guilt, shame,
+              grief, lies, illusion, attachment: these are the demons of our
+              souls. We need to eradicate them to be balanced, centered and
+              present in our bodies; receptive and aware of our nature.
+            </p>
+            <p>
+              This{" "}
+              <b className="fancy-font text-lg text-[#bd0006]">7 day retreat</b>{" "}
+              is a journey through the chakras to restore the balance in our
+              systems, to learn how to deal with the negative feelings, to
+              increase awareness of the body and release the blockages.
+              Together, we will work on building a firm and steady resolve. Just
+              like a sequoia needs a strong and deep ground, we will work on
+              your foundations, making your roots steady and strong.
+            </p>
+          </div>
+          <div className="mt-4 flex flex-col items-center space-y-4 space-x-4 lg:flex-row">
+            <div className="space-y-4 lg:w-1/2">
+              <div className=" rounded-lg border-2 bg-white p-4 shadow-lg ">
+                <BsPatchCheck color="#bd0006" size={25} />
+                <h3 className="text-[30px]">Eligibility</h3>
+                <p>
+                  This retreat is designed to be beneficial to everyone. Neither
+                  do you need to have a background in Yoga to participate nor is
+                  there any restriction on age. You don&apos;t need flexibility
+                  or strength to do this retreat. This retreat is ideal for
+                  anyone looking to recharge their battery, take a break from
+                  the stress of daily life and learn more about yourself. The
+                  only requirement is a keen interest in learning and a
+                  determination to work on your body and mind.
+                </p>
+              </div>
+              <div className="border-l-4 border-[#bd0006] p-4">
+                <p className="font-semibold italic">
+                  Come join us for our{" "}
+                  <span className="text-[#bd0006]">
+                    7 day Chakra Yoga Retreat in Rishikesh
+                  </span>{" "}
+                  to unfold the treasures that lie within. We promise to make it
+                  a memorable and enriching experience for you.
+                </p>
+              </div>
+              <div className="flex justify-center">
+                <p className="mt-6 flex items-center justify-center space-x-4 rounded bg-[#bd0006] p-4 text-lg font-semibold text-white lg:w-1/3 ">
+                  <span>Apply Now</span>
+                  <BsArrowRight />
+                </p>
+              </div>
+            </div>
+
+            <div className="lg:w-1/2">
+              <Image
+                className="rounded-lg drop-shadow"
+                src="https://www.yogkulam.org/images/chakra.jpg"
+                height={500}
+                width={800}
+                alt="aboutus "
+              />
+            </div>
+          </div>
+        </section>
+        <section className="greyFloral mt-6 py-16  px-4 md:px-6 lg:px-8 xl:px-32">
+          <p className="text-center text-xl font-semibold text-[#bd0006] ">
             Practicing Yoga
           </p>
-          <h3 className="text-[30px] md:text-[40px]">
-            Chakras Yoga Retreat in Rishikesh
-          </h3>
-
+          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+            Understanding Chakras & Their Functioning
+            <span>
+              <Image
+                src="/line-decor.png"
+                width={550 / 2}
+                height={63 / 2}
+                alt="line-decor"
+              />
+            </span>
+          </h2>
+          <div className="space-y-2">
+            <p>
+              Chakras are the energy centers within the human body. They help to
+              regulate all the body&apos;s processes, right from organ function
+              to the immune system and emotion control.
+            </p>
+            <p>
+              If one or more of these energy centers are blocked, we may
+              unconsciously be impeding the body&apos;s energy flow. When we
+              suppress feelings like anger or sorrow for example, these chakras
+              get blocked and in the long run, start to affect the body.
+              Whenever we fall sick or experience low emotional levels, it is
+              because a chakra is imbalance or is being blocked. On the other
+              hand, if we endeavor to work on our physical, emotional, mental
+              and spiritual health, we promote an easy flow of energy throughout
+              our chakras. This retreat will help you in restoring the balance
+              and energy flow throughout the body.
+            </p>
+          </div>
           <div className="my-6">
             <Slider {...settings}>
               {[
@@ -106,23 +268,17 @@ const template = () => {
                 },
               ].map((item, i) => {
                 return (
-                  <div key={i}>
-                    <div className="mx-2">
+                  <div key={i} className="p-4">
+                    <div className=" rounded-lg bg-white p-4 drop-shadow">
                       <Image
                         src={item.image}
                         alt={item.name}
-                        height={200}
-                        width={200}
+                        height={100}
+                        width={100}
                       />
                       <div className="px-4">
-                        <h3 className="text-[24px] md:text-[34px]">
-                          {item.name}
-                        </h3>
-                        <div className="my-2">
-                          <Text.Secondary size="sm" color="gray">
-                            {item.desc}
-                          </Text.Secondary>
-                        </div>
+                        <h3 className="text-xl md:text-3xl">{item.name}</h3>
+                        <div className="my-2">{item.desc}</div>
                       </div>
                     </div>
                   </div>
@@ -131,300 +287,209 @@ const template = () => {
             </Slider>
           </div>
         </section>
-
-        {/* undestanding chakras and their functions */}
-        <section className="grid items-center  bg-orange-100 px-8  py-16 md:grid-cols-2 md:px-32">
-          <div className="text-center">
+        <section className="mt-6 py-16  px-4 md:px-6 lg:px-8 xl:px-32">
+          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+            About 7 Day Chakra Yoga Retreat Highlights
+            <span>
+              <Image
+                src="/line-decor.png"
+                width={550 / 2}
+                height={63 / 2}
+                alt="line-decor"
+              />
+            </span>
+          </h2>
+          <p>
+            While there are many kinds of Yoga retreats, the Chakra retreat is
+            primarily different in its focus. The subject of the retreat, as the
+            name suggests, is the Chakras of the body. We learn about the
+            obstacles blocking each chakra and the best way to deal with these
+            issues effectively. Keeping this in mind, all the activities that we
+            do will be focused on the chakras. Even the excursion that we
+            undertake will be connected to the topic of the day! You get to
+            experience a full-immersion Chakra Healing Program while discovering
+            Yoga, The italian mountains and most importantly yourself.
+          </p>
+          <p className="mt-2">
+            This retreat will recharge and boost you and your energy levels.
+            Unlike other retreats, it gives you multiple tools that you can
+            effectively use from home and even continue to develop each practice
+            on your own. It enables you to become more peaceful and less
+            stressed, helping you see things in a new perspective and replacing
+            your old patterns with more productive ones. It is perfect in
+            helping you understand your needs and feelings and in teaching you
+            to take the time to nurture yourself.
+          </p>
+          <div className="mt-6 flex justify-evenly ">
             <Image
-              src="https://yinyangyogaacademy.com/wp-content/uploads/2022/09/Untitled-design.png"
-              alt="yoga courses"
-              height={500}
-              width={500}
+              src="/retreat-1.jpg"
+              height={300}
+              width={300}
+              className="rounded-full object-cover drop-shadow-md "
+              alt="retreat-1"
             />
-          </div>
-          <div>
-            <Text.Secondary size="lg">
-              Energy centers within the human body
-            </Text.Secondary>
-            <h3 className="text-[30px] md:text-[45px]">
-              Understanding Chakras &amp; Their Functioning
-            </h3>
-            <div className="my-2">
-              <Text.Secondary color="gray" size="sm">
-                Chakras are the energy centers within the human body. They help
-                to regulate all the body&apos;s processes, right from organ
-                function to the immune system and emotion control.
-              </Text.Secondary>
-            </div>
-
-            <div className="my-2">
-              <Text.Secondary color="gray" size="sm">
-                If one or more of these energy centers are blocked, we may
-                unconsciously be impeding the body&apos;s energy flow. When we
-                suppress feelings like anger or sorrow for example, these
-                chakras get blocked and in the long run, start to affect the
-                body. Whenever we fall sick or experience low emotional levels,
-                it is because a chakra is imbalance or is being blocked. On the
-                other hand, if we endeavor to work on our physical, emotional,
-                mental and spiritual health, we promote an easy flow of energy
-                throughout our chakras. This retreat will help you in restoring
-                the balance and energy flow throughout the body.
-              </Text.Secondary>
-            </div>
-            <Button
-              title="Book Now"
-              url="/"
-              style="border-2 border-orange-600 px-6 py-2 text-orange-600 text-[24px] hover:bg-orange-600 hover:text-white"
+            <Image
+              src="/retreat-2.jpg"
+              height={300}
+              width={300}
+              className="rounded-full object-cover drop-shadow-md "
+              alt="retreat-1"
+            />
+            <Image
+              src="/retreat-3.jpg"
+              height={300}
+              width={300}
+              className="rounded-full object-cover drop-shadow-md "
+              alt="retreat-1"
             />
           </div>
         </section>
-        <section className=" grid items-center px-8 py-16 md:grid-cols-2 md:px-32">
-          <div>
-            <Text.Secondary size="lg">7 days chakra retreat</Text.Secondary>
-            <h3 className="text-[30px] md:text-[40px]">
-              About the 7 days yoga retreat
-            </h3>
-            {/* title desc comps */}
-            <div className="my-4">
-              {[
-                {
-                  image: require("../../public/shahsrachakra.png"),
-                  title: "Self discovery",
-                  desc: "On this inner journey of self discovery, we help you access your healing powers, giving you techniques that you can take back and integrate into your daily life.",
-                },
-                {
-                  image: "",
-                  title: "Self discovery",
-                  desc: "On this inner journey of self discovery, we help you access your healing powers, giving you techniques that you can take back and integrate into your daily life.",
-                },
-                {
-                  image: "",
-                  title: "Self discovery",
-                  desc: "On this inner journey of self discovery, we help you access your healing powers, giving you techniques that you can take back and integrate into your daily life.",
-                },
-              ].map((item, i) => {
-                return (
-                  <div
-                    key={i}
-                    className="my-2 flex flex-col items-center md:flex-row"
-                  >
-                    <Image
-                      src="http://yinyangyogaacademy.com/wp-content/uploads/2022/09/yog2.png"
-                      alt="icon"
-                      width={150}
-                      height={150}
-                    />
-                    <div className="ml-4">
-                      <Text.Secondary size="lg" color="black">
-                        {item.title}
-                      </Text.Secondary>
-                      <Text.Secondary size="sm" color="gray">
-                        {item.desc}
-                      </Text.Secondary>
-                    </div>
-                  </div>
-                );
-              })}
+        <section className="mt-6 py-16  px-4 md:px-6 lg:px-8 xl:px-32">
+          <div className="items-center justify-around space-x-4 lg:flex">
+            <div className="text-center lg:w-1/2">
+              <Image
+                className="rounded-lg object-cover drop-shadow"
+                src="/retreat-4.jpg"
+                width={600}
+                height={400}
+                alt="yoga-lady"
+              />
+              <div className="mt-4 flex flex-col items-center justify-center rounded-lg border-2 border-[#bd0006] bg-white p-4 shadow-lg">
+                <div className="text-center text-2xl font-semibold">
+                  Book Your Chakra Yoga Retreat for 7 Days at Yin Yang Yoga
+                  Academy at{" "}
+                  <span className="font-bold text-[#bd0006]"> $499</span>
+                </div>
+                <div className="flex justify-center">
+                  <p className="mt-6 flex  items-center justify-center space-x-4 rounded bg-[#bd0006] p-4 text-lg font-semibold text-white ">
+                    <span>Apply Now</span>
+                    <BsArrowRight />
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="text-center">
-            <Image
-              src="https://yinyangyogaacademy.com/wp-content/uploads/2022/09/Untitled-design.png"
-              alt="yoga courses"
-              height={500}
-              width={500}
-            />
+            <div className=" lg:w-1/2">
+              <div className="space-y-2 rounded-lg bg-white p-4  drop-shadow-lg">
+                <h2 className="fancy-font mb-2 text-3xl ">
+                  What&apos;s Included In Retreat
+                </h2>
+
+                {[
+                  { title: " 2 yoga classes daily (one morning, one evening)" },
+                  {
+                    title: " Daily pranayama class (breath awareness practice)",
+                  },
+                  { title: " Daily mantra recitations and relaxations" },
+                  {
+                    title:
+                      " Daily meditation class (active and passive meditations)",
+                  },
+                  {
+                    title:
+                      " Daily outdoor excursions or satsang (caves, temples, waterfalls, or local mountain, villages)",
+                  },
+                  { title: " Daily discussion group and journaling sessions" },
+                  { title: " One vedic astrology session" },
+                  { title: " One reiki healing session" },
+                  { title: " 6 nights accommodation" },
+                  {
+                    title:
+                      " 3 organic vegetarian or vegan delicious meals per day, plus morning herbal tea",
+                  },
+                  { title: " Pick up from Jolly Grant Airport (DED)" },
+                  { title: " Filtered water" },
+                  { title: " Use of campus facilities such as free Wi-Fi" },
+                  { title: " School notebook and pen" },
+                  { title: " 1 mala (Indian mantra necklace)" },
+                  { title: " Yogic cleansing kit" },
+                  { title: " One kirtan or sound healing session" },
+                ].map((item, i) => {
+                  return (
+                    <li key={i} className="flex items-center space-x-4">
+                      <Image
+                        src="/icons-home/001-chakra.png"
+                        width={30}
+                        height={30}
+                        alt="bullet"
+                        className="w-1/6"
+                      />
+                      <span className="w-5/6">{item.title}</span>
+                    </li>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </section>
-        {/* highlights eligibility whats included */}
-        <section className="grid space-y-4 px-8 md:grid-cols-2 md:space-x-2 md:px-32">
-          <div>
-            <div className="mb-2 rounded bg-orange-100 p-4">
-              <Text.Secondary size="lg">Highlights</Text.Secondary>
-              <h3 className="text-2xl md:text-[34px]">
-                Overview Of The Retreat
-              </h3>
-              <Text.Secondary color="gray">
-                While there are many kinds of Yoga retreats, the Chakra retreat
-                is primarily different in its focus. The subject of the retreat,
-                as the name suggests, is the Chakras of the body. We learn about
-                the obstacles blocking each chakra and the best way to deal with
-                these issues effectively. Keeping this in mind, all the
-                activities that we do will be focused on the chakras. Even the
-                excursion that we undertake will be connected to the topic of
-                the day! You get to experience a full-immersion Chakra Healing
-                Program while discovering Yoga, The italian mountains and most
-                importantly yourself.
-              </Text.Secondary>
-              <Text.Secondary color="gray">
-                This retreat will recharge and boost you and your energy levels.
-                Unlike other retreats, it gives you multiple tools that you can
-                effectively use from home and even continue to develop each
-                practice on your own. It enables you to become more peaceful and
-                less stressed, helping you see things in a new perspective and
-                replacing your old patterns with more productive ones. It is
-                perfect in helping you understand your needs and feelings and in
-                teaching you to take the time to nurture yourself.
-              </Text.Secondary>
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+          <p className="text-center text-lg font-bold text-[#bd0006]">
+            Upcoming Events
+          </p>
+          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+            Available Seats for 7 Days Chakra Yoga Retreat
+            <span>
+              <Image
+                src="/line-decor.png"
+                width={550 / 2}
+                height={63 / 2}
+                alt="line-decor"
+              />
+            </span>
+          </h2>
+          <div className="w-full overflow-x-scroll">
+            <div className="flex w-full justify-between rounded-t-lg bg-[#bd0006] p-4 text-center text-lg font-bold text-white">
+              <div className="w-1/6 border-r-[2px] border-dashed">
+                Start Date
+              </div>
+              <div className="w-1/6  border-r-[2px] border-dashed">
+                End Date
+              </div>
+              <div className="w-1/6 border-r-[2px] border-dashed">
+                Availability
+              </div>
+              <div className="w-1/6 border-r-[2px] border-dashed">Shared</div>
+              <div className="w-1/6 border-r-[2px] border-dashed">Private</div>
+              <div className="w-1/6">Booking</div>
             </div>
-            <div className="mt-2 rounded bg-orange-100 p-4">
-              <Text.Secondary size="lg">Eligibility</Text.Secondary>
-              <h3 className="text-2xl md:text-[34px]">
-                Eligibility For The Retreat
-              </h3>
-              <Text.Secondary color="gray">
-                This retreat is designed to be beneficial to everyone. Neither
-                do you need to have a background in Yoga to participate nor is
-                there any restriction on age. You don&apos;t need flexibility or
-                strength to do this retreat. This retreat is ideal for anyone
-                looking to recharge their battery, take a break from the stress
-                of daily life and learn more about yourself. The only
-                requirement is a keen interest in learning and a determination
-                to work on your body and mind.
-              </Text.Secondary>
-            </div>
-          </div>
-          <div className="rounded bg-orange-100 p-4">
-            <Text.Secondary size="lg">What&apos;s Included</Text.Secondary>
-            <h3 className="text-2xl md:text-[34px]">
-              All What Is Included In Retreat
-            </h3>
-            {[
-              { title: " 2 yoga classes daily (one morning, one evening)" },
-              { title: " Daily pranayama class (breath awareness practice)" },
-              { title: " Daily mantra recitations and relaxations" },
-              {
-                title:
-                  " Daily meditation class (active and passive meditations)",
-              },
-              {
-                title:
-                  " Daily outdoor excursions or satsang (caves, temples, waterfalls, or local mountain, villages)",
-              },
-              { title: " Daily discussion group and journaling sessions" },
-              { title: " One vedic astrology session" },
-              { title: " One reiki healing session" },
-              { title: " 6 nights accommodation" },
-              {
-                title:
-                  " 3 organic vegetarian or vegan delicious meals per day, plus morning herbal tea",
-              },
-              { title: " Pick up from Jolly Grant Airport (DED)" },
-              { title: " Filtered water" },
-              { title: " Use of campus facilities such as free Wi-Fi" },
-              { title: " School notebook and pen" },
-              { title: " 1 mala (Indian mantra necklace)" },
-              { title: " Yogic cleansing kit" },
-              { title: " One kirtan or sound healing session" },
-            ].map((item, i) => {
+            {timeTable.map((item: any, index: number) => {
               return (
-                <div key={i} className="my-4 flex items-center md:my-2">
-                  <IoCheckmarkCircle className="mr-2 text-orange-600" />
-                  <Text.Secondary size="sm" color="gray">
-                    {item.title}
-                  </Text.Secondary>
+                <div
+                  key={index}
+                  className={`flex ${
+                    index % 2 === 0 ? "bg-slate-50" : "bg-slate-100"
+                  } w-full justify-between   p-4 text-center text-lg font-medium`}
+                >
+                  <div className="w-1/6 border-r-[2px] border-dashed">
+                    {item.start}
+                  </div>
+                  <div className="w-1/6  border-r-[2px] border-dashed">
+                    {item.end}
+                  </div>
+                  <div className="w-1/6 border-r-[2px] border-dashed">
+                    {item.availability}
+                  </div>
+                  <div className="w-1/6 border-r-[2px] border-dashed">
+                    {item.shared}
+                  </div>
+                  <div className="w-1/6 border-r-[2px] border-dashed">
+                    {item.private}
+                  </div>
+                  <div className="w-1/6">{item.booking}</div>
                 </div>
               );
             })}
           </div>
         </section>
-
-        {/* pricing section */}
-        <section className="my-32 px-8 text-center md:px-32">
-          <Text.Secondary size="lg">Timetable</Text.Secondary>
-          <h3 className="text-[40px]">Upcoming Events</h3>
-          <div className="w-full overflow-x-auto">
-            <table className="table-zebra my-4 table w-full">
-              <thead className="h-16 rounded bg-orange-100">
-                <tr className="font-medium text-orange-600">
-                  <td>Start Date</td>
-                  <td>Start End</td>
-                  <td>Availability</td>
-                  <td>Shared</td>
-                  <td>Private</td>
-                  <td className="text-center">Booking</td>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  {
-                    start: "23 Jul 2022",
-                    end: "29 Jul 2022",
-                    availability: "Available",
-                    shared: "499 USD",
-                    private: "599 USD",
-                    booking: "Apply Now",
-                  },
-                  {
-                    start: "23 Jul 2022",
-                    end: "29 Jul 2022",
-                    availability: "Available",
-                    shared: "499 USD",
-                    private: "599 USD",
-                    booking: "Apply Now",
-                  },
-                  {
-                    start: "23 Jul 2022",
-                    end: "29 Jul 2022",
-                    availability: "Available",
-                    shared: "499 USD",
-                    private: "599 USD",
-                    booking: "Apply Now",
-                  },
-                  {
-                    start: "23 Jul 2022",
-                    end: "29 Jul 2022",
-                    availability: "Available",
-                    shared: "499 USD",
-                    private: "599 USD",
-                    booking: "Apply Now",
-                  },
-                  {
-                    start: "23 Jul 2022",
-                    end: "29 Jul 2022",
-                    availability: "Available",
-                    shared: "499 USD",
-                    private: "599 USD",
-                    booking: "Apply Now",
-                  },
-                  {
-                    start: "23 Jul 2022",
-                    end: "29 Jul 2022",
-                    availability: "Available",
-                    shared: "499 USD",
-                    private: "599 USD",
-                    booking: "Apply Now",
-                  },
-                ].map((item, i) => {
-                  return (
-                    <tr
-                      key={i}
-                      className={`h-16 text-sm text-gray-600 ${
-                        i % 2 !== 0 ? "bg-orange-100" : ""
-                      } `}
-                    >
-                      <td>{item.start}</td>
-                      <td>{item.end}</td>
-                      <td>{item.availability}</td>
-                      <td>{item.shared}</td>
-                      <td>{item.private}</td>
-                      <td>
-                        <Button
-                          title={item.booking}
-                          url="/"
-                          style="bg-orange-600 md:px-6 md:py-3 px-3 py-1 mx-auto text-white rounded"
-                        />
-                      </td>
-                    </tr>
-                  );
-                })}
-                <tr></tr>
-              </tbody>
-            </table>
-          </div>
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+          <TestimonialCarousel />
+        </section>
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+          <TrustPilotReview />
+        </section>
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+          <Teacherprofile />
         </section>
       </main>
-      <Teacherprofile />
     </div>
   );
 };

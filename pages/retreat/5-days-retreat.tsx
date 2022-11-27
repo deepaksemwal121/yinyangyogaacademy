@@ -19,27 +19,70 @@ const Retreat = () => {
       </Head>
       <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
         <div className=" space-y-2 py-2">
-          <p className=" text-xl font-semibold tracking-wide text-gray-200">
+          <p className=" text-lg font-semibold tracking-wide text-gray-200 md:text-xl">
             Come and join us for the unforgettable experience of a lifetime
           </p>
-          <h2 className=" fancy-font text-5xl leading-[4rem] text-white drop-shadow">
+          <h2 className=" fancy-font text-2xl  leading-[6rem] text-white drop-shadow md:text-3xl lg:text-4xl xl:text-5xl">
             5 Day Yoga Retreat in Rishikesh
           </h2>
-          <div className="breadcrumbs text-lg text-white">
-            <ul>
-              <li>
-                <a className="">
-                  <MdHome size={20} />
+          <nav className="flex" aria-label="Breadcrumb">
+            <ol className="inline-flex items-center space-x-1 text-white md:space-x-3">
+              <li className="inline-flex items-center">
+                <a
+                  href="#"
+                  className="inline-flex items-center text-sm font-medium "
+                >
+                  <svg
+                    className="mr-2 h-4 w-4"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                  </svg>
+                  Home
                 </a>
               </li>
               <li>
-                <a>Yoga Retreat </a>
+                <div className="flex items-center">
+                  <svg
+                    className="h-6 w-6 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <a href="#" className="ml-1 text-sm font-medium  md:ml-2">
+                    Yoga Retreat
+                  </a>
+                </div>
               </li>
               <li>
-                <a>5 Day Yoga Retreat</a>
+                <div className="flex items-center">
+                  <svg
+                    className="h-6 w-6 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <a href="#" className="ml-1 text-sm font-medium  md:ml-2">
+                    5 Days Yoga Retreat
+                  </a>
+                </div>
               </li>
-            </ul>
-          </div>
+            </ol>
+          </nav>
         </div>
       </section>
       <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
@@ -84,8 +127,8 @@ const Retreat = () => {
             cliff jumping, and local sightseeing.
           </p>
         </div>
-        <div className="mt-4 flex items-center space-x-4">
-          <div className="w-1/2 space-y-4">
+        <div className="mt-4 flex flex-col items-center space-y-4 space-x-4 lg:flex-row">
+          <div className="space-y-4 lg:w-1/2">
             <div className=" rounded-lg border-2 bg-white p-4 shadow-lg ">
               <BsPatchCheck color="#bd0006" size={25} />
               <h3 className="text-[30px]">Eligibility</h3>
@@ -108,14 +151,14 @@ const Retreat = () => {
               </p>
             </div>
             <div className="flex justify-center">
-              <p className="mt-6 flex w-1/3 items-center justify-center space-x-4 rounded bg-[#bd0006] p-4 text-lg font-semibold text-white ">
+              <p className="mt-6 flex items-center justify-center space-x-4 rounded bg-[#bd0006] p-4 text-lg font-semibold text-white lg:w-1/3 ">
                 <span>Apply Now</span>
                 <BsArrowRight />
               </p>
             </div>
           </div>
 
-          <div className="w-1/2">
+          <div className="lg:w-1/2">
             <Image
               className="rounded-lg drop-shadow"
               src="https://www.yogkulam.org/images/5-days-retreat.jpg"
@@ -149,7 +192,7 @@ const Retreat = () => {
           facilis quasi perspiciatis amet?
         </p>
         <div className="mt-4 border-b-2 border-dashed"></div>
-        <div className="mt-4 flex items-center justify-between rounded-lg border-2 border-[#bd0006] bg-white p-4 shadow-lg">
+        <div className="mt-4 flex flex-col items-center justify-between rounded-lg border-2 border-[#bd0006] bg-white p-4 shadow-lg lg:flex-row">
           <div className="text-2xl font-semibold">
             Book Your Yoga Retreat for 5 Days at Yin Yang Yoga Academy at{" "}
             <span className="font-bold text-[#bd0006]"> $300</span>

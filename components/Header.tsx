@@ -45,12 +45,12 @@ const Header = () => {
         "200 Hours Ayurveda YTTC",
       ],
       links: [
-        "/yoga-teacher-training/200-hours",
-        "/yoga-teacher-training/200-hours",
-        "/yoga-teacher-training/200-hours",
-        "/yoga-teacher-training/200-hours",
-        "/yoga-teacher-training/200-hours",
-        "/yoga-teacher-training/200-hours",
+        "/yoga-teacher-training/100-hours-yttc",
+        "/yoga-teacher-training/200-hour-yttc",
+        "/yoga-teacher-training/300-hour-yttc",
+        "/yoga-teacher-training/200-hour-yttc",
+        "/yoga-teacher-training/ayurveda",
+        "/yoga-teacher-training/ayurveda",
       ],
     },
     {
@@ -61,9 +61,9 @@ const Header = () => {
         "7 Day Chakra Yoga Retreat",
       ],
       links: [
+        "/retreat/5-days-retreat",
         "/retreat/10-days-retreat",
-        "/retreat/10-days-retreat",
-        "/retreat/10-days-retreat",
+        "/retreat/chakra",
       ],
     },
   ];
@@ -95,7 +95,7 @@ const Header = () => {
         </div>
       </div>
       <nav className=" relative z-50 flex w-full items-center justify-around py-2 shadow md:px-8 lg:space-x-24 lg:px-8 xl:space-x-20 xl:px-32">
-        <div className="brand logo absolute left-4 z-50 flex h-full w-1/3 items-center justify-center rounded-tl-3xl rounded-br-3xl bg-[#bd0006] p-4 drop-shadow-lg md:left-16  md:w-1/4 lg:w-1/5 xl:w-1/6">
+        <div className="brand logo absolute left-4 z-50 flex h-full w-1/3 cursor-pointer items-center justify-center rounded-tl-3xl rounded-br-3xl bg-[#bd0006] p-4 drop-shadow-lg md:left-16  md:w-1/4 lg:w-1/5 xl:w-1/6">
           <Link href="/">
             <Image src={logo} width={880 / 5} height={283 / 5} alt="logo" />
           </Link>
@@ -111,7 +111,7 @@ const Header = () => {
         </div>
 
         <div className="hidden h-max w-4/6  lg:block">
-          <ul className="flex  items-center justify-around  ">
+          <ul className="flex cursor-pointer  items-center justify-around  ">
             <li className="  p-4 hover:text-[#bd0006]">
               <Link href="/">Home</Link>
             </li>
@@ -151,16 +151,20 @@ const Header = () => {
           <li className="hover:text-[#bd0006]">
             <Link href="/contact">Contact Us</Link>
           </li>
-          <li className="hover:text-[#bd0006]">Pay Now</li>
+          <li className="hover:text-[#bd0006]">
+            <Link href="/pay">Pay Now</Link>
+          </li>
         </ul>
       </div>
-      <div className="fixed top-0 right-7 z-50 hidden lg:block">
-        <Image
-          src={"/applynow.png"}
-          height={200}
-          width={200}
-          alt="apply now "
-        />
+      <div className=" swingBtn fixed top-0 right-7 z-50 hidden cursor-pointer lg:block">
+        <Link href="/apply">
+          <Image
+            src={"/applynow.png"}
+            height={200}
+            width={200}
+            alt="apply now "
+          />
+        </Link>
       </div>
     </div>
   );

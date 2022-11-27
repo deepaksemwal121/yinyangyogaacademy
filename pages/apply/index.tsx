@@ -12,25 +12,51 @@ const ApplyForm = () => {
       <main>
         <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
           <div className=" space-y-2 py-2">
-            <p className=" text-xl font-semibold tracking-wide text-gray-200">
+            <p className=" text-lg font-semibold tracking-wide text-gray-200 md:text-xl">
               Please Ensure your Advance Booking For the YTTC
             </p>
-            <h2 className=" fancy-font text-5xl leading-[4rem] text-white drop-shadow">
+            <h2 className=" fancy-font text-2xl  leading-[6rem] text-white drop-shadow md:text-3xl lg:text-4xl xl:text-5xl">
               YTTC | Reservation Form
             </h2>
-            <div className="breadcrumbs text-lg text-white">
-              <ul>
-                <li>
-                  <a className="">
-                    <MdHome size={20} />
+            <nav className="flex" aria-label="Breadcrumb">
+              <ol className="inline-flex items-center space-x-1 text-white md:space-x-3">
+                <li className="inline-flex items-center">
+                  <a
+                    href="#"
+                    className="inline-flex items-center text-sm font-medium "
+                  >
+                    <svg
+                      className="mr-2 h-4 w-4"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                    </svg>
+                    Home
                   </a>
                 </li>
-
                 <li>
-                  <a>Application Form</a>
+                  <div className="flex items-center">
+                    <svg
+                      className="h-6 w-6 "
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <a href="#" className="ml-1 text-sm font-medium  md:ml-2">
+                      Application Form
+                    </a>
+                  </div>
                 </li>
-              </ul>
-            </div>
+              </ol>
+            </nav>
           </div>
         </section>
 
@@ -49,7 +75,7 @@ const ApplyForm = () => {
               />
             </span>
           </h2>
-          <p className="my-4 mx-10 text-center text-lg">
+          <p className="my-4 text-center text-lg md:mx-10">
             <b> Namaste! </b> We are so delighted to welcome you to the{" "}
             <span className="font-semibold text-[#bd0006]">
               Yin Yang Yoga Academy!{" "}
@@ -57,7 +83,7 @@ const ApplyForm = () => {
             We hope you are as excited as we are for you to embark on this
             life-changing and trans-formative journey.{" "}
           </p>
-          <div className="patternBg mx-10 rounded-lg p-4">
+          <div className="patternBg rounded-lg p-4 md:mx-10">
             <div className="mt-4">
               <h3 className="fancy-font  text-xl font-bold">
                 Please fill out this form to complete your enrollment at
@@ -72,7 +98,7 @@ const ApplyForm = () => {
             <form>
               <div className="mt-4">
                 <h3 className="text-xl">Personal Inforamtion</h3>
-                <div className="mt-2 grid grid-cols-2 gap-4">
+                <div className="mt-2 grid gap-4 md:grid-cols-2">
                   <div className="relative rounded-lg bg-white p-2">
                     <input
                       type="text"
@@ -156,7 +182,7 @@ const ApplyForm = () => {
               </div>
               <div className="mt-4">
                 <h3 className="text-xl">Course Inforamtion</h3>
-                <div className="mt-2 grid grid-cols-2 gap-4">
+                <div className="mt-2 grid gap-4 md:grid-cols-2">
                   <div className="relative rounded-lg bg-white p-2">
                     <select
                       id="floating_outlined"
@@ -189,7 +215,7 @@ const ApplyForm = () => {
                     </select>
                     <label
                       htmlFor="floating_outlined"
-                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500"
+                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500"
                     >
                       Select Course you want to apply
                     </label>
@@ -222,9 +248,9 @@ const ApplyForm = () => {
                     </select>
                     <label
                       htmlFor="floating_outlined"
-                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500"
+                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform  px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500"
                     >
-                      Will you be staying in a shared or a private room
+                      Select Your Room Type
                     </label>
                   </div>
                   <div className="relative rounded-lg bg-white p-2">
