@@ -17,7 +17,7 @@ const DropdownMenu = ({ links, title, subtitle }: Menu) => {
       <div
         className={` top-[50px] left-0  hidden w-[250px] flex-col  border-t-[2px] border-[#bd0006] bg-white p-4 group-hover:flex   lg:absolute`}
       >
-        <ul className="w-full space-y-4">
+        <ul className="w-full space-y-4 font-medium">
           {subtitle.map((item, index) => {
             return (
               <li

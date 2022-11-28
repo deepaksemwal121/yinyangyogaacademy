@@ -70,7 +70,7 @@ const Header = () => {
 
   return (
     <div className=" sticky top-0  z-50 w-full bg-white md:block ">
-      <div className="topbar z-10 hidden justify-between bg-gray-800 py-2 px-4 text-white md:flex md:px-6 lg:px-8 xl:px-32">
+      <div className="topbar z-10 hidden justify-between bg-gray-800 py-2 px-4 text-white md:flex md:px-6 lg:px-4 xl:px-8">
         <div className="flex w-2/6 items-center  space-x-3  px-2">
           <BiLocationPlus size={20} color="lightgray" />
           <span className="text-sm">
@@ -95,10 +95,12 @@ const Header = () => {
         </div>
       </div>
       <nav className=" relative z-50 flex w-full items-center justify-around py-2 shadow md:px-8 lg:space-x-24 lg:px-8 xl:space-x-20 xl:px-32">
-        <div className="brand logo absolute left-4 z-50 flex h-full w-1/3 cursor-pointer items-center justify-center rounded-tl-3xl rounded-br-3xl bg-[#bd0006] p-4 drop-shadow-lg md:left-16  md:w-1/4 lg:w-1/5 xl:w-1/6">
-          <Link href="/">
-            <Image src={logo} width={880 / 5} height={283 / 5} alt="logo" />
-          </Link>
+        <div className="absolute top-2 left-4">
+          <div className="  z-50 flex h-full  cursor-pointer items-center justify-center rounded-tl-3xl rounded-br-3xl bg-[#bd0006] p-4 drop-shadow-lg  ">
+            <Link href="/">
+              <Image src={logo} width={880 / 5} height={283 / 5} alt="logo" />
+            </Link>
+          </div>
         </div>
         <div
           className=" flex w-full justify-end p-4  lg:hidden"
@@ -110,9 +112,9 @@ const Header = () => {
           </span>
         </div>
 
-        <div className="hidden h-max w-4/6  lg:block">
-          <ul className="flex cursor-pointer  items-center justify-around  ">
-            <li className="  p-4 hover:text-[#bd0006]">
+        <div className="hidden h-max w-full   lg:block">
+          <ul className=" flex cursor-pointer items-center justify-center  space-x-4 font-semibold  ">
+            <li className=" hover:text-[#bd0006] lg:p-3 xl:p-4">
               <Link href="/">Home</Link>
             </li>
             {MenuHover.map((item, index) => {
@@ -125,17 +127,17 @@ const Header = () => {
                 />
               );
             })}
-            <li className="hover:text-[#bd0006]">
+            <li className="hover:text-[#bd0006] lg:p-3 xl:p-4">
               <Link href="/contact">Contact Us</Link>
             </li>
-            <li className="hover:text-[#bd0006]">Pay Now</li>
+            <li className="hover:text-[#bd0006] lg:p-3 xl:p-4">Pay Now</li>
           </ul>
         </div>
       </nav>
       {/* Mobile Menu  */}
       <div className={`${openMenu ? "" : "hidden"} p-3`}>
-        <ul className="menu flex flex-col items-center  justify-around space-y-4 space-x-4 ">
-          <li className=" hover:text-[#bd0006]">
+        <ul className=" flex flex-col items-center justify-around  space-y-4 space-x-4 md:text-base lg:text-lg ">
+          <li className=" hover:text-[#bd0006]  lg:p-4">
             <Link href="/">Home</Link>
           </li>
           {MenuHover.map((item, index) => {
@@ -148,10 +150,10 @@ const Header = () => {
               />
             );
           })}
-          <li className="hover:text-[#bd0006]">
+          <li className="p-4 hover:text-[#bd0006]">
             <Link href="/contact">Contact Us</Link>
           </li>
-          <li className="hover:text-[#bd0006]">
+          <li className="p-4 hover:text-[#bd0006]">
             <Link href="/pay">Pay Now</Link>
           </li>
         </ul>
