@@ -45,14 +45,12 @@ const CourseCard = () => {
                 <p className="font-medium">Certification:</p>
                 <p>Yoga Alliance</p>
               </div>
-              <div className="flex justify-between ">
-                <Button
-                  style="bg-[#bd0006] rounded px-4 py-2 text-white"
-                  title="Apply Now"
-                  url="/"
-                />
-                <div className="flex items-center justify-between text-[#bd0006]">
-                  <p>About Course</p> <MdArrowForward />
+              <div className="mt-1 flex justify-between  space-x-4">
+                <div className="flex cursor-pointer items-center justify-between rounded bg-[#bd0006] p-2 text-white ">
+                  <p>Apply</p>
+                </div>
+                <div className="flex cursor-pointer items-center text-[#bd0006]">
+                  <p>About</p> <MdArrowForward />
                 </div>
               </div>
             </div>
