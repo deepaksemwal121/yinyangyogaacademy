@@ -1,14 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import Text from "../../components/Text";
 import { BsArrowRight, BsPatchCheck } from "react-icons/bs";
-import Button from "../../components/Button";
 import Teacherprofile from "../../components/sections/Teacherprofile";
-import { MdHome } from "react-icons/md";
 import Head from "next/head";
 import EventTable from "../../widgets/reusable/EventTable";
 import TestimonialCarousel from "../../components/sections/TestimonialCarousel";
 import TrustPilotReview from "../../components/sections/TrustPilotReview";
+import ApplyButton from "../../widgets/reusable/ApplyButton";
 
 const Retreat = () => {
   return (
@@ -18,10 +16,10 @@ const Retreat = () => {
       </Head>
       <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
         <div className=" space-y-2 py-2">
-          <p className=" text-lg font-semibold tracking-wide text-gray-200 md:text-xl">
+          <p className=" font-semibold tracking-wide text-gray-200 md:text-lg ">
             Come and join us for the unforgettable experience of a lifetime
           </p>
-          <h2 className=" fancy-font text-2xl  leading-[6rem] text-white drop-shadow md:text-3xl lg:text-4xl xl:text-5xl">
+          <h2 className=" fancy-font text-2xl text-white drop-shadow md:text-3xl lg:text-4xl xl:text-5xl">
             10 Day Yoga Retreat in Rishikesh
           </h2>
           <nav className="flex" aria-label="Breadcrumb">
@@ -85,10 +83,10 @@ const Retreat = () => {
         </div>
       </section>
       <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-        <p className="text-center text-xl font-semibold text-[#bd0006] ">
+        <p className="text-center text-base font-semibold text-[#bd0006] md:text-lg ">
           Know More About Yoga Retreat
         </p>
-        <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+        <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           10 Day Yoga Retreat in Rishikesh
           <span>
             <Image
@@ -100,7 +98,7 @@ const Retreat = () => {
           </span>
         </h2>
         <div className="space-y-4">
-          <p>
+          <p className="text-sm md:text-base">
             Away from the metropolitan lifestyle, our school - Rishikesh
             Yogkulam, serves as a sanctuary for your soul, mind and body.
             Nestled in the lap of the majestic Himalayas and on the banks of the
@@ -110,7 +108,7 @@ const Retreat = () => {
             meditation, giving seekers a break from their daily routine and
             helping them to connect with their inner selves.
           </p>
-          <p>
+          <p className="text-sm md:text-base">
             This holistic retreat includes learning and practicing Yoga asanas,
             pranayama and meditation, nature excursions and a tour of the
             Himalayas! The simplest of Yoga asanas when performed with the right
@@ -118,7 +116,7 @@ const Retreat = () => {
             quieter mind, not to mention the numerous health benefits
             contributing to one&apos;s overall well-being.
           </p>
-          <p>
+          <p className="text-sm md:text-base">
             The gushing water and gentle breeze around our humble abode is a
             refreshing change for the mind, body, and soul and is an experience
             in itself. Moreover, you can even pursue various adventurous
@@ -130,8 +128,8 @@ const Retreat = () => {
           <div className="space-y-4 lg:w-1/2">
             <div className=" rounded-lg border-2 bg-white p-4 shadow-lg ">
               <BsPatchCheck color="#bd0006" size={25} />
-              <h3 className="text-[30px]">Eligibility</h3>
-              <p>
+              <h3 className="text-lg md:text-xl">Eligibility</h3>
+              <p className="text-sm md:text-base">
                 Backed by millennia of experience, this retreat is intricately
                 designed to be beneficial to all, beginners and regular
                 practitioners alike. It has no age or skill restriction and is
@@ -150,10 +148,7 @@ const Retreat = () => {
               </p>
             </div>
             <div className="flex justify-center">
-              <p className="mt-6 flex items-center justify-center space-x-4 rounded bg-[#bd0006] p-4 text-lg font-semibold text-white lg:w-1/3 ">
-                <span>Apply Now</span>
-                <BsArrowRight />
-              </p>
+              <ApplyButton />
             </div>
           </div>
 
@@ -170,10 +165,10 @@ const Retreat = () => {
       </section>
       {/* Cost Section */}
       <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-        <p className="text-center text-xl font-semibold text-[#bd0006] ">
+        <p className="text-center text-lg font-semibold text-[#bd0006] md:text-xl ">
           Know More About Yoga Retreat
         </p>
-        <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+        <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           Get Your 10 Days Yoga Retreat
           <span>
             <Image
@@ -184,23 +179,20 @@ const Retreat = () => {
             />
           </span>
         </h2>
-        <p className="text-center text-lg">
+        <p className="text-center text-sm md:text-base">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
           provident minus ex aspernatur voluptatibus qui autem dicta, blanditiis
           aliquid, recusandae vero saepe nobis consectetur fugiat deserunt,
           facilis quasi perspiciatis amet?
         </p>
         <div className="mt-4 border-b-2 border-dashed"></div>
-        <div className="mt-4 flex items-center justify-between rounded-lg border-2 border-[#bd0006] bg-white p-4 shadow-lg">
-          <div className="text-2xl font-semibold">
-            Book Your Yoga Retreat for 10 Days at Yin Yang Yoga Academy at{" "}
+        <div className="mt-4 flex flex-col items-center justify-between rounded-lg border-2 border-[#bd0006] bg-white p-4 shadow-lg lg:flex-row">
+          <div className="text-center text-xl font-semibold md:text-2xl">
+            Book Your Yoga Retreat for 10 Days at Yin Yang Yoga Academy at
             <span className="font-bold text-[#bd0006]"> $500</span>
           </div>
           <div className="flex justify-center">
-            <p className="mt-6 flex  items-center justify-center space-x-4 rounded bg-[#bd0006] p-4 text-lg font-semibold text-white ">
-              <span>Apply Now</span>
-              <BsArrowRight />
-            </p>
+            <ApplyButton />
           </div>
         </div>
       </section>
@@ -210,7 +202,7 @@ const Retreat = () => {
         <p className="text-center text-lg font-bold text-[#bd0006]">
           Upcoming Events
         </p>
-        <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+        <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           Available Seats for 10 Days Yoga Retreat
           <span>
             <Image

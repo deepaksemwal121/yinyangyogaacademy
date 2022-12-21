@@ -24,7 +24,7 @@ const TeacherCard: React.FC<Teacher> = ({ image, name, expertise, desc }) => {
       <div className="relative flex  space-x-4 p-4">
         <div className="w-1/3">
           <Image
-            className="rounded-tl-[50px] rounded-br-[50px] drop-shadow"
+            className=" rounded-tl-[25px] rounded-br-[25px] drop-shadow md:rounded-tl-[50px] md:rounded-br-[50px]"
             src={image}
             height={200}
             width={200}
@@ -32,10 +32,10 @@ const TeacherCard: React.FC<Teacher> = ({ image, name, expertise, desc }) => {
           />
         </div>
         <div className="flex w-2/3 flex-col flex-wrap justify-center space-y-3 overflow-hidden text-left">
-          <h2 className="fancy-font md:text-lg lg:text-xl xl:text-2xl">
+          <h2 className="fancy-font text-center md:text-lg lg:text-xl xl:text-2xl">
             {name}
           </h2>
-          <p className="rounded-tl-[25px] rounded-br-[25px] bg-[#bd0006] p-3 text-center  text-white">
+          <p className="rounded-tl-[25px] rounded-br-[25px] bg-[#bd0006] p-3 text-center text-sm text-white  md:text-base">
             {expertise}
           </p>
           <div className="my-2 flex justify-center space-x-4">

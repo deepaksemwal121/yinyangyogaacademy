@@ -13,9 +13,11 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import DropdownMenu from "./DropdownMenu";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const router = useRouter();
   const MenuHover = [
     {
       title: " About",
@@ -45,7 +47,7 @@ const Header = () => {
         "200 Hours Ayurveda YTTC",
       ],
       links: [
-        "/yoga-teacher-training/100-hours-yttc",
+        "/yoga-teacher-training/100-hour-yttc",
         "/yoga-teacher-training/200-hour-yttc",
         "/yoga-teacher-training/300-hour-yttc",
         "/yoga-teacher-training/200-hour-yttc",
@@ -98,7 +100,7 @@ const Header = () => {
         <div className="absolute top-2 left-4">
           <div className="  z-50 flex h-full  cursor-pointer items-center justify-center rounded-tl-3xl rounded-br-3xl bg-[#bd0006] p-4 drop-shadow-lg  ">
             <Link href="/">
-              <Image src={logo} width={880 / 5} height={283 / 5} alt="logo" />
+              <Image src={logo} width={880 / 7} height={283 / 7} alt="logo" />
             </Link>
           </div>
         </div>
@@ -114,30 +116,47 @@ const Header = () => {
 
         <div className="hidden h-max w-full   lg:block">
           <ul className=" flex cursor-pointer items-center justify-center  space-x-4 font-semibold  ">
-            <li className=" hover:text-[#bd0006] lg:p-3 xl:p-4">
+            <li
+              className={`${
+                router.pathname === "/" ? "text-[#bd0006]" : "text-black"
+              } hover:text-[#bd0006] lg:p-3 xl:p-4`}
+            >
               <Link href="/">Home</Link>
             </li>
             {MenuHover.map((item, index) => {
               return (
                 <DropdownMenu
+                  openMenu={openMenu}
+                  setOpenMenu={setOpenMenu}
                   key={index}
                   title={item.title}
                   subtitle={item.subtitle}
                   links={item.links}
+                  router={router.pathname}
                 />
               );
             })}
-            <li className="hover:text-[#bd0006] lg:p-3 xl:p-4">
+            <li
+              className={`${
+                router.pathname === "/contact" ? "text-[#bd0006]" : "text-black"
+              } hover:text-[#bd0006] lg:p-3 xl:p-4`}
+            >
               <Link href="/contact">Contact Us</Link>
             </li>
-            <li className="hover:text-[#bd0006] lg:p-3 xl:p-4">Pay Now</li>
+            <li
+              className={`${
+                router.pathname === "/pay" ? "text-[#bd0006]" : "text-black"
+              } hover:text-[#bd0006] lg:p-3 xl:p-4`}
+            >
+              <Link href="/pay">Pay Now</Link>
+            </li>
           </ul>
         </div>
       </nav>
       {/* Mobile Menu  */}
-      <div className={`${openMenu ? "" : "hidden"} p-3`}>
-        <ul className=" flex flex-col items-center justify-around  space-y-4 space-x-4 md:text-base lg:text-lg ">
-          <li className=" hover:text-[#bd0006]  lg:p-4">
+      <div className={`${openMenu ? "" : "hidden"}  mt-5 h-screen  p-3`}>
+        <ul className=" flex flex-col items-center space-y-4 space-x-4   md:text-base lg:justify-around lg:text-lg ">
+          <li className="  hover:text-[#bd0006] lg:p-4">
             <Link href="/">Home</Link>
           </li>
           {MenuHover.map((item, index) => {
@@ -147,6 +166,9 @@ const Header = () => {
                 title={item.title}
                 subtitle={item.subtitle}
                 links={item.links}
+                router={router.pathname}
+                openMenu={openMenu}
+                setOpenMenu={setOpenMenu}
               />
             );
           })}
@@ -155,6 +177,9 @@ const Header = () => {
           </li>
           <li className="p-4 hover:text-[#bd0006]">
             <Link href="/pay">Pay Now</Link>
+          </li>
+          <li className="rounded bg-[#bd0006] p-2 text-white">
+            <Link href="/apply">Apply Now</Link>
           </li>
         </ul>
       </div>

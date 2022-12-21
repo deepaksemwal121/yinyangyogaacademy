@@ -1,21 +1,62 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
-import { MdHome } from "react-icons/md";
 import Teacherprofile from "../../components/sections/Teacherprofile";
 import TestimonialCarousel from "../../components/sections/TestimonialCarousel";
 import TrustPilotReview from "../../components/sections/TrustPilotReview";
 
 const ApplyForm = () => {
+  const [reservationForm, setReservationForm] = useState({
+    studentname: "",
+    emailaddress: "",
+    phoneNumber: "",
+    country: "",
+    gender: "",
+    courseSelected: "",
+    courseDate: "",
+    selectRoomType: "",
+    channelType: "",
+    messageFromStudent: "",
+  });
+
+  const handleReservation = async (e: any) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("/api/reservationApi", {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(reservationForm),
+      });
+      alert(`Successfully Registered`);
+      setReservationForm({
+        studentname: "",
+        emailaddress: "",
+        phoneNumber: "",
+        country: "",
+        gender: "",
+        courseSelected: "",
+        courseDate: "",
+        selectRoomType: "",
+        channelType: "",
+        messageFromStudent: "",
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div>
       <main>
         <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
           <div className=" space-y-2 py-2">
-            <p className=" text-lg font-semibold tracking-wide text-gray-200 md:text-xl">
+            <p className="  font-semibold tracking-wide text-gray-200 md:text-xl">
               Please Ensure your Advance Booking For the YTTC
             </p>
-            <h2 className=" fancy-font text-2xl  leading-[6rem] text-white drop-shadow md:text-3xl lg:text-4xl xl:text-5xl">
+            <h2 className=" fancy-font text-2xl   text-white drop-shadow md:text-3xl lg:text-4xl xl:text-5xl">
               YTTC | Reservation Form
             </h2>
             <nav className="flex" aria-label="Breadcrumb">
@@ -61,10 +102,10 @@ const ApplyForm = () => {
         </section>
 
         <section className="py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
-          <p className="text-center text-xl font-semibold text-[#bd0006] ">
+          <p className="text-center  font-semibold text-[#bd0006] md:text-xl ">
             Complete the Registration Form For Enrollment
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Enrollment Form
             <span>
               <Image
@@ -75,7 +116,7 @@ const ApplyForm = () => {
               />
             </span>
           </h2>
-          <p className="my-4 text-center text-lg md:mx-10">
+          <p className="my-4 text-center text-sm md:mx-10 md:text-lg">
             <b> Namaste! </b> We are so delighted to welcome you to the{" "}
             <span className="font-semibold text-[#bd0006]">
               Yin Yang Yoga Academy!{" "}
@@ -89,7 +130,7 @@ const ApplyForm = () => {
                 Please fill out this form to complete your enrollment at
                 Rishikesh Yogkulam
               </h3>
-              <p>
+              <p className="text-sm md:text-base">
                 Complete This Enrollment form to enroll yourself in the YTTC
                 Course / Yoga Retreats and reserve yur seats for the course in
                 advance{" "}
@@ -101,6 +142,13 @@ const ApplyForm = () => {
                 <div className="mt-2 grid gap-4 md:grid-cols-2">
                   <div className="relative rounded-lg bg-white p-2">
                     <input
+                      value={reservationForm.studentname}
+                      onChange={(e) => {
+                        setReservationForm({
+                          ...reservationForm,
+                          studentname: e.target.value,
+                        });
+                      }}
                       type="text"
                       id="floating_outlined"
                       className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
@@ -116,6 +164,13 @@ const ApplyForm = () => {
                   </div>
                   <div className="relative rounded-lg bg-white p-2">
                     <input
+                      value={reservationForm.emailaddress}
+                      onChange={(e) => {
+                        setReservationForm({
+                          ...reservationForm,
+                          emailaddress: e.target.value,
+                        });
+                      }}
                       type="text"
                       id="floating_outlined"
                       className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
@@ -131,11 +186,18 @@ const ApplyForm = () => {
                   </div>
                   <div className="relative rounded-lg bg-white p-2">
                     <input
+                      value={reservationForm.phoneNumber}
                       type="text"
                       id="floating_outlined"
                       className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
                       placeholder=" "
                       required
+                      onChange={(e) => {
+                        setReservationForm({
+                          ...reservationForm,
+                          phoneNumber: e.target.value,
+                        });
+                      }}
                     />
                     <label
                       htmlFor="floating_outlined"
@@ -146,6 +208,13 @@ const ApplyForm = () => {
                   </div>
                   <div className="relative rounded-lg bg-white p-2">
                     <input
+                      value={reservationForm.country}
+                      onChange={(e) => {
+                        setReservationForm({
+                          ...reservationForm,
+                          country: e.target.value,
+                        });
+                      }}
                       type="text"
                       id="floating_outlined"
                       className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
@@ -165,11 +234,18 @@ const ApplyForm = () => {
                       className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
                       placeholder=" "
                       required
+                      value={reservationForm.gender}
+                      onChange={(e) => {
+                        setReservationForm({
+                          ...reservationForm,
+                          gender: e.target.value,
+                        });
+                      }}
                     >
-                      <option>Choose Your Gender</option>
-                      <option>Male</option>
-                      <option>Female</option>
-                      <option>Others</option>
+                      <option value="None">Choose Your Gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Others">Others</option>
                     </select>
                     <label
                       htmlFor="floating_outlined"
@@ -189,6 +265,13 @@ const ApplyForm = () => {
                       className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
                       placeholder=" "
                       required
+                      value={reservationForm.courseSelected}
+                      onChange={(e) => {
+                        setReservationForm({
+                          ...reservationForm,
+                          courseSelected: e.target.value,
+                        });
+                      }}
                     >
                       <option value="100 Hour YTTC">100 Hour YTTC</option>
                       <option value="200 Hour YTTC">200 Hour YTTC</option>
@@ -222,6 +305,13 @@ const ApplyForm = () => {
                   </div>
                   <div className="relative rounded-lg bg-white p-2">
                     <input
+                      value={reservationForm.courseDate}
+                      onChange={(e) => {
+                        setReservationForm({
+                          ...reservationForm,
+                          courseDate: e.target.value,
+                        });
+                      }}
                       type="date"
                       id="floating_outlined"
                       className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
@@ -239,12 +329,20 @@ const ApplyForm = () => {
                     <select
                       id="floating_outlined"
                       className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
-                      placeholder=" "
                       required
+                      value={reservationForm.selectRoomType}
+                      onChange={(e) => {
+                        setReservationForm({
+                          ...reservationForm,
+                          selectRoomType: e.target.value,
+                        });
+                      }}
                     >
-                      <option>Choose Your Room Type</option>
-                      <option>Shared Room</option>
-                      <option>Private Room</option>
+                      <option value="No Rooms Selected">
+                        Choose Your Room Type
+                      </option>
+                      <option value="Shared Room">Shared Room</option>
+                      <option value="Private Room">Private Room</option>
                     </select>
                     <label
                       htmlFor="floating_outlined"
@@ -255,17 +353,26 @@ const ApplyForm = () => {
                   </div>
                   <div className="relative rounded-lg bg-white p-2">
                     <select
+                      value={reservationForm.channelType}
+                      onChange={(e) => {
+                        setReservationForm({
+                          ...reservationForm,
+                          channelType: e.target.value,
+                        });
+                      }}
                       id="floating_outlined"
                       className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
                       placeholder=" "
                       required
                     >
-                      <option>Select Medium </option>
-                      <option>Facebook / Instagram Advertisement</option>
-                      <option>Social Media</option>
-                      <option>Google Search</option>
-                      <option>Existing Student</option>
-                      <option>Refernce</option>
+                      <option value="none">Select Medium </option>
+                      <option value="Facebook / Instagram Advertisement">
+                        Facebook / Instagram Advertisement
+                      </option>
+                      <option value="Social Media">Social Media</option>
+                      <option value="Google Search">Google Search</option>
+                      <option value="Existing Student">Existing Student</option>
+                      <option value="Reference">Refernce</option>
                     </select>
                     <label
                       htmlFor="floating_outlined"
@@ -277,6 +384,13 @@ const ApplyForm = () => {
                 </div>
                 <div className="relative mt-4 rounded-lg bg-white p-2">
                   <textarea
+                    value={reservationForm.messageFromStudent}
+                    onChange={(e) => {
+                      setReservationForm({
+                        ...reservationForm,
+                        messageFromStudent: e.target.value,
+                      });
+                    }}
                     id="floating_outlined"
                     className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
                     placeholder=" "
@@ -290,7 +404,10 @@ const ApplyForm = () => {
                   </label>
                 </div>
               </div>
-              <button className=" mt-4 flex items-center space-x-4 rounded bg-[#bd0006] p-4 text-lg font-semibold text-white duration-200 ease-linear hover:space-x-6 hover:bg-black">
+              <button
+                onClick={handleReservation}
+                className=" mt-4 flex items-center space-x-4 rounded bg-[#bd0006] p-4 text-lg font-semibold text-white duration-200 ease-linear hover:space-x-6 hover:bg-black"
+              >
                 <span>Submit Your Form </span>
                 <BsArrowRight />
               </button>

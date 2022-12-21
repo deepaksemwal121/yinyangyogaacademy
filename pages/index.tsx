@@ -11,6 +11,52 @@ import TrustPilotReview from "../components/sections/TrustPilotReview";
 import data from "../data/data";
 import ShadowCard from "../widgets/reusable/ShadowCard";
 
+const cardData = [
+  {
+    title: "Certified Yoga Teacher Training Course in Rishikesh",
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+  },
+  {
+    title: "6+ Years of Experience in Yoga Teacher Training ",
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+  },
+  {
+    title: "Want to be a certified Yoga Teacher?",
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+  },
+];
+
+const whyChooseUs = [
+  {
+    image: "https://www.yogkulam.org/images/yoga_retreat.jpg",
+    title: "Yoga retreats",
+    description:
+      "A Yoga retreat is an opportunity to shape your thoughts & being by aligning your mind, body and soul. A time apart from the hustle of humanity, with only nature to keep you company. It’s time to detach, to turn within and listen to your inner self.",
+    url: "",
+  },
+  {
+    image:
+      "https://www.yogkulam.org/images/rishikesh-yogkulam-accommodation.jpg",
+    title: "Accommodation",
+    description:
+      "We understand the importance of a conducive environment for a healthy mind, body and soul. Accommodation is available on private as well as shared basis to ensure that everyone feels absolutely comfortable, warm and as homely as possible.",
+    url: "",
+  },
+  {
+    image: "https://www.yogkulam.org/images/guru%20_homepage.jpg",
+    title: "Gurus",
+    description:
+      "Maestros in their respective fields of Yoga, all our teachers are extensively trained and have a lifetime of experience to share with you. They go above and beyond to train each student on a professional and personal level.",
+    url: "",
+  },
+  {
+    image: "https://www.yogkulam.org/images/rishikesh-yogkulam-food.jpg",
+    title: "Food",
+    description:
+      "Prepared in-house at our school itself, every morning starts with a refreshing cup of herbal tea followed by three delicious and nutritious meals during the day.",
+    url: "",
+  },
+];
 const index = () => {
   return (
     <div>
@@ -25,12 +71,16 @@ const index = () => {
         <SliderHero />
         {/* Section 1 */}
         <section className=" mb-20 grid w-full grid-cols-1 gap-4 px-4 sm:px-24 md:-mt-4 md:grid-cols-3 md:px-6 lg:-mt-20  lg:px-8 xl:-mt-32 xl:px-32">
-          <ShadowCard />
-          <ShadowCard />
-          <ShadowCard />
+          {cardData.map((item, index) => (
+            <ShadowCard
+              key={index}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
         </section>
         <section className="py-8 px-4 md:px-6 lg:px-8 xl:px-32 ">
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Yoga Teacher Training In Rishikesh, INDIA
             <span>
               <Image
@@ -41,8 +91,8 @@ const index = () => {
               />{" "}
             </span>
           </h2>
-          <div className="w-full items-center justify-center px-8 md:flex md:space-x-4  ">
-            <div className=" relative flex flex-col items-center justify-center md:w-1/2">
+          <div className="w-full items-center justify-center space-y-4 px-8 md:flex md:space-x-4   ">
+            <div className=" relative flex flex-col items-center justify-center p-4 md:w-1/2">
               <Image
                 src="/500hr-3.jpg"
                 alt="yoga-pose"
@@ -61,7 +111,7 @@ const index = () => {
               </div>
             </div>
             <div className="md:w-1/2">
-              <p className="text-gray-600">
+              <p className="text-sm text-gray-600 md:text-base">
                 With each passing day, people are getting more and more engaged
                 towards a better peaceful life. Amidst all the chaos all that
                 everyone wants is a little time for oneself so that it leads
@@ -75,25 +125,25 @@ const index = () => {
                 maximum of them are trained from Rishikesh.
               </p>
               <br />
-              <blockquote cite="https://www.google.com">
-                <em className="sloka text-[20px]">
-                  &ldquo; योगेन चित्तस्य पदेन वाचां मलं शरीरस्य च वैद्यकेन।{" "}
+              <p className="border-l-2 border-[#bd0006] pl-2">
+                <em className="sloka ">
+                  &ldquo; योगेन चित्तस्य पदेन वाचां मलं शरीरस्य च वैद्यकेन।
                   <br />
                   योSपाकरोत्तं प्रवरं मुनीनां पतञ्जलिं
                   प्राञ्जलिरानतोSस्मि।।&rdquo;
                 </em>
                 <br />
-                <i>
+                <i className="text-sm md:text-base">
                   Who gave Yoga for serenity and sanctity of mind, grammar for
                   clarity and purity of speech, and medicine for perfection of
                   health, let us bow before the noblest of sages, Patanjali.
                 </i>
-              </blockquote>
+              </p>
             </div>
           </div>
         </section>
         <section className=" patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             About Yin Yang Yoga Academy - Best Yoga School In Rishikesh INDIA
             <span>
               <Image
@@ -115,7 +165,7 @@ const index = () => {
               />
             </div>
             <div className="w-full lg:w-1/2">
-              <p>
+              <p className="text-sm md:text-base">
                 To say the yoga capital of this world it is one of the best Yoga
                 schools which is situated at the heart of the city. Here
                 practices or forms of yoga are found in one of the purest forms.
@@ -147,12 +197,12 @@ const index = () => {
         </section>
         {/* Sub Section of About Yin Yang */}
         <section className="-mt-12 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <div className="flex flex-col items-center justify-between rounded-lg bg-white p-4 shadow-lg lg:flex-row">
+          <div className="flex flex-col items-center justify-between space-y-3 rounded-lg bg-white p-4 shadow-lg lg:flex-row">
             <div>
-              <em className="sloka text-[1.5rem]">
+              <em className="sloka text-2xl md:text-4xl">
                 &ldquo; मनः प्रशमनोपायो योग इत्यभिधीयते। &rdquo;
               </em>
-              <h3 className="text-[1.5rem] italic text-gray-400">
+              <h3 className="text-2xl italic text-gray-400 md:text-4xl">
                 The recourse to pacify the mind is called yoga.
               </h3>
             </div>
@@ -171,7 +221,7 @@ const index = () => {
                 alt="bg"
               />
             </div>
-            <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+            <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
               Best Yoga Teacher Training India
               <span>
                 <Image
@@ -183,14 +233,14 @@ const index = () => {
               </span>
             </h2>
 
-            <p className="sloka text-center text-[30px] leading-10 text-[#bd0006]   ">
+            <p className="sloka text-center text-2xl leading-10 text-[#bd0006] md:text-4xl   ">
               योगः कर्मसु कौशलम्।
             </p>
             <p className="mb-4 text-center text-[24px] italic text-gray-400">
               Yoga is excellence in action.
             </p>
 
-            <p className="text-center text-base text-gray-600 sm:text-lg">
+            <p className="text-center text-sm text-gray-600 sm:text-lg md:text-base">
               There are online classes that are also there. There is no stop to
               spreading knowledge as thus like the entire world the yoga world
               has also chosen and taken part in online tutoring. From hatha yoga
@@ -212,10 +262,10 @@ const index = () => {
                       width={80}
                       height={80}
                     />
-                    <h2 className="text-[20px] text-[#bd0006] md:text-[25px]">
+                    <h2 className="text-xl text-[#bd0006] md:text-[25px]">
                       {value.title}
                     </h2>
-                    <p className="text-base text-gray-600 md:text-lg">
+                    <p className="text-sm text-gray-600 md:text-base">
                       {value.content}
                     </p>
                   </div>
@@ -226,10 +276,10 @@ const index = () => {
         </section>
         <section className="greyFloral py-10 px-4 md:px-6 lg:px-8 xl:px-32">
           <div className=" w-full text-center">
-            <p className=" sloka text-[30px] text-[#bd0006]">
+            <p className=" sloka text-2xl text-[#bd0006] md:text-4xl">
               योगश्चित्तवृत्तिनिरोधः
             </p>
-            <h2 className="flex flex-col text-[30px] font-bold md:text-[40px]">
+            <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
               Why Yoga Teacher Training Programs And Retreats?
               <span>
                 <Image
@@ -269,7 +319,7 @@ const index = () => {
           <CourseSlider />
         </section>
         <section className=" my-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Why To Choose Yin Yang Yoga Academy
             <span>
               <Image
@@ -281,25 +331,30 @@ const index = () => {
             </span>
           </h2>
           <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
-            {[1, 2, 3, 4].map((item, index) => {
+            {whyChooseUs.map((item, index) => {
               return (
                 <div key={index} className="cardShadow">
                   <Image
                     className="rounded-bl-[40%] p-2 hover:scale-105"
-                    src="https://www.yogkulam.org/images/yoga_retreat.jpg"
+                    src={item.image}
                     height={280}
                     width={400}
                     alt="retreat"
                   />
                   <div className="p-[1rem]">
-                    <h2 className="rounded-tl-[20px] rounded-br-[20px] bg-[#bd0006] p-2 text-center text-2xl text-white">
-                      Yoga Retreat
+                    <h2 className="rounded-tl-[20px] rounded-br-[20px] bg-[#bd0006] p-2 text-center text-lg text-white">
+                      {item.title}
                     </h2>
-                    <p className="mt-2">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Accusantium voluptatibus reiciendis nemo nulla quasi
-                      aspernatur quis maxime eos itaque perspiciatis.
+                    <p className="mt-2 text-sm md:text-base">
+                      {item.description}
                     </p>
+                    <a
+                      href={item.url}
+                      className="mt-4 flex cursor-pointer items-center text-sm text-[#bd0006] hover:space-x-4 hover:duration-300 hover:ease-linear md:text-base"
+                    >
+                      <span className="tracking-wider">Learn More</span>
+                      <BsArrowRight />
+                    </a>
                   </div>
                 </div>
               );
@@ -307,7 +362,7 @@ const index = () => {
           </div>
         </section>
         <section className="greyFloral my-8 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Learn From The Best Yoga School In Rishikesh
             <span>
               <Image
@@ -319,7 +374,7 @@ const index = () => {
             </span>
           </h2>
           <div className="py-8 text-center">
-            <p className="mb-4">
+            <p className="mb-4 text-sm md:text-base">
               If you want to do the best yoga training and seeing this as your
               passion as well as a profession then there is no better place than
               this. <b>Rishikesh&apos;s Yoga Teacher Training </b> has all that
@@ -346,7 +401,7 @@ const index = () => {
           <p className=" text-center font-medium uppercase tracking-wide text-[#bd0006]">
             Yin Yang Yoga Blogs
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Know More About Yoga and Its Benefits
             <span>
               <Image
@@ -372,17 +427,17 @@ const index = () => {
                     />
                   </div>
                   <div className="z-20 -mt-20 bg-white p-4 shadow-lg">
-                    <h3 className="text-[20px]">
+                    <h3 className="text-base md:text-lg">
                       How To Do Anjali Mudra (Namaste Mudra) and its Benefits
                     </h3>
-                    <p>
+                    <p className="text-sm md:text-base">
                       How To Do Anjali Mudra (Namaste Mudra) and its Benefits
                       Anjali Mudra or the Namaste Mudra is one of the...
                     </p>
-                    <p className="flex cursor-pointer items-center text-[#bd0006] hover:space-x-4 hover:duration-300 hover:ease-linear">
+                    <a className="flex cursor-pointer items-center text-sm text-[#bd0006] hover:space-x-4 hover:duration-300 hover:ease-linear md:text-base">
                       <span className="tracking-wider">Read Full Article</span>
                       <BsArrowRight />
-                    </p>
+                    </a>
                   </div>
                 </div>
               );
@@ -399,7 +454,7 @@ const index = () => {
           <p className=" text-center font-medium uppercase tracking-wide text-[#bd0006]">
             our social reviews
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Why We are the First Choice For YTTC
             <span>
               <Image

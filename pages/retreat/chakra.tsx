@@ -1,19 +1,19 @@
 import Head from "next/head";
-import Text from "../../components/Text";
-import Button from "../../components/Button";
 import Slider from "react-slick";
 import Image from "next/image";
-import { IoCheckmarkCircle } from "react-icons/io5";
 import Teacherprofile from "../../components/sections/Teacherprofile";
 import { BsArrowRight, BsPatchCheck } from "react-icons/bs";
 import TestimonialCarousel from "../../components/sections/TestimonialCarousel";
 import TrustPilotReview from "../../components/sections/TrustPilotReview";
-import timeTable from "../../data/timeTable";
+
+import ApplyButton from "../../widgets/reusable/ApplyButton";
+import EventTable from "../../widgets/reusable/EventTable";
 
 const template = () => {
   const settings = {
     dots: true,
     infinite: true,
+    arrows: false,
     slidesToShow: 3,
     cssEase: "linear",
     responsive: [
@@ -47,7 +47,7 @@ const template = () => {
             <p className=" text-lg font-semibold tracking-wide text-gray-200 md:text-xl">
               Come and join us for the unforgettable experience of a lifetime
             </p>
-            <h2 className=" fancy-font text-2xl  leading-[6rem] text-white drop-shadow md:text-3xl lg:text-4xl xl:text-5xl">
+            <h2 className=" fancy-font text-2xl   text-white drop-shadow md:text-3xl lg:text-4xl xl:text-5xl">
               7 Day Chakra Yoga Retreat in Rishikesh
             </h2>
             <nav className="flex" aria-label="Breadcrumb">
@@ -115,7 +115,7 @@ const template = () => {
           <p className="text-center text-xl font-semibold text-[#bd0006] ">
             Know More About Yoga Retreat
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             7 Day Chakra Yoga Retreat in Rishikesh
             <span>
               <Image
@@ -127,7 +127,7 @@ const template = () => {
             </span>
           </h2>
           <div className="space-y-4">
-            <p>
+            <p className="text-sm md:text-base">
               Have you ever woken up in the morning with a feeling of not being
               grounded, of being somewhere you don&apos;t belong, feeling
               restless with constant worries and frustration? Do you look at the
@@ -138,7 +138,7 @@ const template = () => {
               souls. We need to eradicate them to be balanced, centered and
               present in our bodies; receptive and aware of our nature.
             </p>
-            <p>
+            <p className="text-sm md:text-base">
               This{" "}
               <b className="fancy-font text-lg text-[#bd0006]">7 day retreat</b>{" "}
               is a journey through the chakras to restore the balance in our
@@ -153,8 +153,8 @@ const template = () => {
             <div className="space-y-4 lg:w-1/2">
               <div className=" rounded-lg border-2 bg-white p-4 shadow-lg ">
                 <BsPatchCheck color="#bd0006" size={25} />
-                <h3 className="text-[30px]">Eligibility</h3>
-                <p>
+                <h3 className="text-lg md:text-xl">Eligibility</h3>
+                <p className="text-sm md:text-base">
                   This retreat is designed to be beneficial to everyone. Neither
                   do you need to have a background in Yoga to participate nor is
                   there any restriction on age. You don&apos;t need flexibility
@@ -176,10 +176,7 @@ const template = () => {
                 </p>
               </div>
               <div className="flex justify-center">
-                <p className="mt-6 flex items-center justify-center space-x-4 rounded bg-[#bd0006] p-4 text-lg font-semibold text-white lg:w-1/3 ">
-                  <span>Apply Now</span>
-                  <BsArrowRight />
-                </p>
+                <ApplyButton />
               </div>
             </div>
 
@@ -198,7 +195,7 @@ const template = () => {
           <p className="text-center text-xl font-semibold text-[#bd0006] ">
             Practicing Yoga
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Understanding Chakras & Their Functioning
             <span>
               <Image
@@ -210,12 +207,12 @@ const template = () => {
             </span>
           </h2>
           <div className="space-y-2">
-            <p>
+            <p className="text-sm md:text-base">
               Chakras are the energy centers within the human body. They help to
               regulate all the body&apos;s processes, right from organ function
               to the immune system and emotion control.
             </p>
-            <p>
+            <p className="text-sm md:text-base">
               If one or more of these energy centers are blocked, we may
               unconsciously be impeding the body&apos;s energy flow. When we
               suppress feelings like anger or sorrow for example, these chakras
@@ -277,8 +274,10 @@ const template = () => {
                         width={100}
                       />
                       <div className="px-4">
-                        <h3 className="text-xl md:text-3xl">{item.name}</h3>
-                        <div className="my-2">{item.desc}</div>
+                        <h3 className="text-lg md:text-3xl">{item.name}</h3>
+                        <div className="my-2 text-sm md:text-base">
+                          {item.desc}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -288,7 +287,7 @@ const template = () => {
           </div>
         </section>
         <section className="mt-6 py-16  px-4 md:px-6 lg:px-8 xl:px-32">
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             About 7 Day Chakra Yoga Retreat Highlights
             <span>
               <Image
@@ -299,7 +298,7 @@ const template = () => {
               />
             </span>
           </h2>
-          <p>
+          <p className="text-sm md:text-base">
             While there are many kinds of Yoga retreats, the Chakra retreat is
             primarily different in its focus. The subject of the retreat, as the
             name suggests, is the Chakras of the body. We learn about the
@@ -310,7 +309,7 @@ const template = () => {
             experience a full-immersion Chakra Healing Program while discovering
             Yoga, The italian mountains and most importantly yourself.
           </p>
-          <p className="mt-2">
+          <p className="mt-2 text-sm md:text-base">
             This retreat will recharge and boost you and your energy levels.
             Unlike other retreats, it gives you multiple tools that you can
             effectively use from home and even continue to develop each practice
@@ -355,22 +354,19 @@ const template = () => {
                 alt="yoga-lady"
               />
               <div className="mt-4 flex flex-col items-center justify-center rounded-lg border-2 border-[#bd0006] bg-white p-4 shadow-lg">
-                <div className="text-center text-2xl font-semibold">
+                <div className="text-center text-lg font-semibold md:text-2xl">
                   Book Your Chakra Yoga Retreat for 7 Days at Yin Yang Yoga
-                  Academy at{" "}
+                  Academy at
                   <span className="font-bold text-[#bd0006]"> $499</span>
                 </div>
                 <div className="flex justify-center">
-                  <p className="mt-6 flex  items-center justify-center space-x-4 rounded bg-[#bd0006] p-4 text-lg font-semibold text-white ">
-                    <span>Apply Now</span>
-                    <BsArrowRight />
-                  </p>
+                  <ApplyButton />
                 </div>
               </div>
             </div>
             <div className=" lg:w-1/2">
               <div className="space-y-2 rounded-lg bg-white p-4  drop-shadow-lg">
-                <h2 className="fancy-font mb-2 text-3xl ">
+                <h2 className="fancy-font mb-2 text-xl md:text-3xl ">
                   What&apos;s Included In Retreat
                 </h2>
 
@@ -413,7 +409,9 @@ const template = () => {
                         alt="bullet"
                         className="w-1/6"
                       />
-                      <span className="w-5/6">{item.title}</span>
+                      <span className="w-5/6 text-sm md:text-base">
+                        {item.title}
+                      </span>
                     </li>
                   );
                 })}
@@ -425,7 +423,7 @@ const template = () => {
           <p className="text-center text-lg font-bold text-[#bd0006]">
             Upcoming Events
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Available Seats for 7 Days Chakra Yoga Retreat
             <span>
               <Image
@@ -436,49 +434,7 @@ const template = () => {
               />
             </span>
           </h2>
-          <div className="w-full overflow-x-scroll">
-            <div className="flex w-full justify-between rounded-t-lg bg-[#bd0006] p-4 text-center text-lg font-bold text-white">
-              <div className="w-1/6 border-r-[2px] border-dashed">
-                Start Date
-              </div>
-              <div className="w-1/6  border-r-[2px] border-dashed">
-                End Date
-              </div>
-              <div className="w-1/6 border-r-[2px] border-dashed">
-                Availability
-              </div>
-              <div className="w-1/6 border-r-[2px] border-dashed">Shared</div>
-              <div className="w-1/6 border-r-[2px] border-dashed">Private</div>
-              <div className="w-1/6">Booking</div>
-            </div>
-            {timeTable.map((item: any, index: number) => {
-              return (
-                <div
-                  key={index}
-                  className={`flex ${
-                    index % 2 === 0 ? "bg-slate-50" : "bg-slate-100"
-                  } w-full justify-between   p-4 text-center text-lg font-medium`}
-                >
-                  <div className="w-1/6 border-r-[2px] border-dashed">
-                    {item.start}
-                  </div>
-                  <div className="w-1/6  border-r-[2px] border-dashed">
-                    {item.end}
-                  </div>
-                  <div className="w-1/6 border-r-[2px] border-dashed">
-                    {item.availability}
-                  </div>
-                  <div className="w-1/6 border-r-[2px] border-dashed">
-                    {item.shared}
-                  </div>
-                  <div className="w-1/6 border-r-[2px] border-dashed">
-                    {item.private}
-                  </div>
-                  <div className="w-1/6">{item.booking}</div>
-                </div>
-              );
-            })}
-          </div>
+          <EventTable />
         </section>
         <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
           <TestimonialCarousel />

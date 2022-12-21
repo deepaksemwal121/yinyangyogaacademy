@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { MdHome } from "react-icons/md";
 import TestimonialCarousel from "../../components/sections/TestimonialCarousel";
 import TrustPilotReview from "../../components/sections/TrustPilotReview";
 import TeacherCard from "../../components/TeacherCard";
@@ -81,8 +80,8 @@ const Teachers = () => {
       </section>
 
       <section className="mt-12  py-8 px-4 text-center md:px-6 lg:px-8 xl:px-32">
-        <p className=" sloka text-[30px] text-[#bd0006]">विद्यां ददाति विनयं</p>
-        <h2 className="flex flex-col text-[30px] font-bold md:text-[40px]">
+        <p className=" sloka text-2xl text-[#bd0006]">विद्यां ददाति विनयं</p>
+        <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           Teaching Faculty - Yin Yang Yoga Academy
           <span>
             <Image
@@ -93,7 +92,7 @@ const Teachers = () => {
             />
           </span>
         </h2>
-        <p>
+        <p className="text-sm md:text-base">
           Maestros in their respective fields of Yoga, all our teachers are
           extensively trained and have a lifetime of experience to share with
           you. They go above and beyond to train each student on a professional
@@ -121,7 +120,7 @@ const Teachers = () => {
         <p className=" text-center font-medium uppercase tracking-wide text-[#bd0006]">
           our social reviews
         </p>
-        <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+        <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           Why We are the First Choice For YTTC
           <span>
             <Image

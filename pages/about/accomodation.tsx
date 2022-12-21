@@ -159,7 +159,7 @@ const accomodation = () => {
         </div>
       </section>
       <section className="space-y-4 py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
-        <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+        <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           Faciliteis At Yin Yang Yoga Academy
           <span>
             <Image
@@ -170,7 +170,7 @@ const accomodation = () => {
             />
           </span>
         </h2>
-        <p className="text-center">
+        <p className="text-center text-sm md:text-base">
           At Rishikesh Yogkulam, we understand the importance of a conducive
           environment for a healthy mind, body and soul. In the lap of the
           Himalayas, on the banks of the river Ganga, our school is ideally
@@ -193,11 +193,11 @@ const accomodation = () => {
               alt="accomadate"
               className="rounded-lg"
             />
-            <div className="top-[80%] h-auto w-[80%] rounded-tr-[50px]  bg-[#bd0006] p-8 md:absolute md:h-[150px]">
-              <h3 className="text-[24px] text-white md:text-[30px]">
+            <div className="top-[8z0%] h-auto w-[80%] rounded-tr-[50px]  bg-[#bd0006] p-3 md:absolute md:h-[150px] md:p-8">
+              <h3 className="text-xl text-white md:text-2xl md:text-[30px]">
                 Yin Yang Yoga Academy
               </h3>
-              <p className="text-[#f1f1f1]">
+              <p className="text-sm text-[#f1f1f1] md:text-base">
                 We Provide the Best Acommodation in Rishikesh with All Faciliies
               </p>
             </div>
@@ -210,7 +210,9 @@ const accomodation = () => {
                   className="flex flex-col items-center space-y-2 p-2"
                 >
                   <div className="text-center">{item.icon}</div>
-                  <p className="text-center font-semibold">{item.title}</p>
+                  <p className="text-center text-sm font-semibold md:text-base">
+                    {item.title}
+                  </p>
                 </div>
               );
             })}

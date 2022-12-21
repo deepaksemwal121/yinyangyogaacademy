@@ -1,50 +1,13 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { IoDownloadOutline, IoEarthOutline } from "react-icons/io5";
 import Slider from "react-slick";
 import data from "../data/data";
 
 const BookSlider = () => {
-  const dataValues = [
-    {
-      heading: "Holistic Learning Programme",
-      icon: "",
-      description:
-        "We offers a holistic learning programme which explores Yoga not only as a physical practice but also as a lifestyle and spiritual practice.",
-    },
-    {
-      heading: "Specialized Yoga Curriculum",
-      icon: "",
-      description:
-        "Specializes in creating courses for small groups to ensure that each student gets the fullest individual attention from every teacher.",
-    },
-    {
-      heading: "Yoga For Everyone",
-      icon: "",
-      description:
-        "Strongly believes that Yoga is for everyone irrespective of ethnicity or age. It doesn't matter where you start; what matters is what you learn along the journey.",
-    },
-    {
-      heading: "Importance of Yoga",
-      icon: "",
-      description:
-        "We strives to convey the authenticity and importance of Yoga teachings on and off the mat and to create a space to practice the art of Yoga with a mindful, encouraging community.",
-    },
-    {
-      heading: "Future Yoga Teacher",
-      icon: "",
-      description:
-        "The purpose of YinYang Yoga Academy is to train future teachers and educate new students in the principles of Yoga.",
-    },
-    {
-      heading: "Security First",
-      icon: "",
-      description:
-        "This is the philosophy of the school and it is the reason why a great emphasis is put on the alignment classNamees.",
-    },
-  ];
   const settings = {
     dots: true,
+    arrows:false,
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 3,
@@ -76,9 +39,40 @@ const BookSlider = () => {
       },
     ],
   };
+
+  // State Variables here
+
+  const [isOpen, setIsopen] = useState(false);
+  const [formInfo, setFormInfo] = useState({
+    email: "",
+    fullName: "",
+    isNewsletterSubscribed: true,
+    bookIndex: 0,
+  });
+
+  // Define All helper Functions Below This
+
+  const handleBookPdf = async () => {
+    try {
+      const res = await fetch("/api/bookemailer", {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formInfo),
+      });
+      res.status === 200
+        ? alert(`Book has been sent to ${formInfo.email}`)
+        : null;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div>
-      <h2 className="flex w-full flex-col text-center text-[30px] font-bold md:text-[40px]">
+      <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
         Find The Best Yoga Books Here
         <span>
           <Image
@@ -111,6 +105,10 @@ const BookSlider = () => {
                       -<em>{item.author}</em>
                     </p> */}
                   <button
+                    onClick={() => {
+                      setFormInfo({ ...formInfo, bookIndex: index });
+                      setIsopen(true);
+                    }}
                     type="button"
                     className=" m-4 flex w-full justify-center rounded-lg bg-[#bd0006]  px-2 py-1 md:space-x-4 md:px-4 md:py-2"
                     data-modal-toggle="defaultModal"
@@ -131,7 +129,9 @@ const BookSlider = () => {
         id="defaultModal"
         tabIndex={-1}
         aria-hidden="true"
-        className="h-modal fixed top-0 right-0 left-0 z-50 hidden w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0 md:h-full"
+        className={`${
+          isOpen ? "" : "hidden"
+        } fixed top-0 right-0 z-50  h-screen  w-full overflow-y-auto overflow-x-hidden p-4 backdrop-blur-sm md:inset-0 md:h-full`}
       >
         <div className="relative h-full w-full max-w-2xl md:h-auto">
           {/* <!-- Modal content --> */}
@@ -139,9 +139,12 @@ const BookSlider = () => {
             {/* <!-- Modal header --> */}
             <div className="flex items-start justify-between rounded-t border-b p-4 dark:border-gray-600">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                Terms of Service
+                Fill Out the Form To Download the Book
               </h3>
               <button
+                onClick={() => {
+                  setIsopen(false);
+                }}
                 type="button"
                 className="ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
                 data-modal-toggle="defaultModal"
@@ -164,35 +167,81 @@ const BookSlider = () => {
             </div>
             {/* <!-- Modal body --> */}
             <div className="space-y-6 p-6">
-              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                With less than a month to go before the European Union enacts
-                new consumer privacy laws for its citizens, companies around the
-                world are updating their terms of service agreements to comply.
-              </p>
-              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                The European Union’s General Data Protection Regulation
-                (G.D.P.R.) goes into effect on May 25 and is meant to ensure a
-                common set of data rights in the European Union. It requires
-                organizations to notify users as soon as possible of high-risk
-                data breaches that could personally affect them.
-              </p>
-            </div>
-            {/* <!-- Modal footer --> */}
-            <div className="flex items-center space-x-2 rounded-b border-t border-gray-200 p-6 dark:border-gray-600">
-              <button
-                data-modal-toggle="defaultModal"
-                type="button"
-                className="rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                I accept
-              </button>
-              <button
-                data-modal-toggle="defaultModal"
-                type="button"
-                className="rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900 focus:z-10 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-500 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-600"
-              >
-                Decline
-              </button>
+              <form className="w-full max-w-sm">
+                <div className="mb-6 md:flex md:items-center">
+                  <div className="md:w-1/3">
+                    <label
+                      className="mb-1 block pr-4 font-bold text-gray-500 md:mb-0 md:text-right"
+                      htmlFor="inline-full-name"
+                    >
+                      Full Name
+                    </label>
+                  </div>
+                  <div className="md:w-2/3">
+                    <input
+                      placeholder="Anna Doe"
+                      className="w-full appearance-none rounded  border-gray-200 bg-gray-200 py-2 px-4 leading-tight text-gray-700"
+                      id="inline-full-name"
+                      type="text"
+                      onChange={(e) => {
+                        setFormInfo({ ...formInfo, fullName: e.target.value });
+                      }}
+                      value={formInfo.fullName}
+                    />
+                  </div>
+                </div>
+                <div className="mb-6 md:flex md:items-center">
+                  <div className="md:w-1/3">
+                    <label
+                      className="mb-1 block pr-4 font-bold text-gray-500 md:mb-0 md:text-right"
+                      htmlFor="inline-email"
+                    >
+                      Email Id
+                    </label>
+                  </div>
+                  <div className="md:w-2/3">
+                    <input
+                      onChange={(e) => {
+                        setFormInfo({ ...formInfo, email: e.target.value });
+                      }}
+                      className="w-full appearance-none rounded  border-gray-200 bg-gray-200 py-2 px-4 leading-tight text-gray-700 "
+                      id="inline-email"
+                      type="email"
+                      placeholder="annadoe@youremail.com"
+                    />
+                  </div>
+                </div>
+                <div className="mb-6 md:flex md:items-center">
+                  <div className="md:w-1/3"></div>
+                  <label className="block font-bold text-gray-500 md:w-2/3">
+                    <input
+                      onChange={() =>
+                        setFormInfo({
+                          ...formInfo,
+                          isNewsletterSubscribed:
+                            !formInfo.isNewsletterSubscribed,
+                        })
+                      }
+                      className="mr-2 leading-tight"
+                      type="checkbox"
+                      checked={formInfo.isNewsletterSubscribed}
+                    />
+                    <span className="text-sm">Send me your newsletter!</span>
+                  </label>
+                </div>
+                <div className="md:flex md:items-center">
+                  <div className="md:w-1/3"></div>
+                  <div className="md:w-2/3">
+                    <button
+                      onClick={handleBookPdf}
+                      className="focus:shadow-outline rounded bg-[#bd0006] py-2 px-4 font-bold text-white shadow hover:bg-purple-400 focus:outline-none"
+                      type="button"
+                    >
+                      Send Pdf
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>

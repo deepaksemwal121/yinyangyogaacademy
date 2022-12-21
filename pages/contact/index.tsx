@@ -10,10 +10,10 @@ const Contact = () => {
       <main>
         <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
           <div className=" space-y-2 py-2">
-            <p className=" text-xl font-semibold tracking-wide text-gray-200">
+            <p className=" text-sm font-semibold tracking-wide text-gray-200 md:text-lg">
               We Will be more than happy to resolve your queries
             </p>
-            <h2 className=" fancy-font text-5xl leading-[4rem] text-white drop-shadow">
+            <h2 className=" fancy-font text-3xl text-white  drop-shadow md:text-5xl">
               Contact Us
             </h2>
             <nav className="flex" aria-label="Breadcrumb">
@@ -58,10 +58,10 @@ const Contact = () => {
           </div>
         </section>
         <section className="py-8 px-4  md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-xl font-semibold text-[#bd0006] ">
+          <p className="text-center  font-semibold text-[#bd0006] md:text-xl ">
             We are one step closer to answer all your queries
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Drop Your Queries To Us
             <span>
               <Image
@@ -72,7 +72,7 @@ const Contact = () => {
               />
             </span>
           </h2>
-          <p className="text-center">
+          <p className="text-center text-sm md:text-base">
             We are here to answer any questions you may have about our yoga
             courses at Yin Yang Yoga. Reach out to us and we&apos;ll respond as
             soon as we can. Even if there is something you have always wanted to
@@ -84,9 +84,9 @@ const Contact = () => {
             <div className="rounded-lg border-2 bg-white p-4 shadow">
               <div className="flex items-center justify-center space-x-4">
                 <MdHome size={40} color="#bd0006" />
-                <h3 className="text-xl font-semibold">Address</h3>
+                <h3 className="text-lg font-semibold md:text-xl">Address</h3>
               </div>
-              <p className="text-center text-lg">
+              <p className="text-center text-sm md:text-base">
                 Laxman Chowk Road, Near Anandham Ashram, Tapovan, Rishikesh,
                 Uttarakhand 249192
               </p>
@@ -94,23 +94,23 @@ const Contact = () => {
             <div className="rounded-lg border-2 bg-white p-4 shadow">
               <div className="flex items-center justify-center space-x-4">
                 <MdPhone size={40} color="#bd0006" />
-                <h3 className="text-xl font-semibold">Enquiry</h3>
+                <h3 className=" text-lg font-semibold md:text-xl">Enquiry</h3>
               </div>
-              <p className="text-center text-lg">
+              <p className="text-center text-sm md:text-lg">
                 +91 8218114342, +918979596944
               </p>
             </div>
             <div className="rounded-lg border-2 bg-white p-4 shadow">
               <div className="flex items-center justify-center space-x-4">
                 <BsWhatsapp size={40} color="#bd0006" />
-                <h3 className="text-xl font-semibold">Whatsapp</h3>
+                <h3 className="text-lg font-semibold md:text-xl">Whatsapp</h3>
               </div>
-              <p className="text-center text-lg">+91 1234567890</p>
+              <p className="text-center text-sm md:text-lg">+91 1234567890</p>
             </div>
           </div>
         </section>
         <section className="py-8 px-4  md:px-6 lg:px-8 xl:px-32">
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Enquiry Form
             <span>
               <Image

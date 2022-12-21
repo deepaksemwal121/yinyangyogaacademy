@@ -19,6 +19,7 @@ import TestimonialCarousel from "../../components/sections/TestimonialCarousel";
 import TrustPilotReview from "../../components/sections/TrustPilotReview";
 import { syllabus } from "../../data/detailedSyllabus";
 import ActivityCourse from "../../widgets/reusable/ActivityCourse";
+import EventTable from "../../widgets/reusable/EventTable";
 
 const CoursePage = () => {
   const [tab, setTab] = useState(0);
@@ -443,10 +444,10 @@ const CoursePage = () => {
           </div>
         </section>
         <section className="py-8 px-4  md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-xl font-semibold text-[#bd0006] ">
+          <p className="text-center text-lg font-semibold text-[#bd0006] ">
             The attitude of gratitude is the highest yoga
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             100 Hour Yoga Teacher Training Rishikesh,India
             <span>
               <Image
@@ -468,7 +469,7 @@ const CoursePage = () => {
               />
             </div>
             <div className="flex flex-col justify-center">
-              <p>
+              <p className="text-sm md:text-base">
                 <b>100 Hour Yoga Teacher Training in Rishikesh</b> , India is
                 for seekers who wish to learn about and experience Yoga in its
                 most authentic and purest form. Our school, Rishikesh Yogkulam,
@@ -491,18 +492,32 @@ const CoursePage = () => {
           <div className=" grid grid-cols-1  gap-4 lg:grid-cols-3 ">
             <div className="group space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg md:-mt-12 ">
               <h2 className="flex w-full flex-col  text-xl">
-                Courese Overview
+                Course Overview
                 <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
-              <ul className="space-y-2">
+              <p className="text-sm md:text-base">
+                The course focuses on expounding and strengthening the
+                understanding of various basic concepts and fundamentals of Yoga
+                and simultaneously helps you slow down, live in the present
+                moment and connect to your true self, inspiring self-discovery
+                on a physical and spiritual level.
+              </p>
+            </div>
+            <div className="group space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg md:-mt-12 ">
+              <h2 className="flex w-full flex-col  text-xl">
+                Course Summary
+                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+              </h2>
+              <ul className="space-y-2 text-sm md:text-base">
                 <li className="flex items-center space-x-2">
                   <Image
                     src="/floral-icon.png"
                     height={20}
                     width={20}
                     alt="icon"
+                    className="w-1/6"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span className="w-5/6">Immersion in a Yogic Lifestyle</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Image
@@ -510,8 +525,12 @@ const CoursePage = () => {
                     height={20}
                     width={20}
                     alt="icon"
+                    className="w-1/6"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span className="w-5/6">
+                    Expanded knowledge, capability, & experience in the course
+                    topic
+                  </span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Image
@@ -519,8 +538,12 @@ const CoursePage = () => {
                     height={20}
                     width={20}
                     alt="icon"
+                    className="w-1/6"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span className="w-5/6">
+                    Witness physical exercise merging with the spiritual,
+                    subtle, and Divine forces of creation.
+                  </span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Image
@@ -528,17 +551,21 @@ const CoursePage = () => {
                     height={20}
                     width={20}
                     alt="icon"
+                    className="w-1/6"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span className="w-5/6">
+                    Expanded knowledge, capability, & experience in the course
+                    topic
+                  </span>
                 </li>
               </ul>
             </div>
             <div className="group space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg md:-mt-12 ">
               <h2 className="flex w-full flex-col  text-xl">
-                Courese Highlights
+                Course Highlights
                 <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-sm  md:text-base">
                 <li className="flex items-center space-x-2">
                   <Image
                     src="/floral-icon.png"
@@ -546,7 +573,7 @@ const CoursePage = () => {
                     width={20}
                     alt="icon"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span>Master Alignment and Adjustment </span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Image
@@ -555,7 +582,7 @@ const CoursePage = () => {
                     width={20}
                     alt="icon"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span>Monitor and Sharpen your own practice</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Image
@@ -563,8 +590,12 @@ const CoursePage = () => {
                     height={20}
                     width={20}
                     alt="icon"
+                    className="w-1/6"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span className="w-5/6">
+                    Gain deeper knowledge and practical experience of the
+                    subject matter
+                  </span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Image
@@ -572,58 +603,18 @@ const CoursePage = () => {
                     height={20}
                     width={20}
                     alt="icon"
+                    className="w-1/6"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
-                </li>
-              </ul>
-            </div>
-            <div className="group space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg md:-mt-12 ">
-              <h2 className="flex w-full flex-col  text-xl">
-                Courese Summary
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
-              </h2>
-              <ul className="space-y-2">
-                <li className="flex items-center space-x-2">
-                  <Image
-                    src="/floral-icon.png"
-                    height={20}
-                    width={20}
-                    alt="icon"
-                  />
-                  <span>Lorem ipsum dolor sit.</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <Image
-                    src="/floral-icon.png"
-                    height={20}
-                    width={20}
-                    alt="icon"
-                  />
-                  <span>Lorem ipsum dolor sit.</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <Image
-                    src="/floral-icon.png"
-                    height={20}
-                    width={20}
-                    alt="icon"
-                  />
-                  <span>Lorem ipsum dolor sit.</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <Image
-                    src="/floral-icon.png"
-                    height={20}
-                    width={20}
-                    alt="icon"
-                  />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span className="w-5/6">
+                    Feel the benefits of consistent Asana, Meditation, &
+                    Pranayama{" "}
+                  </span>
                 </li>
               </ul>
             </div>
           </div>
           <div className="mt-6 space-x-4">
-            <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+            <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
               The Best Known 100 Hour Yoga Teachers Training In Rishikesh
               <span>
                 <Image
@@ -634,7 +625,7 @@ const CoursePage = () => {
                 />
               </span>
             </h2>
-            <p>
+            <p className="text-sm md:text-base">
               The <b>100 Hour Yoga Teacher Training in Rishikesh</b> is one of
               the best courses for someone who is working to improve their yoga
               skills and is passionate about the art of yoga. This course is a
@@ -654,7 +645,7 @@ const CoursePage = () => {
                   What is Yoga?
                 </h3>
                 <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
-                <p>
+                <p className="text-sm md:text-base">
                   Yoga is the ancient art of achieving the oneness of the
                   internal with the external. It is the practice of
                   understanding the positive energies around us and using them
@@ -671,7 +662,7 @@ const CoursePage = () => {
                       width={70}
                       alt="icon"
                     />
-                    <h3 className="text-slate-500 md:text-lg">
+                    <h3 className="text-sm text-slate-500 md:text-lg">
                       Boosts Creativity
                     </h3>
                   </div>
@@ -682,13 +673,15 @@ const CoursePage = () => {
                       width={70}
                       alt="icon"
                     />
-                    <h3 className="text-slate-500 md:text-lg">
+                    <h3 className="text-sm text-slate-500 md:text-lg">
                       Improves Health
                     </h3>
                   </div>
                   <div className="flex w-1/3 flex-col items-center text-center ">
                     <Image src="/peace.png" height={70} width={70} alt="icon" />
-                    <h3 className="text-slate-500 md:text-lg">Inner Peace</h3>
+                    <h3 className="text-sm text-slate-500 md:text-lg">
+                      Inner Peace
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -700,16 +693,16 @@ const CoursePage = () => {
                 Why taking this training?
                 <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h3>
-              <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
+              <div className=" w-[10%]   border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
 
-              <p>
+              <p className="text-sm md:text-base">
                 The 100 Hour Yoga Teacher Training in Rishikesh is a very
                 innovative module that is designed to help the students gain the
                 maximum skills with the use of theoretical, practical,
                 hypothetical, and intuitive knowledge in a safe and protected
                 environment.
               </p>
-              <p>
+              <p className="text-sm md:text-base">
                 This course ensures that you learn the asanas to perfection and
                 are prepared to become a professional. It provides one-to-one
                 teaching sessions to clarify doubts, boast confidence and gain a
@@ -723,7 +716,7 @@ const CoursePage = () => {
               </h3>
               <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
 
-              <p>
+              <p className="text-sm md:text-base">
                 Thus the 100 Hour Yoga Teacher Training in Rishikesh is a
                 complete module that helps you get a grip of the Hatha Vinyas
                 Yoga standards and learn from the best. The module is designed
@@ -736,7 +729,7 @@ const CoursePage = () => {
                 What does this training give?
               </h3>
               <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
-              <p className="space-y-1">
+              <p className="space-y-1 text-sm md:text-base">
                 The 100 Hour Yoga Teacher Training in Rishikesh is a perfect
                 course for someone who is passionate about the art of yoga and
                 wants to take it up as a profession. This course will help you
@@ -744,7 +737,7 @@ const CoursePage = () => {
                 course that helps you achieve fitness, flexibility, and peace of
                 mind. 100 Hour Yoga Teacher Training in Rishikesh{" "}
               </p>
-              <p>
+              <p className="text-sm md:text-base">
                 Furthermore, this course will teach you how to make decisions in
                 contradictory situations in your profession as a teacher and act
                 accordingly. This course prepares you for the future with its
@@ -752,7 +745,7 @@ const CoursePage = () => {
                 this course, you will be challenged not only on the physical but
                 also on a mental level and achieve expertise in both.
               </p>
-              <p>
+              <p className="text-sm md:text-base">
                 With this course, you will get to gain knowledge about the
                 fundamental theories and histories of yoga and get to know about
                 its various asanas. Additionally, you will be able to seek
@@ -765,7 +758,7 @@ const CoursePage = () => {
           </div>
         </section>
         <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             100 Hour Yoga Teacher Training In Rishikesh - Daily Schedule
             <span>
               <Image
@@ -776,9 +769,9 @@ const CoursePage = () => {
               />
             </span>
           </h2>
-          <p>
-            <b className="text-[#bd0006]">100 Hour Yoga Teacher Training</b> is
-            specially designed to keep the student in contemplation of the
+          <p className="text-sm md:text-base">
+            <b className=" text-[#bd0006] ">100 Hour Yoga Teacher Training</b>{" "}
+            is specially designed to keep the student in contemplation of the
             subject matter throughout the day while also allowing them personal
             time. This schedule is the best integration of theory and practice,
             helping the student stay fresh and energetic throughout the day.
@@ -800,7 +793,9 @@ const CoursePage = () => {
                         alt="bullet"
                         className="w-1/6"
                       />
-                      <span className="w-5/6">{item.item}</span>
+                      <span className="w-5/6 text-sm md:text-base">
+                        {item.item}
+                      </span>
                     </li>
                   );
                 })}
@@ -809,15 +804,16 @@ const CoursePage = () => {
                 Evaluation And Certification
                 <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
-              <ul className="space-y-4">
+              <ul className="space-y-4 text-sm md:text-base">
                 <li className="flex items-center space-x-4">
                   <Image
                     src="/icons-home/001-chakra.png"
                     width={30}
                     height={30}
                     alt="bullet"
+                    className="w-1/6"
                   />
-                  <span>
+                  <span className="w-5/6">
                     Assessments will be based on written as well as practical
                     evaluation.
                   </span>
@@ -841,8 +837,9 @@ const CoursePage = () => {
                     width={30}
                     height={30}
                     alt="bullet"
+                    className="w-1/6"
                   />
-                  <span>
+                  <span className="w-5/6">
                     Evaluation will be carried out only for those students who
                     have a minimum of 90% attendance.
                   </span>
@@ -853,8 +850,9 @@ const CoursePage = () => {
                     width={30}
                     height={30}
                     alt="bullet"
+                    className="w-1/6"
                   />
-                  <span>
+                  <span className="w-5/6">
                     Upon successful assessment, the student will receive a
                     certificate accredited by Yoga Alliance, USA.
                   </span>
@@ -875,7 +873,9 @@ const CoursePage = () => {
                 <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
               <div className="mt-4 flex rounded-t-lg bg-[#bd0006] p-4 font-bold text-white drop-shadow-md">
-                <div className="w-2/3 text-center">ACTIVITY</div>
+                <div className="w-2/3 text-center text-lg md:text-xl">
+                  ACTIVITY
+                </div>
                 <div className="w-1/3 text-center">TIME</div>
               </div>
               {timeTable.map((item, index) => {
@@ -888,14 +888,16 @@ const CoursePage = () => {
                       index === timeTable.length - 1 ? "rounded-b-lg" : ""
                     } flex p-4`}
                   >
-                    <div className="w-2/3 border-r-[2px] border-dashed border-gray-400 text-center">
+                    <div className="w-2/3 border-r-[2px] border-dashed border-gray-400 text-center text-sm md:text-base">
                       {item.title}
                     </div>
-                    <div className="w-1/3 text-center">{item.time}</div>
+                    <div className="w-1/3 text-center text-sm md:text-base">
+                      {item.time}
+                    </div>
                   </div>
                 );
               })}
-              <p className="italic ">
+              <p className="text-sm italic md:text-base ">
                 <span className="font-bold text-[#bd0006]"> Note: </span>
                 Schedule is subjected to change
               </p>
@@ -903,7 +905,7 @@ const CoursePage = () => {
           </div>
         </section>
         <section className="greyFloral mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <h2 className="my-4 flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Accomodation &amp; Food
             <span>
               <Image
@@ -914,7 +916,7 @@ const CoursePage = () => {
               />
             </span>
           </h2>
-          <p className="my-4 text-lg font-semibold">
+          <p className="my-4 font-semibold md:text-lg">
             All throughout, we provide the best possible accommodation
             facilities and delicious, sattvic food.
           </p>
@@ -929,7 +931,9 @@ const CoursePage = () => {
                     alt="bullet"
                     className="w-1/6"
                   />
-                  <span className="w-5/6">{item.item}</span>
+                  <span className="w-5/6 text-sm md:text-base">
+                    {item.item}
+                  </span>
                 </li>
               );
             })}
@@ -943,7 +947,9 @@ const CoursePage = () => {
                     className="flex flex-col items-center space-y-2 p-2"
                   >
                     <div className="text-center">{item.icon}</div>
-                    <p className="text-center font-semibold">{item.title}</p>
+                    <p className="text-center text-sm font-semibold md:text-base">
+                      {item.title}
+                    </p>
                   </div>
                 );
               })}
@@ -1011,7 +1017,9 @@ const CoursePage = () => {
                           alt="bullet"
                           className="w-1/6"
                         />
-                        <span className="w-5/6">{item.item}</span>
+                        <span className="w-5/6 text-sm md:text-base">
+                          {item.item}
+                        </span>
                       </li>
                     );
                   })}
@@ -1028,7 +1036,9 @@ const CoursePage = () => {
                           alt="bullet"
                           className="w-1/6"
                         />
-                        <span className="w-5/6">{item.item}</span>
+                        <span className="w-5/6 text-sm md:text-base">
+                          {item.item}
+                        </span>
                       </li>
                     );
                   })}
@@ -1039,7 +1049,7 @@ const CoursePage = () => {
         </section>
 
         <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Course Syllabus - 100 Hour Yoga Teacher Training In Rishikesh
             <span>
               <Image
@@ -1057,10 +1067,10 @@ const CoursePage = () => {
                   key={index}
                   className="group rounded-tl-[30px] rounded-br-[30px] border-[1px] border-[#bd0006] bg-white p-4 drop-shadow-md duration-300 hover:scale-[102%] hover:border-dashed"
                 >
-                  <h3 className="text-xl group-hover:text-[#bd0006]">
+                  <h3 className="text-lg group-hover:text-[#bd0006] md:text-xl">
                     {item.title}
                   </h3>
-                  <p>{item.desc}</p>
+                  <p className="text-sm md:text-base">{item.desc}</p>
                 </div>
               );
             })}
@@ -1084,7 +1094,7 @@ const CoursePage = () => {
           </div>
         </section>
         <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             What Does A Student Get After The Completion Of The Course?
             <span>
               <Image
@@ -1095,7 +1105,7 @@ const CoursePage = () => {
               />
             </span>
           </h2>
-          <p className="text-center">
+          <p className="text-center text-sm md:text-base">
             Once the student has completed the
             <b> 100 Hour Yoga Teacher Training </b> in Rishikesh,they will be
             given a certificate from the institution. The certificate will have
@@ -1119,7 +1129,7 @@ const CoursePage = () => {
               <h3 className=" text-xl text-gray-600 md:text-3xl">
                 How To Book Your Spot
               </h3>
-              <p className="">
+              <p className="text-sm md:text-base">
                 Please note that our yoga courses fill up well in advance,
                 please apply in time to secure your seat. To register please
                 click on apply now button fill out the application form and
@@ -1141,7 +1151,7 @@ const CoursePage = () => {
           <p className="text-center text-lg font-bold text-[#bd0006]">
             Upcoming Events
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Available Seats for 100 Hours Yoga Teacher Training
             <span>
               <Image
@@ -1152,61 +1162,19 @@ const CoursePage = () => {
               />
             </span>
           </h2>
-          <p className="my-4">
+          <p className="my-4 text-sm md:text-base">
             <b>100 hour yoga teacher training course </b>offered by Yin Yang
             Yoga Academy. Certified by{" "}
             <b className="text-[#bd0006]">Yoga Alliance, USA.</b>
           </p>
-          <div className="w-full overflow-x-scroll">
-            <div className="flex w-full justify-between rounded-t-lg bg-[#bd0006] p-4 text-center text-lg font-bold text-white">
-              <div className="w-1/6 border-r-[2px] border-dashed">
-                Start Date
-              </div>
-              <div className="w-1/6  border-r-[2px] border-dashed">
-                End Date
-              </div>
-              <div className="w-1/6 border-r-[2px] border-dashed">
-                Availability
-              </div>
-              <div className="w-1/6 border-r-[2px] border-dashed">Shared</div>
-              <div className="w-1/6 border-r-[2px] border-dashed">Private</div>
-              <div className="w-1/6">Booking</div>
-            </div>
-            {seatAvailability.map((item, index) => {
-              return (
-                <div
-                  key={index}
-                  className={`flex ${
-                    index % 2 === 0 ? "bg-slate-50" : "bg-slate-100"
-                  } w-full justify-between   p-4 text-center text-lg font-medium`}
-                >
-                  <div className="w-1/6 border-r-[2px] border-dashed">
-                    {item.start}
-                  </div>
-                  <div className="w-1/6  border-r-[2px] border-dashed">
-                    {item.end}
-                  </div>
-                  <div className="w-1/6 border-r-[2px] border-dashed">
-                    {item.availability}
-                  </div>
-                  <div className="w-1/6 border-r-[2px] border-dashed">
-                    {item.shared}
-                  </div>
-                  <div className="w-1/6 border-r-[2px] border-dashed">
-                    {item.private}
-                  </div>
-                  <div className="w-1/6">{item.booking}</div>
-                </div>
-              );
-            })}
-          </div>
+          <EventTable />
         </section>
         <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-lg font-bold text-[#bd0006]">
+          <p className="text-center font-bold text-[#bd0006] md:text-lg">
             Experience A Transfomational Journey
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
-            What To Expect At Rishikesh Yogkulam
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
+            What To Expect At Yin Yang Yoga Academy
             <span>
               <Image
                 src="/line-decor.png"
@@ -1234,17 +1202,17 @@ const CoursePage = () => {
                       {item.title}
                     </h3>
                   </div>
-                  <p className="text-base ">{item.desc}</p>
+                  <p className="text-sm md:text-base ">{item.desc}</p>
                 </div>
               );
             })}
           </div>
         </section>
         <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-lg font-bold text-[#bd0006]">
+          <p className="text-center font-bold text-[#bd0006] md:text-lg">
             Experience A Transfomational Journey
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Skill Level Of 100 Hour YTTC In Rishikesh India
             <span>
               <Image
@@ -1255,7 +1223,7 @@ const CoursePage = () => {
               />
             </span>
           </h2>
-          <p>
+          <p className="text-sm md:text-base">
             There are no high requirements of skill level for the 100 Hour Yoga
             Teacher Training in Rishikesh. Although it is expected that the
             student will possess a minimum amount of flexibility of body and
@@ -1266,7 +1234,7 @@ const CoursePage = () => {
           </p>
           <div className="mt-4  flex flex-col items-center space-x-4 space-y-4 lg:flex-row">
             <div className="lg:w-1/2">
-              <p>
+              <p className="text-sm md:text-base">
                 People from all levels of yoga or work are allowed to join this
                 course and no previous experience is required. Our expert
                 trainers will modify the teachings according to a student&apos;s
@@ -1275,8 +1243,8 @@ const CoursePage = () => {
                 yoga but lack a proper certification are also welcome to join
                 this course.
               </p>
-              <h3 className="my-4 text-2xl">Things To Remember</h3>
-              <ul className="grid  gap-4 md:grid-cols-2">
+              <h3 className="my-4 text-xl md:text-2xl">Things To Remember</h3>
+              <ul className="grid  gap-4 text-sm md:grid-cols-2 md:text-base">
                 <li className="flex items-center space-x-4">
                   <Image
                     src="/icons-home/001-chakra.png"
@@ -1396,10 +1364,10 @@ const CoursePage = () => {
           </div>
         </section>
         <section className="greyFloral mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-lg font-bold text-[#bd0006]">
+          <p className="text-center font-bold text-[#bd0006] md:text-lg">
             Complete Syllabus For this Course
           </p>
-          <h2 className="my-4 flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Detailed Syllabus - Yoga Teacher Training In Rishikesh India
             <span>
               <Image
@@ -1429,7 +1397,7 @@ const CoursePage = () => {
           <p className="text-center text-lg font-bold text-[#bd0006]">
             Yoga is the journey of the self, through the self, to the self
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Style Of Yoga In The 100 Hour Yoga Teachers Training In Rishikesh
             <span>
               <Image
@@ -1441,7 +1409,7 @@ const CoursePage = () => {
             </span>
           </h2>
           <div className="space-y-3 ">
-            <p>
+            <p className="text-sm md:text-base">
               Rishikesh is known to be famous for yoga and various yogic
               practices. The place is associated with spirituality and love. The
               Yogakulam Yoga Retreat in Rishikesh is a well-known center that
@@ -1450,7 +1418,7 @@ const CoursePage = () => {
               work on conservative styles and bring in their wisdom to widen the
               experience of the students for a profound experience.
             </p>
-            <p>
+            <p className="text-sm md:text-base">
               The 5000-year-old practice of yoga called the Hatha Yoga, which
               forms the basis of yogic practices is taught by our experts here.
               To maximize the benefits these practices are mixed with modern art
@@ -1473,7 +1441,7 @@ const CoursePage = () => {
               </div>
             </div>
             <div className="grid gap-4 md:w-2/3 md:grid-cols-2">
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
                   src="/icons-home/001-chakra.png"
                   width={30}
@@ -1486,7 +1454,7 @@ const CoursePage = () => {
                   Classes on traditional Hatha Yoga.
                 </span>
               </li>
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
                   src="/icons-home/001-chakra.png"
                   width={30}
@@ -1496,7 +1464,7 @@ const CoursePage = () => {
                 />
                 <span className="w-5/6"> Classes on creative Vinaya Flow.</span>
               </li>
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
                   src="/icons-home/001-chakra.png"
                   width={30}
@@ -1506,7 +1474,7 @@ const CoursePage = () => {
                 />
                 <span className="w-5/6"> Classes on restorative yin yoga.</span>
               </li>
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
                   src="/icons-home/001-chakra.png"
                   width={30}
@@ -1516,7 +1484,7 @@ const CoursePage = () => {
                 />
                 <span className="w-5/6"> Classes on vinyasa power yoga.</span>
               </li>
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
                   src="/icons-home/001-chakra.png"
                   width={30}
@@ -1529,7 +1497,7 @@ const CoursePage = () => {
                   A mix of traditional and modern techniques.
                 </span>
               </li>
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
                   src="/icons-home/001-chakra.png"
                   width={30}
@@ -1539,7 +1507,7 @@ const CoursePage = () => {
                 />
                 <span className="w-5/6"> View on the skeleton variation</span>
               </li>
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
                   src="/icons-home/001-chakra.png"
                   width={30}
@@ -1549,7 +1517,7 @@ const CoursePage = () => {
                 />
                 <span className="w-5/6"> Variety and mix of asanas</span>
               </li>
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
                   src="/icons-home/001-chakra.png"
                   width={30}
@@ -1567,7 +1535,7 @@ const CoursePage = () => {
         </section>
         {/* Pending */}
         <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Activity During The Course
             <span>
               <Image
@@ -1578,12 +1546,13 @@ const CoursePage = () => {
               />
             </span>
           </h2>
+          Under Construction
         </section>
         <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-xl font-bold text-[#bd0006]">
+          <p className="text-center text-lg font-bold text-[#bd0006] md:text-xl">
             Some Recommended Courses{" "}
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Yoga Teacher Training in Rishikesh India
             <span>
               <Image
@@ -1597,10 +1566,10 @@ const CoursePage = () => {
           <CourseCard />
         </section>
         <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32 ">
-          <p className="text-center text-xl font-bold text-[#bd0006]">
+          <p className="text-center text-lg font-bold text-[#bd0006] md:text-xl">
             Course In a Nutshell
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Best 100 Hour Yoga Teacher Training In Rishikesh India
             <span>
               <Image
@@ -1611,7 +1580,7 @@ const CoursePage = () => {
               />
             </span>
           </h2>
-          <p>
+          <p className="text-sm md:text-base">
             The yogkulam yoga retreat in Rishikesh is a divine place where you
             will get teachings regarding Hatha, Asthanga, and Yin yoga is a deep
             and thorough manner. Here, we teach in a traditional way derived
@@ -1633,22 +1602,21 @@ const CoursePage = () => {
                 height="315"
                 src="https://www.youtube.com/embed/I2aiSwHR1BE"
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             </div>
-            <h3 className="fancy-font text:xl font-bold text-[#bd0006] md:text-2xl">
+            <h3 className="fancy-font text-xl font-bold text-[#bd0006] md:text-2xl">
               We are Loved by Yoga Students Across The World
             </h3>
-            <p>
+            <p className="text-sm md:text-base">
               We teach some of the oldest yoga forms present and implement yoga
               forms that are performed by rishis as well. We implement a mix of
               traditional and modern training techniques to help our students
               get a quick understanding of the course, which also helps them
               develop their unique way of teaching.
             </p>
-            <p>
+            <p className="text-sm md:text-base">
               Along with teaching, we provide some of the cleanest and basic
               accommodations available to our students. These rooms are
               available for a single resident as well as two people have the

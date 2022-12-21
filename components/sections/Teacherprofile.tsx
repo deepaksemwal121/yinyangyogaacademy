@@ -80,7 +80,7 @@ const Teacherprofile = () => {
   };
   return (
     <div className="mt-12 ">
-      <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+      <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
         Best Yoga Teachers Rishikesh India
         <span>
           <Image
@@ -97,8 +97,8 @@ const Teacherprofile = () => {
             return (
               <div key={index} className="p-2  md:p-4">
                 <div className="rounded-lg bg-white p-4">
-                  <div className="flex items-center space-x-4 ">
-                    <div className="w-1/3">
+                  <div className="flex flex-col items-center space-x-4 md:flex-row ">
+                    <div className="md:w-1/3">
                       <Image
                         src={item.image}
                         height={150}
@@ -107,12 +107,14 @@ const Teacherprofile = () => {
                         className="rounded-br-[30%] rounded-tl-[30%] border border-solid border-[#bd0006]"
                       />
                     </div>
-                    <div className="w-2/3 space-y-3">
-                      <h3 className="fancy-font text-xl ">{item.name}</h3>
-                      <p className="rounded-br-[20px] rounded-tl-[20px] bg-[#bd0006] p-2 font-medium  text-white">
+                    <div className="space-y-3 text-center md:w-2/3">
+                      <h3 className="fancy-font text-lg md:text-xl ">
+                        {item.name}
+                      </h3>
+                      <p className="rounded-br-[20px] rounded-tl-[20px] bg-[#bd0006] p-2 text-sm font-medium text-white  md:text-base">
                         {item.expertise}
                       </p>
-                      <p>{item.desc}</p>
+                      <p className="text-sm md:text-base">{item.desc}</p>
                     </div>
                   </div>
 

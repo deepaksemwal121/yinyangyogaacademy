@@ -52,14 +52,24 @@ const EventTable = () => {
     },
   ];
   return (
-    <div>
-      <div className="flex w-full justify-between rounded-t-lg bg-[#bd0006] p-4 text-center text-lg font-bold text-white">
-        <div className="w-1/6 border-r-[2px] border-dashed">Start Date</div>
-        <div className="w-1/6  border-r-[2px] border-dashed">End Date</div>
-        <div className="w-1/6 border-r-[2px] border-dashed">Availability</div>
-        <div className="w-1/6 border-r-[2px] border-dashed">Shared</div>
-        <div className="w-1/6 border-r-[2px] border-dashed">Private</div>
-        <div className="w-1/6">Booking</div>
+    <div className="w-full overflow-x-scroll">
+      <div className="flex w-[850px] justify-between overflow-x-auto rounded-t-lg bg-[#bd0006] p-4 text-center text-lg font-bold text-white md:w-full">
+        <div className="w-1/6 border-r-[2px]  border-dashed text-sm md:text-base">
+          Start Date
+        </div>
+        <div className="w-1/6 border-r-[2px]  border-dashed  text-sm md:text-base">
+          End Date
+        </div>
+        <div className="w-1/6 border-r-[2px] border-dashed text-sm md:text-base">
+          Availability
+        </div>
+        <div className="w-1/6 border-r-[2px] border-dashed text-sm md:text-base">
+          Shared
+        </div>
+        <div className="w-1/6 border-r-[2px] border-dashed text-sm md:text-base">
+          Private
+        </div>
+        <div className="text-sm md:w-1/6 md:text-base">Booking</div>
       </div>
       {seatAvailability.map((item, index) => {
         return (
@@ -67,27 +77,28 @@ const EventTable = () => {
             key={index}
             className={`flex ${
               index % 2 === 0 ? "bg-slate-50" : "bg-slate-100"
-            } w-full justify-between   p-4 text-center text-lg font-medium`}
+            } w-[850px] justify-between p-4   text-center text-lg font-medium md:w-full`}
           >
-            <div className="w-1/6 border-r-[2px] border-dashed">
+            <div className="w-1/6 border-r-[2px] border-dashed text-sm">
               {item.start}
             </div>
-            <div className="w-1/6  border-r-[2px] border-dashed">
+            <div className="w-1/6 border-r-[2px]  border-dashed text-sm">
               {item.end}
             </div>
-            <div className="w-1/6 border-r-[2px] border-dashed">
+            <div className="w-1/6 border-r-[2px] border-dashed text-sm">
               {item.availability}
             </div>
-            <div className="w-1/6 border-r-[2px] border-dashed">
+            <div className="w-1/6 border-r-[2px] border-dashed text-sm">
               {item.shared}
             </div>
-            <div className="w-1/6 border-r-[2px] border-dashed">
+            <div className="w-1/6 border-r-[2px] border-dashed text-sm">
               {item.private}
             </div>
-            <div className="w-1/6">{item.booking}</div>
+            <div className="text-sm md:w-1/6">{item.booking}</div>
           </div>
         );
       })}
+      <p className="text-sm italic md:hidden">Please Scroll Horizontally</p>
     </div>
   );
 };

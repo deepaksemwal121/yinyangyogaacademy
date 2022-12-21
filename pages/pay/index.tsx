@@ -11,10 +11,10 @@ const Pay = () => {
     <main>
       <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
         <div className=" space-y-2 py-2">
-          <p className="text-lg font-semibold tracking-wide text-gray-200 md:text-xl">
+          <p className="text-sm font-semibold tracking-wide text-gray-200 md:text-xl">
             Come and join us for the unforgettable experience of a lifetime
           </p>
-          <h2 className=" fancy-font text-2xl  text-white drop-shadow md:text-3xl lg:text-4xl lg:leading-[6rem] xl:text-5xl">
+          <h2 className=" fancy-font text-2xl  text-white drop-shadow md:text-3xl lg:text-4xl xl:text-5xl">
             Course Fee For Yoga Teacher Training
           </h2>
           <nav className="flex" aria-label="Breadcrumb">
@@ -59,7 +59,7 @@ const Pay = () => {
         </div>
       </section>
       <section className="py-8 px-4  md:px-6 lg:px-8 xl:px-32">
-        <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+        <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           Course Fee For Yoga Teacher Training / Retreats
           <span>
             <Image
@@ -70,7 +70,7 @@ const Pay = () => {
             />
           </span>
         </h2>
-        <p>
+        <p className="text-sm md:text-base">
           Yin Yang Yoga Academy offers you paypal payment options. Our courses
           the
           <b>
@@ -80,19 +80,19 @@ const Pay = () => {
           </b>
           are having uniformly the same payment methods.{" "}
         </p>
-        <p>
+        <p className="text-sm md:text-base">
           {" "}
           The reservation of your chosen course is require a deposit of 200 USD
           Please find all payment options to complete your deposit fee
           transaction below.
         </p>
-        <div className="mt-6 flex flex-col-reverse justify-between space-y-4 lg:flex-row">
-          <div className="space-y-4">
-            <h2 className="group mt-4 flex w-full flex-col text-3xl  lg:mt-0">
+        <div className="mt-6 flex  flex-col-reverse justify-between space-y-4 lg:flex-row">
+          <div className="space-y-4 lg:w-2/3">
+            <h2 className="group mt-4 flex w-full flex-col text-xl md:text-3xl  lg:mt-0">
               Refund Policy
-              <span className=" mt-2 h-[2px] w-[20%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[30%] "></span>
+              <span className=" mt-2 h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
             </h2>
-            <p className="md:w-[90%]">
+            <p className="text-sm md:w-[90%] md:text-base">
               All aspirants are advised to carefully consider the time and
               resources required for the course before forwarding the
               application for the teacher training course. The deposit submitted
@@ -104,7 +104,7 @@ const Pay = () => {
             </p>
           </div>
           <div className="patternBg space-y-4 rounded-lg border-2 p-4 shadow lg:w-1/3 ">
-            <h2 className="group flex w-full flex-col  text-3xl">
+            <h2 className="group flex w-full flex-col text-xl  md:text-3xl">
               Registration Fee
               <span className=" mt-2 h-[2px] w-[30%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[40%] "></span>
             </h2>
@@ -115,7 +115,9 @@ const Pay = () => {
               className="space-y-4 "
             >
               <div>
-                <label className="font-medium">Advance Course Fee </label>
+                <label className="text-sm font-medium md:text-base">
+                  Advance Course Fee{" "}
+                </label>
                 <input type="hidden" name="cmd" value="_s-xclick" />
                 <input
                   type="hidden"
@@ -175,7 +177,7 @@ const Pay = () => {
               />
             </form>
 
-            <p className="text-xl font-semibold text-[#bd0006]">
+            <p className="text-lg font-semibold text-[#bd0006] md:text-xl">
               Courses Registration Fees + 6% Handling Fee
             </p>
           </div>
@@ -184,11 +186,11 @@ const Pay = () => {
       <section className="flex justify-center py-8 px-4  md:px-6 lg:px-8 xl:px-32">
         <div className="flex flex-col  items-center justify-between rounded-lg border-[1px] border-[#bd0006] bg-white p-4 shadow-lg lg:w-[80%] lg:flex-row ">
           <div className="space-y-2 p-4 text-center lg:w-3/4">
-            <h2 className="fancy-font w-full text-2xl">
+            <h2 className="fancy-font w-full text-xl md:text-2xl">
               {" "}
               Want To Know More About The Yoga Teacher Training Courses
             </h2>
-            <p>
+            <p className="text-sm md:text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
               nihil illum iure consequuntur,
             </p>

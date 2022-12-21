@@ -34,7 +34,7 @@ const faqData = [
 const FAQ = () => {
   return (
     <div className="space-y-4">
-      <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+      <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
         Frequently Asked Questions By Students
         <span>
           <Image

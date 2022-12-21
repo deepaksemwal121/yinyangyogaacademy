@@ -31,11 +31,13 @@ const CourseCardLayout = ({
             alt="card1"
           />
 
-          <h3 className="clipText text-[18px] drop-shadow-lg">{title}</h3>
+          <h3 className="clipText text-lg drop-shadow-lg">{title}</h3>
         </div>
         <p
           className={`${
-            showCourse ? "hidden" : "block p-4 duration-200 ease-in-out "
+            showCourse
+              ? "hidden"
+              : "block p-4 text-sm duration-200 ease-in-out md:text-base "
           }`}
         >
           {desc}
@@ -57,7 +59,7 @@ const CourseCardLayout = ({
                   width={30}
                   alt={item.name}
                 />
-                <p> {item.name}</p>
+                <p className="text-sm md:text-base"> {item.name}</p>
               </div>
             );
           })}

@@ -16,8 +16,10 @@ const CourseAccordian: React.FC<Syllabus> = ({ title, desc, classes }) => {
     <div>
       <div className="mx-auto flex items-center justify-between rounded-t-lg bg-white p-4 text-[#bd0006] shadow-lg">
         <div className="text-gray-500">
-          <span className="text-lg font-semibold">{title}:</span>{" "}
-          {!open && desc.substring(0, 77) + "..."}
+          <span className="font-semibold md:text-lg">{title}:</span>
+          <span className="text-sm md:text-base">
+            {!open && desc.substring(0, 77) + "..."}
+          </span>
         </div>
         <div
           className="cursor-pointer rounded-full   border-[#bd0006]"
@@ -27,8 +29,8 @@ const CourseAccordian: React.FC<Syllabus> = ({ title, desc, classes }) => {
         </div>
       </div>
       <div className={` bg-slate-50 p-4 ${open ? "" : "hidden"}`}>
-        <p>{desc}</p>
-        <ul className="mt-4 grid gap-5 md:grid-cols-3">
+        <p className="text-sm md:text-base">{desc}</p>
+        <ul className="mt-4 grid gap-5 md:grid-cols-3 text-sm md:text-base">
           {classes.map((item, index) => {
             return (
               <li key={index} className="flex items-center space-x-4">

@@ -10,6 +10,21 @@ import TrustPilotReview from "../../components/sections/TrustPilotReview";
 import BookSlider from "../../components/BookSlider";
 
 const About = () => {
+  const cardData = [
+    {
+      title: "Certified Yoga Teacher Training Course in Rishikesh",
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+    },
+    {
+      title: "6+ Years of Experience in Yoga Teacher Training ",
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+    },
+    {
+      title: "Want to be a certified Yoga Teacher?",
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+    },
+  ];
+
   const dataValues = [
     {
       heading: "Holistic Learning Programme",
@@ -137,12 +152,18 @@ const About = () => {
         </div>
       </section>
       <section className=" grid  gap-4 py-8 px-4 md:px-6 lg:grid-cols-3 lg:px-8 xl:px-32 ">
-        <ShadowCard />
-        <ShadowCard />
-        <ShadowCard />
+        {cardData.map((item, index) => {
+          return (
+            <ShadowCard
+              key={index}
+              title={item.title}
+              description={item.description}
+            />
+          );
+        })}
       </section>
       <section className="patternBg mt-8  py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-        <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+        <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           About Yin Yang Yoga Academy - Best Yoga School In Rishikesh INDIA
           <span>
             <Image
@@ -162,19 +183,19 @@ const About = () => {
               width={438 * 1.5}
               alt="aboutus "
             />
-            <div className=" h-[200px] w-full rounded-bl-[100px] rounded-tr-[100px] bg-[#bd0006] p-8 drop-shadow md:top-[80%] md:left-[10%] md:w-[80%] lg:absolute">
+            <div className=" h-[170px] w-full rounded-bl-[100px] rounded-tr-[100px] bg-[#bd0006] p-8 text-center drop-shadow md:top-[80%] md:left-[10%] md:h-[200px] md:w-[80%] lg:absolute">
               <h3 className="text-[20px] text-white  md:text-[30px]">
                 Yin Yang Yoga Academy
               </h3>
-              <p className="text-[#f1f1f1]">
+              <p className="text-sm text-[#f1f1f1] md:text-base">
                 Yin Yoga is a slower practice where poses are passively held for
                 longer, working on the deep, dense (Yin) connective tissues and
                 joints in the body.
               </p>
             </div>
           </div>
-          <div className="">
-            <p className="">
+          <div className="mt-4 text-sm md:text-base">
+            <p>
               Rishikesh Yogkulam was founded in 2018, born from the vision of
               Dhirendra Bisht and Amit Payal. Having seen their city change in
               recent years, Dhirendra and Amit wanted to start a school that
@@ -211,7 +232,7 @@ const About = () => {
       </section>
 
       <section className=" mt-12  py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-        <h2 className="flex w-full flex-col text-center text-[30px] font-bold md:text-[40px]">
+        <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           Our Values and Mission
           <span>
             <Image
@@ -227,7 +248,7 @@ const About = () => {
             return (
               <div
                 key={index}
-                className="group rounded-bl-[50px] rounded-tr-[50px] p-4 text-center duration-500 ease-in-out hover:bg-[#bd0006] hover:text-white hover:drop-shadow-md "
+                className="group rounded-bl-[50px] rounded-tr-[50px] p-4 text-center duration-300 ease-in-out hover:bg-[#bd0006] hover:text-white hover:drop-shadow-md "
               >
                 <FaYinYang size={40} className="text-center" />
                 {/* <Image
@@ -236,10 +257,10 @@ const About = () => {
                   width={64}
                   alt=""
                 /> */}
-                <h3 className="text-center text-xl  group-hover:text-white  md:text-[24px]">
+                <h3 className="text-center text-lg group-hover:text-white  md:text-xl  md:text-[24px]">
                   {item.heading}
                 </h3>
-                <p>{item.description}</p>
+                <p className="text-sm md:text-base">{item.description}</p>
               </div>
             );
           })}
@@ -259,10 +280,10 @@ const About = () => {
         <div className="py-8 md:w-1/2">
           <p className="text-lg text-[#bd0006]">Our Roots</p>
           <div className="h-1 w-[10%] bg-[#bd0006]"></div>
-          <h3 className="text-[24px] md:text-[45px] ">
+          <h3 className="my-3 text-2xl font-bold md:text-4xl">
             Foundation Of Yin Yoga Academy
           </h3>
-          <p>
+          <p className="text-sm md:text-base">
             The name Rishikesh Yogkulam denotes a unification of the name of the
             city Rishikesh - the world capital of Yoga and “Yogkulam” which
             means Yoga family. Amit and Dhirendra chose this name to amplify the
@@ -289,7 +310,7 @@ const About = () => {
         <BookSlider />
       </section>
       <section className="greyFloral my-8 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-        <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+        <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           Yin Yang Yoga Academy - Always a First Choice
           <span>
             <Image
@@ -301,7 +322,7 @@ const About = () => {
           </span>
         </h2>
         <div className="py-8 text-center">
-          <p className="mb-4">
+          <p className="mb-4 text-sm md:text-base">
             If you want to do the best yoga training and seeing this as your
             passion as well as a profession then there is no better place than
             this. <b>Rishikesh&apos;s Yoga Teacher Training </b> has all that
@@ -328,7 +349,7 @@ const About = () => {
         <p className=" text-center font-medium uppercase tracking-wide text-[#bd0006]">
           our social reviews
         </p>
-        <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+        <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           Why We are the First Choice For YTTC
           <span>
             <Image
