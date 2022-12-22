@@ -151,7 +151,7 @@ const ApplyForm = () => {
                       }}
                       type="text"
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006]"
                       placeholder=" "
                       required
                     />
@@ -173,7 +173,7 @@ const ApplyForm = () => {
                       }}
                       type="text"
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006] md:text-sm"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006] md:text-sm"
                       placeholder=" "
                       required
                     />
@@ -189,7 +189,7 @@ const ApplyForm = () => {
                       value={reservationForm.phoneNumber}
                       type="text"
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006]"
                       placeholder=" "
                       required
                       onChange={(e) => {
@@ -217,7 +217,7 @@ const ApplyForm = () => {
                       }}
                       type="text"
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006]"
                       placeholder=" "
                       required
                     />
@@ -231,7 +231,7 @@ const ApplyForm = () => {
                   <div className="relative rounded-lg bg-white p-2">
                     <select
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006] md:text-sm"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006] md:text-sm"
                       placeholder=" "
                       required
                       value={reservationForm.gender}
@@ -262,7 +262,7 @@ const ApplyForm = () => {
                   <div className="relative rounded-lg bg-white p-2">
                     <select
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006] md:text-sm"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006] md:text-sm"
                       placeholder=" "
                       required
                       value={reservationForm.courseSelected}
@@ -314,7 +314,7 @@ const ApplyForm = () => {
                       }}
                       type="date"
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006] md:text-sm"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006] md:text-sm"
                       placeholder=" "
                       required
                     />
@@ -328,7 +328,7 @@ const ApplyForm = () => {
                   <div className="relative rounded-lg bg-white p-2">
                     <select
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006] md:text-sm"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006] md:text-sm"
                       required
                       value={reservationForm.selectRoomType}
                       onChange={(e) => {
@@ -361,7 +361,7 @@ const ApplyForm = () => {
                         });
                       }}
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006] md:text-sm"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006] md:text-sm"
                       placeholder=" "
                       required
                     >
@@ -392,7 +392,7 @@ const ApplyForm = () => {
                       });
                     }}
                     id="floating_outlined"
-                    className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006] md:text-sm"
+                    className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006] md:text-sm"
                     placeholder=" "
                     required
                   />

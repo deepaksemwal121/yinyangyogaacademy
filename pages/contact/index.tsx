@@ -128,7 +128,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="floating_outlined"
-                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006]"
                     placeholder=" "
                   />
                   <label
@@ -142,7 +142,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="floating_outlined"
-                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006]"
                     placeholder=" "
                   />
                   <label
@@ -158,7 +158,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="floating_outlined"
-                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006]"
                     placeholder=" "
                   />
                   <label
@@ -171,7 +171,7 @@ const Contact = () => {
                 <div className="relative">
                   <select
                     id="floating_outlined"
-                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006]"
                   >
                     <option>Regarding Course Fee</option>
                     <option>Regarding Refund</option>
@@ -189,7 +189,7 @@ const Contact = () => {
               <div className="relative">
                 <textarea
                   id="floating_outlined"
-                  className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                  className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006]"
                   placeholder=" "
                 />
                 <label
