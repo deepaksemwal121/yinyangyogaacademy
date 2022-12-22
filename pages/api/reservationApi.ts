@@ -68,6 +68,8 @@ export default function handler(
     <div>`,
   };
 
+  console.log(process.env.email, process.env.password);
+
   transporter.sendMail(mailData, function (err: any, info: any) {
     if (err) console.log(err);
     else {
