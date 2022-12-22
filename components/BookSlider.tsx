@@ -7,7 +7,7 @@ import data from "../data/data";
 const BookSlider = () => {
   const settings = {
     dots: true,
-    arrows:false,
+    arrows: false,
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 3,
@@ -135,10 +135,10 @@ const BookSlider = () => {
       >
         <div className="relative h-full w-full max-w-2xl md:h-auto">
           {/* <!-- Modal content --> */}
-          <div className="relative rounded-lg bg-white shadow dark:bg-gray-700">
+          <div className="relative rounded-lg bg-white shadow ">
             {/* <!-- Modal header --> */}
-            <div className="flex items-start justify-between rounded-t border-b p-4 dark:border-gray-600">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+            <div className="flex items-start justify-between rounded-t border-b p-4 ">
+              <h3 className="text-xl font-semibold text-gray-900 ">
                 Fill Out the Form To Download the Book
               </h3>
               <button
@@ -146,7 +146,7 @@ const BookSlider = () => {
                   setIsopen(false);
                 }}
                 type="button"
-                className="ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 "
                 data-modal-toggle="defaultModal"
               >
                 <svg
@@ -234,7 +234,7 @@ const BookSlider = () => {
                   <div className="md:w-2/3">
                     <button
                       onClick={handleBookPdf}
-                      className="focus:shadow-outline rounded bg-[#bd0006] py-2 px-4 font-bold text-white shadow hover:bg-purple-400 focus:outline-none"
+                      className="focus:shadow-outline rounded bg-[#bd0006] py-2 px-4 font-bold text-white shadow hover:bg-black focus:outline-none"
                       type="button"
                     >
                       Send Pdf
