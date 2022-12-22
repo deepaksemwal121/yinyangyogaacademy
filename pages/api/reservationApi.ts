@@ -70,16 +70,34 @@ export default async function handler(
   };
   console.log(studentEmail);
 
-  transporter.sendMail(mailData, function (err: any, info: any) {
-    console.log("request here");
-    if (err) console.log(err);
-    else {
-      console.log(info);
-      transporter.sendMail(studentEmail, function (err: any, info: any) {
-        if (err) console.log(err);
-        else console.log(info);
-      });
-    }
+  await new Promise((resolve, reject) => {
+    // verify connection configuration
+    transporter.verify(function (error, success) {
+      if (error) {
+        console.log(error);
+        reject(error);
+      } else {
+        console.log("戦う準備ができている");
+        resolve(success);
+      }
+    });
+  });
+
+  await new Promise((resolve, reject) => {
+    transporter.sendMail(mailData, function (err: any, info: any) {
+      console.log("request here");
+      if (err) {
+        reject(err);
+        console.log(err);
+      } else {
+        console.log(info);
+        transporter.sendMail(studentEmail, function (err: any, info: any) {
+          if (err) console.log(err);
+          else console.log(info);
+          resolve(info);
+        });
+      }
+    });
   });
   return res.status(200).json({ message: "Registered Successfully" });
 }
