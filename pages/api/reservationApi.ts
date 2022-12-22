@@ -68,7 +68,6 @@ export default async function handler(
     <p>Yin Yang Yoga Academy Team </p>
     <div>`,
   };
-  console.log(studentEmail);
 
   await new Promise((resolve, reject) => {
     // verify connection configuration

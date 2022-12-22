@@ -1,5 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
+import nodemailer from "nodemailer";
 
 type Data = {
   message: string;
@@ -12,7 +13,6 @@ const booksArray = [
   },
 ];
 
-let nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
   port: 465,
   host: "smtp.hostinger.com",
@@ -23,7 +23,7 @@ const transporter = nodemailer.createTransport({
   secure: true,
 });
 
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>,
 ) {
@@ -42,10 +42,32 @@ export default function handler(
     `,
   };
 
-  transporter.sendMail(mailData, function (err: any, info: any) {
-    if (err) console.log(err);
-    else console.log(info);
+  await new Promise((resolve, reject) => {
+    // verify connection configuration
+    console.log("Verifying Connection");
+    transporter.verify(function (error, success) {
+      if (error) {
+        console.log(error);
+        reject(error);
+      } else {
+        console.log("戦う準備ができている"); //Ready To Fight
+        resolve(success);
+      }
+    });
   });
+
+  await new Promise((resolve, reject) => {
+    transporter.sendMail(mailData, function (err: any, info: any) {
+      if (err) {
+        console.log(err);
+        reject(err);
+      } else {
+        console.log(info);
+        resolve(info);
+      }
+    });
+  });
+
   res
     .status(200)
     .json({ message: "Book PDF will be emailed to your email address" });
