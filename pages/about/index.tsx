@@ -13,15 +13,16 @@ const About = () => {
   const cardData = [
     {
       title: "Certified Yoga Teacher Training Course in Rishikesh",
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+      description: `Yin Yang oga school is the best yoga School in Rishikesh India. We offer the most authentic and traditional style of Yoga Teacher Training Course in Rishikesh, India, certified by Yoga Alliance USA.
+      Yin Yang Yoga blends two styles of yoga into one practice bringing together the benefits of passively holding yoga poses with more dynamic sequences and standing postures. Yin and Yang are the Taoist concepts which describe the two relative qualities present in everything.`,
     },
     {
       title: "6+ Years of Experience in Yoga Teacher Training ",
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+      description: `For over 6 years, our yoga teacher training school has been providing high-quality education and training to aspiring yoga teachers. Our team of experienced and dedicated instructors have a passion for sharing the benefits of yoga with others and empowering students to confidently teach and share the practice with their own communities.`,
     },
     {
       title: "Want to be a certified Yoga Teacher?",
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+      description: `To become a certified yoga teacher, you will need to complete a yoga teacher training program. These programs vary in length, intensity, and focus, so it is important to research and choose one that aligns with your goals and needs.`,
     },
   ];
 

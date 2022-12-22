@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import SliderHero from "../components/HeroSlider";
@@ -14,15 +15,16 @@ import ShadowCard from "../widgets/reusable/ShadowCard";
 const cardData = [
   {
     title: "Certified Yoga Teacher Training Course in Rishikesh",
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+    description: `Yin Yang oga school is the best yoga School in Rishikesh India. We offer the most authentic and traditional style of Yoga Teacher Training Course in Rishikesh, India, certified by Yoga Alliance USA.
+    Yin Yang Yoga blends two styles of yoga into one practice bringing together the benefits of passively holding yoga poses with more dynamic sequences and standing postures. Yin and Yang are the Taoist concepts which describe the two relative qualities present in everything.`,
   },
   {
     title: "6+ Years of Experience in Yoga Teacher Training ",
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+    description: `For over 6 years, our yoga teacher training school has been providing high-quality education and training to aspiring yoga teachers. Our team of experienced and dedicated instructors have a passion for sharing the benefits of yoga with others and empowering students to confidently teach and share the practice with their own communities.`,
   },
   {
     title: "Want to be a certified Yoga Teacher?",
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+    description: `To become a certified yoga teacher, you will need to complete a yoga teacher training program. These programs vary in length, intensity, and focus, so it is important to research and choose one that aligns with your goals and needs.`,
   },
 ];
 
@@ -32,7 +34,7 @@ const whyChooseUs = [
     title: "Yoga retreats",
     description:
       "A Yoga retreat is an opportunity to shape your thoughts & being by aligning your mind, body and soul. A time apart from the hustle of humanity, with only nature to keep you company. It’s time to detach, to turn within and listen to your inner self.",
-    url: "",
+    url: "/retreat/5-days-retreat",
   },
   {
     image:
@@ -40,21 +42,21 @@ const whyChooseUs = [
     title: "Accommodation",
     description:
       "We understand the importance of a conducive environment for a healthy mind, body and soul. Accommodation is available on private as well as shared basis to ensure that everyone feels absolutely comfortable, warm and as homely as possible.",
-    url: "",
+    url: "/retreat/5-days-retreat",
   },
   {
     image: "https://www.yogkulam.org/images/guru%20_homepage.jpg",
     title: "Gurus",
     description:
       "Maestros in their respective fields of Yoga, all our teachers are extensively trained and have a lifetime of experience to share with you. They go above and beyond to train each student on a professional and personal level.",
-    url: "",
+    url: "/retreat/5-days-retreat",
   },
   {
     image: "https://www.yogkulam.org/images/rishikesh-yogkulam-food.jpg",
     title: "Food",
     description:
       "Prepared in-house at our school itself, every morning starts with a refreshing cup of herbal tea followed by three delicious and nutritious meals during the day.",
-    url: "",
+    url: "/retreat/5-days-retreat",
   },
 ];
 const index = () => {
@@ -117,7 +119,7 @@ const index = () => {
                 everyone wants is a little time for oneself so that it leads
                 them t grow. Thus comes yoga in the scene which is one short
                 formula for such a life that gives one such peace and balances
-                one’s life.{" "}
+                one&apos;s life.{" "}
               </p>
               <br />
               <p className="text-gray-600">
@@ -207,7 +209,9 @@ const index = () => {
               </h3>
             </div>
             <div className="rounded-lg border-2 border-[#bd0006] p-4 ">
-              <p>Join Yoga Retreat</p>
+              <Link href="/retreat/5-days-retreat">
+                <p>Join Yoga Retreat</p>
+              </Link>
             </div>
           </div>
         </section>
@@ -412,7 +416,7 @@ const index = () => {
               />
             </span>
           </h2>
-
+          {/* Blog Articles Component */}
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 ">
             {[1, 2, 3].map((item, index) => {
               return (

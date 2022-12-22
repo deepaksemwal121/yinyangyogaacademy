@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { MdEmail, MdHouse, MdPhone } from "react-icons/md";
 import {
@@ -125,29 +126,38 @@ const Footer = () => {
               Navigation
             </h6>
             <p className="mb-4">
-              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
+              <Link href="/" className="text-gray-300 hover:text-[#bd0006]">
                 Home
-              </a>
+              </Link>
             </p>
             <p className="mb-4">
-              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
-                Yoga Teacher Training
-              </a>
+              <Link
+                href="/apply"
+                className="text-gray-300 hover:text-[#bd0006]"
+              >
+                Reservation Form
+              </Link>
             </p>
             <p className="mb-4">
-              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
+              <Link
+                href="/contact"
+                className="text-gray-300 hover:text-[#bd0006]"
+              >
                 Contact Us
-              </a>
+              </Link>
             </p>
             <p className="mb-4">
-              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
+              <Link
+                href="/about"
+                className="text-gray-300 hover:text-[#bd0006]"
+              >
                 About Us
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
+              <Link href="/pay" className="text-gray-300 hover:text-[#bd0006]">
                 Refund and Privacy Policy
-              </a>
+              </Link>
             </p>
           </div>
           <div className="">
@@ -155,34 +165,52 @@ const Footer = () => {
               Yoga Teacher Training
             </h6>
             <p className="mb-4">
-              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
+              <Link
+                href="/yoga-teacher-training/100-hour-yttc"
+                className="text-gray-300 hover:text-[#bd0006]"
+              >
                 100 Hours YTTC
-              </a>
+              </Link>
             </p>
             <p className="mb-4">
-              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
-                200 Hour YTTC
-              </a>
+              <Link
+                href="/yoga-teacher-training/100-hour-yttc"
+                className="text-gray-300 hover:text-[#bd0006]"
+              >
+                200 Hours YTTC
+              </Link>
             </p>
             <p className="mb-4">
-              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
-                300 Hour YTTC
-              </a>
+              <Link
+                href="/yoga-teacher-training/100-hour-yttc"
+                className="text-gray-300 hover:text-[#bd0006]"
+              >
+                300 Hours YTTC
+              </Link>
             </p>
             <p className="mb-4">
-              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
-                500 Hour YTTC
-              </a>
+              <Link
+                href="/yoga-teacher-training/100-hour-yttc"
+                className="text-gray-300 hover:text-[#bd0006]"
+              >
+                500 Hours YTTC
+              </Link>
             </p>
             <p className="mb-4">
-              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
-                100 Hour Ayureveda YTTC
-              </a>
+              <Link
+                href="/yoga-teacher-training/100-hour-yttc"
+                className="text-gray-300 hover:text-[#bd0006]"
+              >
+                100 Hours Ayurveda YTTC
+              </Link>
             </p>
             <p className="mb-4">
-              <a href="#!" className="text-gray-300 hover:text-[#bd0006]">
-                200 Hour Ayureveda YTTC
-              </a>
+              <Link
+                href="/yoga-teacher-training/100-hour-yttc"
+                className="text-gray-300 hover:text-[#bd0006]"
+              >
+                200 Hours Ayurveda YTTC
+              </Link>
             </p>
           </div>
           <div className="">
@@ -217,12 +245,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-gray-600  text-center">
-        <span>© 2021 Copyright:</span>
+        <span>© {new Date().getFullYear()} Copyright </span>
         <a
-          className="font-semibold text-gray-600"
+          className="font-semibold text-white"
           href="https://tailwind-elements.com/"
         >
-          Tailwind Elements
+          Yin Yang Yoga Academy
         </a>
       </div>
     </footer>

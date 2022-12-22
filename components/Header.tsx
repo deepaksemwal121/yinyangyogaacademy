@@ -156,7 +156,10 @@ const Header = () => {
       {/* Mobile Menu  */}
       <div className={`${openMenu ? "" : "hidden"}  mt-5 h-screen  p-3`}>
         <ul className=" flex flex-col items-center space-y-4 space-x-4   md:text-base lg:justify-around lg:text-lg ">
-          <li className="  hover:text-[#bd0006] lg:p-4">
+          <li
+            onClick={() => setOpenMenu(false)}
+            className="  hover:text-[#bd0006] lg:p-4"
+          >
             <Link href="/">Home</Link>
           </li>
           {MenuHover.map((item, index) => {
@@ -172,13 +175,22 @@ const Header = () => {
               />
             );
           })}
-          <li className="p-4 hover:text-[#bd0006]">
+          <li
+            onClick={() => setOpenMenu(false)}
+            className="p-4 hover:text-[#bd0006]"
+          >
             <Link href="/contact">Contact Us</Link>
           </li>
-          <li className="p-4 hover:text-[#bd0006]">
+          <li
+            onClick={() => setOpenMenu(false)}
+            className="p-4 hover:text-[#bd0006]"
+          >
             <Link href="/pay">Pay Now</Link>
           </li>
-          <li className="rounded bg-[#bd0006] p-2 text-white">
+          <li
+            onClick={() => setOpenMenu(false)}
+            className="rounded bg-[#bd0006] p-2 text-white"
+          >
             <Link href="/apply">Apply Now</Link>
           </li>
         </ul>

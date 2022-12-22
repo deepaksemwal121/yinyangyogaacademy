@@ -180,10 +180,10 @@ const Retreat = () => {
           </span>
         </h2>
         <p className="text-center text-sm md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-          provident minus ex aspernatur voluptatibus qui autem dicta, blanditiis
-          aliquid, recusandae vero saepe nobis consectetur fugiat deserunt,
-          facilis quasi perspiciatis amet?
+          Rishikesh is a beautiful and peaceful city in northern India, known as
+          the &quot;Yoga Capital of the World&quot;. It is the perfect place to
+          embark on a 5-day yoga retreat to rejuvenate your mind, body, and
+          soul.
         </p>
         <div className="mt-4 border-b-2 border-dashed"></div>
         <div className="mt-4 flex flex-col items-center justify-between rounded-lg border-2 border-[#bd0006] bg-white p-4 shadow-lg lg:flex-row">

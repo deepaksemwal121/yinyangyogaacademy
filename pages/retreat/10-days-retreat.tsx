@@ -180,10 +180,12 @@ const Retreat = () => {
           </span>
         </h2>
         <p className="text-center text-sm md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-          provident minus ex aspernatur voluptatibus qui autem dicta, blanditiis
-          aliquid, recusandae vero saepe nobis consectetur fugiat deserunt,
-          facilis quasi perspiciatis amet?
+          A 10-day yoga retreat in Rishikesh, India is a truly transformative
+          experience that combines the ancient practice of yoga with the
+          peaceful and spiritual atmosphere of this holy city. Located in the
+          foothills of the Himalayas, Rishikesh is considered to be the
+          birthplace of yoga and is home to many renowned yoga schools and
+          ashrams.
         </p>
         <div className="mt-4 border-b-2 border-dashed"></div>
         <div className="mt-4 flex flex-col items-center justify-between rounded-lg border-2 border-[#bd0006] bg-white p-4 shadow-lg lg:flex-row">

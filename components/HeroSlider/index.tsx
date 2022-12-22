@@ -80,7 +80,7 @@ const SliderHero = () => {
                   <Button
                     style=" bg-[#bd0006] md:px-8 md:py-3 px-4 py-2 text-sm  md:text-[18px] rounded hover:bg-black  "
                     title="Enroll Now"
-                    url="/"
+                    url="/apply"
                   />
                 </div>
               </div>

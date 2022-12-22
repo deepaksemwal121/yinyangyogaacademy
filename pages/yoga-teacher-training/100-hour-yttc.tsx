@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { IoBedOutline } from "react-icons/io5";
@@ -19,6 +20,7 @@ import TestimonialCarousel from "../../components/sections/TestimonialCarousel";
 import TrustPilotReview from "../../components/sections/TrustPilotReview";
 import { syllabus } from "../../data/detailedSyllabus";
 import ActivityCourse from "../../widgets/reusable/ActivityCourse";
+import ApplyButton from "../../widgets/reusable/ApplyButton";
 import EventTable from "../../widgets/reusable/EventTable";
 
 const CoursePage = () => {
@@ -1080,16 +1082,15 @@ const CoursePage = () => {
               <h3 className=" text-xl text-gray-600 md:text-3xl">
                 Want To Know More About The Syllabus
               </h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, ea? Nesciunt veritatis quos vero cupiditate.
-              </p>
+              <p>Discover the Benefits of the Yoga Teacher Training Course</p>
             </div>
             <div className="flex items-center justify-center font-bold md:w-1/3">
-              <button className="flex items-center space-x-2 rounded-lg bg-[#bd0006] p-4 text-white">
-                <span>Detailed Syllabus</span>
-                <BsArrowRight />
-              </button>
+              <Link href="#detailed_syllabus">
+                <button className="flex items-center space-x-2 rounded-lg bg-[#bd0006] p-4 text-white">
+                  <span>Detailed Syllabus</span>
+                  <BsArrowRight />
+                </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -1138,10 +1139,7 @@ const CoursePage = () => {
               </p>
             </div>
             <div className="flex items-center justify-center font-bold md:w-1/3">
-              <button className="flex items-center space-x-2 rounded-lg bg-[#bd0006] p-4 text-white">
-                <span>Apply Now</span>
-                <BsArrowRight />
-              </button>
+              <ApplyButton />
             </div>
           </div>
         </section>
@@ -1363,7 +1361,10 @@ const CoursePage = () => {
             </div>
           </div>
         </section>
-        <section className="greyFloral mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section
+          id="detailed_syllabus"
+          className="greyFloral mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32"
+        >
           <p className="text-center font-bold text-[#bd0006] md:text-lg">
             Complete Syllabus For this Course
           </p>

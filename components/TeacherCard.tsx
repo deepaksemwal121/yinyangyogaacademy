@@ -64,11 +64,11 @@ const TeacherCard: React.FC<Teacher> = ({ image, name, expertise, desc }) => {
       <div
         className={`${
           showMore ? "" : "hidden"
-        } absolute top-0 h-full rounded-[10px]  bg-[#bd0006] p-4 text-white ease-linear`}
+        } absolute top-0 h-full overflow-y-auto rounded-[10px]  bg-[#bd0006] p-4 text-white ease-linear`}
       >
         <div
           onClick={() => setShowMore(!showMore)}
-          className=" float-right flex h-10 w-10 cursor-pointer items-center justify-center  text-white"
+          className=" sticky top-0 float-right flex h-10 w-10 cursor-pointer items-center justify-center  text-white"
         >
           <IoClose size={25} />
         </div>

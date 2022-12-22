@@ -5,6 +5,7 @@ import "./Teacherprofile.module.css";
 
 import { BsArrowRight, BsArrowRightCircleFill } from "react-icons/bs";
 import data from "../../data/data";
+import Link from "next/link";
 
 function SampleNextArrow(props: any) {
   const { className, style, onClick } = props;
@@ -114,14 +115,17 @@ const Teacherprofile = () => {
                       <p className="rounded-br-[20px] rounded-tl-[20px] bg-[#bd0006] p-2 text-sm font-medium text-white  md:text-base">
                         {item.expertise}
                       </p>
-                      <p className="text-sm md:text-base">{item.desc}</p>
+                      <p className="text-sm md:text-base">
+                        {item.summary?.substring(0, 180)}...
+                      </p>
                     </div>
                   </div>
-
-                  <p className="flex cursor-pointer items-center text-[#bd0006] hover:space-x-4 hover:duration-300 hover:ease-linear">
-                    <span className="tracking-wider">Read More</span>
-                    <BsArrowRight />
-                  </p>
+                  <Link href="/about/our-teachers">
+                    <p className="flex cursor-pointer items-center text-[#bd0006] hover:space-x-4 hover:duration-300 hover:ease-linear">
+                      <span className="tracking-wider">Read More</span>
+                      <BsArrowRight />
+                    </p>
+                  </Link>
                 </div>
               </div>
             );
