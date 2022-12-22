@@ -1,12 +1,14 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
+import nodemailer from "nodemailer";
 import template from "./template";
 
 type Data = {
   message: string;
 };
 
-let nodemailer = require("nodemailer");
+console.log(process.env.email);
+
 const transporter = nodemailer.createTransport({
   port: 465,
   host: "smtp.hostinger.com",
@@ -17,11 +19,10 @@ const transporter = nodemailer.createTransport({
   secure: true,
 });
 
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>,
 ) {
-  console.log(req.body);
   const {
     studentname,
     emailaddress,
@@ -67,10 +68,10 @@ export default function handler(
     <p>Yin Yang Yoga Academy Team </p>
     <div>`,
   };
-
-  console.log(process.env.email, process.env.password);
+  console.log(studentEmail);
 
   transporter.sendMail(mailData, function (err: any, info: any) {
+    console.log("request here");
     if (err) console.log(err);
     else {
       console.log(info);
@@ -80,5 +81,5 @@ export default function handler(
       });
     }
   });
-  res.status(200).json({ message: "Registered Successfully" });
+  return res.status(200).json({ message: "Registered Successfully" });
 }
