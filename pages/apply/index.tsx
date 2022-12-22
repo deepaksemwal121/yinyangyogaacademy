@@ -157,7 +157,7 @@ const ApplyForm = () => {
                     />
                     <label
                       htmlFor="floating_outlined"
-                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500"
+                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-xs  text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500 md:text-sm"
                     >
                       Student Name
                     </label>
@@ -173,13 +173,13 @@ const ApplyForm = () => {
                       }}
                       type="text"
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006] md:text-sm"
                       placeholder=" "
                       required
                     />
                     <label
                       htmlFor="floating_outlined"
-                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500"
+                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-xs text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500 md:text-sm"
                     >
                       Email Address
                     </label>
@@ -223,7 +223,7 @@ const ApplyForm = () => {
                     />
                     <label
                       htmlFor="floating_outlined"
-                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500"
+                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-xs  text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500 md:text-sm"
                     >
                       Your Country
                     </label>
@@ -231,7 +231,7 @@ const ApplyForm = () => {
                   <div className="relative rounded-lg bg-white p-2">
                     <select
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006] md:text-sm"
                       placeholder=" "
                       required
                       value={reservationForm.gender}
@@ -249,7 +249,7 @@ const ApplyForm = () => {
                     </select>
                     <label
                       htmlFor="floating_outlined"
-                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500"
+                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-xs  text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500 md:text-sm"
                     >
                       Select Your Gender
                     </label>
@@ -262,7 +262,7 @@ const ApplyForm = () => {
                   <div className="relative rounded-lg bg-white p-2">
                     <select
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006] md:text-sm"
                       placeholder=" "
                       required
                       value={reservationForm.courseSelected}
@@ -298,7 +298,7 @@ const ApplyForm = () => {
                     </select>
                     <label
                       htmlFor="floating_outlined"
-                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500"
+                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform px-2 text-xs  text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500 md:text-sm"
                     >
                       Select Course you want to apply
                     </label>
@@ -314,13 +314,13 @@ const ApplyForm = () => {
                       }}
                       type="date"
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006] md:text-sm"
                       placeholder=" "
                       required
                     />
                     <label
                       htmlFor="floating_outlined"
-                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500"
+                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-xs  text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500 md:text-sm"
                     >
                       Course Date
                     </label>
@@ -328,7 +328,7 @@ const ApplyForm = () => {
                   <div className="relative rounded-lg bg-white p-2">
                     <select
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006] md:text-sm"
                       required
                       value={reservationForm.selectRoomType}
                       onChange={(e) => {
@@ -346,7 +346,7 @@ const ApplyForm = () => {
                     </select>
                     <label
                       htmlFor="floating_outlined"
-                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform  px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500"
+                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform  px-2 text-xs  text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500 md:text-sm"
                     >
                       Select Your Room Type
                     </label>
@@ -361,7 +361,7 @@ const ApplyForm = () => {
                         });
                       }}
                       id="floating_outlined"
-                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                      className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006] md:text-sm"
                       placeholder=" "
                       required
                     >
@@ -376,7 +376,7 @@ const ApplyForm = () => {
                     </select>
                     <label
                       htmlFor="floating_outlined"
-                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500"
+                      className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-xs  text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500 md:text-sm"
                     >
                       Where did you hear about us?
                     </label>
@@ -392,13 +392,13 @@ const ApplyForm = () => {
                       });
                     }}
                     id="floating_outlined"
-                    className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006]"
+                    className="peer block w-full appearance-none rounded-lg border-0 bg-transparent  px-2.5 pb-2.5 pt-4 text-xs  text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-[#bd0006] md:text-sm"
                     placeholder=" "
                     required
                   />
                   <label
                     htmlFor="floating_outlined"
-                    className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500"
+                    className="absolute top-5 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-xs  text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/3 peer-placeholder-shown:scale-100 peer-focus:top-4 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006] dark:bg-gray-900 dark:text-gray-400 peer-focus:dark:text-blue-500 md:text-sm"
                   >
                     Your Message For Us
                   </label>
