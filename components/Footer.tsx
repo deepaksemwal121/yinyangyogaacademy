@@ -15,7 +15,7 @@ const Footer = () => {
       id="footer"
       className="footer-pattern text-center text-gray-200 lg:text-left "
     >
-      <div className="flex items-center justify-center  p-6 py-8 px-4 md:px-6 lg:justify-between lg:px-8 xl:px-32">
+      <div className="flex items-center justify-center  p-6 py-8 px-4  md:px-6 lg:justify-between lg:px-8 xl:px-16  2xl:px-32">
         <div className="mr-12 hidden text-xl lg:block">
           <span>Get connected with us on social networks:</span>
         </div>

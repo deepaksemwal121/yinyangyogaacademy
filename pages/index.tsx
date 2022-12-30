@@ -14,17 +14,16 @@ import ShadowCard from "../widgets/reusable/ShadowCard";
 
 const cardData = [
   {
-    title: "Certified Yoga Teacher Training Course in Rishikesh",
-    description: `Yin Yang oga school is the best yoga School in Rishikesh India. We offer the most authentic and traditional style of Yoga Teacher Training Course in Rishikesh, India, certified by Yoga Alliance USA.
-    Yin Yang Yoga blends two styles of yoga into one practice bringing together the benefits of passively holding yoga poses with more dynamic sequences and standing postures. Yin and Yang are the Taoist concepts which describe the two relative qualities present in everything.`,
+    title: "Certified Yoga Teacher Training Course",
+    description: `Yin Yang Yoga School is the top choice for authentic and traditional Yoga Teacher Training in Rishikesh, India, certified by Yoga Alliance USA. Our unique program combines the benefits of both yin and yang styles of yoga in one practice. Join us and discover the balance of these relative qualities in your yoga journey.`,
   },
   {
     title: "6+ Years of Experience in Yoga Teacher Training ",
-    description: `For over 6 years, our yoga teacher training school has been providing high-quality education and training to aspiring yoga teachers. Our team of experienced and dedicated instructors have a passion for sharing the benefits of yoga with others and empowering students to confidently teach and share the practice with their own communities.`,
+    description: `Welcome to our Yoga Teacher Training program with over 6 years of experience. Our team of certified instructors will guide you through a comprehensive training program to become a skilled and confident yoga teacher. Our program includes both in-person and online components. Join us on your journey to become a yoga instructor`,
   },
   {
     title: "Want to be a certified Yoga Teacher?",
-    description: `To become a certified yoga teacher, you will need to complete a yoga teacher training program. These programs vary in length, intensity, and focus, so it is important to research and choose one that aligns with your goals and needs.`,
+    description: `To become a certified yoga instructor, you will need to complete a teacher training program that meets your goals and needs. Programs vary in intensity and focus, so it is important to research and choose one that aligns with your personal goals and preferences. By completing a teacher training program, you will gain the skills and knowledge needed to effectively teach yoga to others.`,
   },
 ];
 
@@ -55,7 +54,7 @@ const whyChooseUs = [
     image: "https://www.yogkulam.org/images/rishikesh-yogkulam-food.jpg",
     title: "Food",
     description:
-      "Prepared in-house at our school itself, every morning starts with a refreshing cup of herbal tea followed by three delicious and nutritious meals during the day.",
+      "Our meals are carefully prepared in-house at our school by skilled chefs, ensuring that every bite is both healthy and delicious. Every morning begins with a refreshing cup of herbal tea, setting the tone for a nourishing day ahead.",
     url: "/retreat/5-days-retreat",
   },
 ];
@@ -72,7 +71,7 @@ const index = () => {
         {/* Slider Section */}
         <SliderHero />
         {/* Section 1 */}
-        <section className=" mb-20 grid w-full grid-cols-1 gap-4 px-4 sm:px-24 md:-mt-4 md:grid-cols-3 md:px-6 lg:-mt-20  lg:px-8 xl:-mt-32 xl:px-32">
+        <section className=" mb-20 grid w-full grid-cols-1 gap-4 px-4 sm:px-24  md:grid-cols-3 md:px-6  lg:px-8  xl:px-16 2xl:px-32">
           {cardData.map((item, index) => (
             <ShadowCard
               key={index}
@@ -81,7 +80,7 @@ const index = () => {
             />
           ))}
         </section>
-        <section className="py-8 px-4 md:px-6 lg:px-8 xl:px-32 ">
+        <section className="py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32 ">
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Yoga Teacher Training In Rishikesh, INDIA
             <span>
@@ -144,7 +143,7 @@ const index = () => {
             </div>
           </div>
         </section>
-        <section className=" patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className=" patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             About Yin Yang Yoga Academy - Best Yoga School In Rishikesh INDIA
             <span>
@@ -156,7 +155,7 @@ const index = () => {
               />
             </span>
           </h2>
-          <div className="flex w-full flex-col md:space-x-4 lg:flex-row">
+          <div className="flex w-full flex-col items-center justify-center  md:space-x-4 lg:flex-row">
             <div className="w-full text-center lg:w-1/2">
               <Image
                 src="/home-about.jpg"
@@ -198,24 +197,24 @@ const index = () => {
           </div>
         </section>
         {/* Sub Section of About Yin Yang */}
-        <section className="-mt-12 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="2xl-px-32 -mt-12 py-8 px-4 md:px-6 lg:px-8 xl:px-16">
           <div className="flex flex-col items-center justify-between space-y-3 rounded-lg bg-white p-4 shadow-lg lg:flex-row">
             <div>
               <em className="sloka text-2xl md:text-4xl">
                 &ldquo; मनः प्रशमनोपायो योग इत्यभिधीयते। &rdquo;
               </em>
-              <h3 className="text-2xl italic text-gray-400 md:text-4xl">
+              <h3 className="text-2xl italic text-gray-400 md:text-3xl">
                 The recourse to pacify the mind is called yoga.
               </h3>
             </div>
-            <div className="rounded-lg border-2 border-[#bd0006] p-4 ">
+            <div className="rounded-lg bg-[#bd0006] p-4 font-semibold text-white hover:border-2 hover:border-[#bd0006] hover:bg-white hover:text-[#bd0006] ">
               <Link href="/retreat/5-days-retreat">
                 <p>Join Yoga Retreat</p>
               </Link>
             </div>
           </div>
         </section>
-        <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-16  2xl:px-32">
           <div className="relative w-full">
             <div className="absolute right-0 top-0 opacity-25 ">
               <Image
@@ -278,7 +277,7 @@ const index = () => {
             </div>
           </div>
         </section>
-        <section className="greyFloral py-10 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="greyFloral py-10 px-4 md:px-6 lg:px-8 xl:px-16  2xl:px-32">
           <div className=" w-full text-center">
             <p className=" sloka text-2xl text-[#bd0006] md:text-4xl">
               योगश्चित्तवृत्तिनिरोधः
@@ -319,10 +318,10 @@ const index = () => {
             </div>
           </div>
         </section>
-        <section className=" px-4 py-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="  py-4 px-4 md:px-6 lg:px-8 xl:px-16  2xl:px-32">
           <CourseSlider />
         </section>
-        <section className=" my-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className=" my-8 px-4 md:px-6 lg:px-8 xl:px-16  2xl:px-32">
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Why To Choose Yin Yang Yoga Academy
             <span>
@@ -365,7 +364,7 @@ const index = () => {
             })}
           </div>
         </section>
-        <section className="greyFloral my-8 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="greyFloral my-8 py-8 px-4 md:px-6 lg:px-8 xl:px-16  2xl:px-32">
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Learn From The Best Yoga School In Rishikesh
             <span>
@@ -401,7 +400,7 @@ const index = () => {
             />
           </div>
         </section>
-        <section className="my-8 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="my-8 py-8 px-4 md:px-6 lg:px-8 xl:px-16  2xl:px-32">
           <p className=" text-center font-medium uppercase tracking-wide text-[#bd0006]">
             Yin Yang Yoga Blogs
           </p>
@@ -448,13 +447,13 @@ const index = () => {
             })}
           </div>
         </section>
-        <section className="patternBg  py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="patternBg  py-8 px-4 md:px-6 lg:px-8 xl:px-16  2xl:px-32">
           <Teacherprofile />
         </section>
-        <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-16  2xl:px-32">
           <TestimonialCarousel />
         </section>
-        <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-16  2xl:px-32">
           <p className=" text-center font-medium uppercase tracking-wide text-[#bd0006]">
             our social reviews
           </p>

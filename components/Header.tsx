@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import logo from "../public/logo-white.png";
+import logo from "../public/logo.png";
 import { BiEnvelope, BiLocationPlus, BiPhoneCall } from "react-icons/bi";
-import { FiChevronDown } from "react-icons/fi";
 import {
   FaFacebook,
   FaInstagram,
@@ -96,16 +95,16 @@ const Header = () => {
           <FaTripadvisor size={20} color="lightgray" />
         </div>
       </div>
-      <nav className=" relative z-50 flex w-full items-center justify-around py-2 shadow md:px-8 lg:space-x-24 lg:px-8 xl:space-x-20 xl:px-32">
-        <div className="absolute top-2 left-4">
-          <div className="  z-50 flex h-full  cursor-pointer items-center justify-center rounded-tl-3xl rounded-br-3xl bg-[#bd0006] p-4 drop-shadow-lg  ">
+      <nav className=" relative z-50 flex w-full items-center justify-around py-2 shadow md:px-8 lg:space-x-24 lg:px-8 xl:space-x-6 xl:px-16 2xl:space-x-20">
+        <div className="">
+          <div className="  z-50 flex h-full  cursor-pointer items-center justify-center   ">
             <Link href="/">
-              <Image src={logo} width={880 / 7} height={283 / 7} alt="logo" />
+              <Image src={logo} width={880 / 5} height={283 / 5} alt="logo" />
             </Link>
           </div>
         </div>
         <div
-          className=" flex w-full justify-end p-4  lg:hidden"
+          className=" flex  justify-end p-4  lg:hidden"
           onClick={() => setOpenMenu(!openMenu)}
         >
           <span className={`font-semibold  tracking-[0.3rem] text-[#bd0006]`}>
@@ -149,6 +148,13 @@ const Header = () => {
               } hover:text-[#bd0006] lg:p-3 xl:p-4`}
             >
               <Link href="/pay">Pay Now</Link>
+            </li>
+            <li
+              className={`${
+                router.pathname === "/apply" ? "text-white" : "text-gray-300"
+              } rounded bg-[#bd0006] py-1 px-2 hover:border-2 hover:border-[#bd0006] hover:bg-white hover:text-[#bd0006] 2xl:hidden`}
+            >
+              <Link href="/pay">Apply</Link>
             </li>
           </ul>
         </div>
@@ -195,7 +201,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div className=" swingBtn fixed top-0 right-7 z-50 hidden cursor-pointer lg:block">
+      <div className=" swingBtn fixed top-0 right-4 z-50 hidden cursor-pointer 2xl:block ">
         <Link href="/apply">
           <Image
             src={"/applynow.png"}
