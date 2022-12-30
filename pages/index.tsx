@@ -95,13 +95,13 @@ const index = () => {
           <div className="w-full items-center justify-center space-y-4 px-8 md:flex md:space-x-4   ">
             <div className=" relative flex flex-col items-center justify-center p-4 md:w-1/2">
               <Image
-                src="/500hr-3.jpg"
+                src="/yoga-homepage.png"
                 alt="yoga-pose"
-                width={300}
-                height={300}
-                className="relative z-[2] rounded-full object-cover shadow-lg"
+                width={835}
+                height={512}
+                className=""
               />
-              <div className="absolute  object-cover opacity-40">
+              {/* <div className="absolute  object-cover opacity-40">
                 <Image
                   src="/bg-mandala.png"
                   width={400}
@@ -109,7 +109,7 @@ const index = () => {
                   alt="bg"
                   className="spin-mandala"
                 />
-              </div>
+              </div> */}
             </div>
             <div className="md:w-1/2">
               <p className="text-sm text-gray-600 md:text-base">
