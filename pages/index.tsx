@@ -99,9 +99,9 @@ const index = () => {
                 alt="yoga-pose"
                 width={835}
                 height={512}
-                className=""
+                className="relative z-[2]"
               />
-              {/* <div className="absolute  object-cover opacity-40">
+              <div className="absolute left-10 object-cover opacity-40">
                 <Image
                   src="/bg-mandala.png"
                   width={400}
@@ -109,7 +109,7 @@ const index = () => {
                   alt="bg"
                   className="spin-mandala"
                 />
-              </div> */}
+              </div>
             </div>
             <div className="md:w-1/2">
               <p className="text-sm text-gray-600 md:text-base">
