@@ -83,7 +83,7 @@ const TestimonialCarousel = () => {
           {testimonialData.map((item, index) => {
             return (
               <div key={index} className=" p-4 drop-shadow">
-                <div className="relative rounded-tl-3xl bg-[#bd0006] p-4  text-center drop-shadow-md">
+                <div className="relative rounded-tl-3xl bg-[#de4c11] p-4  text-center drop-shadow-md">
                   <ImQuotesLeft
                     size={90}
                     color="#f5f5f540"

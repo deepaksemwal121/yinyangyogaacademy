@@ -23,19 +23,19 @@ const data = {
   ],
   onlineCards: [
     {
-      image: require("../public/yoga-online1.png"),
+      image: require("../public/orange-theme/onlinecard-1.png"),
       title: "Classical Hatha Yoga",
       content:
         "Build firm foundation in hatha yoga rooted in the Sivananda Yoga tradition, while learning the importance of deep relaxation, proper diet, positive thinking and meditation for your physical and mental well-being",
     },
     {
-      image: require("../public/yoga-online2.png"),
+      image: require("../public/orange-theme/onlinecard-2.png"),
       title: "Experienced Teachers",
       content:
         "Classes are taken by teachers with years of experience in teaching yoga to people from across the globe, both online and offline. Our approach is gentle, traditional and holistic.",
     },
     {
-      image: require("../public/yoga-online3.png"),
+      image: require("../public/orange-theme/onlinecard-3.png"),
       title: "Interactive Classes",
       content:
         "Keeping the class size small, gives us the flexibility to offer you individualised attention during each class and each step of the way. Any questions you may have will be answered personally during the sessions.",

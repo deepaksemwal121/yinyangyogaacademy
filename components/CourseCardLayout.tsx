@@ -67,7 +67,7 @@ const CourseCardLayout = ({
         <div className="p-4">
           <div
             onClick={() => setShowCourse(!showCourse)}
-            className="rounded border-[1.5px] border-[#bd0006] p-2 text-center font-semibold text-[#bd0006] "
+            className="rounded border-[1.5px] border-[#de4c11] p-2 text-center font-semibold text-[#de4c11] hover:bg-[#de4c11] hover:text-white "
           >
             {showCourse ? "About Course" : "Course Syllabus"}
           </div>

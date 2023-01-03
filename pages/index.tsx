@@ -126,7 +126,7 @@ const index = () => {
                 maximum of them are trained from Rishikesh.
               </p>
               <br />
-              <p className="border-l-2 border-[#bd0006] pl-2">
+              <p className="border-l-2 border-[#de4c11] pl-2">
                 <em className="sloka ">
                   &ldquo; योगेन चित्तस्य पदेन वाचां मलं शरीरस्य च वैद्यकेन।
                   <br />
@@ -207,7 +207,7 @@ const index = () => {
                 The recourse to pacify the mind is called yoga.
               </h3>
             </div>
-            <div className="rounded-lg bg-[#bd0006] p-4 font-semibold text-white hover:border-2 hover:border-[#bd0006] hover:bg-white hover:text-[#bd0006] ">
+            <div className="rounded-lg bg-[#de4c11] p-4 font-semibold text-white hover:border-2 hover:border-[#de4c11] hover:bg-white hover:text-[#de4c11] ">
               <Link href="/retreat/5-days-retreat">
                 <p>Join Yoga Retreat</p>
               </Link>
@@ -236,7 +236,7 @@ const index = () => {
               </span>
             </h2>
 
-            <p className="sloka text-center text-2xl leading-10 text-[#bd0006] md:text-4xl   ">
+            <p className="sloka text-center text-2xl leading-10 text-[#de4c11] md:text-4xl   ">
               योगः कर्मसु कौशलम्।
             </p>
             <p className="mb-4 text-center text-[24px] italic text-gray-400">
@@ -265,7 +265,7 @@ const index = () => {
                       width={80}
                       height={80}
                     />
-                    <h2 className="text-xl text-[#bd0006] md:text-[25px]">
+                    <h2 className="text-xl text-[#de4c11] md:text-[25px]">
                       {value.title}
                     </h2>
                     <p className="text-sm text-gray-600 md:text-base">
@@ -279,7 +279,7 @@ const index = () => {
         </section>
         <section className="greyFloral py-10 px-4 md:px-6 lg:px-8 xl:px-16  2xl:px-32">
           <div className=" w-full text-center">
-            <p className=" sloka text-2xl text-[#bd0006] md:text-4xl">
+            <p className=" sloka text-2xl text-[#de4c11] md:text-4xl">
               योगश्चित्तवृत्तिनिरोधः
             </p>
             <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -345,7 +345,7 @@ const index = () => {
                     alt="retreat"
                   />
                   <div className="p-[1rem]">
-                    <h2 className="rounded-tl-[20px] rounded-br-[20px] bg-[#bd0006] p-2 text-center text-lg text-white">
+                    <h2 className="rounded-tl-[20px] rounded-br-[20px] bg-[#de4c11] p-2 text-center text-lg text-white">
                       {item.title}
                     </h2>
                     <p className="mt-2 text-sm md:text-base">
@@ -353,7 +353,7 @@ const index = () => {
                     </p>
                     <a
                       href={item.url}
-                      className="mt-4 flex cursor-pointer items-center text-sm text-[#bd0006] hover:space-x-4 hover:duration-300 hover:ease-linear md:text-base"
+                      className="mt-4 flex cursor-pointer items-center text-sm text-[#de4c11] hover:space-x-4 hover:duration-300 hover:ease-linear md:text-base"
                     >
                       <span className="tracking-wider">Learn More</span>
                       <BsArrowRight />
@@ -401,7 +401,7 @@ const index = () => {
           </div>
         </section>
         <section className="my-8 py-8 px-4 md:px-6 lg:px-8 xl:px-16  2xl:px-32">
-          <p className=" text-center font-medium uppercase tracking-wide text-[#bd0006]">
+          <p className=" text-center font-medium uppercase tracking-wide text-[#de4c11]">
             Yin Yang Yoga Blogs
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -437,7 +437,7 @@ const index = () => {
                       How To Do Anjali Mudra (Namaste Mudra) and its Benefits
                       Anjali Mudra or the Namaste Mudra is one of the...
                     </p>
-                    <a className="flex cursor-pointer items-center text-sm text-[#bd0006] hover:space-x-4 hover:duration-300 hover:ease-linear md:text-base">
+                    <a className="flex cursor-pointer items-center text-sm text-[#de4c11] hover:space-x-4 hover:duration-300 hover:ease-linear md:text-base">
                       <span className="tracking-wider">Read Full Article</span>
                       <BsArrowRight />
                     </a>
@@ -454,7 +454,7 @@ const index = () => {
           <TestimonialCarousel />
         </section>
         <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-16  2xl:px-32">
-          <p className=" text-center font-medium uppercase tracking-wide text-[#bd0006]">
+          <p className=" text-center font-medium uppercase tracking-wide text-[#de4c11]">
             our social reviews
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">

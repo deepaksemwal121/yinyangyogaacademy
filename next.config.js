@@ -8,6 +8,7 @@ const nextConfig = {
       "yinyangyogaacademy.com",
       "cdn-icons-png.flaticon.com",
       "www.yogkulam.org",
+      "img.icons8.com",
     ],
   },
 };

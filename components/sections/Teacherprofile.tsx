@@ -17,7 +17,7 @@ function SampleNextArrow(props: any) {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        background: "#bd0006",
+        background: "#de4c11",
         borderRadius: "50%",
         width: "30px",
         height: "30px",
@@ -37,7 +37,7 @@ function SamplePrevArrow(props: any) {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        background: "#bd0006",
+        background: "#de4c11",
         borderRadius: "50%",
         width: "30px",
         height: "30px",
@@ -105,14 +105,14 @@ const Teacherprofile = () => {
                         height={150}
                         width={150}
                         alt="Dheeraj"
-                        className="rounded-br-[30%] rounded-tl-[30%] border border-solid border-[#bd0006]"
+                        className="rounded-br-[30%] rounded-tl-[30%] border border-solid border-[#de4c11]"
                       />
                     </div>
                     <div className="space-y-3 text-center md:w-2/3">
                       <h3 className="fancy-font text-lg md:text-xl ">
                         {item.name}
                       </h3>
-                      <p className="rounded-br-[20px] rounded-tl-[20px] bg-[#bd0006] p-2 text-sm font-medium text-white  md:text-base">
+                      <p className="rounded-br-[20px] rounded-tl-[20px] bg-[#de4c11] p-2 text-sm font-medium text-white  md:text-base">
                         {item.expertise}
                       </p>
                       <p className="text-sm md:text-base">
@@ -121,7 +121,7 @@ const Teacherprofile = () => {
                     </div>
                   </div>
                   <Link href="/about/our-teachers">
-                    <p className="flex cursor-pointer items-center text-[#bd0006] hover:space-x-4 hover:duration-300 hover:ease-linear">
+                    <p className="flex cursor-pointer items-center text-[#de4c11] hover:space-x-4 hover:duration-300 hover:ease-linear">
                       <span className="tracking-wider">Read More</span>
                       <BsArrowRight />
                     </p>

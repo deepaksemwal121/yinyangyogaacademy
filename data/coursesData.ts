@@ -61,12 +61,9 @@ export const courseCard = [
     syllabus: [
       {
         icons: require("../public/yoga-outline-1.png"),
-        name: "Hatha",
+        name: "Hatha & Asthanga",
       },
-      {
-        icons: require("../public/yoga-outline-2.png"),
-        name: "Ashtanga",
-      },
+
       {
         icons: require("../public/yoga-theory.png"),
         name: "Asana Lab",
@@ -92,12 +89,9 @@ export const courseCard = [
     syllabus: [
       {
         icons: require("../public/yoga-outline-1.png"),
-        name: "Hatha",
+        name: "Hatha & Asthanga",
       },
-      {
-        icons: require("../public/yoga-outline-2.png"),
-        name: "Ashtanga",
-      },
+
       {
         icons: require("../public/yoga-theory.png"),
         name: "Asana Lab",

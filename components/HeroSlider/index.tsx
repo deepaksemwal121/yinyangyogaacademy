@@ -78,8 +78,8 @@ const SliderHero = () => {
                     &quot; {slide.para} &quot;
                   </em>
                   <Button
-                    style=" bg-[#bd0006] md:px-8 md:py-3 px-4 py-2 text-sm  md:text-[18px] rounded hover:bg-black  "
-                    title="Enroll Now"
+                    style=" bg-[#de4c11] md:px-8 md:py-3 px-3 py-2 text-sm  md:text-[18px] rounded hover:border-[#de4c11] "
+                    title="Apply Now"
                     url="/apply"
                   />
                 </div>

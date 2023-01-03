@@ -107,9 +107,9 @@ const Header = () => {
           className=" flex  justify-end p-4  lg:hidden"
           onClick={() => setOpenMenu(!openMenu)}
         >
-          <span className={`font-semibold  tracking-[0.3rem] text-[#bd0006]`}>
+          <span className={`font-semibold  tracking-[0.3rem] text-[#de4c11]`}>
             {openMenu ? "CLOSE" : "MENU"}
-            <div className="h-[2px] w-1/2 bg-[#bd0006] duration-300 ease-linear hover:w-3/4"></div>
+            <div className="h-[2px] w-1/2 bg-[#de4c11] duration-300 ease-linear hover:w-3/4"></div>
           </span>
         </div>
 
@@ -117,8 +117,8 @@ const Header = () => {
           <ul className=" flex cursor-pointer items-center justify-center  space-x-4 font-semibold  ">
             <li
               className={`${
-                router.pathname === "/" ? "text-[#bd0006]" : "text-black"
-              } hover:text-[#bd0006] lg:p-3 xl:p-4`}
+                router.pathname === "/" ? "text-[#de4c11]" : "text-black"
+              } hover:text-[#de4c11] lg:p-3 xl:p-4`}
             >
               <Link href="/">Home</Link>
             </li>
@@ -137,24 +137,20 @@ const Header = () => {
             })}
             <li
               className={`${
-                router.pathname === "/contact" ? "text-[#bd0006]" : "text-black"
+                router.pathname === "/contact" ? "text-[#de4c11]" : "text-black"
               } hover:text-[#bd0006] lg:p-3 xl:p-4`}
             >
               <Link href="/contact">Contact Us</Link>
             </li>
             <li
               className={`${
-                router.pathname === "/pay" ? "text-[#bd0006]" : "text-black"
+                router.pathname === "/pay" ? "text-[#de4c11]" : "text-black"
               } hover:text-[#bd0006] lg:p-3 xl:p-4`}
             >
               <Link href="/pay">Pay Now</Link>
             </li>
-            <li
-              className={`${
-                router.pathname === "/apply" ? "text-white" : "text-gray-300"
-              } rounded bg-[#bd0006] py-1 px-2 hover:border-2 hover:border-[#bd0006] hover:bg-white hover:text-[#bd0006] 2xl:hidden`}
-            >
-              <Link href="/pay">Apply</Link>
+            <li className="rounded bg-[#de4c11] py-1 px-2 text-white hover:border-2 hover:border-[#de4c11] hover:bg-white hover:text-[#de4c11] 2xl:hidden">
+              <Link href="/apply">Apply</Link>
             </li>
           </ul>
         </div>
