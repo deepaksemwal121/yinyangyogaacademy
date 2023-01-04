@@ -86,8 +86,8 @@ const Teacherprofile = () => {
         <span>
           <Image
             src="/line-decor.png"
-            width={550 / 2}
-            height={63 / 2}
+            width={568 / 2}
+            height={94 / 2}
             alt="line-decor"
           />
         </span>

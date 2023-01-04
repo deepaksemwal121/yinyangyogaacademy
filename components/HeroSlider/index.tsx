@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { AiOutlineCaretLeft, AiOutlineCaretRight } from "react-icons/ai";
 import {
@@ -77,11 +78,15 @@ const SliderHero = () => {
                   <em className=" text-center text-[16px] md:text-[24px]">
                     &quot; {slide.para} &quot;
                   </em>
-                  <Button
-                    style=" bg-[#de4c11] md:px-8 md:py-3 px-3 py-2 text-sm  md:text-[18px] rounded hover:border-[#de4c11] "
-                    title="Apply Now"
-                    url="/apply"
-                  />
+
+                  <Link href="/apply">
+                    <p
+                      className=" cursor-pointer rounded bg-[#de4c11] px-3 py-2
+                  text-sm font-semibold transition-all hover:border-2 hover:border-[#de4c11]  hover:bg-transparent hover:text-[#de4c11] md:px-8 md:py-3 md:text-[18px] "
+                    >
+                      Apply Now
+                    </p>
+                  </Link>
                 </div>
               </div>
             )}

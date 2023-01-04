@@ -86,8 +86,8 @@ const index = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />{" "}
             </span>
@@ -149,8 +149,8 @@ const index = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -207,7 +207,7 @@ const index = () => {
                 The recourse to pacify the mind is called yoga.
               </h3>
             </div>
-            <div className="rounded-lg bg-[#de4c11] p-4 font-semibold text-white hover:border-2 hover:border-[#de4c11] hover:bg-white hover:text-[#de4c11] ">
+            <div className="rounded-lg bg-[#de4c11] p-4 font-semibold text-white transition-all hover:border-2 hover:border-[#de4c11] hover:bg-white hover:text-[#de4c11] ">
               <Link href="/retreat/5-days-retreat">
                 <p>Join Yoga Retreat</p>
               </Link>
@@ -229,8 +229,8 @@ const index = () => {
               <span>
                 <Image
                   src="/line-decor.png"
-                  width={550 / 2}
-                  height={63 / 2}
+                  width={568 / 2}
+                  height={94 / 2}
                   alt="line-decor"
                 />
               </span>
@@ -287,8 +287,8 @@ const index = () => {
               <span>
                 <Image
                   src="/line-decor.png"
-                  width={550 / 2}
-                  height={63 / 2}
+                  width={568 / 2}
+                  height={94 / 2}
                   alt="line-decor"
                 />
               </span>
@@ -327,8 +327,8 @@ const index = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -370,8 +370,8 @@ const index = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -409,8 +409,8 @@ const index = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -462,8 +462,8 @@ const index = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
