@@ -79,8 +79,10 @@ const Teachers = () => {
         </div>
       </section>
 
-      <section className="mt-12  py-8 px-4 text-center md:px-6 lg:px-8 xl:px-32">
-        <p className=" sloka text-2xl text-[#bd0006]">विद्यां ददाति विनयं</p>
+      <section className="mt-12  py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+        <p className=" sloka text-center text-2xl text-[#de4c11]">
+          विद्यां ददाति विनयं
+        </p>
         <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           Teaching Faculty - Yin Yang Yoga Academy
           <span>
@@ -100,7 +102,7 @@ const Teachers = () => {
         </p>
       </section>
       {/* Gurus Section  */}
-      <section className=" grid gap-4 py-8 px-4 text-center  md:px-6 lg:grid-cols-2 lg:px-8 xl:px-32  ">
+      <section className=" grid gap-4 py-8 px-4 text-center  md:px-6 lg:grid-cols-2 lg:px-8   xl:px-16 2xl:px-32  ">
         {data.guruProfile.map((item, index) => {
           return (
             <TeacherCard
@@ -113,10 +115,10 @@ const Teachers = () => {
           );
         })}
       </section>
-      <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+      <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
         <TestimonialCarousel />
       </section>
-      <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+      <section className="py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
         <p className=" text-center font-medium uppercase tracking-wide text-[#bd0006]">
           our social reviews
         </p>

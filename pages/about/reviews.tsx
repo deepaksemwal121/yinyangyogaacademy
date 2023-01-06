@@ -78,16 +78,16 @@ const Testimonials = () => {
           </nav>
         </div>
       </section>
-      <section className="grid gap-4 py-8 px-4 md:grid-cols-3 md:px-6 lg:px-8 xl:px-32">
+      <section className="grid gap-4 py-8 px-4 md:grid-cols-3 md:px-6 lg:px-8  xl:px-16 2xl:px-32">
         <div className="cardShadow flex flex-col items-center space-x-3 bg-white p-4 shadow">
           <TbHeartHandshake size={50} color="#6f727b" />
-          <h3 className="text-xl font-semibold text-[#bd0006] lg:text-3xl">
+          <h3 className="text-xl font-semibold text-[#de4c11] lg:text-3xl">
             1000+ Students
           </h3>
         </div>
         <div className="cardShadow  flex flex-col items-center space-x-3 bg-white p-4 shadow">
           <GiLaurelsTrophy size={50} color="#6f727b" />
-          <h3 className="text-xl font-semibold text-[#bd0006] lg:text-3xl">
+          <h3 className="text-xl font-semibold text-[#de4c11] lg:text-3xl">
             #1 Ranked YTTC
           </h3>
         </div>
@@ -98,22 +98,22 @@ const Testimonials = () => {
             width={50}
             alt="Yoga-alliance"
           />
-          <h3 className="text-xl font-semibold text-[#bd0006] lg:text-3xl">
+          <h3 className="text-xl font-semibold text-[#de4c11] lg:text-3xl">
             Yoga Alliance
           </h3>
         </div>
       </section>
-      <section className="space-y-3 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+      <section className="space-y-3 py-8 px-4 md:px-6 lg:px-8  xl:px-16 2xl:px-32">
         <div className="">
           <h2 className=" font-bold md:text-lg lg:text-2xl ">Testimonials</h2>
-          <div className="h-1 w-[5%] bg-[#bd0006]"></div>
+          <div className="h-1 w-[5%] bg-[#de4c11]"></div>
         </div>
         <p className=" fancy-font text-lg font-bold leading-snug md:text-3xl lg:text-5xl">
           Our Goal is to teach the best yogic practices <br /> to our students
           across the world
         </p>
       </section>
-      <section className=" grid gap-4 bg-slate-100 py-8 px-4 md:grid-cols-2 md:px-6 lg:grid-cols-3 lg:px-8 xl:px-32">
+      <section className=" grid gap-4 bg-slate-100 py-8 px-4 md:grid-cols-2 md:px-6 lg:grid-cols-3 lg:px-8 xl:px-16 2xl:px-32">
         {[1, 2, 3, 4, 5, 6].map((item, index) => {
           return (
             <div key={index} className="space-y-3 rounded-lg bg-white p-4 ">
@@ -144,7 +144,7 @@ const Testimonials = () => {
         <TestimonialCarousel />
       </section>
       <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-        <p className=" text-center font-medium uppercase tracking-wide text-[#bd0006]">
+        <p className=" text-center font-medium uppercase tracking-wide text-[#de4c11]">
           our social reviews
         </p>
         <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
@@ -152,8 +152,8 @@ const Testimonials = () => {
           <span>
             <Image
               src="/line-decor.png"
-              width={550 / 2}
-              height={63 / 2}
+              width={568 / 2}
+              height={94 / 2}
               alt="line-decor"
             />
           </span>

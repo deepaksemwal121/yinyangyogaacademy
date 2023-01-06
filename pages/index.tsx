@@ -197,7 +197,7 @@ const index = () => {
           </div>
         </section>
         {/* Sub Section of About Yin Yang */}
-        <section className="2xl-px-32 -mt-12 py-8 px-4 md:px-6 lg:px-8 xl:px-16">
+        <section className="-mt-12 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <div className="flex flex-col items-center justify-between space-y-3 rounded-lg bg-white p-4 shadow-lg lg:flex-row">
             <div>
               <em className="sloka text-2xl md:text-4xl">

@@ -158,14 +158,14 @@ const accomodation = () => {
           </nav>
         </div>
       </section>
-      <section className="space-y-4 py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
+      <section className="space-y-4 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
         <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           Faciliteis At Yin Yang Yoga Academy
           <span>
             <Image
               src="/line-decor.png"
-              width={550 / 3}
-              height={63 / 3}
+              width={568 / 3}
+              height={94 / 3}
               alt="line-decor"
             />
           </span>
@@ -193,7 +193,7 @@ const accomodation = () => {
               alt="accomadate"
               className="rounded-lg"
             />
-            <div className="top-[8z0%] h-auto w-[80%] rounded-tr-[50px]  bg-[#bd0006] p-3 md:absolute md:h-[150px] md:p-8">
+            <div className="top-[8z0%] h-auto w-[80%] rounded-tr-[50px]  bg-[#de4c11] p-3 md:absolute md:h-[150px] md:p-8">
               <h3 className="text-xl text-white md:text-2xl md:text-[30px]">
                 Yin Yang Yoga Academy
               </h3>
@@ -220,7 +220,7 @@ const accomodation = () => {
         </div>
       </section>
 
-      <section className="py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
+      <section className="py-8 px-4 md:px-6 lg:mt-20 lg:px-8 xl:px-16 2xl:px-32 ">
         <div className="space-x-3 overflow-x-hidden ">
           <Slider {...settings}>
             {[
@@ -249,10 +249,10 @@ const accomodation = () => {
         </div>
       </section>
 
-      <section className="patternBg  py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+      <section className="patternBg py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
         <Teacherprofile />
       </section>
-      <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+      <section className="py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
         <p className=" text-center font-medium uppercase tracking-wide text-[#bd0006]">
           our social reviews
         </p>

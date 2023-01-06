@@ -12,17 +12,16 @@ import BookSlider from "../../components/BookSlider";
 const About = () => {
   const cardData = [
     {
-      title: "Certified Yoga Teacher Training Course in Rishikesh",
-      description: `Yin Yang oga school is the best yoga School in Rishikesh India. We offer the most authentic and traditional style of Yoga Teacher Training Course in Rishikesh, India, certified by Yoga Alliance USA.
-      Yin Yang Yoga blends two styles of yoga into one practice bringing together the benefits of passively holding yoga poses with more dynamic sequences and standing postures. Yin and Yang are the Taoist concepts which describe the two relative qualities present in everything.`,
+      title: "Certified Yoga Teacher Training Course",
+      description: `Yin Yang Yoga School is the top choice for authentic and traditional Yoga Teacher Training in Rishikesh, India, certified by Yoga Alliance USA. Our unique program combines the benefits of both yin and yang styles of yoga in one practice. Join us and discover the balance of these relative qualities in your yoga journey.`,
     },
     {
       title: "6+ Years of Experience in Yoga Teacher Training ",
-      description: `For over 6 years, our yoga teacher training school has been providing high-quality education and training to aspiring yoga teachers. Our team of experienced and dedicated instructors have a passion for sharing the benefits of yoga with others and empowering students to confidently teach and share the practice with their own communities.`,
+      description: `Welcome to our Yoga Teacher Training program with over 6 years of experience. Our team of certified instructors will guide you through a comprehensive training program to become a skilled and confident yoga teacher. Our program includes both in-person and online components. Join us on your journey to become a yoga instructor`,
     },
     {
       title: "Want to be a certified Yoga Teacher?",
-      description: `To become a certified yoga teacher, you will need to complete a yoga teacher training program. These programs vary in length, intensity, and focus, so it is important to research and choose one that aligns with your goals and needs.`,
+      description: `To become a certified yoga instructor, you will need to complete a teacher training program that meets your goals and needs. Programs vary in intensity and focus, so it is important to research and choose one that aligns with your personal goals and preferences. By completing a teacher training program, you will gain the skills and knowledge needed to effectively teach yoga to others.`,
     },
   ];
 
@@ -152,7 +151,7 @@ const About = () => {
           </nav>
         </div>
       </section>
-      <section className=" grid  gap-4 py-8 px-4 md:px-6 lg:grid-cols-3 lg:px-8 xl:px-32 ">
+      <section className="mt-12 mb-20 grid w-full grid-cols-1 gap-4 px-4 sm:px-24  md:grid-cols-3 md:px-6  lg:px-8  xl:px-16 2xl:px-32">
         {cardData.map((item, index) => {
           return (
             <ShadowCard
@@ -163,19 +162,19 @@ const About = () => {
           );
         })}
       </section>
-      <section className="patternBg mt-8  py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+      <section className="patternBg mt-8 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
         <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           About Yin Yang Yoga Academy - Best Yoga School In Rishikesh INDIA
           <span>
             <Image
               src="/line-decor.png"
-              width={550 / 2}
-              height={63 / 2}
+              width={568 / 2}
+              height={94 / 2}
               alt="line-decor"
             />
           </span>
         </h2>
-        <div className="grid space-x-4 lg:grid-cols-2 ">
+        <div className="grid place-items-center space-x-4 lg:grid-cols-2 ">
           <div className="relative">
             <Image
               className="rounded-lg"
@@ -184,7 +183,7 @@ const About = () => {
               width={438 * 1.5}
               alt="aboutus "
             />
-            <div className=" h-[170px] w-full rounded-bl-[100px] rounded-tr-[100px] bg-[#bd0006] p-8 text-center drop-shadow md:top-[80%] md:left-[10%] md:h-[200px] md:w-[80%] lg:absolute">
+            <div className=" h-[170px] w-full rounded-bl-[100px] rounded-tr-[100px] bg-[#de4c11] p-8 text-center drop-shadow md:top-[80%] md:left-[10%] md:h-[200px] md:w-[80%] lg:absolute">
               <h3 className="text-[20px] text-white  md:text-[30px]">
                 Yin Yang Yoga Academy
               </h3>
@@ -232,14 +231,14 @@ const About = () => {
         </div>
       </section>
 
-      <section className=" mt-12  py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+      <section className="mt-12 py-8 px-4 md:px-6 lg:px-8  xl:px-16 2xl:px-32">
         <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           Our Values and Mission
           <span>
             <Image
               src="/line-decor.png"
-              width={550 / 2}
-              height={63 / 2}
+              width={568 / 2}
+              height={94 / 2}
               alt="line-decor"
             />
           </span>
@@ -249,7 +248,7 @@ const About = () => {
             return (
               <div
                 key={index}
-                className="group rounded-bl-[50px] rounded-tr-[50px] p-4 text-center duration-300 ease-in-out hover:bg-[#bd0006] hover:text-white hover:drop-shadow-md "
+                className="group rounded-bl-[50px] rounded-tr-[50px] p-4 text-center duration-300 ease-in-out hover:bg-[#de4c11] hover:text-white hover:drop-shadow-md "
               >
                 <FaYinYang size={40} className="text-center" />
                 {/* <Image
@@ -268,7 +267,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className=" greyFloral mt-12 flex flex-col space-x-6 py-8 px-4 md:px-6 lg:flex-row lg:px-8 xl:px-32">
+      <section className=" greyFloral xl:px- mt-12 flex flex-col space-x-6  px-4 py-8  md:px-6  lg:flex-row  lg:px-8 xl:px-16 2xl:px-32">
         <div className="py-8 md:w-1/2">
           <Image
             src="/about-us-2.jpg"
@@ -279,8 +278,8 @@ const About = () => {
           />
         </div>
         <div className="py-8 md:w-1/2">
-          <p className="text-lg text-[#bd0006]">Our Roots</p>
-          <div className="h-1 w-[10%] bg-[#bd0006]"></div>
+          <p className="text-lg text-[#de4c11]">Our Roots</p>
+          <div className="h-1 w-[10%] bg-[#de4c11]"></div>
           <h3 className="my-3 text-2xl font-bold md:text-4xl">
             Foundation Of Yin Yoga Academy
           </h3>
@@ -293,9 +292,9 @@ const About = () => {
             students and become an integral part of this Yoga family in
             Rishikesh.
           </p>
-          <div className="counter my-4 flex w-full rounded-xl bg-white p-8 shadow-md md:w-1/2">
+          <div className="counter my-4 flex w-full rounded-xl bg-white p-8 shadow-md md:w-2/3">
             <div className="w-1/3">
-              <IoEarthOutline size={70} color="#bd0006" />
+              <IoEarthOutline size={70} color="#de4c11" />
             </div>
             <div>
               <p className=" fancy-font text-lg md:text-xl ">Global Students</p>
@@ -307,7 +306,7 @@ const About = () => {
         </div>
       </section>
       {/* Books Section  */}
-      <section className="mt-12  py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+      <section className="mt-12  py-8 px-4  md:px-6  lg:px-8  xl:px-16 2xl:px-32">
         <BookSlider />
       </section>
       <section className="greyFloral my-8 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
@@ -316,8 +315,8 @@ const About = () => {
           <span>
             <Image
               src="/line-decor.png"
-              width={550 / 2}
-              height={63 / 2}
+              width={568 / 2}
+              height={94 / 2}
               alt="line-decor"
             />
           </span>
@@ -346,24 +345,24 @@ const About = () => {
         </div>
       </section>
       {/* Teacher Profile */}
-      <section className=" py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-        <p className=" text-center font-medium uppercase tracking-wide text-[#bd0006]">
-          our social reviews
+      <section className="  py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+        <p className=" text-center font-medium uppercase tracking-wide text-[#de4c11]">
+          Our Social reviews
         </p>
         <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           Why We are the First Choice For YTTC
           <span>
             <Image
               src="/line-decor.png"
-              width={550 / 2}
-              height={63 / 2}
+              width={568 / 2}
+              height={94 / 2}
               alt="line-decor"
             />
           </span>
         </h2>
         <TrustPilotReview />
       </section>
-      <section className="patternBg  py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+      <section className="patternBg  py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
         <Teacherprofile />
       </section>
     </main>

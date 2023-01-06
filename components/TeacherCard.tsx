@@ -35,17 +35,17 @@ const TeacherCard: React.FC<Teacher> = ({ image, name, expertise, desc }) => {
           <h2 className="fancy-font text-center md:text-lg lg:text-xl xl:text-2xl">
             {name}
           </h2>
-          <p className="rounded-tl-[25px] rounded-br-[25px] bg-[#bd0006] p-3 text-center text-sm text-white  md:text-base">
+          <p className="rounded-tl-[25px] rounded-br-[25px] bg-[#de4c11] p-3 text-center text-sm text-white  md:text-base">
             {expertise}
           </p>
           <div className="my-2 flex justify-center space-x-4">
-            <BsLinkedin className="hover:text-[#bd0006]" size={20} />
-            <BsInstagram className="hover:text-[#bd0006]" size={20} />
-            <BsFacebook className="hover:text-[#bd0006]" size={20} />
-            <BsTwitter className="hover:text-[#bd0006]" size={20} />
+            <BsLinkedin className="hover:text-[#de4c11]" size={20} />
+            <BsInstagram className="hover:text-[#de4c11]" size={20} />
+            <BsFacebook className="hover:text-[#de4c11]" size={20} />
+            <BsTwitter className="hover:text-[#de4c11]" size={20} />
           </div>
           <p className="flex items-center justify-center space-x-1 font-semibold">
-            <BsAward size={24} className="w-1/4" color="#bd0006" />
+            <BsAward size={24} className="w-1/4" color="#de4c11" />
             <span className="w-3/4  text-xs md:text-base">
               10+ Years of Experience
             </span>
@@ -56,7 +56,7 @@ const TeacherCard: React.FC<Teacher> = ({ image, name, expertise, desc }) => {
         onClick={() => setShowMore(!showMore)}
         className=" cursor-pointer p-2  md:p-4"
       >
-        <p className="flex cursor-pointer items-center text-[#bd0006] hover:space-x-4 hover:duration-300 hover:ease-linear">
+        <p className="flex cursor-pointer items-center text-[#de4c11] hover:space-x-4 hover:duration-300 hover:ease-linear">
           <span className="tracking-wider">Read More</span>
           <BsArrowRight />
         </p>
@@ -64,7 +64,7 @@ const TeacherCard: React.FC<Teacher> = ({ image, name, expertise, desc }) => {
       <div
         className={`${
           showMore ? "" : "hidden"
-        } absolute top-0 h-full overflow-y-auto rounded-[10px]  bg-[#bd0006] p-4 text-white ease-linear`}
+        } absolute top-0 h-full overflow-y-auto rounded-[10px]  bg-[#de4c11] p-4 text-white ease-linear`}
       >
         <div
           onClick={() => setShowMore(!showMore)}
