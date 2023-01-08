@@ -42,7 +42,7 @@ const template = () => {
       </Head>
       <main className="">
         {/* hero section */}
-        <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
+        <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32 ">
           <div className=" space-y-2 py-2">
             <p className=" text-lg font-semibold tracking-wide text-gray-200 md:text-xl">
               Come and join us for the unforgettable experience of a lifetime
@@ -111,8 +111,8 @@ const template = () => {
           </div>
         </section>
         {/* chakra retreat section */}
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-xl font-semibold text-[#bd0006] ">
+        <section className="mt-6 ">
+          <p className="text-center text-xl font-semibold text-[#de4c11] ">
             Know More About Yoga Retreat
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -140,7 +140,7 @@ const template = () => {
             </p>
             <p className="text-sm md:text-base">
               This{" "}
-              <b className="fancy-font text-lg text-[#bd0006]">7 day retreat</b>{" "}
+              <b className="fancy-font text-lg text-[#de4c11]">7 day retreat</b>{" "}
               is a journey through the chakras to restore the balance in our
               systems, to learn how to deal with the negative feelings, to
               increase awareness of the body and release the blockages.
@@ -152,7 +152,7 @@ const template = () => {
           <div className="mt-4 flex flex-col items-center space-y-4 space-x-4 lg:flex-row">
             <div className="space-y-4 lg:w-1/2">
               <div className=" rounded-lg border-2 bg-white p-4 shadow-lg ">
-                <BsPatchCheck color="#bd0006" size={25} />
+                <BsPatchCheck color="#de4c11" size={25} />
                 <h3 className="text-lg md:text-xl">Eligibility</h3>
                 <p className="text-sm md:text-base">
                   This retreat is designed to be beneficial to everyone. Neither
@@ -165,10 +165,10 @@ const template = () => {
                   determination to work on your body and mind.
                 </p>
               </div>
-              <div className="border-l-4 border-[#bd0006] p-4">
+              <div className="border-l-4 border-[#de4c11] p-4">
                 <p className="font-semibold italic">
                   Come join us for our{" "}
-                  <span className="text-[#bd0006]">
+                  <span className="text-[#de4c11]">
                     7 day Chakra Yoga Retreat in Rishikesh
                   </span>{" "}
                   to unfold the treasures that lie within. We promise to make it
@@ -176,7 +176,7 @@ const template = () => {
                 </p>
               </div>
               <div className="flex justify-center">
-                <ApplyButton />
+                <ApplyButton text="Join Yoga Retreat" url="/apply" />
               </div>
             </div>
 
@@ -192,7 +192,7 @@ const template = () => {
           </div>
         </section>
         <section className="greyFloral mt-6 py-16  px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-xl font-semibold text-[#bd0006] ">
+          <p className="text-center text-xl font-semibold text-[#de4c11] ">
             Practicing Yoga
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -353,14 +353,14 @@ const template = () => {
                 height={400}
                 alt="yoga-lady"
               />
-              <div className="mt-4 flex flex-col items-center justify-center rounded-lg border-2 border-[#bd0006] bg-white p-4 shadow-lg">
+              <div className="mt-4 flex flex-col items-center justify-center rounded-lg border-2 border-[#de4c11] bg-white p-4 shadow-lg">
                 <div className="text-center text-lg font-semibold md:text-2xl">
                   Book Your Chakra Yoga Retreat for 7 Days at Yin Yang Yoga
                   Academy at
-                  <span className="font-bold text-[#bd0006]"> $499</span>
+                  <span className="font-bold text-[#de4c11]"> $499</span>
                 </div>
                 <div className="flex justify-center">
-                  <ApplyButton />
+                  <ApplyButton text="Apply Now" url="/apply" />
                 </div>
               </div>
             </div>
@@ -419,8 +419,8 @@ const template = () => {
             </div>
           </div>
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-lg font-bold text-[#bd0006]">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <p className="text-center text-lg font-bold text-[#de4c11]">
             Upcoming Events
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -436,13 +436,13 @@ const template = () => {
           </h2>
           <EventTable />
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <TestimonialCarousel />
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <TrustPilotReview />
         </section>
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <Teacherprofile />
         </section>
       </main>
