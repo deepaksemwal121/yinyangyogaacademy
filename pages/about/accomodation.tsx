@@ -164,8 +164,8 @@ const accomodation = () => {
           <span>
             <Image
               src="/line-decor.png"
-              width={568 / 3}
-              height={94 / 3}
+              width={568 / 2}
+              height={94 / 2}
               alt="line-decor"
             />
           </span>
@@ -261,8 +261,8 @@ const accomodation = () => {
           <span>
             <Image
               src="/line-decor.png"
-              width={550 / 2}
-              height={63 / 2}
+              width={568 / 2}
+              height={94 / 2}
               alt="line-decor"
             />
           </span>

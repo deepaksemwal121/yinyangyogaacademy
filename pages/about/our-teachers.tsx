@@ -86,10 +86,10 @@ const Teachers = () => {
         <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
           Teaching Faculty - Yin Yang Yoga Academy
           <span>
-            <Image
+          <Image
               src="/line-decor.png"
-              width={2500 / 12}
-              height={346 / 12}
+              width={568 / 2}
+              height={94 / 2}
               alt="line-decor"
             />
           </span>
@@ -127,8 +127,8 @@ const Teachers = () => {
           <span>
             <Image
               src="/line-decor.png"
-              width={550 / 2}
-              height={63 / 2}
+              width={568 / 2}
+              height={94 / 2}
               alt="line-decor"
             />
           </span>

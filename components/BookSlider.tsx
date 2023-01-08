@@ -110,11 +110,16 @@ const BookSlider = () => {
                       setIsopen(true);
                     }}
                     type="button"
-                    className=" m-4 flex w-full justify-center rounded-lg bg-[#bd0006]  px-2 py-1 md:space-x-4 md:px-4 md:py-2"
+                    className=" group m-4 flex w-full justify-center rounded-lg bg-[#de4c11] px-2 py-1 hover:border-2  hover:border-[#de4c11] hover:bg-transparent md:space-x-4 md:px-4 md:py-2"
                     data-modal-toggle="defaultModal"
                   >
-                    <IoDownloadOutline color="white" size={20} />
-                    <span>Download</span>
+                    <IoDownloadOutline
+                      className="text-white group-hover:text-[#de4c11]"
+                      size={20}
+                    />
+                    <span className="text-white group-hover:text-[#de4c11]">
+                      Download
+                    </span>
                   </button>
                 </div>
               </div>
@@ -234,7 +239,7 @@ const BookSlider = () => {
                   <div className="md:w-2/3">
                     <button
                       onClick={handleBookPdf}
-                      className="focus:shadow-outline rounded bg-[#bd0006] py-2 px-4 font-bold text-white shadow hover:bg-black focus:outline-none"
+                      className="focus:shadow-outline rounded bg-[#de4c11] py-2 px-4 font-bold text-white shadow hover:bg-black focus:outline-none"
                       type="button"
                     >
                       Send Pdf

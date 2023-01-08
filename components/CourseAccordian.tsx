@@ -30,12 +30,12 @@ const CourseAccordian: React.FC<Syllabus> = ({ title, desc, classes }) => {
       </div>
       <div className={` bg-slate-50 p-4 ${open ? "" : "hidden"}`}>
         <p className="text-sm md:text-base">{desc}</p>
-        <ul className="mt-4 grid gap-5 md:grid-cols-3 text-sm md:text-base">
+        <ul className="mt-4 grid gap-5 text-sm md:grid-cols-3 md:text-base">
           {classes.map((item, index) => {
             return (
               <li key={index} className="flex items-center space-x-4">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"

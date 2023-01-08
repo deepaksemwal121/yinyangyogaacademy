@@ -138,14 +138,14 @@ const Header = () => {
             <li
               className={`${
                 router.pathname === "/contact" ? "text-[#de4c11]" : "text-black"
-              } hover:text-[#bd0006] lg:p-3 xl:p-4`}
+              } hover:text-[#de4c11] lg:p-3 xl:p-4`}
             >
               <Link href="/contact">Contact Us</Link>
             </li>
             <li
               className={`${
                 router.pathname === "/pay" ? "text-[#de4c11]" : "text-black"
-              } hover:text-[#bd0006] lg:p-3 xl:p-4`}
+              } hover:text-[#de4c11] lg:p-3 xl:p-4`}
             >
               <Link href="/pay">Pay Now</Link>
             </li>
@@ -160,7 +160,7 @@ const Header = () => {
         <ul className=" flex flex-col items-center space-y-4 space-x-4   md:text-base lg:justify-around lg:text-lg ">
           <li
             onClick={() => setOpenMenu(false)}
-            className="  hover:text-[#bd0006] lg:p-4"
+            className="  hover:text-[#de4c11] lg:p-4"
           >
             <Link href="/">Home</Link>
           </li>
@@ -179,19 +179,19 @@ const Header = () => {
           })}
           <li
             onClick={() => setOpenMenu(false)}
-            className="p-4 hover:text-[#bd0006]"
+            className="p-4 hover:text-[#de4c11]"
           >
             <Link href="/contact">Contact Us</Link>
           </li>
           <li
             onClick={() => setOpenMenu(false)}
-            className="p-4 hover:text-[#bd0006]"
+            className="p-4 hover:text-[#de4c11]"
           >
             <Link href="/pay">Pay Now</Link>
           </li>
           <li
             onClick={() => setOpenMenu(false)}
-            className="rounded bg-[#bd0006] p-2 text-white"
+            className="rounded bg-[#de4c11] p-2 text-white"
           >
             <Link href="/apply">Apply Now</Link>
           </li>

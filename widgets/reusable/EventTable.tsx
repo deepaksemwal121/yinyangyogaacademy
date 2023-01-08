@@ -53,7 +53,7 @@ const EventTable = () => {
   ];
   return (
     <div className="w-full overflow-x-scroll">
-      <div className="flex w-[850px] justify-between overflow-x-auto rounded-t-lg bg-[#bd0006] p-4 text-center text-lg font-bold text-white md:w-full">
+      <div className="flex w-[850px] justify-between overflow-x-auto rounded-t-lg bg-[#de4c11] p-4 text-center text-lg font-bold text-white md:w-full">
         <div className="w-1/6 border-r-[2px]  border-dashed text-sm md:text-base">
           Start Date
         </div>

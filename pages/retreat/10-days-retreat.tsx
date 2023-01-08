@@ -14,7 +14,7 @@ const Retreat = () => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
+      <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
         <div className=" space-y-2 py-2">
           <p className=" font-semibold tracking-wide text-gray-200 md:text-lg ">
             Come and join us for the unforgettable experience of a lifetime
@@ -82,8 +82,8 @@ const Retreat = () => {
           </nav>
         </div>
       </section>
-      <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-        <p className="text-center text-base font-semibold text-[#bd0006] md:text-lg ">
+      <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+        <p className="text-center text-base font-semibold text-[#de4c11] md:text-lg ">
           Know More About Yoga Retreat
         </p>
         <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -91,8 +91,8 @@ const Retreat = () => {
           <span>
             <Image
               src="/line-decor.png"
-              width={550 / 2}
-              height={63 / 2}
+              width={568 / 2}
+              height={94 / 2}
               alt="line-decor"
             />
           </span>
@@ -127,7 +127,7 @@ const Retreat = () => {
         <div className="mt-4 flex flex-col items-center space-y-4 space-x-4 lg:flex-row">
           <div className="space-y-4 lg:w-1/2">
             <div className=" rounded-lg border-2 bg-white p-4 shadow-lg ">
-              <BsPatchCheck color="#bd0006" size={25} />
+              <BsPatchCheck color="#de4c11" size={25} />
               <h3 className="text-lg md:text-xl">Eligibility</h3>
               <p className="text-sm md:text-base">
                 Backed by millennia of experience, this retreat is intricately
@@ -137,10 +137,10 @@ const Retreat = () => {
                 step back and reconnect with their true self.
               </p>
             </div>
-            <div className="border-l-4 border-[#bd0006] p-4">
+            <div className="border-l-4 border-[#de4c11] p-4">
               <p className="font-semibold italic">
                 Come join us for our{" "}
-                <span className="text-[#bd0006]">
+                <span className="text-[#de4c11]">
                   10 day Yoga Retreat in Rishikesh
                 </span>{" "}
                 to unfold the treasures that lie within. We promise to make it a
@@ -148,7 +148,7 @@ const Retreat = () => {
               </p>
             </div>
             <div className="flex justify-center">
-              <ApplyButton />
+              <ApplyButton text="Apply Now" url="/apply" />
             </div>
           </div>
 
@@ -164,8 +164,8 @@ const Retreat = () => {
         </div>
       </section>
       {/* Cost Section */}
-      <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-        <p className="text-center text-lg font-semibold text-[#bd0006] md:text-xl ">
+      <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+        <p className="text-center text-lg font-semibold text-[#de4c11] md:text-xl ">
           Know More About Yoga Retreat
         </p>
         <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -173,8 +173,8 @@ const Retreat = () => {
           <span>
             <Image
               src="/line-decor.png"
-              width={550 / 2}
-              height={63 / 2}
+              width={568 / 2}
+              height={94 / 2}
               alt="line-decor"
             />
           </span>
@@ -188,20 +188,20 @@ const Retreat = () => {
           ashrams.
         </p>
         <div className="mt-4 border-b-2 border-dashed"></div>
-        <div className="mt-4 flex flex-col items-center justify-between rounded-lg border-2 border-[#bd0006] bg-white p-4 shadow-lg lg:flex-row">
+        <div className="mt-4 flex flex-col items-center justify-between rounded-lg border-2 border-[#de4c11] bg-white p-4 shadow-lg lg:flex-row">
           <div className="text-center text-xl font-semibold md:text-2xl">
             Book Your Yoga Retreat for 10 Days at Yin Yang Yoga Academy at
-            <span className="font-bold text-[#bd0006]"> $500</span>
+            <span className="font-bold text-[#de4c11]"> $500</span>
           </div>
           <div className="flex justify-center">
-            <ApplyButton />
+            <ApplyButton text="Join Yoga Retreat" url="/apply" />
           </div>
         </div>
       </section>
       {/* pricing section */}
 
-      <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-        <p className="text-center text-lg font-bold text-[#bd0006]">
+      <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+        <p className="text-center text-lg font-bold text-[#de4c11]">
           Upcoming Events
         </p>
         <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -209,21 +209,21 @@ const Retreat = () => {
           <span>
             <Image
               src="/line-decor.png"
-              width={550 / 2}
-              height={63 / 2}
+              width={568 / 2}
+              height={94 / 2}
               alt="line-decor"
             />
           </span>
         </h2>
         <EventTable />
       </section>
-      <section className=" mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+      <section className=" mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
         <TestimonialCarousel />
       </section>
-      <section className=" mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+      <section className=" mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
         <TrustPilotReview />
       </section>
-      <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+      <section className="patternBg py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
         <Teacherprofile />
       </section>
     </main>

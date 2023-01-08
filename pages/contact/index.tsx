@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div>
       <main>
-        <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
+        <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <div className=" space-y-2 py-2">
             <p className=" text-sm font-semibold tracking-wide text-gray-200 md:text-lg">
               We Will be more than happy to resolve your queries
@@ -57,8 +57,8 @@ const Contact = () => {
             </nav>
           </div>
         </section>
-        <section className="py-8 px-4  md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center  font-semibold text-[#bd0006] md:text-xl ">
+        <section className="py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <p className="text-center  font-semibold text-[#de4c11] md:text-xl ">
             We are one step closer to answer all your queries
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -66,8 +66,8 @@ const Contact = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -83,7 +83,7 @@ const Contact = () => {
           <div className="mt-4 grid gap-4 md:grid-cols-3">
             <div className="rounded-lg border-2 bg-white p-4 shadow">
               <div className="flex items-center justify-center space-x-4">
-                <MdHome size={40} color="#bd0006" />
+                <MdHome size={40} color="#de4c11" />
                 <h3 className="text-lg font-semibold md:text-xl">Address</h3>
               </div>
               <p className="text-center text-sm md:text-base">
@@ -93,7 +93,7 @@ const Contact = () => {
             </div>
             <div className="rounded-lg border-2 bg-white p-4 shadow">
               <div className="flex items-center justify-center space-x-4">
-                <MdPhone size={40} color="#bd0006" />
+                <MdPhone size={40} color="#de4c11" />
                 <h3 className=" text-lg font-semibold md:text-xl">Enquiry</h3>
               </div>
               <p className="text-center text-sm md:text-lg">
@@ -102,21 +102,21 @@ const Contact = () => {
             </div>
             <div className="rounded-lg border-2 bg-white p-4 shadow">
               <div className="flex items-center justify-center space-x-4">
-                <BsWhatsapp size={40} color="#bd0006" />
+                <BsWhatsapp size={40} color="#de4c11" />
                 <h3 className="text-lg font-semibold md:text-xl">Whatsapp</h3>
               </div>
               <p className="text-center text-sm md:text-lg">+91 1234567890</p>
             </div>
           </div>
         </section>
-        <section className="py-8 px-4  md:px-6 lg:px-8 xl:px-32">
+        <section className="py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Enquiry Form
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -128,12 +128,12 @@ const Contact = () => {
                   <input
                     type="text"
                     id="floating_outlined"
-                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006]"
+                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#de4c11] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#de4c11]"
                     placeholder=" "
                   />
                   <label
                     htmlFor="floating_outlined"
-                    className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006]  peer-focus:dark:text-blue-500"
+                    className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#de4c11]  peer-focus:dark:text-blue-500"
                   >
                     Your Name
                   </label>
@@ -142,12 +142,12 @@ const Contact = () => {
                   <input
                     type="text"
                     id="floating_outlined"
-                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006]"
+                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#de4c11] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#de4c11]"
                     placeholder=" "
                   />
                   <label
                     htmlFor="floating_outlined"
-                    className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006]  peer-focus:dark:text-blue-500"
+                    className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#de4c11]  peer-focus:dark:text-blue-500"
                   >
                     Your Email
                   </label>
@@ -158,12 +158,12 @@ const Contact = () => {
                   <input
                     type="text"
                     id="floating_outlined"
-                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006]"
+                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#de4c11] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#de4c11]"
                     placeholder=" "
                   />
                   <label
                     htmlFor="floating_outlined"
-                    className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006]  peer-focus:dark:text-blue-500"
+                    className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#de4c11]  peer-focus:dark:text-blue-500"
                   >
                     Your Phone
                   </label>
@@ -171,7 +171,7 @@ const Contact = () => {
                 <div className="relative">
                   <select
                     id="floating_outlined"
-                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006]"
+                    className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#de4c11] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#de4c11]"
                   >
                     <option>Regarding Course Fee</option>
                     <option>Regarding Refund</option>
@@ -180,7 +180,7 @@ const Contact = () => {
                   </select>
                   <label
                     htmlFor="floating_outlined"
-                    className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006]  peer-focus:dark:text-blue-500"
+                    className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#de4c11]  peer-focus:dark:text-blue-500"
                   >
                     Type Of Enquiry
                   </label>
@@ -189,12 +189,12 @@ const Contact = () => {
               <div className="relative">
                 <textarea
                   id="floating_outlined"
-                  className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#bd0006] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#bd0006]"
+                  className="border-1 peer block w-full appearance-none rounded-lg border-gray-300 bg-transparent p-4 px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-[#de4c11] focus:outline-none focus:ring-0 dark:border-gray-600  dark:focus:border-[#de4c11]"
                   placeholder=" "
                 />
                 <label
                   htmlFor="floating_outlined"
-                  className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#bd0006]  peer-focus:dark:text-blue-500"
+                  className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#de4c11]  peer-focus:dark:text-blue-500"
                 >
                   Your Query
                 </label>
@@ -202,7 +202,7 @@ const Contact = () => {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="flex w-1/4 items-center justify-center space-x-4 rounded  bg-[#bd0006] px-4 py-2 text-white hover:bg-black"
+                  className="flex w-1/4 items-center justify-center space-x-4 rounded  bg-[#de4c11] px-4 py-2 text-white hover:border-2 hover:border-[#de4c11] hover:bg-transparent hover:text-[#de4c11]"
                 >
                   <span>Submit</span> <BsArrowRight />
                 </button>
@@ -210,7 +210,7 @@ const Contact = () => {
             </form>
           </div>
         </section>
-        <section className="py-8 px-4  md:px-6 lg:px-8 xl:px-32">
+        <section className="py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <FAQ />
         </section>
       </main>

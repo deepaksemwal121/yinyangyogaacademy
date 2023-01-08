@@ -19,25 +19,25 @@ const DropdownMenu = ({
   setOpenMenu,
 }: Menu) => {
   return (
-    <div className="group relative p-4 duration-300 hover:text-[#bd0006] ">
+    <div className="group relative p-4 duration-300 hover:text-[#de4c11] ">
       <span
         className={`${
-          links.includes(router) ? "text-[#bd0006]" : ""
+          links.includes(router) ? "text-[#de4c11]" : ""
         } flex items-center space-x-2`}
       >
         <span>{title}</span>
         <FiChevronDown />
       </span>
       <div
-        className={` top-[50px] left-0  hidden w-[250px] flex-col  border-[#bd0006] bg-white p-4 group-hover:flex lg:absolute   lg:border-t-[2px]`}
+        className={` top-[50px] left-0  hidden w-[250px] flex-col  border-[#de4c11] bg-white p-4 group-hover:flex lg:absolute   lg:border-t-[2px]`}
       >
         <ul className="w-full space-y-4 font-medium">
           {subtitle.map((item, index) => {
             return (
               <li
-              onClick={()=>setOpenMenu(false)}
+                onClick={() => setOpenMenu(false)}
                 key={index}
-                className=" border-b-[1px]  text-black drop-shadow-lg duration-300   ease-linear hover:border-b-2 hover:border-dotted hover:border-[#bd0006] hover:text-[#bd0006]"
+                className=" border-b-[1px]  text-black drop-shadow-lg duration-300   ease-linear hover:border-b-2 hover:border-dotted hover:border-[#de4c11] hover:text-[#de4c11]"
               >
                 <Link href={links[index]}>{item}</Link>
               </li>
