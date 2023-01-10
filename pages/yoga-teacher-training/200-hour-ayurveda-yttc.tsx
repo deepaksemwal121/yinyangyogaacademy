@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { IoBedOutline } from "react-icons/io5";
@@ -19,8 +20,10 @@ import TestimonialCarousel from "../../components/sections/TestimonialCarousel";
 import TrustPilotReview from "../../components/sections/TrustPilotReview";
 import { syllabus } from "../../data/detailedSyllabus";
 import ActivityCourse from "../../widgets/reusable/ActivityCourse";
+import ApplyButton from "../../widgets/reusable/ApplyButton";
+import EventTable from "../../widgets/reusable/EventTable";
 
-const Ayurveda100 = () => {
+const AyurvedaCoursePage = () => {
   const [tab, setTab] = useState(0);
 
   const settingsAccomodation = {
@@ -341,12 +344,12 @@ const Ayurveda100 = () => {
     {
       title: "Transformational",
       image: "/icons-home/pose-1.png",
-      desc: "This form seeks to create a transformation or a great change in a positive way. Our 300 Hour Yoga Teacher Training in Rishikesh is designed to help you rejuvenate your mind and soul and transform yourself. In our course, you will be able to nurture yourself and connect your spirit with the universe to bring out the best in you.",
+      desc: "This form seeks to create a transformation or a great change in a positive way. Our 200 Hour Ayurveda Yoga Teacher Training in Rishikesh is designed to help you rejuvenate your mind and soul and transform yourself. In our course, you will be able to nurture yourself and connect your spirit with the universe to bring out the best in you.",
     },
     {
       title: "Comprehensive",
       image: "/icons-home/pose-2.png",
-      desc: "One of the best parts of the 300 Hour Yoga Teacher Training in Rishikesh is that it is very comprehensive and has a wide scope. The course through its wide variety of exposure to knowledge and experience affects every individual differently. With the help of certified and well-reputed instructors, students can gain the maximum benefit and work on their self-development and improvement.",
+      desc: "One of the best parts of the 200 Hour Ayurveda Yoga Teacher Training in Rishikesh is that it is very comprehensive and has a wide scope. The course through its wide variety of exposure to knowledge and experience affects every individual differently. With the help of certified and well-reputed instructors, students can gain the maximum benefit and work on their self-development and improvement.",
     },
     {
       title: "Professional",
@@ -356,12 +359,12 @@ const Ayurveda100 = () => {
     {
       title: "Body Wisdom",
       image: "/icons-home/pose-4.png",
-      desc: "Another aim of the 300 Hour Yoga Teacher Training in Rishikesh is to open the pathway to your body’s internal intellect or wisdom. Our body is nothing but a storehouse that keeps account of all the knowledge and wisdom acquired. Thus we here make sure to empower the storehouse wisdom through various activities, asanas, alignments, physiology, etc.",
+      desc: "Another aim of the 200 Hour Ayurveda Yoga Teacher Training in Rishikesh is to open the pathway to your body’s internal intellect or wisdom. Our body is nothing but a storehouse that keeps account of all the knowledge and wisdom acquired. Thus we here make sure to empower the storehouse wisdom through various activities, asanas, alignments, physiology, etc.",
     },
     {
       title: "Mind Mastery",
       image: "/icons-home/pose-5.png",
-      desc: "Understanding the mind opens numerous doors and helps you understand yourself better, make perfect choices for yourself, and govern your behavior. This kind of mind mastery and self-discovery can be attained through meditation and other effective powerful techniques. The 300 Hour Yoga Teacher Training in Rishikesh ensures that you achieve the mastery of mind and build a strong foundation for other asanas.",
+      desc: "Understanding the mind opens numerous doors and helps you understand yourself better, make perfect choices for yourself, and govern your behavior. This kind of mind mastery and self-discovery can be attained through meditation and other effective powerful techniques. The 200 Hour Ayurveda Yoga Teacher Training in Rishikesh ensures that you achieve the mastery of mind and build a strong foundation for other asanas.",
     },
     {
       title: "Soulful Discovery",
@@ -373,13 +376,14 @@ const Ayurveda100 = () => {
   return (
     <div>
       <main>
-        <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
+        <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8  xl:px-16 2xl:px-32">
           <div className=" space-y-2 py-2">
             <p className=" font-semibold tracking-wide text-gray-200 md:text-xl">
               Come and join us for the unforgettable experience of a lifetime
             </p>
             <h2 className=" fancy-font text-2xl  text-white drop-shadow md:text-3xl md:leading-[6rem] lg:text-4xl xl:text-5xl">
-              100 Hour Ayurveda Yoga Teacher Training <br /> Course in Rishikesh
+              200 Hour Ayurveda Yoga Teacher Training <br />
+              In Rishikesh, India
             </h2>
             <nav className="flex" aria-label="Breadcrumb">
               <ol className="inline-flex items-center space-x-1 text-white md:space-x-3">
@@ -433,7 +437,7 @@ const Ayurveda100 = () => {
                       ></path>
                     </svg>
                     <span className="ml-1 text-sm font-medium   md:ml-2">
-                      100 Hour Ayurved YTTC
+                      300 Hours YTTC
                     </span>
                   </div>
                 </li>
@@ -441,17 +445,17 @@ const Ayurveda100 = () => {
             </nav>
           </div>
         </section>
-        <section className="py-8 px-4  md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-xl font-semibold text-[#bd0006] ">
+        <section className="py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <p className="text-center text-lg font-semibold text-[#de4c11] ">
             The attitude of gratitude is the highest yoga
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
-            100 Hour Ayurveda Yoga Teacher Training In Rishikesh,India
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
+            200 Hour Ayurveda Yoga Teacher Training Rishikesh,India
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -460,60 +464,63 @@ const Ayurveda100 = () => {
             <div>
               <Image
                 className="rounded-lg drop-shadow"
-                src="https://www.yogkulam.org/images/ayurvedic-massage.jpg"
+                src="/300hr-2.jpg"
                 height={400}
                 width={600}
-                alt="100 Hour Ayurveda"
+                alt="300 hours "
               />
             </div>
             <div className="flex flex-col justify-center">
-              <p>
-                <b>100 Hour Ayurveda Yoga Teacher Training Course </b> in
-                Rishikesh, India is for seekers who wish to learn about
-                Ayurveda, the historic system of medicine and explore Yoga in
-                its most authentic and purest form. Our school, Rishikesh
+              <p className="text-sm md:text-base">
+                <b>200 Hour Ayurveda Yoga Teacher Training in Rishikesh</b> ,
+                India is for seekers who wish to learn about and experience Yoga
+                in its most authentic and purest form. Our school, Rishikesh
                 Yogkulam, situated in the heart of Rishikesh offers{" "}
-                <b>300 Hour YTTCs</b>, 200 Hour YTTC., 300 Hour YTTC. and 500
-                Hour YTTC. The 300 Hour course is specially designed for novices
-                and is a breakdown of the 200 Hour YTTC. It is a two-week long,
-                complete immersion beginner course for individuals aspiring to
-                step into the world of Yoga and begin their journey. <br />
+                <b>200 Hour Ayurveda YTTCs</b>, 200 Hour YTTC., 100 Hour
+                AyurvedaYTTC. and 500 Hour YTTC. The 300 Hour course is
+                specially designed for novices and is a breakdown of the 200
+                Hour YTTC. It is a two-week long, complete immersion beginner
+                course for individuals aspiring to step into the world of Yoga
+                and begin their journey. <br />
                 The course focuses on expounding and strengthening the
                 understanding of various basic concepts and fundamentals of Yoga
                 and simultaneously helps you slow down, live in the present
                 moment and connect to your true self, inspiring self-discovery
                 on a physical and spiritual level.
               </p>
-              <p className="mt-2">
-                Backed by millennia of experience, our
-                <b> 100 Hour Ayurveda Yoga TTC </b> in Rishikesh is a perfect
-                blend of both - theory and practice! With a wide range of
-                subjects from Ayurveda Theory and Practical&apos;s, Anatomy and
-                Physiology, Yoga philosophy, Asanas and Posture Integration to
-                Pranayama, Meditation, Sanskrit terminologies and Mantras, this
-                course focuses on the fundamentals of Yoga and Ayurveda, making
-                it an ideal course for beginners. All through, we ensure a
-                conducive environment for learning and growth.
-              </p>
             </div>
           </div>
         </section>
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <div className=" grid grid-cols-1  gap-4 lg:grid-cols-3 ">
             <div className="group space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg md:-mt-12 ">
               <h2 className="flex w-full flex-col  text-xl">
-                Courese Overview
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+                Course Overview
+                <span className=" h-[2px] w-[10%] bg-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
-              <ul className="space-y-2">
+              <p className="text-sm md:text-base">
+                The course focuses on expounding and strengthening the
+                understanding of various basic concepts and fundamentals of Yoga
+                and simultaneously helps you slow down, live in the present
+                moment and connect to your true self, inspiring self-discovery
+                on a physical and spiritual level.
+              </p>
+            </div>
+            <div className="group space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg md:-mt-12 ">
+              <h2 className="flex w-full flex-col  text-xl">
+                Course Summary
+                <span className=" h-[2px] w-[10%] bg-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+              </h2>
+              <ul className="space-y-2 text-sm md:text-base">
                 <li className="flex items-center space-x-2">
                   <Image
                     src="/floral-icon.png"
                     height={20}
                     width={20}
                     alt="icon"
+                    className="w-1/6"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span className="w-5/6">Immersion in a Yogic Lifestyle</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Image
@@ -521,8 +528,12 @@ const Ayurveda100 = () => {
                     height={20}
                     width={20}
                     alt="icon"
+                    className="w-1/6"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span className="w-5/6">
+                    Expanded knowledge, capability, & experience in the course
+                    topic
+                  </span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Image
@@ -530,8 +541,12 @@ const Ayurveda100 = () => {
                     height={20}
                     width={20}
                     alt="icon"
+                    className="w-1/6"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span className="w-5/6">
+                    Witness physical exercise merging with the spiritual,
+                    subtle, and Divine forces of creation.
+                  </span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Image
@@ -539,17 +554,21 @@ const Ayurveda100 = () => {
                     height={20}
                     width={20}
                     alt="icon"
+                    className="w-1/6"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span className="w-5/6">
+                    Expanded knowledge, capability, & experience in the course
+                    topic
+                  </span>
                 </li>
               </ul>
             </div>
             <div className="group space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg md:-mt-12 ">
               <h2 className="flex w-full flex-col  text-xl">
-                Courese Highlights
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+                Course Highlights
+                <span className=" h-[2px] w-[10%] bg-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-sm  md:text-base">
                 <li className="flex items-center space-x-2">
                   <Image
                     src="/floral-icon.png"
@@ -557,7 +576,7 @@ const Ayurveda100 = () => {
                     width={20}
                     alt="icon"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span>Master Alignment and Adjustment </span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Image
@@ -566,7 +585,7 @@ const Ayurveda100 = () => {
                     width={20}
                     alt="icon"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span>Monitor and Sharpen your own practice</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Image
@@ -574,8 +593,12 @@ const Ayurveda100 = () => {
                     height={20}
                     width={20}
                     alt="icon"
+                    className="w-1/6"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span className="w-5/6">
+                    Gain deeper knowledge and practical experience of the
+                    subject matter
+                  </span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Image
@@ -583,71 +606,31 @@ const Ayurveda100 = () => {
                     height={20}
                     width={20}
                     alt="icon"
+                    className="w-1/6"
                   />
-                  <span>Lorem ipsum dolor sit.</span>
-                </li>
-              </ul>
-            </div>
-            <div className="group space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg md:-mt-12 ">
-              <h2 className="flex w-full flex-col  text-xl">
-                Courese Summary
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
-              </h2>
-              <ul className="space-y-2">
-                <li className="flex items-center space-x-2">
-                  <Image
-                    src="/floral-icon.png"
-                    height={20}
-                    width={20}
-                    alt="icon"
-                  />
-                  <span>Lorem ipsum dolor sit.</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <Image
-                    src="/floral-icon.png"
-                    height={20}
-                    width={20}
-                    alt="icon"
-                  />
-                  <span>Lorem ipsum dolor sit.</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <Image
-                    src="/floral-icon.png"
-                    height={20}
-                    width={20}
-                    alt="icon"
-                  />
-                  <span>Lorem ipsum dolor sit.</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <Image
-                    src="/floral-icon.png"
-                    height={20}
-                    width={20}
-                    alt="icon"
-                  />
-                  <span>Lorem ipsum dolor sit.</span>
+                  <span className="w-5/6">
+                    Feel the benefits of consistent Asana, Meditation, &
+                    Pranayama{" "}
+                  </span>
                 </li>
               </ul>
             </div>
           </div>
           <div className="mt-6 space-x-4">
-            <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
-              The Best Known 100 Hour Ayurveda Yoga Teachers Training In
+            <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
+              The Best Known 200 Hour Ayurveda Yoga Teachers Training In
               Rishikesh
               <span>
                 <Image
                   src="/line-decor.png"
-                  width={550 / 2}
-                  height={63 / 2}
+                  width={568 / 2}
+                  height={94 / 2}
                   alt="line-decor"
                 />
               </span>
             </h2>
-            <p>
-              The <b>100 Hour Ayurveda Yoga Teacher Training in Rishikesh</b> is
+            <p className="text-sm md:text-base">
+              The <b>200 Hour Ayurveda Yoga Teacher Training in Rishikesh</b> is
               one of the best courses for someone who is working to improve
               their yoga skills and is passionate about the art of yoga. This
               course is a well-known platform that will help you transform
@@ -663,18 +646,18 @@ const Ayurveda100 = () => {
                 alt="300 hours "
               />
               <div className="flex flex-col justify-center space-y-2 lg:w-1/2">
-                <h3 className="group text-xl font-semibold text-[#bd0006] md:text-3xl">
+                <h3 className="group text-xl font-semibold text-[#de4c11] md:text-3xl">
                   What is Yoga?
                 </h3>
-                <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
-                <p>
+                <div className=" w-[10%]  border-2 border-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
+                <p className="text-sm md:text-base">
                   Yoga is the ancient art of achieving the oneness of the
                   internal with the external. It is the practice of
                   understanding the positive energies around us and using them
-                  as a power. The <b>300 Hour Yoga Teacher Training</b> in
-                  Rishikesh seeks to provide around the experience of this art
-                  with the help of experts and a tried-out and successful module
-                  structure.
+                  as a power. The <b>200 Hour Ayurveda Yoga Teacher Training</b>{" "}
+                  in Rishikesh seeks to provide around the experience of this
+                  art with the help of experts and a tried-out and successful
+                  module structure.
                 </p>
                 <div className="mt-4 flex space-x-2 rounded-lg bg-white p-4 shadow">
                   <div className="flex w-1/3 flex-col items-center text-center ">
@@ -684,7 +667,7 @@ const Ayurveda100 = () => {
                       width={70}
                       alt="icon"
                     />
-                    <h3 className="text-slate-500 md:text-lg">
+                    <h3 className="text-sm text-slate-500 md:text-lg">
                       Boosts Creativity
                     </h3>
                   </div>
@@ -695,13 +678,15 @@ const Ayurveda100 = () => {
                       width={70}
                       alt="icon"
                     />
-                    <h3 className="text-slate-500 md:text-lg">
+                    <h3 className="text-sm text-slate-500 md:text-lg">
                       Improves Health
                     </h3>
                   </div>
                   <div className="flex w-1/3 flex-col items-center text-center ">
                     <Image src="/peace.png" height={70} width={70} alt="icon" />
-                    <h3 className="text-slate-500 md:text-lg">Inner Peace</h3>
+                    <h3 className="text-sm text-slate-500 md:text-lg">
+                      Inner Peace
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -709,20 +694,20 @@ const Ayurveda100 = () => {
           </div>
           <div className="mt-4 space-y-2 lg:flex lg:space-x-4">
             <div className="space-y-2 lg:w-1/2">
-              <h3 className="group text-xl font-semibold text-[#bd0006] md:text-3xl">
+              <h3 className="group text-xl font-semibold text-[#de4c11] md:text-3xl">
                 Why taking this training?
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+                <span className=" h-[2px] w-[10%] bg-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h3>
-              <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
+              <div className=" w-[10%]   border-2 border-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
 
-              <p>
-                The 300 Hour Yoga Teacher Training in Rishikesh is a very
-                innovative module that is designed to help the students gain the
-                maximum skills with the use of theoretical, practical,
+              <p className="text-sm md:text-base">
+                The 200 Hour Ayurveda Yoga Teacher Training in Rishikesh is a
+                very innovative module that is designed to help the students
+                gain the maximum skills with the use of theoretical, practical,
                 hypothetical, and intuitive knowledge in a safe and protected
                 environment.
               </p>
-              <p>
+              <p className="text-sm md:text-base">
                 This course ensures that you learn the asanas to perfection and
                 are prepared to become a professional. It provides one-to-one
                 teaching sessions to clarify doubts, boast confidence and gain a
@@ -731,33 +716,34 @@ const Ayurveda100 = () => {
                 a great opportunity for individuals who are passionate about
                 yoga teaching.
               </p>
-              <h3 className="group text-xl font-semibold text-[#bd0006] md:text-3xl">
+              <h3 className="group text-xl font-semibold text-[#de4c11] md:text-3xl">
                 In Conclusion
               </h3>
-              <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
+              <div className=" w-[10%]  border-2 border-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
 
-              <p>
-                Thus the 300 Hour Yoga Teacher Training in Rishikesh is a
-                complete module that helps you get a grip of the Hatha Vinyas
+              <p className="text-sm md:text-base">
+                Thus the 200 Hour Ayurveda Yoga Teacher Training in Rishikesh is
+                a complete module that helps you get a grip of the Hatha Vinyas
                 Yoga standards and learn from the best. The module is designed
                 to provide a complete experience and maximum benefit for the
                 participants.
               </p>
             </div>
             <div className="space-y-2 lg:w-1/2">
-              <h3 className="group text-xl font-semibold text-[#bd0006] md:text-3xl">
+              <h3 className="group text-xl font-semibold text-[#de4c11] md:text-3xl">
                 What does this training give?
               </h3>
-              <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
-              <p className="space-y-1">
-                The 300 Hour Yoga Teacher Training in Rishikesh is a perfect
-                course for someone who is passionate about the art of yoga and
-                wants to take it up as a profession. This course will help you
-                if you want to turn into an authorized teacher. It is a round
-                course that helps you achieve fitness, flexibility, and peace of
-                mind. 300 Hour Yoga Teacher Training in Rishikesh{" "}
+              <div className=" w-[10%]  border-2 border-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
+              <p className="space-y-1 text-sm md:text-base">
+                The 200 Hour Ayurveda Yoga Teacher Training in Rishikesh is a
+                perfect course for someone who is passionate about the art of
+                yoga and wants to take it up as a profession. This course will
+                help you if you want to turn into an authorized teacher. It is a
+                round course that helps you achieve fitness, flexibility, and
+                peace of mind. 200 Hour Ayurveda Yoga Teacher Training in
+                Rishikesh{" "}
               </p>
-              <p>
+              <p className="text-sm md:text-base">
                 Furthermore, this course will teach you how to make decisions in
                 contradictory situations in your profession as a teacher and act
                 accordingly. This course prepares you for the future with its
@@ -765,7 +751,7 @@ const Ayurveda100 = () => {
                 this course, you will be challenged not only on the physical but
                 also on a mental level and achieve expertise in both.
               </p>
-              <p>
+              <p className="text-sm md:text-base">
                 With this course, you will get to gain knowledge about the
                 fundamental theories and histories of yoga and get to know about
                 its various asanas. Additionally, you will be able to seek
@@ -777,21 +763,24 @@ const Ayurveda100 = () => {
             </div>
           </div>
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
-            300 Hour Yoga Teacher Training In Rishikesh - Daily Schedule
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
+            200 Hour Ayurveda Yoga Teacher Training In Rishikesh - Daily
+            Schedule
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
           </h2>
-          <p>
-            <b className="text-[#bd0006]">300 Hour Yoga Teacher Training</b> is
-            specially designed to keep the student in contemplation of the
+          <p className="text-sm md:text-base">
+            <b className=" text-[#de4c11] ">
+              200 Hour Ayurveda Yoga Teacher Training
+            </b>{" "}
+            is specially designed to keep the student in contemplation of the
             subject matter throughout the day while also allowing them personal
             time. This schedule is the best integration of theory and practice,
             helping the student stay fresh and energetic throughout the day.
@@ -800,44 +789,47 @@ const Ayurveda100 = () => {
             <div className="lg:w-3/5 ">
               <h2 className="my-2 flex w-full flex-col text-2xl">
                 Important Instructions
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+                <span className=" h-[2px] w-[10%] bg-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
               <ul className="space-y-4">
                 {instructions.map((item, index) => {
                   return (
                     <li key={index} className="flex items-center space-x-4">
                       <Image
-                        src="/icons-home/001-chakra.png"
+                        src="/list-icon.png"
                         width={30}
                         height={30}
                         alt="bullet"
                         className="w-1/6"
                       />
-                      <span className="w-5/6">{item.item}</span>
+                      <span className="w-5/6 text-sm md:text-base">
+                        {item.item}
+                      </span>
                     </li>
                   );
                 })}
               </ul>
               <h2 className="mt-4 mb-2 flex w-full flex-col text-2xl">
                 Evaluation And Certification
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+                <span className=" h-[2px] w-[10%] bg-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
-              <ul className="space-y-4">
+              <ul className="space-y-4 text-sm md:text-base">
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
+                    className="w-1/6"
                   />
-                  <span>
+                  <span className="w-5/6">
                     Assessments will be based on written as well as practical
                     evaluation.
                   </span>
                 </li>
                 <li className="flex w-full items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -850,24 +842,26 @@ const Ayurveda100 = () => {
                 </li>{" "}
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
+                    className="w-1/6"
                   />
-                  <span>
+                  <span className="w-5/6">
                     Evaluation will be carried out only for those students who
                     have a minimum of 90% attendance.
                   </span>
                 </li>
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
+                    className="w-1/6"
                   />
-                  <span>
+                  <span className="w-5/6">
                     Upon successful assessment, the student will receive a
                     certificate accredited by Yoga Alliance, USA.
                   </span>
@@ -877,7 +871,7 @@ const Ayurveda100 = () => {
                 <h3 className=" text-lg font-semibold md:text-3xl">
                   Total Course Fee for 300 hours YTTC
                 </h3>
-                <span className="rounded  bg-[#bd0006] p-2 text-base font-semibold text-white md:p-4 md:text-xl">
+                <span className="rounded  bg-[#de4c11] p-2 text-base font-semibold text-white md:p-4 md:text-xl">
                   USD 499
                 </span>
               </div>
@@ -885,10 +879,12 @@ const Ayurveda100 = () => {
             <div className="flex flex-col rounded-lg lg:w-2/5 ">
               <h2 className="my-2 flex w-full flex-col text-2xl">
                 Course Schedule
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+                <span className=" h-[2px] w-[10%] bg-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
-              <div className="mt-4 flex rounded-t-lg bg-[#bd0006] p-4 font-bold text-white drop-shadow-md">
-                <div className="w-2/3 text-center">ACTIVITY</div>
+              <div className="mt-4 flex rounded-t-lg bg-[#de4c11] p-4 font-bold text-white drop-shadow-md">
+                <div className="w-2/3 text-center text-lg md:text-xl">
+                  ACTIVITY
+                </div>
                 <div className="w-1/3 text-center">TIME</div>
               </div>
               {timeTable.map((item, index) => {
@@ -901,22 +897,24 @@ const Ayurveda100 = () => {
                       index === timeTable.length - 1 ? "rounded-b-lg" : ""
                     } flex p-4`}
                   >
-                    <div className="w-2/3 border-r-[2px] border-dashed border-gray-400 text-center">
+                    <div className="w-2/3 border-r-[2px] border-dashed border-gray-400 text-center text-sm md:text-base">
                       {item.title}
                     </div>
-                    <div className="w-1/3 text-center">{item.time}</div>
+                    <div className="w-1/3 text-center text-sm md:text-base">
+                      {item.time}
+                    </div>
                   </div>
                 );
               })}
-              <p className="italic ">
-                <span className="font-bold text-[#bd0006]"> Note: </span>
+              <p className="text-sm italic md:text-base ">
+                <span className="font-bold text-[#de4c11]"> Note: </span>
                 Schedule is subjected to change
               </p>
             </div>
           </div>
         </section>
-        <section className="greyFloral mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <h2 className="my-4 flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+        <section className="greyFloral mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Accomodation &amp; Food
             <span>
               <Image
@@ -927,7 +925,7 @@ const Ayurveda100 = () => {
               />
             </span>
           </h2>
-          <p className="my-4 text-lg font-semibold">
+          <p className="my-4 font-semibold md:text-lg">
             All throughout, we provide the best possible accommodation
             facilities and delicious, sattvic food.
           </p>
@@ -936,13 +934,15 @@ const Ayurveda100 = () => {
               return (
                 <li key={index} className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
                     className="w-1/6"
                   />
-                  <span className="w-5/6">{item.item}</span>
+                  <span className="w-5/6 text-sm md:text-base">
+                    {item.item}
+                  </span>
                 </li>
               );
             })}
@@ -956,7 +956,9 @@ const Ayurveda100 = () => {
                     className="flex flex-col items-center space-y-2 p-2"
                   >
                     <div className="text-center">{item.icon}</div>
-                    <p className="text-center font-semibold">{item.title}</p>
+                    <p className="text-center text-sm font-semibold md:text-base">
+                      {item.title}
+                    </p>
                   </div>
                 );
               })}
@@ -994,7 +996,7 @@ const Ayurveda100 = () => {
                 onClick={() => setTab(0)}
                 className={`${
                   tab === 0
-                    ? "border-b-[2px] border-dashed border-[#bd0006] bg-slate-200 text-[#bd0006]"
+                    ? "border-b-[2px] border-dashed border-[#de4c11] bg-slate-200 text-[#de4c11]"
                     : "bg-slate-50"
                 } w-1/2  cursor-pointer p-4 font-bold md:text-lg`}
               >
@@ -1004,7 +1006,7 @@ const Ayurveda100 = () => {
                 onClick={() => setTab(1)}
                 className={`${
                   tab === 1
-                    ? "border-b-[2px] border-dashed border-[#bd0006] bg-slate-200 text-[#bd0006]"
+                    ? "border-b-[2px] border-dashed border-[#de4c11] bg-slate-200 text-[#de4c11]"
                     : "bg-slate-50"
                 } w-1/2 cursor-pointer p-4 font-bold md:text-lg `}
               >
@@ -1018,13 +1020,15 @@ const Ayurveda100 = () => {
                     return (
                       <li key={index} className="flex items-center space-x-4">
                         <Image
-                          src="/icons-home/001-chakra.png"
+                          src="/list-icon.png"
                           width={30}
                           height={30}
                           alt="bullet"
                           className="w-1/6"
                         />
-                        <span className="w-5/6">{item.item}</span>
+                        <span className="w-5/6 text-sm md:text-base">
+                          {item.item}
+                        </span>
                       </li>
                     );
                   })}
@@ -1035,13 +1039,15 @@ const Ayurveda100 = () => {
                     return (
                       <li key={index} className="flex items-center space-x-4">
                         <Image
-                          src="/icons-home/001-chakra.png"
+                          src="/list-icon.png"
                           width={30}
                           height={30}
                           alt="bullet"
                           className="w-1/6"
                         />
-                        <span className="w-5/6">{item.item}</span>
+                        <span className="w-5/6 text-sm md:text-base">
+                          {item.item}
+                        </span>
                       </li>
                     );
                   })}
@@ -1051,14 +1057,15 @@ const Ayurveda100 = () => {
           </div>
         </section>
 
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
-            Course Syllabus - 300 Hour Yoga Teacher Training In Rishikesh
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
+            Course Syllabus - 200 Hour Ayurveda Yoga Teacher Training In
+            Rishikesh
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -1068,12 +1075,12 @@ const Ayurveda100 = () => {
               return (
                 <div
                   key={index}
-                  className="group rounded-tl-[30px] rounded-br-[30px] border-[1px] border-[#bd0006] bg-white p-4 drop-shadow-md duration-300 hover:scale-[102%] hover:border-dashed"
+                  className="group rounded-tl-[30px] rounded-br-[30px] border-[1px] border-[#de4c11] bg-white p-4 drop-shadow-md duration-300 hover:scale-[102%] hover:border-dashed"
                 >
-                  <h3 className="text-xl group-hover:text-[#bd0006]">
+                  <h3 className="text-lg group-hover:text-[#de4c11] md:text-xl">
                     {item.title}
                   </h3>
-                  <p>{item.desc}</p>
+                  <p className="text-sm md:text-base">{item.desc}</p>
                 </div>
               );
             })}
@@ -1083,40 +1090,34 @@ const Ayurveda100 = () => {
               <h3 className=" text-xl text-gray-600 md:text-3xl">
                 Want To Know More About The Syllabus
               </h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, ea? Nesciunt veritatis quos vero cupiditate.
-              </p>
+              <p>Discover the Benefits of the Yoga Teacher Training Course</p>
             </div>
             <div className="flex items-center justify-center font-bold md:w-1/3">
-              <button className="flex items-center space-x-2 rounded-lg bg-[#bd0006] p-4 text-white">
-                <span>Detailed Syllabus</span>
-                <BsArrowRight />
-              </button>
+              <ApplyButton text="Detailed Syllabus" url="#detailed_syllabus" />
             </div>
           </div>
         </section>
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             What Does A Student Get After The Completion Of The Course?
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
           </h2>
-          <p className="text-center">
+          <p className="text-center text-sm md:text-base">
             Once the student has completed the
-            <b> 300 Hour Yoga Teacher Training </b> in Rishikesh,they will be
-            given a certificate from the institution. The certificate will have
-            a record of the hours spent on the course and state the fact that
-            they will be henceforth able to hold a license as a yoga teacher.
-            The certificate is issued by the Yoga Alliance which is one of the
-            biggest organizations that is involved in the yogic lifestyle for
-            years and is highly recognized and authentic.
+            <b> 200 Hour Ayurveda Yoga Teacher Training </b> in Rishikesh,they
+            will be given a certificate from the institution. The certificate
+            will have a record of the hours spent on the course and state the
+            fact that they will be henceforth able to hold a license as a yoga
+            teacher. The certificate is issued by the Yoga Alliance which is one
+            of the biggest organizations that is involved in the yogic lifestyle
+            for years and is highly recognized and authentic.
           </p>
           <div className="mt-4 text-center">
             <Image
@@ -1132,7 +1133,7 @@ const Ayurveda100 = () => {
               <h3 className=" text-xl text-gray-600 md:text-3xl">
                 How To Book Your Spot
               </h3>
-              <p className="">
+              <p className="text-sm md:text-base">
                 Please note that our yoga courses fill up well in advance,
                 please apply in time to secure your seat. To register please
                 click on apply now button fill out the application form and
@@ -1141,90 +1142,45 @@ const Ayurveda100 = () => {
               </p>
             </div>
             <div className="flex items-center justify-center font-bold md:w-1/3">
-              <button className="flex items-center space-x-2 rounded-lg bg-[#bd0006] p-4 text-white">
-                <span>Apply Now</span>
-                <BsArrowRight />
-              </button>
+              <ApplyButton url="/apply" text="Apply Now" />
             </div>
           </div>
         </section>
         {/* Time Table is Not REsponsive */}
         {/* Seats Availabe */}
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-lg font-bold text-[#bd0006]">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <p className="text-center text-lg font-bold text-[#de4c11]">
             Upcoming Events
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Available Seats for 300 Hours Yoga Teacher Training
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
           </h2>
-          <p className="my-4">
-            <b>300 hour yoga teacher training course </b>offered by Yin Yang
-            Yoga Academy. Certified by{" "}
-            <b className="text-[#bd0006]">Yoga Alliance, USA.</b>
+          <p className="my-4 text-sm md:text-base">
+            <b>200 Hour Ayurveda yoga teacher training course </b>offered by Yin
+            Yang Yoga Academy. Certified by{" "}
+            <b className="text-[#de4c11]">Yoga Alliance, USA.</b>
           </p>
-          <div className="w-full overflow-x-scroll">
-            <div className="flex w-full justify-between rounded-t-lg bg-[#bd0006] p-4 text-center text-lg font-bold text-white">
-              <div className="w-1/6 border-r-[2px] border-dashed">
-                Start Date
-              </div>
-              <div className="w-1/6  border-r-[2px] border-dashed">
-                End Date
-              </div>
-              <div className="w-1/6 border-r-[2px] border-dashed">
-                Availability
-              </div>
-              <div className="w-1/6 border-r-[2px] border-dashed">Shared</div>
-              <div className="w-1/6 border-r-[2px] border-dashed">Private</div>
-              <div className="w-1/6">Booking</div>
-            </div>
-            {seatAvailability.map((item, index) => {
-              return (
-                <div
-                  key={index}
-                  className={`flex ${
-                    index % 2 === 0 ? "bg-slate-50" : "bg-slate-300"
-                  } w-full justify-between   p-4 text-center text-lg font-medium`}
-                >
-                  <div className="w-1/6 border-r-[2px] border-dashed">
-                    {item.start}
-                  </div>
-                  <div className="w-1/6  border-r-[2px] border-dashed">
-                    {item.end}
-                  </div>
-                  <div className="w-1/6 border-r-[2px] border-dashed">
-                    {item.availability}
-                  </div>
-                  <div className="w-1/6 border-r-[2px] border-dashed">
-                    {item.shared}
-                  </div>
-                  <div className="w-1/6 border-r-[2px] border-dashed">
-                    {item.private}
-                  </div>
-                  <div className="w-1/6">{item.booking}</div>
-                </div>
-              );
-            })}
-          </div>
+          <EventTable />
         </section>
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-lg font-bold text-[#bd0006]">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <p className="text-center font-bold text-[#de4c11] md:text-lg">
             Experience A Transfomational Journey
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
-            What To Expect At Rishikesh Yogkulam
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
+            What To Expect At Yin Yang Yoga Academy
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -1234,7 +1190,7 @@ const Ayurveda100 = () => {
               return (
                 <div
                   key={index}
-                  className="space-y-3 rounded-lg border-[1px] border-[#bd0006] bg-white p-4 drop-shadow"
+                  className="space-y-3 rounded-lg border-[1px] border-[#de4c11] bg-white p-4 drop-shadow"
                 >
                   <div className="flex items-center space-x-4">
                     <Image
@@ -1247,39 +1203,39 @@ const Ayurveda100 = () => {
                       {item.title}
                     </h3>
                   </div>
-                  <p className="text-base ">{item.desc}</p>
+                  <p className="text-sm md:text-base ">{item.desc}</p>
                 </div>
               );
             })}
           </div>
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-lg font-bold text-[#bd0006]">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <p className="text-center font-bold text-[#de4c11] md:text-lg">
             Experience A Transfomational Journey
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
-            Skill Level Of 300 Hour YTTC In Rishikesh India
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
+            Skill Level Of 200 Hour Ayurveda YTTC In Rishikesh India
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
           </h2>
-          <p>
-            There are no high requirements of skill level for the 300 Hour Yoga
-            Teacher Training in Rishikesh. Although it is expected that the
-            student will possess a minimum amount of flexibility of body and
-            mind, the students are not required to be experts as they will learn
-            it during the course. We expect our students to keep an open mind to
-            learning and be passionate about the whole process and journey of
-            the course.
+          <p className="text-sm md:text-base">
+            There are no high requirements of skill level for the 100 Hour
+            AyurvedaYoga Teacher Training in Rishikesh. Although it is expected
+            that the student will possess a minimum amount of flexibility of
+            body and mind, the students are not required to be experts as they
+            will learn it during the course. We expect our students to keep an
+            open mind to learning and be passionate about the whole process and
+            journey of the course.
           </p>
           <div className="mt-4  flex flex-col items-center space-x-4 space-y-4 lg:flex-row">
             <div className="lg:w-1/2">
-              <p>
+              <p className="text-sm md:text-base">
                 People from all levels of yoga or work are allowed to join this
                 course and no previous experience is required. Our expert
                 trainers will modify the teachings according to a student&apos;s
@@ -1288,11 +1244,11 @@ const Ayurveda100 = () => {
                 yoga but lack a proper certification are also welcome to join
                 this course.
               </p>
-              <h3 className="my-4 text-2xl">Things To Remember</h3>
-              <ul className="grid  gap-4 md:grid-cols-2">
+              <h3 className="my-4 text-xl md:text-2xl">Things To Remember</h3>
+              <ul className="grid  gap-4 text-sm md:grid-cols-2 md:text-base">
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1305,7 +1261,7 @@ const Ayurveda100 = () => {
                 </li>
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1318,7 +1274,7 @@ const Ayurveda100 = () => {
                 </li>{" "}
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1331,7 +1287,7 @@ const Ayurveda100 = () => {
                 </li>{" "}
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1344,7 +1300,7 @@ const Ayurveda100 = () => {
                 </li>{" "}
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1358,7 +1314,7 @@ const Ayurveda100 = () => {
                 </li>{" "}
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1371,7 +1327,7 @@ const Ayurveda100 = () => {
                 </li>
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1384,7 +1340,7 @@ const Ayurveda100 = () => {
                 </li>
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1408,17 +1364,20 @@ const Ayurveda100 = () => {
             </div>
           </div>
         </section>
-        <section className="greyFloral mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-lg font-bold text-[#bd0006]">
+        {/* <section
+          id="detailed_syllabus"
+          className="greyFloral mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32"
+        >
+          <p className="text-center font-bold text-[#de4c11] md:text-lg">
             Complete Syllabus For this Course
           </p>
-          <h2 className="my-4 flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Detailed Syllabus - Yoga Teacher Training In Rishikesh India
             <span>
               <Image
                 src="/line-decor.png"
-                width={2500 / 12}
-                height={346 / 12}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -1435,26 +1394,27 @@ const Ayurveda100 = () => {
               );
             })}
           </div>
-        </section>
+        </section> */}
         {/* Responsive */}
 
-        <section className=" mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-lg font-bold text-[#bd0006]">
+        <section className=" mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <p className="text-center text-lg font-bold text-[#de4c11]">
             Yoga is the journey of the self, through the self, to the self
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
-            Style Of Yoga In The 300 Hour Yoga Teachers Training In Rishikesh
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
+            Style Of Yoga In The 200 Hour Ayurveda Yoga Teachers Training In
+            Rishikesh
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
           </h2>
           <div className="space-y-3 ">
-            <p>
+            <p className="text-sm md:text-base">
               Rishikesh is known to be famous for yoga and various yogic
               practices. The place is associated with spirituality and love. The
               Yogakulam Yoga Retreat in Rishikesh is a well-known center that
@@ -1463,7 +1423,7 @@ const Ayurveda100 = () => {
               work on conservative styles and bring in their wisdom to widen the
               experience of the students for a profound experience.
             </p>
-            <p>
+            <p className="text-sm md:text-base">
               The 5000-year-old practice of yoga called the Hatha Yoga, which
               forms the basis of yogic practices is taught by our experts here.
               To maximize the benefits these practices are mixed with modern art
@@ -1486,9 +1446,9 @@ const Ayurveda100 = () => {
               </div>
             </div>
             <div className="grid gap-4 md:w-2/3 md:grid-cols-2">
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1499,9 +1459,9 @@ const Ayurveda100 = () => {
                   Classes on traditional Hatha Yoga.
                 </span>
               </li>
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1509,9 +1469,9 @@ const Ayurveda100 = () => {
                 />
                 <span className="w-5/6"> Classes on creative Vinaya Flow.</span>
               </li>
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1519,9 +1479,9 @@ const Ayurveda100 = () => {
                 />
                 <span className="w-5/6"> Classes on restorative yin yoga.</span>
               </li>
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1529,9 +1489,9 @@ const Ayurveda100 = () => {
                 />
                 <span className="w-5/6"> Classes on vinyasa power yoga.</span>
               </li>
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1542,9 +1502,9 @@ const Ayurveda100 = () => {
                   A mix of traditional and modern techniques.
                 </span>
               </li>
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1552,9 +1512,9 @@ const Ayurveda100 = () => {
                 />
                 <span className="w-5/6"> View on the skeleton variation</span>
               </li>
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1562,9 +1522,9 @@ const Ayurveda100 = () => {
                 />
                 <span className="w-5/6"> Variety and mix of asanas</span>
               </li>
-              <li className="flex items-center space-x-4">
+              <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1579,52 +1539,53 @@ const Ayurveda100 = () => {
           </div>
         </section>
         {/* Pending */}
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Activity During The Course
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
           </h2>
+          Under Construction
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-xl font-bold text-[#bd0006]">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <p className="text-center text-lg font-bold text-[#de4c11] md:text-xl">
             Some Recommended Courses{" "}
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Yoga Teacher Training in Rishikesh India
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
           </h2>
           <CourseCard />
         </section>
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32 ">
-          <p className="text-center text-xl font-bold text-[#bd0006]">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32 ">
+          <p className="text-center text-lg font-bold text-[#de4c11] md:text-xl">
             Course In a Nutshell
           </p>
-          <h2 className="flex flex-col text-center text-[30px] font-bold md:text-[40px]">
-            Best 300 Hour Yoga Teacher Training In Rishikesh India
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
+            Best 200 Hour Ayurveda Yoga Teacher Training In Rishikesh India
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
           </h2>
-          <p>
+          <p className="text-sm md:text-base">
             The yogkulam yoga retreat in Rishikesh is a divine place where you
             will get teachings regarding Hatha, Asthanga, and Yin yoga is a deep
             and thorough manner. Here, we teach in a traditional way derived
@@ -1646,22 +1607,21 @@ const Ayurveda100 = () => {
                 height="315"
                 src="https://www.youtube.com/embed/I2aiSwHR1BE"
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             </div>
-            <h3 className="fancy-font text:xl font-bold text-[#bd0006] md:text-2xl">
+            <h3 className="fancy-font text-xl font-bold text-[#de4c11] md:text-2xl">
               We are Loved by Yoga Students Across The World
             </h3>
-            <p>
+            <p className="text-sm md:text-base">
               We teach some of the oldest yoga forms present and implement yoga
               forms that are performed by rishis as well. We implement a mix of
               traditional and modern training techniques to help our students
               get a quick understanding of the course, which also helps them
               develop their unique way of teaching.
             </p>
-            <p>
+            <p className="text-sm md:text-base">
               Along with teaching, we provide some of the cleanest and basic
               accommodations available to our students. These rooms are
               available for a single resident as well as two people have the
@@ -1675,23 +1635,23 @@ const Ayurveda100 = () => {
             </p>
           </div>
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <FAQ />
         </section>
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <BookSlider />
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <TestimonialCarousel />
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <TrustPilotReview />
         </section>
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <Teacherprofile />
         </section>
       </main>
     </div>
   );
 };
-export default Ayurveda100;
+export default AyurvedaCoursePage;

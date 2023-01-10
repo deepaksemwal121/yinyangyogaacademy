@@ -111,7 +111,7 @@ const template = () => {
           </div>
         </section>
         {/* chakra retreat section */}
-        <section className="mt-6 ">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <p className="text-center text-xl font-semibold text-[#de4c11] ">
             Know More About Yoga Retreat
           </p>

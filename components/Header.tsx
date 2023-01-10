@@ -49,9 +49,9 @@ const Header = () => {
         "/yoga-teacher-training/100-hour-yttc",
         "/yoga-teacher-training/200-hour-yttc",
         "/yoga-teacher-training/300-hour-yttc",
-        "/yoga-teacher-training/200-hour-yttc",
-        "/yoga-teacher-training/ayurveda",
-        "/yoga-teacher-training/ayurveda",
+        "/yoga-teacher-training/500-hour-yttc",
+        "/yoga-teacher-training/100-hour-ayurveda-yttc",
+        "/yoga-teacher-training/200-hour-ayurveda-yttc",
       ],
     },
     {

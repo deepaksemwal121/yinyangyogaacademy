@@ -241,7 +241,7 @@ const CoursePage = () => {
 
   const notIncluded = [
     {
-      item: "Private Accommodation - 200 USD additional.",
+      item: "Private Accommodation - 500 USD additional.",
     },
     {
       item: "The air conditioner is already provided in the rooms. However, there is an additional cost of 75 USD to use it.",
@@ -344,12 +344,12 @@ const CoursePage = () => {
     {
       title: "Transformational",
       image: "/icons-home/pose-1.png",
-      desc: "This form seeks to create a transformation or a great change in a positive way. Our 200 Hour Yoga Teacher Training in Rishikesh is designed to help you rejuvenate your mind and soul and transform yourself. In our course, you will be able to nurture yourself and connect your spirit with the universe to bring out the best in you.",
+      desc: "This form seeks to create a transformation or a great change in a positive way. Our 500 Hour Yoga Teacher Training in Rishikesh is designed to help you rejuvenate your mind and soul and transform yourself. In our course, you will be able to nurture yourself and connect your spirit with the universe to bring out the best in you.",
     },
     {
       title: "Comprehensive",
       image: "/icons-home/pose-2.png",
-      desc: "One of the best parts of the 200 Hour Yoga Teacher Training in Rishikesh is that it is very comprehensive and has a wide scope. The course through its wide variety of exposure to knowledge and experience affects every individual differently. With the help of certified and well-reputed instructors, students can gain the maximum benefit and work on their self-development and improvement.",
+      desc: "One of the best parts of the 500 Hour Yoga Teacher Training in Rishikesh is that it is very comprehensive and has a wide scope. The course through its wide variety of exposure to knowledge and experience affects every individual differently. With the help of certified and well-reputed instructors, students can gain the maximum benefit and work on their self-development and improvement.",
     },
     {
       title: "Professional",
@@ -359,12 +359,12 @@ const CoursePage = () => {
     {
       title: "Body Wisdom",
       image: "/icons-home/pose-4.png",
-      desc: "Another aim of the 200 Hour Yoga Teacher Training in Rishikesh is to open the pathway to your body’s internal intellect or wisdom. Our body is nothing but a storehouse that keeps account of all the knowledge and wisdom acquired. Thus we here make sure to empower the storehouse wisdom through various activities, asanas, alignments, physiology, etc.",
+      desc: "Another aim of the 500 Hour Yoga Teacher Training in Rishikesh is to open the pathway to your body’s internal intellect or wisdom. Our body is nothing but a storehouse that keeps account of all the knowledge and wisdom acquired. Thus we here make sure to empower the storehouse wisdom through various activities, asanas, alignments, physiology, etc.",
     },
     {
       title: "Mind Mastery",
       image: "/icons-home/pose-5.png",
-      desc: "Understanding the mind opens numerous doors and helps you understand yourself better, make perfect choices for yourself, and govern your behavior. This kind of mind mastery and self-discovery can be attained through meditation and other effective powerful techniques. The 200 Hour Yoga Teacher Training in Rishikesh ensures that you achieve the mastery of mind and build a strong foundation for other asanas.",
+      desc: "Understanding the mind opens numerous doors and helps you understand yourself better, make perfect choices for yourself, and govern your behavior. This kind of mind mastery and self-discovery can be attained through meditation and other effective powerful techniques. The 500 Hour Yoga Teacher Training in Rishikesh ensures that you achieve the mastery of mind and build a strong foundation for other asanas.",
     },
     {
       title: "Soulful Discovery",
@@ -382,7 +382,7 @@ const CoursePage = () => {
               Come and join us for the unforgettable experience of a lifetime
             </p>
             <h2 className=" fancy-font text-2xl  text-white drop-shadow md:text-3xl md:leading-[6rem] lg:text-4xl xl:text-5xl">
-              200 Hour Yoga Teacher Training <br />
+              500 Hour Yoga Teacher Training <br />
               In Rishikesh, India
             </h2>
             <nav className="flex" aria-label="Breadcrumb">
@@ -437,7 +437,7 @@ const CoursePage = () => {
                       ></path>
                     </svg>
                     <span className="ml-1 text-sm font-medium   md:ml-2">
-                      200 Hours YTTC
+                      500 Hours YTTC
                     </span>
                   </div>
                 </li>
@@ -450,7 +450,7 @@ const CoursePage = () => {
             The attitude of gratitude is the highest yoga
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
-            200 Hour Yoga Teacher Training Rishikesh,India
+            500 Hour Yoga Teacher Training Rishikesh,India
             <span>
               <Image
                 src="/line-decor.png"
@@ -464,19 +464,19 @@ const CoursePage = () => {
             <div>
               <Image
                 className="rounded-lg drop-shadow"
-                src="/200hr-2.jpg"
+                src="/500hr-2.jpg"
                 height={400}
                 width={600}
-                alt="200 hours "
+                alt="500 hours "
               />
             </div>
             <div className="flex flex-col justify-center">
               <p className="text-sm md:text-base">
-                <b>200 Hour Yoga Teacher Training in Rishikesh</b> , India is
+                <b>500 Hour Yoga Teacher Training in Rishikesh</b> , India is
                 for seekers who wish to learn about and experience Yoga in its
                 most authentic and purest form. Our school, Rishikesh Yogkulam,
-                situated in the heart of Rishikesh offers <b>200 Hour YTTCs</b>,
-                200 Hour YTTC., 300 Hour YTTC. and 500 Hour YTTC. The 200 Hour
+                situated in the heart of Rishikesh offers <b>500 Hour YTTCs</b>,
+                200 Hour YTTC., 300 Hour YTTC. and 500 Hour YTTC. The 500 Hour
                 course is specially designed for novices and is a breakdown of
                 the 200 Hour YTTC. It is a two-week long, complete immersion
                 beginner course for individuals aspiring to step into the world
@@ -617,7 +617,7 @@ const CoursePage = () => {
           </div>
           <div className="mt-6 space-x-4">
             <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
-              The Best Known 200 Hour Yoga Teachers Training In Rishikesh
+              The Best Known 500 Hour Yoga Teachers Training In Rishikesh
               <span>
                 <Image
                   src="/line-decor.png"
@@ -628,7 +628,7 @@ const CoursePage = () => {
               </span>
             </h2>
             <p className="text-sm md:text-base">
-              The <b>200 Hour Yoga Teacher Training in Rishikesh</b> is one of
+              The <b>500 Hour Yoga Teacher Training in Rishikesh</b> is one of
               the best courses for someone who is working to improve their yoga
               skills and is passionate about the art of yoga. This course is a
               well-known platform that will help you transform yourself and help
@@ -637,10 +637,10 @@ const CoursePage = () => {
             <div className="mt-4 lg:flex lg:space-x-4">
               <Image
                 className="rounded-lg drop-shadow"
-                src="/200hr-2.jpg"
+                src="/500hr-2.jpg"
                 height={400}
                 width={600}
-                alt="200 hours "
+                alt="500 hours "
               />
               <div className="flex flex-col justify-center space-y-2 lg:w-1/2">
                 <h3 className="group text-xl font-semibold text-[#de4c11] md:text-3xl">
@@ -651,7 +651,7 @@ const CoursePage = () => {
                   Yoga is the ancient art of achieving the oneness of the
                   internal with the external. It is the practice of
                   understanding the positive energies around us and using them
-                  as a power. The <b>200 Hour Yoga Teacher Training</b> in
+                  as a power. The <b>500 Hour Yoga Teacher Training</b> in
                   Rishikesh seeks to provide around the experience of this art
                   with the help of experts and a tried-out and successful module
                   structure.
@@ -698,7 +698,7 @@ const CoursePage = () => {
               <div className=" w-[10%]   border-2 border-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
 
               <p className="text-sm md:text-base">
-                The 200 Hour Yoga Teacher Training in Rishikesh is a very
+                The 500 Hour Yoga Teacher Training in Rishikesh is a very
                 innovative module that is designed to help the students gain the
                 maximum skills with the use of theoretical, practical,
                 hypothetical, and intuitive knowledge in a safe and protected
@@ -719,7 +719,7 @@ const CoursePage = () => {
               <div className=" w-[10%]  border-2 border-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
 
               <p className="text-sm md:text-base">
-                Thus the 200 Hour Yoga Teacher Training in Rishikesh is a
+                Thus the 500 Hour Yoga Teacher Training in Rishikesh is a
                 complete module that helps you get a grip of the Hatha Vinyas
                 Yoga standards and learn from the best. The module is designed
                 to provide a complete experience and maximum benefit for the
@@ -732,12 +732,12 @@ const CoursePage = () => {
               </h3>
               <div className=" w-[10%]  border-2 border-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
               <p className="space-y-1 text-sm md:text-base">
-                The 200 Hour Yoga Teacher Training in Rishikesh is a perfect
+                The 500 Hour Yoga Teacher Training in Rishikesh is a perfect
                 course for someone who is passionate about the art of yoga and
                 wants to take it up as a profession. This course will help you
                 if you want to turn into an authorized teacher. It is a round
                 course that helps you achieve fitness, flexibility, and peace of
-                mind. 200 Hour Yoga Teacher Training in Rishikesh{" "}
+                mind. 500 Hour Yoga Teacher Training in Rishikesh{" "}
               </p>
               <p className="text-sm md:text-base">
                 Furthermore, this course will teach you how to make decisions in
@@ -761,7 +761,7 @@ const CoursePage = () => {
         </section>
         <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
-            200 Hour Yoga Teacher Training In Rishikesh - Daily Schedule
+            500 Hour Yoga Teacher Training In Rishikesh - Daily Schedule
             <span>
               <Image
                 src="/line-decor.png"
@@ -772,7 +772,7 @@ const CoursePage = () => {
             </span>
           </h2>
           <p className="text-sm md:text-base">
-            <b className=" text-[#de4c11] ">200 Hour Yoga Teacher Training</b>{" "}
+            <b className=" text-[#de4c11] ">500 Hour Yoga Teacher Training</b>{" "}
             is specially designed to keep the student in contemplation of the
             subject matter throughout the day while also allowing them personal
             time. This schedule is the best integration of theory and practice,
@@ -862,7 +862,7 @@ const CoursePage = () => {
               </ul>
               <div className="mt-4 flex flex-col items-center justify-between rounded-lg border-[1px] bg-white p-4 shadow-lg md:flex-row">
                 <h3 className=" text-lg font-semibold md:text-3xl">
-                  Total Course Fee for 200 hours YTTC
+                  Total Course Fee for 500 hours YTTC
                 </h3>
                 <span className="rounded  bg-[#de4c11] p-2 text-base font-semibold text-white md:p-4 md:text-xl">
                   USD 499
@@ -1052,7 +1052,7 @@ const CoursePage = () => {
 
         <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
-            Course Syllabus - 200 Hour Yoga Teacher Training In Rishikesh
+            Course Syllabus - 500 Hour Yoga Teacher Training In Rishikesh
             <span>
               <Image
                 src="/line-decor.png"
@@ -1103,7 +1103,7 @@ const CoursePage = () => {
           </h2>
           <p className="text-center text-sm md:text-base">
             Once the student has completed the
-            <b> 200 Hour Yoga Teacher Training </b> in Rishikesh,they will be
+            <b> 500 Hour Yoga Teacher Training </b> in Rishikesh,they will be
             given a certificate from the institution. The certificate will have
             a record of the hours spent on the course and state the fact that
             they will be henceforth able to hold a license as a yoga teacher.
@@ -1145,7 +1145,7 @@ const CoursePage = () => {
             Upcoming Events
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
-            Available Seats for 200 Hours Yoga Teacher Training
+            Available Seats for 500 Hours Yoga Teacher Training
             <span>
               <Image
                 src="/line-decor.png"
@@ -1156,7 +1156,7 @@ const CoursePage = () => {
             </span>
           </h2>
           <p className="my-4 text-sm md:text-base">
-            <b>200 hour yoga teacher training course </b>offered by Yin Yang
+            <b>500 hour yoga teacher training course </b>offered by Yin Yang
             Yoga Academy. Certified by{" "}
             <b className="text-[#de4c11]">Yoga Alliance, USA.</b>
           </p>
@@ -1206,7 +1206,7 @@ const CoursePage = () => {
             Experience A Transfomational Journey
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
-            Skill Level Of 200 Hour YTTC In Rishikesh India
+            Skill Level Of 500 Hour YTTC In Rishikesh India
             <span>
               <Image
                 src="/line-decor.png"
@@ -1217,7 +1217,7 @@ const CoursePage = () => {
             </span>
           </h2>
           <p className="text-sm md:text-base">
-            There are no high requirements of skill level for the 200 Hour Yoga
+            There are no high requirements of skill level for the 500 Hour Yoga
             Teacher Training in Rishikesh. Although it is expected that the
             student will possess a minimum amount of flexibility of body and
             mind, the students are not required to be experts as they will learn
@@ -1347,7 +1347,7 @@ const CoursePage = () => {
             </div>
             <div className="lg:w-1/2">
               <Image
-                src="/200hr-2.jpg"
+                src="/500hr-2.jpg"
                 width={600}
                 height={400}
                 alt="skills"
@@ -1394,7 +1394,7 @@ const CoursePage = () => {
             Yoga is the journey of the self, through the self, to the self
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
-            Style Of Yoga In The 200 Hour Yoga Teachers Training In Rishikesh
+            Style Of Yoga In The 500 Hour Yoga Teachers Training In Rishikesh
             <span>
               <Image
                 src="/line-decor.png"
@@ -1428,7 +1428,7 @@ const CoursePage = () => {
             <div className=" md:w-1/3">
               <div className="static">
                 <Image
-                  src="/200hr-2.jpg"
+                  src="/500hr-2.jpg"
                   width={600 * 0.7}
                   height={400 * 0.7}
                   alt="Image"
@@ -1566,7 +1566,7 @@ const CoursePage = () => {
             Course In a Nutshell
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
-            Best 200 Hour Yoga Teacher Training In Rishikesh India
+            Best 500 Hour Yoga Teacher Training In Rishikesh India
             <span>
               <Image
                 src="/line-decor.png"

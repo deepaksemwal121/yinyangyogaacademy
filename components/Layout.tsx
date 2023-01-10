@@ -10,29 +10,8 @@ interface Pages {
 }
 
 const Layout = ({ children }: Pages) => {
-  const [displayLogo, setDisplayLogo] = useState(true);
-  const [height, setHeight] = useState(0);
-
-  useEffect(() => {
-    window.addEventListener("scroll", listenToScroll);
-    return () => window.removeEventListener("scroll", listenToScroll);
-  }, []);
-
-  const listenToScroll = () => {
-    let heightToHideFrom = 200;
-    const winScroll =
-      document.body.scrollTop || document.documentElement.scrollTop;
-    setHeight(winScroll);
-
-    if (winScroll > heightToHideFrom) {
-      setDisplayLogo(false);
-    } else {
-      setDisplayLogo(true);
-    }
-  };
   return (
     <div className="relative bg-white">
-      {/* <MobileNav displayLogo={displayLogo} /> */}
       <Header />
       {children}
       <Footer />

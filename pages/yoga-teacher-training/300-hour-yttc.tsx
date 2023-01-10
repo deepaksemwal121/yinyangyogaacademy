@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { IoBedOutline } from "react-icons/io5";
@@ -19,6 +20,7 @@ import TestimonialCarousel from "../../components/sections/TestimonialCarousel";
 import TrustPilotReview from "../../components/sections/TrustPilotReview";
 import { syllabus } from "../../data/detailedSyllabus";
 import ActivityCourse from "../../widgets/reusable/ActivityCourse";
+import ApplyButton from "../../widgets/reusable/ApplyButton";
 import EventTable from "../../widgets/reusable/EventTable";
 
 const CoursePage = () => {
@@ -239,7 +241,7 @@ const CoursePage = () => {
 
   const notIncluded = [
     {
-      item: "Private Accommodation - 100 USD additional.",
+      item: "Private Accommodation - 300 USD additional.",
     },
     {
       item: "The air conditioner is already provided in the rooms. However, there is an additional cost of 75 USD to use it.",
@@ -374,7 +376,7 @@ const CoursePage = () => {
   return (
     <div>
       <main>
-        <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8 xl:px-32 ">
+        <section className=" hero-section flex h-[60vh] items-center  rounded-bl-[80px] py-8 px-4  md:px-6 lg:px-8  xl:px-16 2xl:px-32">
           <div className=" space-y-2 py-2">
             <p className=" font-semibold tracking-wide text-gray-200 md:text-xl">
               Come and join us for the unforgettable experience of a lifetime
@@ -443,8 +445,8 @@ const CoursePage = () => {
             </nav>
           </div>
         </section>
-        <section className="py-8 px-4  md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-lg font-semibold text-[#bd0006] ">
+        <section className="py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <p className="text-center text-lg font-semibold text-[#de4c11] ">
             The attitude of gratitude is the highest yoga
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -452,8 +454,8 @@ const CoursePage = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -462,10 +464,10 @@ const CoursePage = () => {
             <div>
               <Image
                 className="rounded-lg drop-shadow"
-                src="/100hr-2.jpg"
+                src="/300hr-2.jpg"
                 height={400}
                 width={600}
-                alt="300 Hours "
+                alt="300 hours "
               />
             </div>
             <div className="flex flex-col justify-center">
@@ -488,12 +490,12 @@ const CoursePage = () => {
             </div>
           </div>
         </section>
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <div className=" grid grid-cols-1  gap-4 lg:grid-cols-3 ">
             <div className="group space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg md:-mt-12 ">
               <h2 className="flex w-full flex-col  text-xl">
                 Course Overview
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+                <span className=" h-[2px] w-[10%] bg-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
               <p className="text-sm md:text-base">
                 The course focuses on expounding and strengthening the
@@ -506,7 +508,7 @@ const CoursePage = () => {
             <div className="group space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg md:-mt-12 ">
               <h2 className="flex w-full flex-col  text-xl">
                 Course Summary
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+                <span className=" h-[2px] w-[10%] bg-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
               <ul className="space-y-2 text-sm md:text-base">
                 <li className="flex items-center space-x-2">
@@ -563,7 +565,7 @@ const CoursePage = () => {
             <div className="group space-y-3 rounded-lg border-2 bg-white py-4 px-6 shadow-lg md:-mt-12 ">
               <h2 className="flex w-full flex-col  text-xl">
                 Course Highlights
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+                <span className=" h-[2px] w-[10%] bg-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
               <ul className="space-y-2 text-sm  md:text-base">
                 <li className="flex items-center space-x-2">
@@ -619,8 +621,8 @@ const CoursePage = () => {
               <span>
                 <Image
                   src="/line-decor.png"
-                  width={550 / 2}
-                  height={63 / 2}
+                  width={568 / 2}
+                  height={94 / 2}
                   alt="line-decor"
                 />
               </span>
@@ -635,16 +637,16 @@ const CoursePage = () => {
             <div className="mt-4 lg:flex lg:space-x-4">
               <Image
                 className="rounded-lg drop-shadow"
-                src="/100hr-2.jpg"
+                src="/300hr-2.jpg"
                 height={400}
                 width={600}
-                alt="300 Hours "
+                alt="300 hours "
               />
               <div className="flex flex-col justify-center space-y-2 lg:w-1/2">
-                <h3 className="group text-xl font-semibold text-[#bd0006] md:text-3xl">
+                <h3 className="group text-xl font-semibold text-[#de4c11] md:text-3xl">
                   What is Yoga?
                 </h3>
-                <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
+                <div className=" w-[10%]  border-2 border-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
                 <p className="text-sm md:text-base">
                   Yoga is the ancient art of achieving the oneness of the
                   internal with the external. It is the practice of
@@ -689,11 +691,11 @@ const CoursePage = () => {
           </div>
           <div className="mt-4 space-y-2 lg:flex lg:space-x-4">
             <div className="space-y-2 lg:w-1/2">
-              <h3 className="group text-xl font-semibold text-[#bd0006] md:text-3xl">
+              <h3 className="group text-xl font-semibold text-[#de4c11] md:text-3xl">
                 Why taking this training?
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+                <span className=" h-[2px] w-[10%] bg-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h3>
-              <div className=" w-[10%]   border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
+              <div className=" w-[10%]   border-2 border-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
 
               <p className="text-sm md:text-base">
                 The 300 Hour Yoga Teacher Training in Rishikesh is a very
@@ -711,10 +713,10 @@ const CoursePage = () => {
                 a great opportunity for individuals who are passionate about
                 yoga teaching.
               </p>
-              <h3 className="group text-xl font-semibold text-[#bd0006] md:text-3xl">
+              <h3 className="group text-xl font-semibold text-[#de4c11] md:text-3xl">
                 In Conclusion
               </h3>
-              <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
+              <div className=" w-[10%]  border-2 border-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
 
               <p className="text-sm md:text-base">
                 Thus the 300 Hour Yoga Teacher Training in Rishikesh is a
@@ -725,10 +727,10 @@ const CoursePage = () => {
               </p>
             </div>
             <div className="space-y-2 lg:w-1/2">
-              <h3 className="group text-xl font-semibold text-[#bd0006] md:text-3xl">
+              <h3 className="group text-xl font-semibold text-[#de4c11] md:text-3xl">
                 What does this training give?
               </h3>
-              <div className=" w-[10%]  border-2 border-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
+              <div className=" w-[10%]  border-2 border-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></div>
               <p className="space-y-1 text-sm md:text-base">
                 The 300 Hour Yoga Teacher Training in Rishikesh is a perfect
                 course for someone who is passionate about the art of yoga and
@@ -757,20 +759,20 @@ const CoursePage = () => {
             </div>
           </div>
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             300 Hour Yoga Teacher Training In Rishikesh - Daily Schedule
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
           </h2>
           <p className="text-sm md:text-base">
-            <b className=" text-[#bd0006] ">300 Hour Yoga Teacher Training</b>{" "}
+            <b className=" text-[#de4c11] ">300 Hour Yoga Teacher Training</b>{" "}
             is specially designed to keep the student in contemplation of the
             subject matter throughout the day while also allowing them personal
             time. This schedule is the best integration of theory and practice,
@@ -780,14 +782,14 @@ const CoursePage = () => {
             <div className="lg:w-3/5 ">
               <h2 className="my-2 flex w-full flex-col text-2xl">
                 Important Instructions
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+                <span className=" h-[2px] w-[10%] bg-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
               <ul className="space-y-4">
                 {instructions.map((item, index) => {
                   return (
                     <li key={index} className="flex items-center space-x-4">
                       <Image
-                        src="/icons-home/001-chakra.png"
+                        src="/list-icon.png"
                         width={30}
                         height={30}
                         alt="bullet"
@@ -802,12 +804,12 @@ const CoursePage = () => {
               </ul>
               <h2 className="mt-4 mb-2 flex w-full flex-col text-2xl">
                 Evaluation And Certification
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+                <span className=" h-[2px] w-[10%] bg-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
               <ul className="space-y-4 text-sm md:text-base">
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -820,7 +822,7 @@ const CoursePage = () => {
                 </li>
                 <li className="flex w-full items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -833,7 +835,7 @@ const CoursePage = () => {
                 </li>{" "}
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -846,7 +848,7 @@ const CoursePage = () => {
                 </li>
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -860,9 +862,9 @@ const CoursePage = () => {
               </ul>
               <div className="mt-4 flex flex-col items-center justify-between rounded-lg border-[1px] bg-white p-4 shadow-lg md:flex-row">
                 <h3 className=" text-lg font-semibold md:text-3xl">
-                  Total Course Fee for 300 Hours YTTC
+                  Total Course Fee for 300 hours YTTC
                 </h3>
-                <span className="rounded  bg-[#bd0006] p-2 text-base font-semibold text-white md:p-4 md:text-xl">
+                <span className="rounded  bg-[#de4c11] p-2 text-base font-semibold text-white md:p-4 md:text-xl">
                   USD 499
                 </span>
               </div>
@@ -870,9 +872,9 @@ const CoursePage = () => {
             <div className="flex flex-col rounded-lg lg:w-2/5 ">
               <h2 className="my-2 flex w-full flex-col text-2xl">
                 Course Schedule
-                <span className=" h-[2px] w-[10%] bg-[#bd0006] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
+                <span className=" h-[2px] w-[10%] bg-[#de4c11] duration-200 hover:ease-in-out group-hover:w-[20%] "></span>
               </h2>
-              <div className="mt-4 flex rounded-t-lg bg-[#bd0006] p-4 font-bold text-white drop-shadow-md">
+              <div className="mt-4 flex rounded-t-lg bg-[#de4c11] p-4 font-bold text-white drop-shadow-md">
                 <div className="w-2/3 text-center text-lg md:text-xl">
                   ACTIVITY
                 </div>
@@ -898,13 +900,13 @@ const CoursePage = () => {
                 );
               })}
               <p className="text-sm italic md:text-base ">
-                <span className="font-bold text-[#bd0006]"> Note: </span>
+                <span className="font-bold text-[#de4c11]"> Note: </span>
                 Schedule is subjected to change
               </p>
             </div>
           </div>
         </section>
-        <section className="greyFloral mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="greyFloral mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Accomodation &amp; Food
             <span>
@@ -925,7 +927,7 @@ const CoursePage = () => {
               return (
                 <li key={index} className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -987,7 +989,7 @@ const CoursePage = () => {
                 onClick={() => setTab(0)}
                 className={`${
                   tab === 0
-                    ? "border-b-[2px] border-dashed border-[#bd0006] bg-slate-200 text-[#bd0006]"
+                    ? "border-b-[2px] border-dashed border-[#de4c11] bg-slate-200 text-[#de4c11]"
                     : "bg-slate-50"
                 } w-1/2  cursor-pointer p-4 font-bold md:text-lg`}
               >
@@ -997,7 +999,7 @@ const CoursePage = () => {
                 onClick={() => setTab(1)}
                 className={`${
                   tab === 1
-                    ? "border-b-[2px] border-dashed border-[#bd0006] bg-slate-200 text-[#bd0006]"
+                    ? "border-b-[2px] border-dashed border-[#de4c11] bg-slate-200 text-[#de4c11]"
                     : "bg-slate-50"
                 } w-1/2 cursor-pointer p-4 font-bold md:text-lg `}
               >
@@ -1011,7 +1013,7 @@ const CoursePage = () => {
                     return (
                       <li key={index} className="flex items-center space-x-4">
                         <Image
-                          src="/icons-home/001-chakra.png"
+                          src="/list-icon.png"
                           width={30}
                           height={30}
                           alt="bullet"
@@ -1030,7 +1032,7 @@ const CoursePage = () => {
                     return (
                       <li key={index} className="flex items-center space-x-4">
                         <Image
-                          src="/icons-home/001-chakra.png"
+                          src="/list-icon.png"
                           width={30}
                           height={30}
                           alt="bullet"
@@ -1048,14 +1050,14 @@ const CoursePage = () => {
           </div>
         </section>
 
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Course Syllabus - 300 Hour Yoga Teacher Training In Rishikesh
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -1065,9 +1067,9 @@ const CoursePage = () => {
               return (
                 <div
                   key={index}
-                  className="group rounded-tl-[30px] rounded-br-[30px] border-[1px] border-[#bd0006] bg-white p-4 drop-shadow-md duration-300 hover:scale-[102%] hover:border-dashed"
+                  className="group rounded-tl-[30px] rounded-br-[30px] border-[1px] border-[#de4c11] bg-white p-4 drop-shadow-md duration-300 hover:scale-[102%] hover:border-dashed"
                 >
-                  <h3 className="text-lg group-hover:text-[#bd0006] md:text-xl">
+                  <h3 className="text-lg group-hover:text-[#de4c11] md:text-xl">
                     {item.title}
                   </h3>
                   <p className="text-sm md:text-base">{item.desc}</p>
@@ -1080,27 +1082,21 @@ const CoursePage = () => {
               <h3 className=" text-xl text-gray-600 md:text-3xl">
                 Want To Know More About The Syllabus
               </h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, ea? Nesciunt veritatis quos vero cupiditate.
-              </p>
+              <p>Discover the Benefits of the Yoga Teacher Training Course</p>
             </div>
             <div className="flex items-center justify-center font-bold md:w-1/3">
-              <button className="flex items-center space-x-2 rounded-lg bg-[#bd0006] p-4 text-white">
-                <span>Detailed Syllabus</span>
-                <BsArrowRight />
-              </button>
+              <ApplyButton text="Detailed Syllabus" url="#detailed_syllabus" />
             </div>
           </div>
         </section>
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             What Does A Student Get After The Completion Of The Course?
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -1138,17 +1134,14 @@ const CoursePage = () => {
               </p>
             </div>
             <div className="flex items-center justify-center font-bold md:w-1/3">
-              <button className="flex items-center space-x-2 rounded-lg bg-[#bd0006] p-4 text-white">
-                <span>Apply Now</span>
-                <BsArrowRight />
-              </button>
+              <ApplyButton url="/apply" text="Apply Now" />
             </div>
           </div>
         </section>
         {/* Time Table is Not REsponsive */}
         {/* Seats Availabe */}
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-lg font-bold text-[#bd0006]">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <p className="text-center text-lg font-bold text-[#de4c11]">
             Upcoming Events
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -1156,21 +1149,21 @@ const CoursePage = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
           </h2>
           <p className="my-4 text-sm md:text-base">
-            <b>300 Hour yoga teacher training course </b>offered by Yin Yang
+            <b>300 hour yoga teacher training course </b>offered by Yin Yang
             Yoga Academy. Certified by{" "}
-            <b className="text-[#bd0006]">Yoga Alliance, USA.</b>
+            <b className="text-[#de4c11]">Yoga Alliance, USA.</b>
           </p>
           <EventTable />
         </section>
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center font-bold text-[#bd0006] md:text-lg">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <p className="text-center font-bold text-[#de4c11] md:text-lg">
             Experience A Transfomational Journey
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -1178,8 +1171,8 @@ const CoursePage = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -1189,7 +1182,7 @@ const CoursePage = () => {
               return (
                 <div
                   key={index}
-                  className="space-y-3 rounded-lg border-[1px] border-[#bd0006] bg-white p-4 drop-shadow"
+                  className="space-y-3 rounded-lg border-[1px] border-[#de4c11] bg-white p-4 drop-shadow"
                 >
                   <div className="flex items-center space-x-4">
                     <Image
@@ -1208,8 +1201,8 @@ const CoursePage = () => {
             })}
           </div>
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center font-bold text-[#bd0006] md:text-lg">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <p className="text-center font-bold text-[#de4c11] md:text-lg">
             Experience A Transfomational Journey
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -1217,8 +1210,8 @@ const CoursePage = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -1247,7 +1240,7 @@ const CoursePage = () => {
               <ul className="grid  gap-4 text-sm md:grid-cols-2 md:text-base">
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1260,7 +1253,7 @@ const CoursePage = () => {
                 </li>
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1273,7 +1266,7 @@ const CoursePage = () => {
                 </li>{" "}
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1286,7 +1279,7 @@ const CoursePage = () => {
                 </li>{" "}
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1299,7 +1292,7 @@ const CoursePage = () => {
                 </li>{" "}
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1313,7 +1306,7 @@ const CoursePage = () => {
                 </li>{" "}
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1326,7 +1319,7 @@ const CoursePage = () => {
                 </li>
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1339,7 +1332,7 @@ const CoursePage = () => {
                 </li>
                 <li className="flex items-center space-x-4">
                   <Image
-                    src="/icons-home/001-chakra.png"
+                    src="/list-icon.png"
                     width={30}
                     height={30}
                     alt="bullet"
@@ -1354,7 +1347,7 @@ const CoursePage = () => {
             </div>
             <div className="lg:w-1/2">
               <Image
-                src="/100hr-2.jpg"
+                src="/300hr-2.jpg"
                 width={600}
                 height={400}
                 alt="skills"
@@ -1363,8 +1356,11 @@ const CoursePage = () => {
             </div>
           </div>
         </section>
-        <section className="greyFloral mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center font-bold text-[#bd0006] md:text-lg">
+        <section
+          id="detailed_syllabus"
+          className="greyFloral mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32"
+        >
+          <p className="text-center font-bold text-[#de4c11] md:text-lg">
             Complete Syllabus For this Course
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -1372,8 +1368,8 @@ const CoursePage = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={2500 / 12}
-                height={346 / 12}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -1393,8 +1389,8 @@ const CoursePage = () => {
         </section>
         {/* Responsive */}
 
-        <section className=" mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-lg font-bold text-[#bd0006]">
+        <section className=" mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <p className="text-center text-lg font-bold text-[#de4c11]">
             Yoga is the journey of the self, through the self, to the self
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -1402,8 +1398,8 @@ const CoursePage = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -1432,7 +1428,7 @@ const CoursePage = () => {
             <div className=" md:w-1/3">
               <div className="static">
                 <Image
-                  src="/100hr-2.jpg"
+                  src="/300hr-2.jpg"
                   width={600 * 0.7}
                   height={400 * 0.7}
                   alt="Image"
@@ -1443,7 +1439,7 @@ const CoursePage = () => {
             <div className="grid gap-4 md:w-2/3 md:grid-cols-2">
               <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1456,7 +1452,7 @@ const CoursePage = () => {
               </li>
               <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1466,7 +1462,7 @@ const CoursePage = () => {
               </li>
               <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1476,7 +1472,7 @@ const CoursePage = () => {
               </li>
               <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1486,7 +1482,7 @@ const CoursePage = () => {
               </li>
               <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1499,7 +1495,7 @@ const CoursePage = () => {
               </li>
               <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1509,7 +1505,7 @@ const CoursePage = () => {
               </li>
               <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1519,7 +1515,7 @@ const CoursePage = () => {
               </li>
               <li className="flex items-center space-x-4 text-sm md:text-base">
                 <Image
-                  src="/icons-home/001-chakra.png"
+                  src="/list-icon.png"
                   width={30}
                   height={30}
                   alt="bullet"
@@ -1534,22 +1530,22 @@ const CoursePage = () => {
           </div>
         </section>
         {/* Pending */}
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
             Activity During The Course
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
           </h2>
           Under Construction
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
-          <p className="text-center text-lg font-bold text-[#bd0006] md:text-xl">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
+          <p className="text-center text-lg font-bold text-[#de4c11] md:text-xl">
             Some Recommended Courses{" "}
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -1557,16 +1553,16 @@ const CoursePage = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
           </h2>
           <CourseCard />
         </section>
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32 ">
-          <p className="text-center text-lg font-bold text-[#bd0006] md:text-xl">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32 ">
+          <p className="text-center text-lg font-bold text-[#de4c11] md:text-xl">
             Course In a Nutshell
           </p>
           <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
@@ -1574,8 +1570,8 @@ const CoursePage = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={550 / 2}
-                height={63 / 2}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
@@ -1606,7 +1602,7 @@ const CoursePage = () => {
                 allowFullScreen
               ></iframe>
             </div>
-            <h3 className="fancy-font text-xl font-bold text-[#bd0006] md:text-2xl">
+            <h3 className="fancy-font text-xl font-bold text-[#de4c11] md:text-2xl">
               We are Loved by Yoga Students Across The World
             </h3>
             <p className="text-sm md:text-base">
@@ -1630,19 +1626,19 @@ const CoursePage = () => {
             </p>
           </div>
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <FAQ />
         </section>
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <BookSlider />
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <TestimonialCarousel />
         </section>
-        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <TrustPilotReview />
         </section>
-        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-32">
+        <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <Teacherprofile />
         </section>
       </main>
