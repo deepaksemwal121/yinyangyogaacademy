@@ -22,6 +22,7 @@ import { syllabus } from "../../data/detailedSyllabus";
 import ActivityCourse from "../../widgets/reusable/ActivityCourse";
 import ApplyButton from "../../widgets/reusable/ApplyButton";
 import EventTable from "../../widgets/reusable/EventTable";
+import { iSeatsAvailable } from "../types";
 
 const CoursePage = () => {
   const [tab, setTab] = useState(0);
@@ -43,6 +44,89 @@ const CoursePage = () => {
       },
     ],
   };
+
+  const seatAvailability: iSeatsAvailable[] = [
+    {
+      start: "01 Jan 2023	",
+      end: "11 Jan 2023	",
+      availability: "Fully Booked ✅	",
+      shared: "$499 USD",
+      private: "$599 USD",
+      sharedOriginal: "$600",
+      privateOriginal: "$700",
+      booking: "/apply",
+    },
+    {
+      start: "01 Feb 2023	",
+      end: "11 Feb 2023	",
+      availability: "Open",
+      shared: "$599 USD",
+      private: "$749 USD",
+      sharedOriginal: "$699",
+      privateOriginal: "$849 USD",
+      booking: "/apply",
+    },
+    {
+      start: "01 Mar 2023	",
+      end: "11 Mar 2023	",
+      availability: "Open",
+      shared: "$599 USD",
+      private: "$749 USD",
+      sharedOriginal: "$699",
+      privateOriginal: "$849 USD",
+      booking: "/apply",
+    },
+    {
+      start: "01 Apr 2023	",
+      end: "11 Apr 2023	",
+      availability: "Open",
+      shared: "$599 USD",
+      private: "$749 USD",
+      sharedOriginal: "$699",
+      privateOriginal: "$849 USD",
+      booking: "/apply",
+    },
+    {
+      start: "01 May 2023	",
+      end: "11 May 2023	",
+      availability: "Open",
+      shared: "499 USD",
+      private: "599 USD",
+      sharedOriginal: "600 USD",
+      privateOriginal: "700 USD",
+      booking: "/apply",
+    },
+    {
+      start: "01 Jun 2023	",
+      end: "11 Jun 2023	",
+      availability: "Open",
+      shared: "$499 USD",
+      private: "$599 USD",
+      sharedOriginal: "$600",
+      privateOriginal: "$700",
+      booking: "/apply",
+    },
+    {
+      start: "01 Jul 2023	",
+      end: "11 Jul 2023	",
+      availability: "Open",
+      shared: "$499 USD",
+      private: "$599 USD",
+      sharedOriginal: "$600",
+      privateOriginal: "$700",
+      booking: "/apply",
+    },
+    {
+      start: "01 Aug 2023	",
+      end: "11 Aug 2023	",
+      availability: "Open",
+      shared: "$499 USD",
+      private: "$599 USD",
+      sharedOriginal: "$600",
+      privateOriginal: "$700",
+      booking: "/apply",
+    },
+  ];
 
   const timeTable = [
     {
@@ -287,56 +371,6 @@ const CoursePage = () => {
     },
     {
       item: "Smoking and alcohol are not permitted during the training.",
-    },
-  ];
-  const seatAvailability = [
-    {
-      start: "23 Jul 2022",
-      end: "29 Jul 2022",
-      availability: "Available",
-      shared: "499 USD",
-      private: "599 USD",
-      booking: "Apply Now",
-    },
-    {
-      start: "23 Jul 2022",
-      end: "29 Jul 2022",
-      availability: "Available",
-      shared: "499 USD",
-      private: "599 USD",
-      booking: "Apply Now",
-    },
-    {
-      start: "23 Jul 2022",
-      end: "29 Jul 2022",
-      availability: "Available",
-      shared: "499 USD",
-      private: "599 USD",
-      booking: "Apply Now",
-    },
-    {
-      start: "23 Jul 2022",
-      end: "29 Jul 2022",
-      availability: "Available",
-      shared: "499 USD",
-      private: "599 USD",
-      booking: "Apply Now",
-    },
-    {
-      start: "23 Jul 2022",
-      end: "29 Jul 2022",
-      availability: "Available",
-      shared: "499 USD",
-      private: "599 USD",
-      booking: "Apply Now",
-    },
-    {
-      start: "23 Jul 2022",
-      end: "29 Jul 2022",
-      availability: "Available",
-      shared: "499 USD",
-      private: "599 USD",
-      booking: "Apply Now",
     },
   ];
 
@@ -1113,7 +1147,7 @@ const CoursePage = () => {
           </p>
           <div className="mt-4 text-center">
             <Image
-              src="https://www.yogkulam.org/images/TTC-certificate.jpg"
+              src="/100hrs.png"
               height={400}
               width={1083}
               alt="certificate"
@@ -1160,7 +1194,7 @@ const CoursePage = () => {
             Yoga Academy. Certified by{" "}
             <b className="text-[#de4c11]">Yoga Alliance, USA.</b>
           </p>
-          <EventTable />
+          <EventTable timeTable={seatAvailability} />
         </section>
         <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <p className="text-center font-bold text-[#de4c11] md:text-lg">
@@ -1542,7 +1576,7 @@ const CoursePage = () => {
               />
             </span>
           </h2>
-          Under Construction
+          <ActivityCourse />
         </section>
         <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <p className="text-center text-lg font-bold text-[#de4c11] md:text-xl">

@@ -10,6 +10,8 @@ import Teacherprofile from "../components/sections/Teacherprofile";
 import TestimonialCarousel from "../components/sections/TestimonialCarousel";
 import TrustPilotReview from "../components/sections/TrustPilotReview";
 import data from "../data/data";
+import CourseAdBanner from "../widgets/reusable/CourseAdBanner";
+import Gallery from "../widgets/reusable/Gallery";
 import ShadowCard from "../widgets/reusable/ShadowCard";
 
 const cardData = [
@@ -446,6 +448,48 @@ const index = () => {
               );
             })}
           </div>
+        </section>
+        <section className="py-8 px-4 md:px-6 lg:px-8 xl:px-16  2xl:px-32">
+          <p className=" text-center font-medium uppercase tracking-wide text-[#de4c11]">
+            Surroundings
+          </p>
+          <h2 className="flex flex-col text-center text-2xl font-bold md:text-4xl">
+            Experience the serene beauty and create mesmerizing memories at the
+            Yin Yang Yoga Academy in Rishikesh
+            <span>
+              <Image
+                src="/line-decor.png"
+                width={568 / 2}
+                height={94 / 2}
+                alt="line-decor"
+              />
+            </span>
+          </h2>
+          <p className="mb-4 text-center text-sm md:text-base">
+            The <b> Yin Yang Yoga Academy in Rishikesh </b> offers a truly
+            unique and immersive yoga experience amidst the spiritual and serene
+            surroundings of the holy city. Nestled on the banks of the Ganges,
+            the Academy offers breathtaking views of the majestic Himalayan
+            Mountains and the holy river. The gentle sound of the river flowing
+            and the distant chantings of the temple bells create a tranquil
+            ambiance that is perfect for yoga practice. The Academy&apos;s
+            traditional architecture blends seamlessly into the surrounding,
+            creating a sense of harmony with the local culture and the spiritual
+            atmosphere of Rishikesh. The open-air yoga shalas are the perfect
+            place to reconnect with oneself and nature as you breathe in the
+            fresh mountain air and soak in the natural light. The Academy is a
+            sanctuary for the mind, body, and soul, and an ideal place to deepen
+            your yoga practice and explore the rich cultural heritage of
+            Rishikesh.
+          </p>
+          <Gallery />
+          <CourseAdBanner
+            offerTitle="200 Hour Hatha And Ashtanga Vinyasa Yoga Teacher Training Course"
+            description="1st To 28th Of Every Month"
+            price="$499"
+            redirect1="/apply"
+            redirect2="/100-hour-yttc"
+          />
         </section>
         <section className="patternBg  py-8 px-4 md:px-6 lg:px-8 xl:px-16  2xl:px-32">
           <Teacherprofile />

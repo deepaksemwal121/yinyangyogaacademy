@@ -1113,7 +1113,7 @@ const CoursePage = () => {
           </p>
           <div className="mt-4 text-center">
             <Image
-              src="https://www.yogkulam.org/images/TTC-certificate.jpg"
+              src="/500hrs.png"
               height={400}
               width={1083}
               alt="certificate"
@@ -1160,7 +1160,7 @@ const CoursePage = () => {
             Yoga Academy. Certified by{" "}
             <b className="text-[#de4c11]">Yoga Alliance, USA.</b>
           </p>
-          <EventTable />
+          <EventTable timeTable={seatAvailability} />
         </section>
         <section className="patternBg mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <p className="text-center font-bold text-[#de4c11] md:text-lg">
@@ -1542,7 +1542,7 @@ const CoursePage = () => {
               />
             </span>
           </h2>
-          Under Construction
+          <ActivityCourse />
         </section>
         <section className="mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
           <p className="text-center text-lg font-bold text-[#de4c11] md:text-xl">

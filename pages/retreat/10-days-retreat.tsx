@@ -7,8 +7,92 @@ import EventTable from "../../widgets/reusable/EventTable";
 import TestimonialCarousel from "../../components/sections/TestimonialCarousel";
 import TrustPilotReview from "../../components/sections/TrustPilotReview";
 import ApplyButton from "../../widgets/reusable/ApplyButton";
+import { iSeatsAvailable } from "../types";
+import CourseAdBanner from "../../widgets/reusable/CourseAdBanner";
 
 const Retreat = () => {
+  const seatAvailability: iSeatsAvailable[] = [
+    {
+      start: "01 Jan 2023	",
+      end: "11 Jan 2023	",
+      availability: "Fully Booked ✅	",
+      shared: "$499 USD",
+      private: "$599 USD",
+      sharedOriginal: "$600",
+      privateOriginal: "$700",
+      booking: "/apply",
+    },
+    {
+      start: "01 Feb 2023	",
+      end: "11 Feb 2023	",
+      availability: "Open",
+      shared: "$599 USD",
+      private: "$749 USD",
+      sharedOriginal: "$699",
+      privateOriginal: "$849 USD",
+      booking: "/apply",
+    },
+    {
+      start: "01 Mar 2023	",
+      end: "11 Mar 2023	",
+      availability: "Open",
+      shared: "$599 USD",
+      private: "$749 USD",
+      sharedOriginal: "$699",
+      privateOriginal: "$849 USD",
+      booking: "/apply",
+    },
+    {
+      start: "01 Apr 2023	",
+      end: "11 Apr 2023	",
+      availability: "Open",
+      shared: "$599 USD",
+      private: "$749 USD",
+      sharedOriginal: "$699",
+      privateOriginal: "$849 USD",
+      booking: "/apply",
+    },
+    {
+      start: "01 May 2023	",
+      end: "11 May 2023	",
+      availability: "Open",
+      shared: "499 USD",
+      private: "599 USD",
+      sharedOriginal: "600 USD",
+      privateOriginal: "700 USD",
+      booking: "/apply",
+    },
+    {
+      start: "01 Jun 2023	",
+      end: "11 Jun 2023	",
+      availability: "Open",
+      shared: "$499 USD",
+      private: "$599 USD",
+      sharedOriginal: "$600",
+      privateOriginal: "$700",
+      booking: "/apply",
+    },
+    {
+      start: "01 Jul 2023	",
+      end: "11 Jul 2023	",
+      availability: "Open",
+      shared: "$499 USD",
+      private: "$599 USD",
+      sharedOriginal: "$600",
+      privateOriginal: "$700",
+      booking: "/apply",
+    },
+    {
+      start: "01 Aug 2023	",
+      end: "11 Aug 2023	",
+      availability: "Open",
+      shared: "$499 USD",
+      private: "$599 USD",
+      sharedOriginal: "$600",
+      privateOriginal: "$700",
+      booking: "/apply",
+    },
+  ];
   return (
     <main>
       <Head>
@@ -215,7 +299,15 @@ const Retreat = () => {
             />
           </span>
         </h2>
-        <EventTable />
+        <EventTable timeTable={seatAvailability} />
+
+        <CourseAdBanner
+          offerTitle="200 Hour Online Hatha And Ashtanga Vinyasa Yoga Teacher Training Course"
+          description="1st To 28th Of Every Month"
+          price="$499 USD"
+          redirect1="/apply"
+          redirect2="/apply"
+        />
       </section>
       <section className=" mt-6 py-8 px-4 md:px-6 lg:px-8 xl:px-16 2xl:px-32">
         <TestimonialCarousel />
