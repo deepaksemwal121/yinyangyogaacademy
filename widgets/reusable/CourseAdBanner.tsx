@@ -13,8 +13,8 @@ type Props = {
 const CourseAdBanner = (props: Props) => {
   return (
     <div
-      className=" items-center rounded border-2 border-[#de4c11] p-8 text-center lg:flex  lg:justify-between  "
-      style={{ backgroundColor: "#faebd6", margin: "0 2em" }}
+      className="  items-center rounded border-2 border-[#de4c11] p-8 text-center lg:flex  lg:justify-between  "
+      style={{ backgroundColor: "#faebd6", margin: "2em" }}
     >
       <div className="lg:w-1/4">
         <Image
