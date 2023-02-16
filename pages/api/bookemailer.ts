@@ -32,6 +32,7 @@ export default async function handler(
   const mailData = {
     from: process.env.email,
     to: email,
+    cc: "yinyangyogaacademy@gmail.com",
     subject: `Download Your Book - YinYangYoga Academy`,
     html: `<div>
     <p>Hello ${fullName} ,</p>

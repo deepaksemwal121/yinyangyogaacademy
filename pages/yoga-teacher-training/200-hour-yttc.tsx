@@ -218,7 +218,7 @@ const CoursePage = () => {
 
   const included = [
     {
-      item: "11 nights shared in accommodation and an attached bathroom.",
+      item: "24 nights shared in accommodation and an attached bathroom.",
     },
     {
       item: "Course material.",
@@ -295,10 +295,10 @@ const CoursePage = () => {
       start: "01 Jan 2023	",
       end: "11 Jan 2023	",
       availability: "Fully Booked ✅	",
-      shared: "$499 USD",
-      private: "$599 USD",
-      sharedOriginal: "$600",
-      privateOriginal: "$700",
+      shared: "$799 USD",
+      private: "$999 USD",
+      sharedOriginal: "$999",
+      privateOriginal: "$1299",
       booking: "/apply",
     },
     {
@@ -898,7 +898,7 @@ const CoursePage = () => {
                   Total Course Fee for 200 hours YTTC
                 </h3>
                 <span className="rounded  bg-[#de4c11] p-2 text-base font-semibold text-white md:p-4 md:text-xl">
-                  USD 499
+                  USD 999
                 </span>
               </div>
             </div>
@@ -945,8 +945,8 @@ const CoursePage = () => {
             <span>
               <Image
                 src="/line-decor.png"
-                width={2500 / 12}
-                height={346 / 12}
+                width={568 / 2}
+                height={94 / 2}
                 alt="line-decor"
               />
             </span>
